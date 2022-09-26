@@ -266,13 +266,3 @@ table, th, tr, td {
     /* border-left: 1px solid #2780e3; */
     color: var(--navbar-sec-color) !important;
   }
-
-/* Hide the TOC when resized to mobile or tablet:  480px, 768px, 900px */
-@media screen and (max-width: 1000px) {
-#TOC {
-    }
-    .d-contents nav h3 {
-      text-indent: 0; }
-    input[type="button" i] {  
-      display: none; }
-  }
