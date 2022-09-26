@@ -38,8 +38,8 @@ output:
 ```
 
 ```{r worldCloud, message=FALSE, warning=FALSE, include=FALSE}
-if(!require(wordcloud2)){
-  install.packages("wordcloud2")
+if(!require(wordcloud)){
+  install.packages("wordcloud")
 }
 if(!require(tm)){
   install.packages("tm")
