@@ -1,5 +1,5 @@
 # qpetitjean_distill
-Source files for my [personal website][cc-by-nc-sa] constructed using [Distill for R Markdown][https://rstudio.github.io/distill/] and hosted on GitHub.
+Source files for my [personal website][https://qpetitjean.github.io/qpetitjean_distill/] constructed using [Distill for R Markdown][https://rstudio.github.io/distill/] and hosted on GitHub.
 
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
