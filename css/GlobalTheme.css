@@ -115,7 +115,7 @@ d-appendix {
     background-color: #FFFFFF;
     color: var(--header-color);  /* Color of text in drop-down*/
     padding: 0.625rem;
-    padding-top: 0rem;
+    padding-top: 0.5rem;
     padding-bottom: 0rem;
     border-radius: 1.563rem;
     border: 0rem;  /* Removed border */
@@ -180,6 +180,17 @@ div#content p {
   font-size: 1.06rem;
   text-align: justify;
   color: var(--body-color);
+}
+
+/* Buttons on home page - code from https://github.com/jhelvy/jhelvy_distill/blob/master/css/jhelvy.css */
+.btn-outline-dark {
+    background-color: var(--header-color);
+    color:  rgba(255, 255, 255, 0.8);
+    border: 0px;
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--navbar-sec-color);
 }
 
 /* Change tables appearence */

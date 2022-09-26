@@ -2,13 +2,13 @@
 title: "Quentin PETITJEAN"
 image: images/Home_QP.png
 links:
-  - label: '`r fontawesome::fa("envelope", fill = "#333333")`'
+  - label: '<i class="fa fa-envelope"></i>'
     url: "mailto:q.petitjean1@gmail.com"
-  - label: '`r fontawesome::fa("github", fill = "#333333")`'
+  - label: '<i class="fa fa-github"></i>'
     url: "https://github.com/qpetitjean"
-  - label: '`r fontawesome::fa("twitter", fill = "#333333")`'
+  - label: '<i class="fa fa-twitter"></i>'
     url: "https://twitter.com/Q_PETITJEAN"
-  - label: '`r fontawesome::fa("orcid", fill = "#333333")`'
+  - label: '<i class="ai ai-orcid fa-lg"></i>'
     url: "https://orcid.org/0000-0003-2708-7831"
   - label: '<i class="ai ai-researcherid fa-lg"></i>'
     url: "https://www.webofscience.com/wos/author/record/AAE-8204-2021"
