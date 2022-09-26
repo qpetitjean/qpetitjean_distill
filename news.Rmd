@@ -1,0 +1,8 @@
+---
+title: "News"
+listing: posts
+output:
+  distill::distill_article:
+    css:
+      - css/GlobalTheme.css
+---

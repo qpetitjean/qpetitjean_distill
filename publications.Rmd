@@ -1,0 +1,364 @@
+---
+title: "Publications"
+output: 
+  distill::distill_article:
+    toc: true
+    toc_float: true
+    toc_depth: 2
+    collapsed: true
+    code_folding: false
+    css:
+      - css/GlobalTheme.css
+---
+
+<!-- TOC JAVASCRIPT ELEMENTS - code from the "A poor man’s TOC in {distill}" page -->
+<!-- https://distillery.rbind.io/posts/2022-01-24-the-toc-in-distill/?panelset1=css-elements2&panelset2=javascript-elements2&panelset=yaml-output -->
+
+<script>
+function toggle () {
+  document.getElementById("TOC").classList.toggle("hide");
+};
+
+window.addEventListener('DOMContentLoaded', () => {
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const id = entry.target.getAttribute('id');
+      if (entry.intersectionRatio > 0) {
+        document.querySelector(`[href="#${id}"]`).parentElement.classList.add('active');
+      } else {
+        document.querySelector(`[href="#${id}"]`).parentElement.classList.remove('active');
+      }
+    });
+  });
+
+  // Track all headings that have an `id` applied
+  document.querySelectorAll('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').forEach((h1, h2, h3, h4, h5, h6) => {
+    observer.observe(h1, h2, h3, h4, h5, h6);
+  });
+  
+});
+</script>
+
+<!-- TOC JAVASCRIPT ELEMENTS END -->
+
+```{r dateformating, include=FALSE}
+# specify that you want to use english date formatting - added in a separate chunk to not display it in the webpage
+Sys.setlocale("LC_TIME", "English")
+```
+
+```{r publicationsList, echo=FALSE, results='asis'}
+if(!require(scholar)){
+    install.packages("scholar")
+}
+if(!require(stats)){
+    install.packages("stats")
+}
+if(!require(rvest)){
+    install.packages("rvest")
+}
+
+# create some useful functions and data:
+####################################
+## escape some special chars, german umlauts, ... (adapted from Thomas Hackl' blog post: https://thackl.github.io/automatically-update-publications-with-R-scholar to handle more special character)
+char2html <- function(x) {
+  dictionary <- data.frame(
+    symbol = c("À",	"à",	"Â",	"â",	"Ä",	"ä",	"Æ",	"æ",	"Ç",	"ç",	"È",	"è",	"É",	"é",	"Ê",	"ê",	"Ë",	"ë",	"Î",	"î",	"Ï",	"ï",	"ñ",	"Ö",	"ö",	"Ô",	"ô",	"Œ",	"œ",	"Ù",	"ù",	"Û",	"û",	"Ü",	"ü",	"ß"),
+    html = c("&Agrave;",	"&agrave;",	"&Acirc;",	"&acirc;",	"&Auml;",	"&auml;",	"&AElig;",	"&aelig;",	"&Ccedil;",	"&ccedil;",	"&Egrave;",	"&egrave;",	"&Eacute;",	"&eacute;",	"&Ecirc;",	"&ecirc;",	"&Euml;",	"&euml;",	"&Icirc;",	"&icirc;",	"&Iuml;",	"&iuml;",	"&ntilde;",	"&Ouml;",	"&ouml;",	"&Ocirc;",	"&ocirc;",	"&OElig;",	"&oelig;",	"&Ugrave;",	"&ugrave;",	"&Ucirc;",	"&ucirc;",	"&Uuml;",	"&uuml;",	"&szlig;")
+  )
+  for (i in 1:dim(dictionary)[1]) {
+    x <- gsub(dictionary$symbol[i], dictionary$html[i], x)
+  }
+  x
+}
+
+## remove some elements form the publication' list
+toRemove <- function(toExclude, from, data) {
+  Res <- c()
+  for (i in seq(length(toExclude))) {
+    Res <- c(Res, grep(toExclude[[i]], data[[from]]))
+  }
+  if (length(which(duplicated(Res))) > 0) {
+    Res <- Res[-which(duplicated(Res)),]
+  }
+  cleaned <- data[-Res, ]
+  return(cleaned)
+}
+
+## Look for a given element within lists or dataframes
+listGet  <- function(myList, toFind) {
+  #### if myList is a simple list or a df
+  if (toFind %in% names(myList) == TRUE) {
+    return(myList[[toFind]])
+  }
+  #### if myList is a nested list
+  else if (any(sapply(myList, class) == "list")) {
+    for (i in myList) {
+      found <- Recall(i, toFind)
+      if (!is.null(found)) {
+        return(found)
+      } else {
+        NULL
+      }
+    }
+  }
+}
+
+## specify the HTML node (class) to look for within the publisher website (useful if you want display the DOI)
+DOIHTMLClass <-
+  data.frame(
+    Publisher = c(
+      "Elsevier",
+      "Pergamon",
+      "Springer",
+      "Frontiers",
+      "TheRoyalSocietyPublishing",
+      "Wiley"
+    ),
+    HTMLNode = c(
+      ".ArticleIdentifierLinks .doi",
+      ".ArticleIdentifierLinks .doi",
+      ".c-bibliographic-information__value",
+      ".header-bar-three",
+      ".epub-section",
+      "NotAllowed" # wiley online library does not allow web scaping for DOi, fortunately, the DOI is included within URL 
+    )
+  )
+
+####################################
+
+# Let's start to construct the publication' list
+######################################################
+
+# my google scholar profile url
+GscholarURL <-
+  "https://scholar.google.com/citations?user=GMudi1sAAAAJ&hl=en"
+
+# retrieve my id from my google scholar profile url (the id is located between "=" and "&")
+Qpetitjean <- regmatches(GscholarURL,
+                         regexpr("(?<=\\=)(.*?)(?=\\&)",
+                                 GscholarURL, perl = T))
+
+# pull the informations from google scholar
+html1 <- scholar::get_publications(Qpetitjean)
+
+# remove the oral communications and posters from the publication list (see function above)
+html1 <- toRemove(
+  toExclude = c("Oral Communication", "oral communication", "Poster", "poster"),
+  from = "journal",
+  data = html1
+)
+
+# sometimes journal' names and authors' list can be truncated. 
+# also volume and pages of the publications as well as the publication URL and the DOI are not included in the dataset
+# We will hence retrieve the full list of authors names, the full journal name as well as the volume and pages and the DOI for each publication
+
+## specify the list of info to retrieve
+toRetrieve <- c("Authors", "Journal", "Volume", "Pages", "PubUrl", "DOI")
+
+## allocate space within an empty dataframe
+Res <-
+  stats::setNames(data.frame(matrix(
+    ncol = length(toRetrieve), nrow = nrow(html1)
+  )), toRetrieve)
+
+## loop over the publications to retrieve the complementary informations
+for (i in seq(nrow(html1))) {
+  ### get the infos
+  temp <-
+    scholar::get_publication_data_extended(Qpetitjean, html1[i, "pubid"])
+  ### if "PubUrl" is specified in toRetrieve, look for the publication URL
+  if ("PubUrl" %in% toRetrieve) {
+    PubUrl <- scholar::get_publication_url(Qpetitjean, html1[i, "pubid"])
+    temp <- cbind(temp, PubUrl)
+  }
+  ### if "DOI" is specified in toRetrieve, look for the publication DOI
+  if ("PubUrl" %in% toRetrieve && "DOI" %in% toRetrieve) {
+    #### if the publisher is not found in the DOIHTMLClass dataframe, return NA  
+    if (length(which(DOIHTMLClass[["Publisher"]] == gsub(" .*$", "", temp[["Publisher"]]))) == 0) {
+      DOI <- ""
+    #### if the publisher website does not allow webscaping of the DOI, try to retrieve the DOI from the URL (e.g., Wiley)  
+    } else if(DOIHTMLClass[which(DOIHTMLClass[["Publisher"]] == gsub(" .*$", "", temp[["Publisher"]])),
+                            "HTMLNode"] == "NotAllowed") {
+      DOI <-
+        regmatches(temp[["PubUrl"]],
+                   regexpr("10.\\d{4,9}/[-._;()/:a-z0-9A-Z]+", temp[["PubUrl"]], perl = F))
+    #### otherwise, retrieve the DOI from the publisher website according to the DOIHTMLClass
+    } else{
+      DOI <-
+        rvest::html_text(rvest::html_nodes(rvest::read_html(temp[["PubUrl"]]),
+                                           DOIHTMLClass[which(DOIHTMLClass[["Publisher"]] == gsub(" .*$", "", temp[["Publisher"]])),
+                                                        "HTMLNode"]))
+      ##### extract the DOI from other text elements
+      DOI <- data.frame(DOI = regmatches(DOI,
+                                         regexpr(
+                                           "10.\\d{4,9}/[-._;()/:a-z0-9A-Z]+", DOI, perl = F
+                                         )))
+    }
+    temp <-
+      cbind(temp, DOI)
+  }
+  ### fill the Res dataframe with the retrieved informations
+  Res[i,] <-
+    stats::setNames(as.data.frame(t(
+      sapply(toRetrieve, function(x)
+        listGet(temp, x))
+    )), toRetrieve)
+}
+
+# bind the Res dataframe to html1
+html1 <- cbind(html1, Res)
+
+# To use the Authors full list, we need keep only the first letter of the firstname and the whole last name
+AuthorsFUll <- apply(html1, 1, function(y)
+  paste(sapply(strsplit(y[["Authors"]], ", "), function(x)
+    gsub("(\\w).*(\\s+\\w+)$", "\\1\\2", x, perl = F)), collapse = ", "))
+
+html1 <- cbind(html1, AuthorsFUll)
+
+# Now we have the full dataset 
+
+# replace "..." by et "al." when  there is numerous authors
+html1[["author"]] <-
+  gsub(", \\.\\.\\.", " et al.", html1[["author"]])
+
+# add tag specifying bold text (HTML language) to highltght my own name
+html1[["AuthorsFUll"]] <-
+  gsub("Q Petitjean", "<strong>Q Petitjean</strong>", html1[["AuthorsFUll"]])
+
+# split the publication record according to the year of publication
+html2 <- split(html1, html1[["year"]])
+
+# order the list' elements according to year in a descending way
+html2 <- html2[sort(names(html2), decreasing = T)]
+
+# reorder the various elements (authors, year, title, journal...) from the publication record
+# also add the publication' URL behind the publication' title (publisher website), the PDF file and the altimetric and dimension badges below each publication
+# see https://api.altmetric.com/embeds.html and https://badge.dimensions.ai/#build for more details
+
+# load the file containing the correspondence between the publication title and the pdf file name located in the github repository or a weblink to the pdf when #the article is OA
+pubList <- read.csv2(list.files("PubList",
+                                pattern = ".csv",
+                                full.names = TRUE))
+
+
+html3 <- list()
+for (i in names(html2)) {
+  temp <- apply(html2[[i]], 1, function(x)
+    # break the line after publication reference
+    paste(
+        # add the altimetric and dimension badges to the publication reference
+        paste0(
+          # add the pdf icon and the link to pdf to the publication reference
+          paste(
+            # add a dot and break the line at the end of the publication reference
+            paste(
+              # concatenate the journal name, volume, page and DOI (when present) to the line containing authors names, publication title with its URL
+              paste(
+                # create the line containing authors names, publication title with its URL
+                paste0(
+                  "<table style='border: none;'><td width='100%'>",
+                  # add a bullet in front of each publication
+                  fontawesome::fa("square-caret-right", fill = "#333333"),
+                  # create link to publisher website for each publication
+                  paste(
+                    x[["AuthorsFUll"]],
+                    paste0("(", x[["year"]], ")"),
+                    paste0("<a href=",
+                           x[["PubUrl"]],
+                           ">",
+                           x[["title"]],
+                           "</a>"),
+                    sep = " "
+                  ),
+                  "</a>"
+                ),
+                ifelse(is.null(x[["Journal"]]), x[["journal"]], x[["Journal"]]),
+                x[["Volume"]],
+                x[["Pages"]],
+                ifelse(x[["DOI"]] == '', x[["DOI"]], paste("doi:", x[["DOI"]], sep = " ")),
+                sep = ", "
+              ),
+              "<br/>",
+              sep = "."
+            ),
+            # the block to make the correspondence between publication title and the link to ddl the pdf (either a pdf stored in github repository or a weblink to              the pdf when the article is OA)
+            paste0(
+              "[",
+              fontawesome::fa("file-pdf", fill = "#0E8BB7", height = "1.5em"),
+              "]",
+              "(",
+              ifelse(
+                pubList[which(tolower(gsub(
+                  "[^[:alnum:]]", " ", char2html(pubList[["Title"]]), perl = T
+                )) == tolower(gsub(
+                  "[^[:alnum:]]", " ", char2html(x[["title"]]), perl = T
+                ))), "Extension"] == ".pdf",
+                paste0("pubList/", pubList[which(tolower(gsub(
+                  "[^[:alnum:]]", " ", char2html(pubList[["Title"]]), perl = T
+                )) == tolower(gsub(
+                  "[^[:alnum:]]",              " ", char2html(x[["title"]]), perl = T
+                ))), "FileName"], pubList[which(tolower(gsub(
+                  "[^[:alnum:]]", " ", char2html(pubList[["Title"]]), perl = T
+                )) == tolower(gsub(
+                  "[^[:alnum:]]", " ", char2html(x[["title"]]), perl = T
+                ))), "Extension"]),
+                pubList[which(tolower(gsub(
+                  "[^[:alnum:]]", " ", char2html(pubList[["Title"]]), perl = T
+                )) == tolower(gsub(
+                  "[^[:alnum:]]", " ", char2html(x[["title"]]), perl = T
+                ))), "FileName"]
+              ),
+              ")"
+            ),
+            sep = " "
+          ),
+          ifelse(
+            x[["DOI"]] == '',
+            "",
+            paste0(
+              "<div style='display: flex; space-between; width: 140px;'>",
+              "<div data-badge-popover='right' data-badge-type='1' data-doi=",
+              dQuote(x[["DOI"]], q = F),
+              "class='altmetric-embed'></div>",
+              " &ensp; ",
+              "<span class='__dimensions_badge_embed__' data-doi=",
+              dQuote(x[["DOI"]], q = F),
+              "data-legend='hover-right' data-style='large_rectangle'></span><script async src='https://badge.dimensions.ai/badge.js' charset='utf-8'></script>",
+              "</div>"
+            )
+          )
+        ), 
+        "</table>",
+      sep = "&ensp;"
+    ))
+  
+  # remove special characters (see function above)
+  temp <- as.list(char2html(temp))
+  
+  # add a header for each years section
+  temp <- c(paste0(" \n## ", i, " \n "),
+            temp)
+  html3 <- unlist(c(html3, temp))
+}
+
+# in case there is some null values (e.g., journal, volume, pages...), remove the extra comma
+html3 <- gsub("(, )+",", ", html3)
+
+# also, if there is null values at the end of the string, the comma might be followed a period, in this case remove the comma
+html3 <- gsub('(, \\.)|(,\\.)',".", html3)
+
+# add a sentence to the upper right corner of the page to specify the date at which the publication list has been updated
+# (from Thomas Hackl' blog post: https://thackl.github.io/automatically-update-publications-with-R-scholar)
+html4 <- c(
+  paste0(
+    "<div class='small-text'>Last updated ",
+    format(Sys.Date(), format = "%B %d, %Y"),
+    "&nbsp;&ndash;&nbsp;Pulled automatically from <a href='https://scholar.google.com/citations?user=GMudi1sAAAAJ&hl=en'>Google Scholar</a>.</div>",
+    "<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>"
+  ),
+  html3
+)
+# display the output
+cat(html4)
+```

@@ -1,0 +1,43 @@
+---
+title: "Welcome to Quentin's website"
+description: "Happy to open the 'News' section of my brand new website."
+preview: https://media.giphy.com/media/Lr4HRF6DEEJo90SQXF/giphy.gif
+categories:
+  - Welcome
+author:
+  - name: Quentin PETITJEAN
+    url: "https://qpetitjean.github.io/Welcome"
+    affiliation: Institut Sophia Agrobiotech, UMR5254 ISA, INRAE, CNRS, Université Côte d’Azur, Sophia-Antipolis, France.
+    affiliation_url: https://www6.paca.inrae.fr/institut-sophia-agrobiotech
+date: 09-22-2022
+output:
+  distill::distill_article:
+    self_contained: false
+    css:
+      - css/GlobalTheme.css
+---
+
+<p class="plain-text" style="text-align: center">
+Welcome; I'm happy to open my brand-new website's "News" section.
+</p> 
+<p class="plain-text">
+Here you'll find news about recently published articles, new positions, and more generally scientific and lab. actualities.
+</p> 
+<div style="height: 0.125rem;"><br></div>
+<p class="plain-text">
+This section is currently in progress, but some content will be added soon.
+</p> <div style="height: 0.125rem;"><br></div>
+
+<div class="fa-3x" style="text-align: center">
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-solid fa-gear fa-spin fa-2x"></i>
+ <br/>
+<i class="fa fa-flip-vertical">
+  <i class="fa fa-spin fa-gear fa-2x"></i>
+</i>
+</div>
+
+ 
+## Last updated on {.appendix}
+```{r,echo=FALSE}
+Sys.time()
+```

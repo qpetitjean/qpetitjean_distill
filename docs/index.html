@@ -1,0 +1,1411 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <style type="text/css">body {font-family: 'Roboto Slab', serif;}</style>
+
+    <title>Quentin PETITJEAN</title>
+
+    
+          <!--radix_placeholder_navigation_in_header-->
+          <meta name="distill:offset" content=""/>
+
+          <script type="application/javascript">
+
+            window.headroom_prevent_pin = false;
+
+            window.document.addEventListener("DOMContentLoaded", function (event) {
+
+              // initialize headroom for banner
+              var header = $('header').get(0);
+              var headerHeight = header.offsetHeight;
+              var headroom = new Headroom(header, {
+                tolerance: 5,
+                onPin : function() {
+                  if (window.headroom_prevent_pin) {
+                    window.headroom_prevent_pin = false;
+                    headroom.unpin();
+                  }
+                }
+              });
+              headroom.init();
+              if(window.location.hash)
+                headroom.unpin();
+              $(header).addClass('headroom--transition');
+
+              // offset scroll location for banner on hash change
+              // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
+              window.addEventListener("hashchange", function(event) {
+                window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
+              });
+
+              // responsive menu
+              $('.distill-site-header').each(function(i, val) {
+                var topnav = $(this);
+                var toggle = topnav.find('.nav-toggle');
+                toggle.on('click', function() {
+                  topnav.toggleClass('responsive');
+                });
+              });
+
+              // nav dropdowns
+              $('.nav-dropbtn').click(function(e) {
+                $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
+                $(this).parent().siblings('.nav-dropdown')
+                   .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
+              });
+              $("body").click(function(e){
+                $('.nav-dropdown-content').removeClass('nav-dropdown-active');
+              });
+              $(".nav-dropdown").click(function(e){
+                e.stopPropagation();
+              });
+            });
+          </script>
+
+          <style type="text/css">
+
+          /* Theme (user-documented overrideables for nav appearance) */
+
+          .distill-site-nav {
+            color: rgba(255, 255, 255, 0.8);
+            background-color: #0F2E3D;
+            font-size: 15px;
+            font-weight: 300;
+          }
+
+          .distill-site-nav a {
+            color: inherit;
+            text-decoration: none;
+          }
+
+          .distill-site-nav a:hover {
+            color: white;
+          }
+
+          @media print {
+            .distill-site-nav {
+              display: none;
+            }
+          }
+
+          .distill-site-header {
+
+          }
+
+          .distill-site-footer {
+
+          }
+
+
+          /* Site Header */
+
+          .distill-site-header {
+            width: 100%;
+            box-sizing: border-box;
+            z-index: 3;
+          }
+
+          .distill-site-header .nav-left {
+            display: inline-block;
+            margin-left: 8px;
+          }
+
+          @media screen and (max-width: 768px) {
+            .distill-site-header .nav-left {
+              margin-left: 0;
+            }
+          }
+
+
+          .distill-site-header .nav-right {
+            float: right;
+            margin-right: 8px;
+          }
+
+          .distill-site-header a,
+          .distill-site-header .title {
+            display: inline-block;
+            text-align: center;
+            padding: 14px 10px 14px 10px;
+          }
+
+          .distill-site-header .title {
+            font-size: 18px;
+            min-width: 150px;
+          }
+
+          .distill-site-header .logo {
+            padding: 0;
+          }
+
+          .distill-site-header .logo img {
+            display: none;
+            max-height: 20px;
+            width: auto;
+            margin-bottom: -4px;
+          }
+
+          .distill-site-header .nav-image img {
+            max-height: 18px;
+            width: auto;
+            display: inline-block;
+            margin-bottom: -3px;
+          }
+
+
+
+          @media screen and (min-width: 1000px) {
+            .distill-site-header .logo img {
+              display: inline-block;
+            }
+            .distill-site-header .nav-left {
+              margin-left: 20px;
+            }
+            .distill-site-header .nav-right {
+              margin-right: 20px;
+            }
+            .distill-site-header .title {
+              padding-left: 12px;
+            }
+          }
+
+
+          .distill-site-header .nav-toggle {
+            display: none;
+          }
+
+          .nav-dropdown {
+            display: inline-block;
+            position: relative;
+          }
+
+          .nav-dropdown .nav-dropbtn {
+            border: none;
+            outline: none;
+            color: rgba(255, 255, 255, 0.8);
+            padding: 16px 10px;
+            background-color: transparent;
+            font-family: inherit;
+            font-size: inherit;
+            font-weight: inherit;
+            margin: 0;
+            margin-top: 1px;
+            z-index: 2;
+          }
+
+          .nav-dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 200px;
+            border: 1px solid rgba(0,0,0,0.15);
+            border-radius: 4px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+            z-index: 1;
+            margin-top: 2px;
+            white-space: nowrap;
+            padding-top: 4px;
+            padding-bottom: 4px;
+          }
+
+          .nav-dropdown-content hr {
+            margin-top: 4px;
+            margin-bottom: 4px;
+            border: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          }
+
+          .nav-dropdown-active {
+            display: block;
+          }
+
+          .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
+            color: black;
+            padding: 6px 24px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+          }
+
+          .nav-dropdown-content .nav-dropdown-header {
+            display: block;
+            padding: 5px 24px;
+            padding-bottom: 0;
+            text-transform: uppercase;
+            font-size: 14px;
+            color: #999999;
+            white-space: nowrap;
+          }
+
+          .nav-dropdown:hover .nav-dropbtn {
+            color: white;
+          }
+
+          .nav-dropdown-content a:hover {
+            background-color: #ddd;
+            color: black;
+          }
+
+          .nav-right .nav-dropdown-content {
+            margin-left: -45%;
+            right: 0;
+          }
+
+          @media screen and (max-width: 768px) {
+            .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
+            .distill-site-header a.nav-toggle {
+              float: right;
+              display: block;
+            }
+            .distill-site-header .title {
+              margin-left: 0;
+            }
+            .distill-site-header .nav-right {
+              margin-right: 0;
+            }
+            .distill-site-header {
+              overflow: hidden;
+            }
+            .nav-right .nav-dropdown-content {
+              margin-left: 0;
+            }
+          }
+
+
+          @media screen and (max-width: 768px) {
+            .distill-site-header.responsive {position: relative; min-height: 500px; }
+            .distill-site-header.responsive a.nav-toggle {
+              position: absolute;
+              right: 0;
+              top: 0;
+            }
+            .distill-site-header.responsive a,
+            .distill-site-header.responsive .nav-dropdown {
+              display: block;
+              text-align: left;
+            }
+            .distill-site-header.responsive .nav-left,
+            .distill-site-header.responsive .nav-right {
+              width: 100%;
+            }
+            .distill-site-header.responsive .nav-dropdown {float: none;}
+            .distill-site-header.responsive .nav-dropdown-content {position: relative;}
+            .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
+              display: block;
+              width: 100%;
+              text-align: left;
+            }
+          }
+
+          /* Site Footer */
+
+          .distill-site-footer {
+            width: 100%;
+            overflow: hidden;
+            box-sizing: border-box;
+            z-index: 3;
+            margin-top: 30px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            text-align: center;
+          }
+
+          /* Headroom */
+
+          d-title {
+            padding-top: 6rem;
+          }
+
+          @media print {
+            d-title {
+              padding-top: 4rem;
+            }
+          }
+
+          .headroom {
+            z-index: 1000;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+          }
+
+          .headroom--transition {
+            transition: all .4s ease-in-out;
+          }
+
+          .headroom--unpinned {
+            top: -100px;
+          }
+
+          .headroom--pinned {
+            top: 0;
+          }
+
+          /* adjust viewport for navbar height */
+          /* helps vertically center bootstrap (non-distill) content */
+          .min-vh-100 {
+            min-height: calc(100vh - 100px) !important;
+          }
+
+          </style>
+
+          <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+          <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
+          <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
+          <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
+          <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
+          <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
+
+          <script type="application/javascript">
+
+          function getMeta(metaName) {
+            var metas = document.getElementsByTagName('meta');
+            for (let i = 0; i < metas.length; i++) {
+              if (metas[i].getAttribute('name') === metaName) {
+                return metas[i].getAttribute('content');
+              }
+            }
+            return '';
+          }
+
+          function offsetURL(url) {
+            var offset = getMeta('distill:offset');
+            return offset ? offset + '/' + url : url;
+          }
+
+          function createFuseIndex() {
+
+            // create fuse index
+            var options = {
+              keys: [
+                { name: 'title', weight: 20 },
+                { name: 'categories', weight: 15 },
+                { name: 'description', weight: 10 },
+                { name: 'contents', weight: 5 },
+              ],
+              ignoreLocation: true,
+              threshold: 0
+            };
+            var fuse = new window.Fuse([], options);
+
+            // fetch the main search.json
+            return fetch(offsetURL('search.json'))
+              .then(function(response) {
+                if (response.status == 200) {
+                  return response.json().then(function(json) {
+                    // index main articles
+                    json.articles.forEach(function(article) {
+                      fuse.add(article);
+                    });
+                    // download collections and index their articles
+                    return Promise.all(json.collections.map(function(collection) {
+                      return fetch(offsetURL(collection)).then(function(response) {
+                        if (response.status === 200) {
+                          return response.json().then(function(articles) {
+                            articles.forEach(function(article) {
+                              fuse.add(article);
+                            });
+                          })
+                        } else {
+                          return Promise.reject(
+                            new Error('Unexpected status from search index request: ' +
+                                      response.status)
+                          );
+                        }
+                      });
+                    })).then(function() {
+                      return fuse;
+                    });
+                  });
+
+                } else {
+                  return Promise.reject(
+                    new Error('Unexpected status from search index request: ' +
+                                response.status)
+                  );
+                }
+              });
+          }
+
+          window.document.addEventListener("DOMContentLoaded", function (event) {
+
+            // get search element (bail if we don't have one)
+            var searchEl = window.document.getElementById('distill-search');
+            if (!searchEl)
+              return;
+
+            createFuseIndex()
+              .then(function(fuse) {
+
+                // make search box visible
+                searchEl.classList.remove('hidden');
+
+                // initialize autocomplete
+                var options = {
+                  autoselect: true,
+                  hint: false,
+                  minLength: 2,
+                };
+                window.autocomplete(searchEl, options, [{
+                  source: function(query, callback) {
+                    const searchOptions = {
+                      isCaseSensitive: false,
+                      shouldSort: true,
+                      minMatchCharLength: 2,
+                      limit: 10,
+                    };
+                    var results = fuse.search(query, searchOptions);
+                    callback(results
+                      .map(function(result) { return result.item; })
+                    );
+                  },
+                  templates: {
+                    suggestion: function(suggestion) {
+                      var img = suggestion.preview && Object.keys(suggestion.preview).length > 0
+                        ? `<img src="${offsetURL(suggestion.preview)}"</img>`
+                        : '';
+                      var html = `
+                        <div class="search-item">
+                          <h3>${suggestion.title}</h3>
+                          <div class="search-item-description">
+                            ${suggestion.description || ''}
+                          </div>
+                          <div class="search-item-preview">
+                            ${img}
+                          </div>
+                        </div>
+                      `;
+                      return html;
+                    }
+                  }
+                }]).on('autocomplete:selected', function(event, suggestion) {
+                  window.location.href = offsetURL(suggestion.path);
+                });
+                // remove inline display style on autocompleter (we want to
+                // manage responsive display via css)
+                $('.algolia-autocomplete').css("display", "");
+              })
+              .catch(function(error) {
+                console.log(error);
+              });
+
+          });
+
+          </script>
+
+          <style type="text/css">
+
+          .nav-search {
+            font-size: x-small;
+          }
+
+          /* Algolioa Autocomplete */
+
+          .algolia-autocomplete {
+            display: inline-block;
+            margin-left: 10px;
+            vertical-align: sub;
+            background-color: white;
+            color: black;
+            padding: 6px;
+            padding-top: 8px;
+            padding-bottom: 0;
+            border-radius: 6px;
+            border: 1px #0F2E3D solid;
+            width: 180px;
+          }
+
+
+          @media screen and (max-width: 768px) {
+            .distill-site-nav .algolia-autocomplete {
+              display: none;
+              visibility: hidden;
+            }
+            .distill-site-nav.responsive .algolia-autocomplete {
+              display: inline-block;
+              visibility: visible;
+            }
+            .distill-site-nav.responsive .algolia-autocomplete .aa-dropdown-menu {
+              margin-left: 0;
+              width: 400px;
+              max-height: 400px;
+            }
+          }
+
+          .algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
+            width: 90%;
+            outline: none;
+            border: none;
+          }
+
+          .algolia-autocomplete .aa-hint {
+            color: #999;
+          }
+          .algolia-autocomplete .aa-dropdown-menu {
+            width: 550px;
+            max-height: 70vh;
+            overflow-x: visible;
+            overflow-y: scroll;
+            padding: 5px;
+            margin-top: 3px;
+            margin-left: -150px;
+            background-color: #fff;
+            border-radius: 5px;
+            border: 1px solid #999;
+            border-top: none;
+          }
+
+          .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
+            cursor: pointer;
+            padding: 5px 4px;
+            border-bottom: 1px solid #eee;
+          }
+
+          .algolia-autocomplete .aa-dropdown-menu .aa-suggestion:last-of-type {
+            border-bottom: none;
+            margin-bottom: 2px;
+          }
+
+          .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item {
+            overflow: hidden;
+            font-size: 0.8em;
+            line-height: 1.4em;
+          }
+
+          .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
+            font-size: 1rem;
+            margin-block-start: 0;
+            margin-block-end: 5px;
+          }
+
+          .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-description {
+            display: inline-block;
+            overflow: hidden;
+            height: 2.8em;
+            width: 80%;
+            margin-right: 4%;
+          }
+
+          .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview {
+            display: inline-block;
+            width: 15%;
+          }
+
+          .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img {
+            height: 3em;
+            width: auto;
+            display: none;
+          }
+
+          .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img[src] {
+            display: initial;
+          }
+
+          .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
+            background-color: #eee;
+          }
+          .algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
+            font-weight: bold;
+            font-style: normal;
+          }
+
+          </style>
+
+
+          <!--/radix_placeholder_navigation_in_header-->
+          <!--radix_placeholder_site_in_header-->
+          <!--/radix_placeholder_site_in_header-->
+          
+          <style type="text/css">
+          body {
+            padding-top: 60px;
+          }
+          </style>
+          <style type="text/css">
+          /* base variables */
+
+          /* Edit the CSS properties in this file to create a custom
+             Distill theme. Only edit values in the right column
+             for each row; values shown are the CSS defaults.
+             To return any property to the default,
+             you may set its value to: unset
+             All rows must end with a semi-colon.                      */
+
+          /* Optional: embed custom fonts here with `@import`          */
+          /* This must remain at the top of this file.                 */
+
+
+
+          html {
+            /*-- Main font sizes --*/
+            --title-size:      50px;
+            --body-size:       1.06rem;
+            --code-size:       14px;
+            --aside-size:      12px;
+            --fig-cap-size:    13px;
+            /*-- Main font colors --*/
+            --title-color:     #000000;
+            --header-color:    rgba(0, 0, 0, 0.8);
+            --body-color:      rgba(0, 0, 0, 0.8);
+            --aside-color:     rgba(0, 0, 0, 0.6);
+            --fig-cap-color:   rgba(0, 0, 0, 0.6);
+            /*-- Specify custom fonts ~~~ must be imported above   --*/
+            --heading-font:    sans-serif;
+            --mono-font:       monospace;
+            --body-font:       sans-serif;
+            --navbar-font:     sans-serif;  /* websites + blogs only */
+          }
+
+          /*-- ARTICLE METADATA --*/
+          d-byline {
+            --heading-size:    0.6rem;
+            --heading-color:   rgba(0, 0, 0, 0.5);
+            --body-size:       0.8rem;
+            --body-color:      rgba(0, 0, 0, 0.8);
+          }
+
+          /*-- ARTICLE TABLE OF CONTENTS --*/
+          .d-contents {
+            --heading-size:    18px;
+            --contents-size:   13px;
+          }
+
+          /*-- ARTICLE APPENDIX --*/
+          d-appendix {
+            --heading-size:    15px;
+            --heading-color:   rgba(0, 0, 0, 0.65);
+            --text-size:       0.8em;
+            --text-color:      rgba(0, 0, 0, 0.5);
+          }
+
+          /*-- WEBSITE HEADER + FOOTER --*/
+          /* These properties only apply to Distill sites and blogs  */
+
+          .distill-site-header {
+            --title-size:       18px;
+            --text-color:       rgba(255, 255, 255, 0.8);
+            --text-size:        15px;
+            --hover-color:      white;
+            --bkgd-color:       #0F2E3D;
+          }
+
+          .distill-site-footer {
+            --text-color:       rgba(255, 255, 255, 0.8);
+            --text-size:        15px;
+            --hover-color:      white;
+            --bkgd-color:       #0F2E3D;
+          }
+
+          /*-- Additional custom styles --*/
+          /* Add any additional CSS rules below                      */
+          </style>
+          <style type="text/css">
+          /* base variables */
+
+          /* Edit the CSS properties in this file to create a custom
+             Distill theme. Only edit values in the right column
+             for each row; values shown are the CSS defaults.
+             To return any property to the default,
+             you may set its value to: unset
+             All rows must end with a semi-colon.                      */
+
+          /* Optional: embed custom fonts here with `@import`          */
+          @import url("https://fonts.googleapis.com/css?family=Rubik+Dirt|Rampart+One|Mochiy+Pop+P+One|Saira+Stencil+One|Verdana|Roboto");
+          /* Optional: embed some icons from academicons here with `@import`          */
+          @import url("https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css");
+          /* This must remain at the top of this file.                 */
+
+          :root {
+            /* Main font */
+            --font-body:   "Roboto", sans-serif, Arial, sans-serif;
+            --font-header: 'Rampart One', cursive, Arial, sans-serif;
+            --font-navbar: 'Rubik Dirt', cursive, Arial, sans-serif;
+            
+            /* color of the html pages background */
+            --color-background:    rgba(215, 219, 219, 0.5);
+            
+            /* color of titles */
+            --title-color:    rgba(0, 0, 0, 0.8);
+            /* color of headers */
+            --header-color:    rgba(37, 160, 160, 0.8);
+            /* color of text */
+            --body-color:      rgba(5, 55, 65, 0.8);
+            /* color of aside text */
+            --aside-color:     rgba(82, 117, 131 , 0.8);
+            /* color of navigation bar and footer */
+            --navbar-foot-color: rgba(37, 160, 160, 0.8);
+            /* color of text within the navbar */
+            --navbar-prim-color: rgba(255, 255, 255, 0.8);
+            /* color of text within the navbar when user move the mouse over */
+            --navbar-sec-color: rgba(117, 112, 179, 0.8);
+          }
+
+          html {
+            /*-- Main font sizes --*/
+            --title-size:      3rem;
+            --body-size:       1.06rem;
+            --code-size:       0.875rem;
+            --aside-size:      0.75rem;
+            --fig-cap-size:    0.75rem;
+            /*-- Main font colors --*/
+            --title-color:     var(--title-color);
+            --header-color:    var(--header-color);
+            --body-color:      var(--body-color);
+            --aside-color:     var(--aside-color);
+            --fig-cap-color:   rgba(0, 0, 0, 0.6);
+            /*-- Specify custom fonts ~~~ must be imported above   --*/
+            --heading-font:    var(--font-header);
+            --mono-font:       monospace;
+            --body-font:       var(--font-body);
+            --navbar-font:     var(--font-navbar);  /* websites + blogs only */
+            --scroll-behavior: auto; /* The scrolling box scrolls instantly */
+          }
+
+          /*-- ARTICLE METADATA --*/
+          d-byline {
+            --heading-size:    0.6rem;
+            --heading-color:   rgba(0, 0, 0, 0.5);
+            --body-size:       0.8rem;
+            --body-color:      rgba(0, 0, 0, 0.8);
+          }
+
+          /*-- ARTICLE TABLE OF CONTENTS --*/
+          .d-contents {
+            --heading-size:    1.125rem;
+            --contents-size:   0.813rem;
+          }
+
+          /*-- ARTICLE APPENDIX --*/
+          d-appendix {
+            --heading-size:    0.938rem;
+            --heading-color:   rgba(0, 0, 0, 0.65);
+            --text-size:       0.8em;
+            --text-color:      rgba(0, 0, 0, 0.5);
+          }
+
+          /*-- WEBSITE HEADER + FOOTER --*/
+          /* These properties only apply to Distill sites and blogs  */
+
+          .distill-site-header {
+            --font-family:      var(--font-navbar);
+            --title-size:       1.375rem;
+            --text-size:        1.125rem;
+            --text-color:       var(--navbar-prim-color);
+            --hover-color:      var(--navbar-sec-color);
+            --bkgd-color:       var(--navbar-foot-color);
+          }
+
+          .distill-site-footer {
+            --font-family:      var(--font-navbar);
+            --text-size:        1.125rem;
+            --text-color:       var(--navbar-prim-color);
+            --hover-color:      var(--navbar-sec-color);;
+            --bkgd-color:       var(--navbar-foot-color);
+          }
+
+          /*-- Additional custom styles --*/
+          /* Add any additional CSS rules below  */
+
+          /* change search bar appearance */ 
+          .algolia-autocomplete {
+              display: inline-block;
+              margin-left: 1.563rem;
+              vertical-align: sub;
+              background-color: #FFFFFF;
+              color: var(--header-color);  /* Color of text in drop-down*/
+              padding: 0.625rem;
+              padding-top: 0.5rem;
+              padding-bottom: 0;
+              border-radius: 1.563rem;
+              border: 0rem;  /* Removed border */
+              width: 12.5rem;
+          }
+
+          /* Change the appearence of embeded video (e.g., youtube video) */
+          .video-container { 
+            text-align: center;
+            width: 43.75rem;
+            height: 24.625rem;
+            display: block;
+            margin: auto;
+            position: relative; 
+            padding-bottom: 56.25%; 
+            padding-top: 30px; 
+            height: 0; 
+            overflow: hidden; 
+            
+          }
+
+          .video-container iframe, .video-container object, .video-container embed { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            
+          }
+
+          /* change html background appearance */ 
+          html body {
+              background-color: var(--color-background);
+          }
+
+          /* Change link appearance */
+          d-article a {
+            color: var(--header-color);
+            font-style: italic;
+            border-bottom: 0px;
+            text-decoration: none;
+          }
+
+          a:hover, a:focus {
+              color: var(--navbar-sec-color);
+              font-weight: 500;
+              text-decoration: none !important;
+              border-bottom: 0px !important;
+          }
+
+          /* Postcard headers */
+          h1, h2 {
+            color:    var(--header-color);
+            /*-- Specify custom fonts ~~~ must be imported above   --*/
+            font-family:   var(--font-header);
+          }
+
+          /* Postcard main text */
+          div#content p {
+            font-family: var(--font-body);
+            font-style: normal;
+            font-size: 1.06rem;
+            text-align: justify;
+            color: var(--body-color);
+          }
+
+          /* Change tables appearence */
+          table, th, tr, td {
+            font-family: var(--font-body);
+            font-style: normal;
+            font-size: 1.06rem;
+            color: var(--body-color);
+            text-align: justify;
+            border-collapse: collapse;
+            border: none;
+          }
+
+          /* add small text appearence */
+          .small-text {
+            font-family: var(--font-body);
+            font-style: italic;
+            font-size: 0.8em;
+            color: var(--aside-color);
+            text-align: right;
+          }
+
+          /* add a special appearence for the title of the detailed section */
+          .summary {
+            font-family: var(--font-body);
+            font-style: italic;
+            font-size: 0.938rem;
+            color: var(--navbar-sec-color);
+            text-align: left;
+          }
+
+          /* add a special appearence for detailed section */
+          .detailed-text {
+            font-family: var(--font-body);
+            font-style: normal;
+            font-size: 0.938em;
+            color: var(--body-color);
+            text-align: justify;
+          }
+
+          /* add a special appearence for plain text section */
+          .plain-text {
+            font-family: var(--font-body);
+            font-style: normal;
+            font-size: 1.06rem;
+            color: var(--body-color);
+            text-align: justify;
+          }
+
+          /* adjust the size of the blog post' preview (code from austinweisgrau retrieved from https://github.com/rstudio/distill/issues/92) */
+          .thumbnail {
+              padding: 0px!important;
+              margin: 0px!important;
+              max-width: 10%!important;
+              height: auto!important;
+              vertical-align: text-top!important;
+          }
+
+          /* Change the TOC to fix it to the upper left (code from https://distillery.rbind.io/posts/2021-12-18-quality-of-life-modifications-for-your-distill-websites)/ */
+          #TOC {
+            position: fixed;
+            z-index: 50;
+            background: none; /* makes the toc background layer transparent */    
+            left: 2em; /* changes the left edge gap */
+            top: 15em; /* changes the top edge gap */
+          }
+
+          /* 💡 This small transition makes setting of the active state smooth */
+          .d-contents nav a {
+                transition: all 0.1s ease-in-out;
+            }
+
+          .d-contents nav a:hover {
+              color: var(--navbar-sec-color);
+              font-weight: 500;
+              border-color: var(--navbar-sec-color);
+              transform: scale(1.01); /* change scale to control hover zoom, now it is in 1:1 ratio */
+              padding-left:0%; /* change percentage value to control left gap during hover */
+              background-color: none; /* background colour on hover, kept as white as it is my bg colour */
+              display: block; /* keep it as block to station the text on hover */
+          }
+
+          /* ScrollSpy active styles (see JAVASCRIPT tab for activation) */
+          .d-contents nav ul li.active > a { 
+              font-weight: bold;  
+              /* border-left: 1px solid #2780e3; */
+              color: var(--navbar-sec-color) !important;
+            }
+
+          /* Hide the TOC when resized to mobile or tablet:  480px, 768px, 900px */
+          @media screen and (max-width: 1000px) {
+          #TOC {
+              }
+              .d-contents nav h3 {
+                text-indent: 0; }
+              input[type="button" i] {  
+                display: none; }
+            }</style>
+          <style type="text/css">
+          /* base style */
+
+          /* FONT FAMILIES */
+
+          :root {
+            --heading-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+            --mono-default: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+            --body-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+          }
+
+          body,
+          .posts-list .post-preview p,
+          .posts-list .description p {
+            font-family: var(--body-font), var(--body-default);
+          }
+
+          h1, h2, h3, h4, h5, h6,
+          .posts-list .post-preview h2,
+          .posts-list .description h2 {
+            font-family: var(--heading-font), var(--heading-default);
+          }
+
+          d-article div.sourceCode code,
+          d-article pre code {
+            font-family: var(--mono-font), var(--mono-default);
+          }
+
+
+          /*-- TITLE --*/
+          d-title h1,
+          .posts-list > h1 {
+            color: var(--title-color, black);
+          }
+
+          d-title h1 {
+            font-size: var(--title-size, 50px);
+          }
+
+          /*-- HEADERS --*/
+          d-article h1,
+          d-article h2,
+          d-article h3,
+          d-article h4,
+          d-article h5,
+          d-article h6 {
+            color: var(--header-color, rgba(0, 0, 0, 0.8));
+          }
+
+          /*-- BODY --*/
+          d-article > p,  /* only text inside of <p> tags */
+          d-article > ul, /* lists */
+          d-article > ol {
+            color: var(--body-color, rgba(0, 0, 0, 0.8));
+            font-size: var(--body-size, 1.06rem);
+          }
+
+
+          /*-- CODE --*/
+          d-article div.sourceCode code,
+          d-article pre code {
+            font-size: var(--code-size, 14px);
+          }
+
+          /*-- ASIDE --*/
+          d-article aside {
+            font-size: var(--aside-size, 12px);
+            color: var(--aside-color, rgba(0, 0, 0, 0.6));
+          }
+
+          /*-- FIGURE CAPTIONS --*/
+          figure .caption,
+          figure figcaption,
+          .figure .caption {
+            font-size: var(--fig-cap-size, 13px);
+            color: var(--fig-cap-color, rgba(0, 0, 0, 0.6));
+          }
+
+          /*-- METADATA --*/
+          d-byline h3 {
+            font-size: var(--heading-size, 0.6rem);
+            color: var(--heading-color, rgba(0, 0, 0, 0.5));
+          }
+
+          d-byline {
+            font-size: var(--body-size, 0.8rem);
+            color: var(--body-color, rgba(0, 0, 0, 0.8));
+          }
+
+          d-byline a,
+          d-article d-byline a {
+            color: var(--body-color, rgba(0, 0, 0, 0.8));
+          }
+
+          /*-- TABLE OF CONTENTS --*/
+          .d-contents nav h3 {
+            font-size: var(--heading-size, 18px);
+          }
+
+          .d-contents nav a {
+            font-size: var(--contents-size, 13px);
+          }
+
+          /*-- APPENDIX --*/
+          d-appendix h3 {
+            font-size: var(--heading-size, 15px);
+            color: var(--heading-color, rgba(0, 0, 0, 0.65));
+          }
+
+          d-appendix {
+            font-size: var(--text-size, 0.8em);
+            color: var(--text-color, rgba(0, 0, 0, 0.5));
+          }
+
+          d-appendix d-footnote-list a.footnote-backlink {
+            color: var(--text-color, rgba(0, 0, 0, 0.5));
+          }
+
+          /*-- WEBSITE HEADER + FOOTER --*/
+          .distill-site-header .title {
+            font-size: var(--title-size, 18px);
+            font-family: var(--navbar-font), var(--heading-default);
+          }
+
+          .distill-site-header a,
+          .nav-dropdown .nav-dropbtn {
+            font-family: var(--navbar-font), var(--heading-default);
+          }
+
+          .nav-dropdown .nav-dropbtn {
+            color: var(--text-color, rgba(255, 255, 255, 0.8));
+            font-size: var(--text-size, 15px);
+          }
+
+          .distill-site-header a:hover,
+          .nav-dropdown:hover .nav-dropbtn {
+            color: var(--hover-color, white);
+          }
+
+          .distill-site-header {
+            font-size: var(--text-size, 15px);
+            color: var(--text-color, rgba(255, 255, 255, 0.8));
+            background-color: var(--bkgd-color, #0F2E3D);
+          }
+
+          .distill-site-footer {
+            font-size: var(--text-size, 15px);
+            color: var(--text-color, rgba(255, 255, 255, 0.8));
+            background-color: var(--bkgd-color, #0F2E3D);
+          }
+
+          .distill-site-footer a:hover {
+            color: var(--hover-color, white);
+          }</style>
+          <script src="C:\Users\quent\Documents\R\win-library\4.1\rmarkdown\rmd\h\pandoc\header-attrs.js"></script>
+          <meta name="twitter:title" content="Quentin PETITJEAN webpage"/>
+          <meta name="twitter:description" content="The personal website of Quentin PETITJEAN"/>
+          <meta name="twitter:url" content="https://qpetitjean.github.io/"/>
+          <meta name="twitter:image" content="images/Home_QP.png"/>
+          <meta name="twitter:image:alt" content="A photo of Quentin PETITJEAN"/>
+          <meta name="twitter:card" content="summary"/>
+          <meta name="twitter:creator" content="@Q_PETITJEAN"/>
+          <meta name="twitter:site" content="@Q_PETITJEAN"/>
+          <meta property="og:title" content="Quentin PETITJEAN webpage"/>
+          <meta property="og:description" content="The personal website of Quentin PETITJEAN"/>
+          <meta property="og:url" content="https://qpetitjean.github.io/"/>
+          <meta property="og:image" content="images/Home_QP.png"/>
+          <meta property="og:image:alt" content="A photo of Quentin PETITJEAN"/>
+          <meta property="og:type" content="website"/>
+          <meta property="og:locale" content="en_US"/>
+          <meta property="article:author" content="Quentin PETITJEAN"/>
+    
+    
+  </head>
+  <body>
+
+          <!--radix_placeholder_navigation_before_body-->
+          <header class="header header--fixed" role="banner">
+          <nav class="distill-site-nav distill-site-header">
+          <div class="nav-left">
+          <span class="logo">
+          <img src="images/FavIcon.png"/>
+          </span>
+          <a href="index.html" class="title">Quentin PETITJEAN</a>
+          <input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
+          </div>
+          <div class="nav-right">
+          <a href="index.html">
+          <i class="fa fa-home" aria-hidden="true"></i>
+          </a>
+          <a href="news.html">News</a>
+          <a href="publications.html">Publications</a>
+          <a href="Communications.html">Communications</a>
+          <a href="cv.html">CV</a>
+          <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
+          </div>
+          </nav>
+          </header>
+          <!--/radix_placeholder_navigation_before_body-->
+          <!--radix_placeholder_site_before_body-->
+          <!--/radix_placeholder_site_before_body-->
+    
+    <div class="container-fluid d-none d-lg-block d-xl-block">
+      <div class="d-flex row flex-row vh-100">
+        <div class="d-flex flex-column col-5 align-items-center text-center align-self-center">
+          <div class="mx-auto text-center">
+            <div class="p-3">
+              <img src="images/Home_QP.png" style="height:15rem" class="rounded">
+            </div>
+            <div class="p-2">
+              <h1>Quentin PETITJEAN</h1>
+            </div>
+            <hr style="width:60%;"/>
+            <div class="p-2">
+              <div id="icon-list">
+                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                    <a href=mailto:q.petitjean1@gmail.com>
+                      <button type="button" class="btn btn-outline-dark mb-2">
+                        <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/></svg>
+                      </button>
+                    </a>
+                  </li>
+                                    <li class="list-inline-item">
+                    <a href=https://github.com/qpetitjean>
+                      <button type="button" class="btn btn-outline-dark mb-2">
+                        <svg aria-hidden="true" role="img" viewBox="0 0 496 512" style="height:1em;width:0.97em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                      </button>
+                    </a>
+                  </li>
+                                    <li class="list-inline-item">
+                    <a href=https://twitter.com/Q_PETITJEAN>
+                      <button type="button" class="btn btn-outline-dark mb-2">
+                        <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M459.4 151.7c.325 4.548 .325 9.097 .325 13.65 0 138.7-105.6 298.6-298.6 298.6-59.45 0-114.7-17.22-161.1-47.11 8.447 .974 16.57 1.299 25.34 1.299 49.06 0 94.21-16.57 130.3-44.83-46.13-.975-84.79-31.19-98.11-72.77 6.498 .974 12.99 1.624 19.82 1.624 9.421 0 18.84-1.3 27.61-3.573-48.08-9.747-84.14-51.98-84.14-102.1v-1.299c13.97 7.797 30.21 12.67 47.43 13.32-28.26-18.84-46.78-51.01-46.78-87.39 0-19.49 5.197-37.36 14.29-52.95 51.65 63.67 129.3 105.3 216.4 109.8-1.624-7.797-2.599-15.92-2.599-24.04 0-57.83 46.78-104.9 104.9-104.9 30.21 0 57.5 12.67 76.67 33.14 23.72-4.548 46.46-13.32 66.6-25.34-7.798 24.37-24.37 44.83-46.13 57.83 21.12-2.273 41.58-8.122 60.43-16.24-14.29 20.79-32.16 39.31-52.63 54.25z"/></svg>
+                      </button>
+                    </a>
+                  </li>
+                                    <li class="list-inline-item">
+                    <a href=https://orcid.org/0000-0003-2708-7831>
+                      <button type="button" class="btn btn-outline-dark mb-2">
+                        <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M294.8 188.2h-45.92V342h47.47c67.62 0 83.12-51.34 83.12-76.91 0-41.64-26.54-76.9-84.67-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.79 360.8h-29.84v-207.5h29.84zm-14.92-231.1a19.57 19.57 0 1 1 19.57-19.57 19.64 19.64 0 0 1 -19.57 19.57zM300 369h-81V161.3h80.6c76.73 0 110.4 54.83 110.4 103.8C410 318.4 368.4 369 300 369z"/></svg>
+                      </button>
+                    </a>
+                  </li>
+                                    <li class="list-inline-item">
+                    <a href=https://www.webofscience.com/wos/author/record/AAE-8204-2021>
+                      <button type="button" class="btn btn-outline-dark mb-2">
+                        <i class="ai ai-researcherid fa-lg"></i>
+                      </button>
+                    </a>
+                  </li>
+                                    <li class="list-inline-item">
+                    <a href=https://www.researchgate.net/profile/Quentin-Petitjean-2>
+                      <button type="button" class="btn btn-outline-dark mb-2">
+                        <i class="ai ai-researchgate fa-lg"></i>
+                      </button>
+                    </a>
+                  </li>
+                                    <li class="list-inline-item">
+                    <a href=https://scholar.google.com/citations?user=GMudi1sAAAAJ&amp;hl=en>
+                      <button type="button" class="btn btn-outline-dark mb-2">
+                        <i class="ai ai-google-scholar fa-lg"></i>
+                      </button>
+                    </a>
+                  </li>
+                                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column vh-100 border-left"></div>
+        <div class="d-flex flex-column col px-5 align-items-center align-self-center mh-100" style="overflow-y: scroll;">
+          <div class="my-5" id="content">
+            <p><img src="images/WordCloud_QP.png" width="768" style="display: block; margin: auto;" /></p>
+            <div id="bio" class="section level1">
+            <h1>Bio</h1>
+            <p class="plain-text">
+            I’m a postdoctoral researcher working on the effects of global changes on various organisms, such as flies <img src="https://icon-library.com/images/fly-icon/fly-icon-29.jpg" height="18px" width="18px" />, snails <img src="https://cdn-icons-png.flaticon.com/512/616/616636.png" height="18px" width="18px" />, and fish <svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#003366;overflow:visible;position:relative;"><path d="M180.5 141.5C219.7 108.5 272.6 80 336 80C399.4 80 452.3 108.5 491.5 141.5C530.5 174.5 558.3 213.1 572.4 241.3C577.2 250.5 577.2 261.5 572.4 270.7C558.3 298 530.5 337.5 491.5 370.5C452.3 403.5 399.4 432 336 432C272.6 432 219.7 403.5 180.5 370.5C164.3 356.7 150 341.9 137.8 327.3L48.12 379.6C35.61 386.9 19.76 384.9 9.474 374.7C-.8133 364.5-2.97 348.7 4.216 336.1L50 256L4.216 175.9C-2.97 163.3-.8133 147.5 9.474 137.3C19.76 127.1 35.61 125.1 48.12 132.4L137.8 184.7C150 170.1 164.3 155.3 180.5 141.5L180.5 141.5zM416 224C398.3 224 384 238.3 384 256C384 273.7 398.3 288 416 288C433.7 288 448 273.7 448 256C448 238.3 433.7 224 416 224z"/></svg>.
+            </p>
+            <p class="plain-text">
+            <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#358378;overflow:visible;position:relative;"><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 400c-18 0-32-14-32-32s13.1-32 32-32c17.1 0 32 14 32 32S273.1 400 256 400zM325.1 258L280 286V288c0 13-11 24-24 24S232 301 232 288V272c0-8 4-16 12-21l57-34C308 213 312 206 312 198C312 186 301.1 176 289.1 176h-51.1C225.1 176 216 186 216 198c0 13-11 24-24 24s-24-11-24-24C168 159 199 128 237.1 128h51.1C329 128 360 159 360 198C360 222 347 245 325.1 258z"/></svg> More particularly, I’m investigating how stressors such as temperature changes <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#660000;overflow:visible;position:relative;"><path d="M159.1 322.9V112C159.1 103.1 152.9 96 144 96C135.1 96 128 103.1 128 112v210.9c-22 7.875-35.25 30.38-31.25 53.38C100.6 399.4 120.6 416.1 144 416.1c23.37 0 43.37-16.71 47.25-39.83C195.2 353.3 181.1 330.8 159.1 322.9zM255.1 112C255.1 50.13 205.9 0 144 0C82.13 0 32 50.13 32 112v166.5C12.25 303.3 0 334 0 368C0 447.5 64.5 512 144 512c79.5 0 143.1-64.5 143.1-144c0-34-12.25-64.88-32-89.5V112zM219.9 393.4C208.1 426.1 178.4 447.1 144 447.1c-34.38 0-65-21.84-75.88-54.59C57.25 360.8 68.5 324.9 96 304.3V112c0-26.5 21.5-48.01 48-48.01c26.5 0 47.1 21.51 47.1 48.01v192.3C219.5 324.9 230.7 360.8 219.9 393.4zM504.1 124l-64-80c-12.12-15.19-37.84-15.19-49.97 0l-64 80c-11.05 13.81-8.812 33.94 5 45c13.75 11.03 33.94 8.781 44.97-5L384 155.2V448c0 17.69 14.33 32 32 32s32-14.31 32-32V155.2L455 164c6.312 7.906 15.61 12 25 12c7.016 0 14.08-2.281 19.97-7C513.8 157.9 516 137.8 504.1 124z"/></svg> <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#99CCFF;overflow:visible;position:relative;"><path d="M159.1 322.9l-.0002-18.92C159.1 295.1 152.9 287.1 144 287.1c-8.875 0-15.1 7.115-15.1 15.99L128 322.9c-22 7.875-35.25 30.38-31.25 53.38C100.6 399.4 120.6 416.1 144 416.1c23.37 0 43.37-16.71 47.25-39.83C195.2 353.3 181.1 330.8 159.1 322.9zM255.1 112C255.1 50.13 205.9 0 144 0C82.13 0 32 50.13 32 112v166.5C12.25 303.3 0 334 0 368C0 447.5 64.5 512 144 512c79.5 0 143.1-64.5 143.1-144c0-34-12.25-64.88-32-89.5V112zM219.9 393.4C208.1 426.1 178.4 447.1 144 447.1c-34.38 0-65-21.84-75.88-54.59C57.25 360.8 68.5 324.9 96 304.3V112C96 85.5 117.5 64 144 64c26.5 0 47.1 21.5 47.1 48v192.3C219.5 324.9 230.7 360.8 219.9 393.4zM499.1 343c-13.77-11.03-33.92-8.75-44.97 5L448 356.8V64c0-17.69-14.33-32-32-32s-32 14.31-32 32v292.8L376.1 348c-11.03-13.81-31.19-16.03-44.97-5c-13.81 11.06-16.05 31.19-5 45l64 80C397.1 475.6 406.3 480 416 480s18.92-4.406 24.98-12l64-80C516 374.2 513.8 354.1 499.1 343z"/></svg>, pollution <svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#FF9900;overflow:visible;position:relative;"><path d="M575.5 283.5c-13.13-39.11-39.5-71.98-74.13-92.35c-17.5-10.37-36.25-16.62-55.25-19.87c6-17.75 10-36.49 10-56.24c0-40.99-14.5-80.73-41-112.2c-2.5-3-6.625-3.623-10-1.75c-3.25 1.875-4.75 5.998-3.625 9.748c4.5 13.75 6.625 26.24 6.625 38.49c0 67.73-53.76 122.8-120 122.8s-120-55.11-120-122.8c0-12.12 2.25-24.74 6.625-38.49c1.125-3.75-.375-7.873-3.625-9.748c-3.375-1.873-7.502-1.25-10 1.75C134.7 34.3 120.1 74.04 120.1 115c0 19.75 3.875 38.49 10 56.24C111.2 174.5 92.32 180.8 74.82 191.1c-34.63 20.49-61.01 53.24-74.38 92.35c-1.25 3.75 .25 7.748 3.5 9.748c3.375 2 7.5 1.375 10-1.5c9.377-10.87 19-19.12 29.25-25.12c57.25-33.87 130.8-13.75 163.9 44.99c33.13 58.61 13.38 133.1-43.88 167.8c-10.25 6.123-22 10.37-35.88 13.37c-3.627 .875-6.377 4.25-6.377 8.123c.125 4 2.75 7.248 6.502 7.998c39.75 7.748 80.63 .7495 115.3-19.74c18-10.5 32.88-24.49 45.25-39.99c12.38 15.5 27.38 29.49 45.38 39.99c34.5 20.49 75.51 27.49 115.1 19.74c3.875-.75 6.375-3.998 6.5-7.998c0-3.873-2.625-7.248-6.375-8.123c-13.88-2.873-25.63-7.248-35.75-13.37c-57.38-33.87-77.01-109.2-44-167.8c33.13-58.73 106.6-78.85 164-44.99c10.12 6.123 19.75 14.25 29.13 25.12c2.5 2.875 6.752 3.5 10 1.5C575.4 291.2 576.9 287.2 575.5 283.5zM287.1 320.1c-26.5 0-48-21.49-48-47.99c0-26.49 21.5-47.99 48-47.99c26.5 0 48.01 21.49 48.01 47.99C335.1 298.6 314.5 320.1 287.1 320.1zM385 377.6c1.152 22.77 10.74 44.63 27.22 60.92c47.45-35.44 79.13-90.58 83.1-153.4c-22.58-6.173-45.69-2.743-65.57 8.76C424.7 326.9 408.5 355.1 385 377.6zM253.3 132.6c26.22-6.551 45.37-6.024 69.52 .0254c21.93-9.777 39.07-28.55 47.48-51.75C345 69.98 317.3 63.94 288.1 63.94c-29.18 0-56.96 5.986-82.16 16.84C214.3 103.1 231.4 122.8 253.3 132.6zM163.8 438.5c16.46-16.26 26.03-38.19 27.14-61.01c-23.49-21.59-39.59-50.67-44.71-83.6C126.9 282.7 103.8 278.8 80.67 285.1C84.64 347.9 116.3 403.1 163.8 438.5z"/></svg>, and pathogens <svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#330000;overflow:visible;position:relative;"><path d="M627.3 227.3c9.439-2.781 14.81-12.65 12-22.04c-3.039-10.21-13.57-14.52-22.14-11.95l-11.27 3.33c-8.086-15.15-20.68-27.55-36.4-35.43l2.888-11.06c1.867-7.158-1.9-22.19-17.26-22.19c-7.92 0-15.14 5.288-17.23 13.28l-2.865 10.97c-7.701-.2793-26.9-.6485-48.75 13.63L477.6 157.1c-3.777-3.873-15.44-9.779-25.19-.3691c-7.062 6.822-7.225 18.04-.3711 25.07l9.14 9.373c-11.96 18.85-10.27 28.38-15.88 46.61c-8.023-3.758-11.44-5.943-16.66-5.943c-6.689 0-13.09 3.763-16.13 10.19c-4.188 8.856-.3599 19.42 8.546 23.58l8.797 4.115c-14.91 22.05-34.42 33.57-34.83 33.83l-3.922-8.855C387.2 285.8 376.7 281.7 367.7 285.6c-9 3.959-13.08 14.42-9.115 23.39l4.041 9.127c-16.38 4.559-27.93 4.345-46.15 16.94l-9.996-9.012c-6.969-6.303-18.28-6.33-25.15 1.235c-6.609 7.26-6.053 18.47 1.24 25.04l9.713 8.756c-8.49 14.18-12.74 30.77-11.64 48.17l-11.86 3.512c-9.428 2.793-14.8 12.66-11.99 22.05c2.781 9.385 12.69 14.71 22.15 11.94l11.34-3.359c8.287 15.49 20.99 27.86 36.38 35.57l-2.839 10.85c-2.482 9.477 3.224 19.16 12.75 21.62c9.566 2.482 19.25-3.221 21.72-12.69l2.82-10.78c5.508 .1875 11.11-.1523 16.75-1.102c11.37-1.893 22.23-5.074 33.1-8.24l3.379 9.455c3.305 9.225 13.5 14.11 22.75 10.76c9.266-3.279 14.1-13.41 10.81-22.65l-3.498-9.792c15.41-6.654 30.08-14.46 43.95-23.57l6.321 8.429c5.891 7.84 17.05 9.443 24.93 3.602c7.885-5.863 9.498-16.97 3.617-24.82l-6.457-8.611c12.66-10.78 24.33-22.54 34.96-35.33l8.816 6.413c7.932 5.795 19.07 4.074 24.89-3.855c5.809-7.908 4.072-18.1-3.874-24.77l-8.885-6.465c8.893-13.88 16.54-28.52 22.99-43.91l10.47 3.59c9.334 3.186 19.43-1.719 22.64-10.99c3.211-9.258-1.739-19.35-11.04-22.53l-10.33-3.541c5.744-20.5 9.424-31.81 8.338-49.26L627.3 227.3zM416 416c-17.67 0-32-14.33-32-32c0-17.67 14.33-32 32-32c17.67 0 32 14.33 32 32C448 401.7 433.7 416 416 416zM272.3 226.4c9-3.959 13.08-14.42 9.115-23.39L277.4 193.9c16.38-4.561 27.93-4.345 46.15-16.94l9.996 9.012c6.969 6.301 18.28 6.326 25.15-1.236c6.609-7.26 6.053-18.47-1.24-25.04l-9.713-8.756c8.49-14.18 12.74-30.77 11.64-48.18l11.86-3.511c9.428-2.793 14.8-12.66 11.99-22.05c-2.781-9.385-12.69-14.71-22.15-11.94l-11.34 3.357C341.5 53.13 328.8 40.76 313.4 33.05l2.838-10.85C318.7 12.73 313 3.04 303.5 .5811c-9.566-2.482-19.25 3.222-21.72 12.69l-2.82 10.78C273.4 23.86 267.8 24.2 262.2 25.15C250.8 27.04 239.1 30.22 229.1 33.39L225.7 23.93C222.4 14.71 212.2 9.827 202.1 13.17C193.7 16.45 188.9 26.59 192.2 35.82l3.498 9.793C180.2 52.27 165.6 60.07 151.7 69.19L145.4 60.76C139.5 52.92 128.3 51.32 120.5 57.16C112.6 63.02 110.1 74.13 116.8 81.98l6.457 8.611C110.6 101.4 98.96 113.1 88.34 125.9L79.52 119.5c-7.932-5.795-19.08-4.074-24.89 3.855c-5.809 7.908-4.07 19 3.875 24.77l8.885 6.465C58.5 168.5 50.86 183.1 44.41 198.5L33.93 194.9c-9.334-3.186-19.44 1.721-22.64 10.99C8.086 215.2 13.04 225.3 22.34 228.4l10.33 3.541C26.93 252.5 23.25 263.8 24.33 281.2L12.75 284.7C3.309 287.4-2.061 297.3 .7441 306.7c3.041 10.21 13.57 14.52 22.14 11.95l11.27-3.33c8.086 15.15 20.68 27.55 36.39 35.43l-2.887 11.06c-1.865 7.156 1.902 22.19 17.26 22.19c7.92 0 15.14-5.287 17.23-13.28l2.863-10.97c7.701 .2773 26.9 .6465 48.76-13.63l8.59 8.809c3.777 3.873 15.44 9.779 25.19 .3691c7.062-6.822 7.225-18.04 .3711-25.07l-9.14-9.373c11.96-18.85 10.27-28.38 15.88-46.61c8.025 3.756 11.44 5.943 16.66 5.943c6.689 0 13.09-3.762 16.13-10.19C231.6 261.1 227.8 250.6 218.9 246.4L210.1 242.3C225 220.2 244.5 208.7 244.9 208.5l3.922 8.856C252.8 226.2 263.3 230.3 272.3 226.4zM128 256C110.3 256 96 241.7 96 223.1c0-17.67 14.33-32 32-32c17.67 0 32 14.33 32 32C160 241.7 145.7 256 128 256zM208 160c-8.836 0-16-7.164-16-16c0-8.838 7.164-16 16-16s16 7.162 16 16C224 152.8 216.8 160 208 160z"/></svg> <svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#330000;overflow:visible;position:relative;"><path d="M346.5 213.3h16.16C374.5 213.3 384 203.8 384 192c0-11.79-9.541-21.33-21.33-21.33h-16.16c-38.01 0-57.05-45.96-30.17-72.84l11.44-11.44c8.332-8.332 8.331-21.83-.0012-30.17c-8.334-8.334-21.83-8.332-30.17 .002L286.2 67.66C259.3 94.54 213.3 75.51 213.3 37.49V21.33C213.3 9.542 203.8 0 192 0S170.7 9.542 170.7 21.33v16.16c0 38.01-45.96 57.05-72.84 30.17L86.4 56.23c-8.334-8.334-21.83-8.336-30.17-.002c-8.332 8.334-8.333 21.84-.0012 30.17L67.66 97.83c26.88 26.88 7.842 72.84-30.17 72.84H21.33C9.541 170.7 0 180.2 0 192c0 11.79 9.541 21.33 21.33 21.33h16.16c38.01 0 57.05 45.96 30.17 72.84L56.23 297.6c-8.332 8.334-8.328 21.84 .0043 30.17c4.168 4.168 9.621 6.248 15.08 6.248s10.92-2.082 15.08-6.25L97.83 316.3c26.88-26.88 72.84-7.842 72.84 30.17v16.16C170.7 374.5 180.2 384 192 384s21.33-9.543 21.33-21.33v-16.16c0-38.01 45.96-57.05 72.84-30.17l11.43 11.43c4.168 4.168 9.625 6.25 15.08 6.25s10.91-2.08 15.08-6.248c8.332-8.332 8.333-21.83 .0012-30.17L316.3 286.2C289.5 259.3 308.5 213.3 346.5 213.3zM160 192C142.3 192 128 177.7 128 160c0-17.67 14.33-32 32-32s32 14.33 32 32C192 177.7 177.7 192 160 192zM240 224C231.2 224 224 216.8 224 208C224 199.2 231.2 192 240 192S256 199.2 256 208C256 216.8 248.8 224 240 224zM624 352h-12.12c-28.51 0-42.79-34.47-22.63-54.63l8.576-8.576c6.25-6.25 6.25-16.37 0-22.62s-16.38-6.253-22.62-.0031l-8.576 8.576C546.5 294.9 512 280.6 512 252.1V240C512 231.2 504.8 224 496 224S480 231.2 480 240v12.12c0 28.51-34.47 42.79-54.63 22.63l-8.576-8.576c-6.25-6.25-16.37-6.253-22.62-.0031s-6.253 16.38-.0031 22.63l8.576 8.576C422.9 317.5 408.6 352 380.1 352H368c-8.844 0-16 7.156-16 16s7.156 16 16 16h12.12c28.51 0 42.79 34.47 22.63 54.63l-8.576 8.576c-6.25 6.25-6.253 16.37-.0031 22.62c3.125 3.125 7.222 4.691 11.32 4.691s8.188-1.562 11.31-4.688l8.576-8.576C445.5 441.1 480 455.4 480 483.9V496c0 8.844 7.156 16 16 16s16-7.156 16-16v-12.12c0-28.51 34.47-42.79 54.63-22.63l8.576 8.576c3.125 3.125 7.219 4.688 11.31 4.688s8.184-1.559 11.31-4.684c6.25-6.25 6.253-16.38 .0031-22.63l-8.576-8.576C569.1 418.5 583.4 384 611.9 384H624c8.844 0 16-7.156 16-16S632.8 352 624 352zM480 384c-17.67 0-32-14.33-32-32c0-17.67 14.33-32 32-32s32 14.33 32 32C512 369.7 497.7 384 480 384z"/></svg> interact and affect populations persistence in the wild. Also, I’m trying to better understand how and why, some individuals can cope with such stressors while others cannot even survive <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#000000;overflow:visible;position:relative;"><path d="M368 128C368 172.4 342.6 211.5 304 234.4V256C304 273.7 289.7 288 272 288H175.1C158.3 288 143.1 273.7 143.1 256V234.4C105.4 211.5 79.1 172.4 79.1 128C79.1 57.31 144.5 0 223.1 0C303.5 0 368 57.31 368 128V128zM167.1 176C185.7 176 199.1 161.7 199.1 144C199.1 126.3 185.7 112 167.1 112C150.3 112 135.1 126.3 135.1 144C135.1 161.7 150.3 176 167.1 176zM280 112C262.3 112 248 126.3 248 144C248 161.7 262.3 176 280 176C297.7 176 312 161.7 312 144C312 126.3 297.7 112 280 112zM3.378 273.7C11.28 257.9 30.5 251.5 46.31 259.4L223.1 348.2L401.7 259.4C417.5 251.5 436.7 257.9 444.6 273.7C452.5 289.5 446.1 308.7 430.3 316.6L295.6 384L430.3 451.4C446.1 459.3 452.5 478.5 444.6 494.3C436.7 510.1 417.5 516.5 401.7 508.6L223.1 419.8L46.31 508.6C30.5 516.5 11.28 510.1 3.378 494.3C-4.526 478.5 1.881 459.3 17.69 451.4L152.4 384L17.69 316.6C1.881 308.7-4.526 289.5 3.378 273.7V273.7z"/></svg>?
+            </p>
+            <div class="row">
+            <div class="col-md-6">
+            <br/>
+            <p class="plain-text">
+            To tackle these questions, I’m measuring various organisms’ traits across biological levels of organization, from the molecules (e.g., gene expression) to the cells (e.g., physiological responses such as oxidative stress, immune responses) and individuals (e.g., growth, behavior, survival). <br/><br/> By gaining insight into intraspecific variability of responses to multiple stressors in the wild, I expect to better understand and predict global changes impacts on populations and ecosystems to improve management and conservation practices.
+            </p>
+            </div>
+            <div class="col-md-6">
+            <p><img src="images/BiologicalLevelOrga.png" width="336" /></p>
+            </div>
+            </div>
+            <p class="plain-text">
+            Besides, I’m an <svg aria-hidden="true" role="img" viewBox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"/></svg> enthusiast, using it to: <br/> <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M384 32H64C28.65 32 0 60.65 0 96v320c0 35.34 28.65 64 64 64h320c35.35 0 64-28.66 64-64V96C448 60.65 419.3 32 384 32zM312.3 273.6l-112 104C195.8 381.8 189.9 384 184 384c-3.25 0-6.5-.6562-9.594-2C165.7 378.2 160 369.5 160 360v-208c0-9.531 5.656-18.19 14.41-22c8.75-3.75 18.94-2.062 25.94 4.406l112 104C317.2 242.1 320 249.3 320 256S317.2 269 312.3 273.6z"/></svg>   Analyze data in a reliable and open framework. <br/> <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M384 32H64C28.65 32 0 60.65 0 96v320c0 35.34 28.65 64 64 64h320c35.35 0 64-28.66 64-64V96C448 60.65 419.3 32 384 32zM312.3 273.6l-112 104C195.8 381.8 189.9 384 184 384c-3.25 0-6.5-.6562-9.594-2C165.7 378.2 160 369.5 160 360v-208c0-9.531 5.656-18.19 14.41-22c8.75-3.75 18.94-2.062 25.94 4.406l112 104C317.2 242.1 320 249.3 320 256S317.2 269 312.3 273.6z"/></svg>   Create package – see the MoveR package. <br/> <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M384 32H64C28.65 32 0 60.65 0 96v320c0 35.34 28.65 64 64 64h320c35.35 0 64-28.66 64-64V96C448 60.65 419.3 32 384 32zM312.3 273.6l-112 104C195.8 381.8 189.9 384 184 384c-3.25 0-6.5-.6562-9.594-2C165.7 378.2 160 369.5 160 360v-208c0-9.531 5.656-18.19 14.41-22c8.75-3.75 18.94-2.062 25.94 4.406l112 104C317.2 242.1 320 249.3 320 256S317.2 269 312.3 273.6z"/></svg>   And recently, create this website. <br/>
+            </p>
+            </div>
+            <div class="d-appendix">
+
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-flex min-vh-100 d-block d-lg-none d-xl-none">
+      <div class="d-flex flex-row justify-content-center">
+        <div class="d-flex flex-col">
+          <div class="mx-auto">
+            <div class="p-3 mt-3 text-center">
+              <img src="images/Home_QP.png" style="height:15rem" class="rounded">
+            </div>
+            <div class="p-2 text-center">
+              <h1>Quentin PETITJEAN</h1>
+            </div>
+            <hr style="width:60%;"/>
+
+            <div class="row justify-content-center align-items-center">
+              <div class="col-8 p-1 text-center">
+                <div class="list-group">
+                                    <a href=mailto:q.petitjean1@gmail.com>
+                    <button type="button" class="list-group-item list-group-item-action my-1 rounded">
+                      <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/></svg>
+                    </button>
+                  </a>
+                                    <a href=https://github.com/qpetitjean>
+                    <button type="button" class="list-group-item list-group-item-action my-1 rounded">
+                      <svg aria-hidden="true" role="img" viewBox="0 0 496 512" style="height:1em;width:0.97em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                    </button>
+                  </a>
+                                    <a href=https://twitter.com/Q_PETITJEAN>
+                    <button type="button" class="list-group-item list-group-item-action my-1 rounded">
+                      <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M459.4 151.7c.325 4.548 .325 9.097 .325 13.65 0 138.7-105.6 298.6-298.6 298.6-59.45 0-114.7-17.22-161.1-47.11 8.447 .974 16.57 1.299 25.34 1.299 49.06 0 94.21-16.57 130.3-44.83-46.13-.975-84.79-31.19-98.11-72.77 6.498 .974 12.99 1.624 19.82 1.624 9.421 0 18.84-1.3 27.61-3.573-48.08-9.747-84.14-51.98-84.14-102.1v-1.299c13.97 7.797 30.21 12.67 47.43 13.32-28.26-18.84-46.78-51.01-46.78-87.39 0-19.49 5.197-37.36 14.29-52.95 51.65 63.67 129.3 105.3 216.4 109.8-1.624-7.797-2.599-15.92-2.599-24.04 0-57.83 46.78-104.9 104.9-104.9 30.21 0 57.5 12.67 76.67 33.14 23.72-4.548 46.46-13.32 66.6-25.34-7.798 24.37-24.37 44.83-46.13 57.83 21.12-2.273 41.58-8.122 60.43-16.24-14.29 20.79-32.16 39.31-52.63 54.25z"/></svg>
+                    </button>
+                  </a>
+                                    <a href=https://orcid.org/0000-0003-2708-7831>
+                    <button type="button" class="list-group-item list-group-item-action my-1 rounded">
+                      <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M294.8 188.2h-45.92V342h47.47c67.62 0 83.12-51.34 83.12-76.91 0-41.64-26.54-76.9-84.67-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.79 360.8h-29.84v-207.5h29.84zm-14.92-231.1a19.57 19.57 0 1 1 19.57-19.57 19.64 19.64 0 0 1 -19.57 19.57zM300 369h-81V161.3h80.6c76.73 0 110.4 54.83 110.4 103.8C410 318.4 368.4 369 300 369z"/></svg>
+                    </button>
+                  </a>
+                                    <a href=https://www.webofscience.com/wos/author/record/AAE-8204-2021>
+                    <button type="button" class="list-group-item list-group-item-action my-1 rounded">
+                      <i class="ai ai-researcherid fa-lg"></i>
+                    </button>
+                  </a>
+                                    <a href=https://www.researchgate.net/profile/Quentin-Petitjean-2>
+                    <button type="button" class="list-group-item list-group-item-action my-1 rounded">
+                      <i class="ai ai-researchgate fa-lg"></i>
+                    </button>
+                  </a>
+                                    <a href=https://scholar.google.com/citations?user=GMudi1sAAAAJ&amp;hl=en>
+                    <button type="button" class="list-group-item list-group-item-action my-1 rounded">
+                      <i class="ai ai-google-scholar fa-lg"></i>
+                    </button>
+                  </a>
+                                  </div>
+              </div>
+            </div>
+            <div class="p pt-4 px-5">
+              <p><img src="images/WordCloud_QP.png" width="768" style="display: block; margin: auto;" /></p>
+              <div id="bio" class="section level1">
+              <h1>Bio</h1>
+              <p class="plain-text">
+              I’m a postdoctoral researcher working on the effects of global changes on various organisms, such as flies <img src="https://icon-library.com/images/fly-icon/fly-icon-29.jpg" height="18px" width="18px" />, snails <img src="https://cdn-icons-png.flaticon.com/512/616/616636.png" height="18px" width="18px" />, and fish <svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#003366;overflow:visible;position:relative;"><path d="M180.5 141.5C219.7 108.5 272.6 80 336 80C399.4 80 452.3 108.5 491.5 141.5C530.5 174.5 558.3 213.1 572.4 241.3C577.2 250.5 577.2 261.5 572.4 270.7C558.3 298 530.5 337.5 491.5 370.5C452.3 403.5 399.4 432 336 432C272.6 432 219.7 403.5 180.5 370.5C164.3 356.7 150 341.9 137.8 327.3L48.12 379.6C35.61 386.9 19.76 384.9 9.474 374.7C-.8133 364.5-2.97 348.7 4.216 336.1L50 256L4.216 175.9C-2.97 163.3-.8133 147.5 9.474 137.3C19.76 127.1 35.61 125.1 48.12 132.4L137.8 184.7C150 170.1 164.3 155.3 180.5 141.5L180.5 141.5zM416 224C398.3 224 384 238.3 384 256C384 273.7 398.3 288 416 288C433.7 288 448 273.7 448 256C448 238.3 433.7 224 416 224z"/></svg>.
+              </p>
+              <p class="plain-text">
+              <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#358378;overflow:visible;position:relative;"><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 400c-18 0-32-14-32-32s13.1-32 32-32c17.1 0 32 14 32 32S273.1 400 256 400zM325.1 258L280 286V288c0 13-11 24-24 24S232 301 232 288V272c0-8 4-16 12-21l57-34C308 213 312 206 312 198C312 186 301.1 176 289.1 176h-51.1C225.1 176 216 186 216 198c0 13-11 24-24 24s-24-11-24-24C168 159 199 128 237.1 128h51.1C329 128 360 159 360 198C360 222 347 245 325.1 258z"/></svg> More particularly, I’m investigating how stressors such as temperature changes <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#660000;overflow:visible;position:relative;"><path d="M159.1 322.9V112C159.1 103.1 152.9 96 144 96C135.1 96 128 103.1 128 112v210.9c-22 7.875-35.25 30.38-31.25 53.38C100.6 399.4 120.6 416.1 144 416.1c23.37 0 43.37-16.71 47.25-39.83C195.2 353.3 181.1 330.8 159.1 322.9zM255.1 112C255.1 50.13 205.9 0 144 0C82.13 0 32 50.13 32 112v166.5C12.25 303.3 0 334 0 368C0 447.5 64.5 512 144 512c79.5 0 143.1-64.5 143.1-144c0-34-12.25-64.88-32-89.5V112zM219.9 393.4C208.1 426.1 178.4 447.1 144 447.1c-34.38 0-65-21.84-75.88-54.59C57.25 360.8 68.5 324.9 96 304.3V112c0-26.5 21.5-48.01 48-48.01c26.5 0 47.1 21.51 47.1 48.01v192.3C219.5 324.9 230.7 360.8 219.9 393.4zM504.1 124l-64-80c-12.12-15.19-37.84-15.19-49.97 0l-64 80c-11.05 13.81-8.812 33.94 5 45c13.75 11.03 33.94 8.781 44.97-5L384 155.2V448c0 17.69 14.33 32 32 32s32-14.31 32-32V155.2L455 164c6.312 7.906 15.61 12 25 12c7.016 0 14.08-2.281 19.97-7C513.8 157.9 516 137.8 504.1 124z"/></svg> <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#99CCFF;overflow:visible;position:relative;"><path d="M159.1 322.9l-.0002-18.92C159.1 295.1 152.9 287.1 144 287.1c-8.875 0-15.1 7.115-15.1 15.99L128 322.9c-22 7.875-35.25 30.38-31.25 53.38C100.6 399.4 120.6 416.1 144 416.1c23.37 0 43.37-16.71 47.25-39.83C195.2 353.3 181.1 330.8 159.1 322.9zM255.1 112C255.1 50.13 205.9 0 144 0C82.13 0 32 50.13 32 112v166.5C12.25 303.3 0 334 0 368C0 447.5 64.5 512 144 512c79.5 0 143.1-64.5 143.1-144c0-34-12.25-64.88-32-89.5V112zM219.9 393.4C208.1 426.1 178.4 447.1 144 447.1c-34.38 0-65-21.84-75.88-54.59C57.25 360.8 68.5 324.9 96 304.3V112C96 85.5 117.5 64 144 64c26.5 0 47.1 21.5 47.1 48v192.3C219.5 324.9 230.7 360.8 219.9 393.4zM499.1 343c-13.77-11.03-33.92-8.75-44.97 5L448 356.8V64c0-17.69-14.33-32-32-32s-32 14.31-32 32v292.8L376.1 348c-11.03-13.81-31.19-16.03-44.97-5c-13.81 11.06-16.05 31.19-5 45l64 80C397.1 475.6 406.3 480 416 480s18.92-4.406 24.98-12l64-80C516 374.2 513.8 354.1 499.1 343z"/></svg>, pollution <svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#FF9900;overflow:visible;position:relative;"><path d="M575.5 283.5c-13.13-39.11-39.5-71.98-74.13-92.35c-17.5-10.37-36.25-16.62-55.25-19.87c6-17.75 10-36.49 10-56.24c0-40.99-14.5-80.73-41-112.2c-2.5-3-6.625-3.623-10-1.75c-3.25 1.875-4.75 5.998-3.625 9.748c4.5 13.75 6.625 26.24 6.625 38.49c0 67.73-53.76 122.8-120 122.8s-120-55.11-120-122.8c0-12.12 2.25-24.74 6.625-38.49c1.125-3.75-.375-7.873-3.625-9.748c-3.375-1.873-7.502-1.25-10 1.75C134.7 34.3 120.1 74.04 120.1 115c0 19.75 3.875 38.49 10 56.24C111.2 174.5 92.32 180.8 74.82 191.1c-34.63 20.49-61.01 53.24-74.38 92.35c-1.25 3.75 .25 7.748 3.5 9.748c3.375 2 7.5 1.375 10-1.5c9.377-10.87 19-19.12 29.25-25.12c57.25-33.87 130.8-13.75 163.9 44.99c33.13 58.61 13.38 133.1-43.88 167.8c-10.25 6.123-22 10.37-35.88 13.37c-3.627 .875-6.377 4.25-6.377 8.123c.125 4 2.75 7.248 6.502 7.998c39.75 7.748 80.63 .7495 115.3-19.74c18-10.5 32.88-24.49 45.25-39.99c12.38 15.5 27.38 29.49 45.38 39.99c34.5 20.49 75.51 27.49 115.1 19.74c3.875-.75 6.375-3.998 6.5-7.998c0-3.873-2.625-7.248-6.375-8.123c-13.88-2.873-25.63-7.248-35.75-13.37c-57.38-33.87-77.01-109.2-44-167.8c33.13-58.73 106.6-78.85 164-44.99c10.12 6.123 19.75 14.25 29.13 25.12c2.5 2.875 6.752 3.5 10 1.5C575.4 291.2 576.9 287.2 575.5 283.5zM287.1 320.1c-26.5 0-48-21.49-48-47.99c0-26.49 21.5-47.99 48-47.99c26.5 0 48.01 21.49 48.01 47.99C335.1 298.6 314.5 320.1 287.1 320.1zM385 377.6c1.152 22.77 10.74 44.63 27.22 60.92c47.45-35.44 79.13-90.58 83.1-153.4c-22.58-6.173-45.69-2.743-65.57 8.76C424.7 326.9 408.5 355.1 385 377.6zM253.3 132.6c26.22-6.551 45.37-6.024 69.52 .0254c21.93-9.777 39.07-28.55 47.48-51.75C345 69.98 317.3 63.94 288.1 63.94c-29.18 0-56.96 5.986-82.16 16.84C214.3 103.1 231.4 122.8 253.3 132.6zM163.8 438.5c16.46-16.26 26.03-38.19 27.14-61.01c-23.49-21.59-39.59-50.67-44.71-83.6C126.9 282.7 103.8 278.8 80.67 285.1C84.64 347.9 116.3 403.1 163.8 438.5z"/></svg>, and pathogens <svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#330000;overflow:visible;position:relative;"><path d="M627.3 227.3c9.439-2.781 14.81-12.65 12-22.04c-3.039-10.21-13.57-14.52-22.14-11.95l-11.27 3.33c-8.086-15.15-20.68-27.55-36.4-35.43l2.888-11.06c1.867-7.158-1.9-22.19-17.26-22.19c-7.92 0-15.14 5.288-17.23 13.28l-2.865 10.97c-7.701-.2793-26.9-.6485-48.75 13.63L477.6 157.1c-3.777-3.873-15.44-9.779-25.19-.3691c-7.062 6.822-7.225 18.04-.3711 25.07l9.14 9.373c-11.96 18.85-10.27 28.38-15.88 46.61c-8.023-3.758-11.44-5.943-16.66-5.943c-6.689 0-13.09 3.763-16.13 10.19c-4.188 8.856-.3599 19.42 8.546 23.58l8.797 4.115c-14.91 22.05-34.42 33.57-34.83 33.83l-3.922-8.855C387.2 285.8 376.7 281.7 367.7 285.6c-9 3.959-13.08 14.42-9.115 23.39l4.041 9.127c-16.38 4.559-27.93 4.345-46.15 16.94l-9.996-9.012c-6.969-6.303-18.28-6.33-25.15 1.235c-6.609 7.26-6.053 18.47 1.24 25.04l9.713 8.756c-8.49 14.18-12.74 30.77-11.64 48.17l-11.86 3.512c-9.428 2.793-14.8 12.66-11.99 22.05c2.781 9.385 12.69 14.71 22.15 11.94l11.34-3.359c8.287 15.49 20.99 27.86 36.38 35.57l-2.839 10.85c-2.482 9.477 3.224 19.16 12.75 21.62c9.566 2.482 19.25-3.221 21.72-12.69l2.82-10.78c5.508 .1875 11.11-.1523 16.75-1.102c11.37-1.893 22.23-5.074 33.1-8.24l3.379 9.455c3.305 9.225 13.5 14.11 22.75 10.76c9.266-3.279 14.1-13.41 10.81-22.65l-3.498-9.792c15.41-6.654 30.08-14.46 43.95-23.57l6.321 8.429c5.891 7.84 17.05 9.443 24.93 3.602c7.885-5.863 9.498-16.97 3.617-24.82l-6.457-8.611c12.66-10.78 24.33-22.54 34.96-35.33l8.816 6.413c7.932 5.795 19.07 4.074 24.89-3.855c5.809-7.908 4.072-18.1-3.874-24.77l-8.885-6.465c8.893-13.88 16.54-28.52 22.99-43.91l10.47 3.59c9.334 3.186 19.43-1.719 22.64-10.99c3.211-9.258-1.739-19.35-11.04-22.53l-10.33-3.541c5.744-20.5 9.424-31.81 8.338-49.26L627.3 227.3zM416 416c-17.67 0-32-14.33-32-32c0-17.67 14.33-32 32-32c17.67 0 32 14.33 32 32C448 401.7 433.7 416 416 416zM272.3 226.4c9-3.959 13.08-14.42 9.115-23.39L277.4 193.9c16.38-4.561 27.93-4.345 46.15-16.94l9.996 9.012c6.969 6.301 18.28 6.326 25.15-1.236c6.609-7.26 6.053-18.47-1.24-25.04l-9.713-8.756c8.49-14.18 12.74-30.77 11.64-48.18l11.86-3.511c9.428-2.793 14.8-12.66 11.99-22.05c-2.781-9.385-12.69-14.71-22.15-11.94l-11.34 3.357C341.5 53.13 328.8 40.76 313.4 33.05l2.838-10.85C318.7 12.73 313 3.04 303.5 .5811c-9.566-2.482-19.25 3.222-21.72 12.69l-2.82 10.78C273.4 23.86 267.8 24.2 262.2 25.15C250.8 27.04 239.1 30.22 229.1 33.39L225.7 23.93C222.4 14.71 212.2 9.827 202.1 13.17C193.7 16.45 188.9 26.59 192.2 35.82l3.498 9.793C180.2 52.27 165.6 60.07 151.7 69.19L145.4 60.76C139.5 52.92 128.3 51.32 120.5 57.16C112.6 63.02 110.1 74.13 116.8 81.98l6.457 8.611C110.6 101.4 98.96 113.1 88.34 125.9L79.52 119.5c-7.932-5.795-19.08-4.074-24.89 3.855c-5.809 7.908-4.07 19 3.875 24.77l8.885 6.465C58.5 168.5 50.86 183.1 44.41 198.5L33.93 194.9c-9.334-3.186-19.44 1.721-22.64 10.99C8.086 215.2 13.04 225.3 22.34 228.4l10.33 3.541C26.93 252.5 23.25 263.8 24.33 281.2L12.75 284.7C3.309 287.4-2.061 297.3 .7441 306.7c3.041 10.21 13.57 14.52 22.14 11.95l11.27-3.33c8.086 15.15 20.68 27.55 36.39 35.43l-2.887 11.06c-1.865 7.156 1.902 22.19 17.26 22.19c7.92 0 15.14-5.287 17.23-13.28l2.863-10.97c7.701 .2773 26.9 .6465 48.76-13.63l8.59 8.809c3.777 3.873 15.44 9.779 25.19 .3691c7.062-6.822 7.225-18.04 .3711-25.07l-9.14-9.373c11.96-18.85 10.27-28.38 15.88-46.61c8.025 3.756 11.44 5.943 16.66 5.943c6.689 0 13.09-3.762 16.13-10.19C231.6 261.1 227.8 250.6 218.9 246.4L210.1 242.3C225 220.2 244.5 208.7 244.9 208.5l3.922 8.856C252.8 226.2 263.3 230.3 272.3 226.4zM128 256C110.3 256 96 241.7 96 223.1c0-17.67 14.33-32 32-32c17.67 0 32 14.33 32 32C160 241.7 145.7 256 128 256zM208 160c-8.836 0-16-7.164-16-16c0-8.838 7.164-16 16-16s16 7.162 16 16C224 152.8 216.8 160 208 160z"/></svg> <svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#330000;overflow:visible;position:relative;"><path d="M346.5 213.3h16.16C374.5 213.3 384 203.8 384 192c0-11.79-9.541-21.33-21.33-21.33h-16.16c-38.01 0-57.05-45.96-30.17-72.84l11.44-11.44c8.332-8.332 8.331-21.83-.0012-30.17c-8.334-8.334-21.83-8.332-30.17 .002L286.2 67.66C259.3 94.54 213.3 75.51 213.3 37.49V21.33C213.3 9.542 203.8 0 192 0S170.7 9.542 170.7 21.33v16.16c0 38.01-45.96 57.05-72.84 30.17L86.4 56.23c-8.334-8.334-21.83-8.336-30.17-.002c-8.332 8.334-8.333 21.84-.0012 30.17L67.66 97.83c26.88 26.88 7.842 72.84-30.17 72.84H21.33C9.541 170.7 0 180.2 0 192c0 11.79 9.541 21.33 21.33 21.33h16.16c38.01 0 57.05 45.96 30.17 72.84L56.23 297.6c-8.332 8.334-8.328 21.84 .0043 30.17c4.168 4.168 9.621 6.248 15.08 6.248s10.92-2.082 15.08-6.25L97.83 316.3c26.88-26.88 72.84-7.842 72.84 30.17v16.16C170.7 374.5 180.2 384 192 384s21.33-9.543 21.33-21.33v-16.16c0-38.01 45.96-57.05 72.84-30.17l11.43 11.43c4.168 4.168 9.625 6.25 15.08 6.25s10.91-2.08 15.08-6.248c8.332-8.332 8.333-21.83 .0012-30.17L316.3 286.2C289.5 259.3 308.5 213.3 346.5 213.3zM160 192C142.3 192 128 177.7 128 160c0-17.67 14.33-32 32-32s32 14.33 32 32C192 177.7 177.7 192 160 192zM240 224C231.2 224 224 216.8 224 208C224 199.2 231.2 192 240 192S256 199.2 256 208C256 216.8 248.8 224 240 224zM624 352h-12.12c-28.51 0-42.79-34.47-22.63-54.63l8.576-8.576c6.25-6.25 6.25-16.37 0-22.62s-16.38-6.253-22.62-.0031l-8.576 8.576C546.5 294.9 512 280.6 512 252.1V240C512 231.2 504.8 224 496 224S480 231.2 480 240v12.12c0 28.51-34.47 42.79-54.63 22.63l-8.576-8.576c-6.25-6.25-16.37-6.253-22.62-.0031s-6.253 16.38-.0031 22.63l8.576 8.576C422.9 317.5 408.6 352 380.1 352H368c-8.844 0-16 7.156-16 16s7.156 16 16 16h12.12c28.51 0 42.79 34.47 22.63 54.63l-8.576 8.576c-6.25 6.25-6.253 16.37-.0031 22.62c3.125 3.125 7.222 4.691 11.32 4.691s8.188-1.562 11.31-4.688l8.576-8.576C445.5 441.1 480 455.4 480 483.9V496c0 8.844 7.156 16 16 16s16-7.156 16-16v-12.12c0-28.51 34.47-42.79 54.63-22.63l8.576 8.576c3.125 3.125 7.219 4.688 11.31 4.688s8.184-1.559 11.31-4.684c6.25-6.25 6.253-16.38 .0031-22.63l-8.576-8.576C569.1 418.5 583.4 384 611.9 384H624c8.844 0 16-7.156 16-16S632.8 352 624 352zM480 384c-17.67 0-32-14.33-32-32c0-17.67 14.33-32 32-32s32 14.33 32 32C512 369.7 497.7 384 480 384z"/></svg> interact and affect populations persistence in the wild. Also, I’m trying to better understand how and why, some individuals can cope with such stressors while others cannot even survive <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#000000;overflow:visible;position:relative;"><path d="M368 128C368 172.4 342.6 211.5 304 234.4V256C304 273.7 289.7 288 272 288H175.1C158.3 288 143.1 273.7 143.1 256V234.4C105.4 211.5 79.1 172.4 79.1 128C79.1 57.31 144.5 0 223.1 0C303.5 0 368 57.31 368 128V128zM167.1 176C185.7 176 199.1 161.7 199.1 144C199.1 126.3 185.7 112 167.1 112C150.3 112 135.1 126.3 135.1 144C135.1 161.7 150.3 176 167.1 176zM280 112C262.3 112 248 126.3 248 144C248 161.7 262.3 176 280 176C297.7 176 312 161.7 312 144C312 126.3 297.7 112 280 112zM3.378 273.7C11.28 257.9 30.5 251.5 46.31 259.4L223.1 348.2L401.7 259.4C417.5 251.5 436.7 257.9 444.6 273.7C452.5 289.5 446.1 308.7 430.3 316.6L295.6 384L430.3 451.4C446.1 459.3 452.5 478.5 444.6 494.3C436.7 510.1 417.5 516.5 401.7 508.6L223.1 419.8L46.31 508.6C30.5 516.5 11.28 510.1 3.378 494.3C-4.526 478.5 1.881 459.3 17.69 451.4L152.4 384L17.69 316.6C1.881 308.7-4.526 289.5 3.378 273.7V273.7z"/></svg>?
+              </p>
+              <div class="row">
+              <div class="col-md-6">
+              <br/>
+              <p class="plain-text">
+              To tackle these questions, I’m measuring various organisms’ traits across biological levels of organization, from the molecules (e.g., gene expression) to the cells (e.g., physiological responses such as oxidative stress, immune responses) and individuals (e.g., growth, behavior, survival). <br/><br/> By gaining insight into intraspecific variability of responses to multiple stressors in the wild, I expect to better understand and predict global changes impacts on populations and ecosystems to improve management and conservation practices.
+              </p>
+              </div>
+              <div class="col-md-6">
+              <p><img src="images/BiologicalLevelOrga.png" width="336" /></p>
+              </div>
+              </div>
+              <p class="plain-text">
+              Besides, I’m an <svg aria-hidden="true" role="img" viewBox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"/></svg> enthusiast, using it to: <br/> <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M384 32H64C28.65 32 0 60.65 0 96v320c0 35.34 28.65 64 64 64h320c35.35 0 64-28.66 64-64V96C448 60.65 419.3 32 384 32zM312.3 273.6l-112 104C195.8 381.8 189.9 384 184 384c-3.25 0-6.5-.6562-9.594-2C165.7 378.2 160 369.5 160 360v-208c0-9.531 5.656-18.19 14.41-22c8.75-3.75 18.94-2.062 25.94 4.406l112 104C317.2 242.1 320 249.3 320 256S317.2 269 312.3 273.6z"/></svg>   Analyze data in a reliable and open framework. <br/> <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M384 32H64C28.65 32 0 60.65 0 96v320c0 35.34 28.65 64 64 64h320c35.35 0 64-28.66 64-64V96C448 60.65 419.3 32 384 32zM312.3 273.6l-112 104C195.8 381.8 189.9 384 184 384c-3.25 0-6.5-.6562-9.594-2C165.7 378.2 160 369.5 160 360v-208c0-9.531 5.656-18.19 14.41-22c8.75-3.75 18.94-2.062 25.94 4.406l112 104C317.2 242.1 320 249.3 320 256S317.2 269 312.3 273.6z"/></svg>   Create package – see the MoveR package. <br/> <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M384 32H64C28.65 32 0 60.65 0 96v320c0 35.34 28.65 64 64 64h320c35.35 0 64-28.66 64-64V96C448 60.65 419.3 32 384 32zM312.3 273.6l-112 104C195.8 381.8 189.9 384 184 384c-3.25 0-6.5-.6562-9.594-2C165.7 378.2 160 369.5 160 360v-208c0-9.531 5.656-18.19 14.41-22c8.75-3.75 18.94-2.062 25.94 4.406l112 104C317.2 242.1 320 249.3 320 256S317.2 269 312.3 273.6z"/></svg>   And recently, create this website. <br/>
+              </p>
+              </div>
+              <div class="d-appendix">
+
+              </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+      <!--radix_placeholder_site_after_body-->
+      <!--/radix_placeholder_site_after_body-->
+      <!--radix_placeholder_navigation_after_body-->
+      <div class="distill-site-nav distill-site-footer">
+      <html>
+      © Quentin PETITJEAN • <script>document.write(new Date().getFullYear())</script> • 
+      Site constructed using <a href="https://rstudio.github.io/distill/">Distill for R Markdown</a> and hosted on <a href="https://pages.github.com">GitHub Pages</a>.
+
+      <!-- centering the text vertically - code from https://github.com/jbkunst/blog/blob/master/_footer.html --> 
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var t = setInterval(function(){
+            var resizeEvent = new Event('resize');
+            window.dispatchEvent(resizeEvent);  
+          }, 1000);
+        });
+      </script> 
+      </html>
+      </div>
+      <!--/radix_placeholder_navigation_after_body-->
+
+  
+  </body>
+</html>
