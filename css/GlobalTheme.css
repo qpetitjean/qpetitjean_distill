@@ -94,6 +94,7 @@ d-appendix {
   --text-color:       var(--navbar-prim-color);
   --hover-color:      var(--navbar-sec-color);
   --bkgd-color:       var(--navbar-foot-color);
+  --letter-spacing:   0.125rem;
 }
 
 .distill-site-footer {
@@ -106,6 +107,11 @@ d-appendix {
 
 /*-- Additional custom styles --*/
 /* Add any additional CSS rules below  */
+
+/* Increase the size of the logo (in the navbar) */ 
+.distill-site-header .logo img{
+  max-height: 25px; /* Makes logo bigger, default was 20px */
+}
 
 /* change search bar appearance */ 
 .algolia-autocomplete {
@@ -151,6 +157,10 @@ html body {
     background-color: var(--color-background);
 }
 
+d-article {
+    contain: none;
+  }
+  
 /* Change link appearance */
 d-article a {
   color: var(--header-color);
@@ -167,7 +177,7 @@ a:hover, a:focus {
 }
 
 /* Postcard headers */
-h1, h2 {
+h1, h2, h3 {
   color:    var(--header-color);
   /*-- Specify custom fonts ~~~ must be imported above   --*/
   font-family:   var(--font-header);
@@ -279,3 +289,24 @@ table, th, tr, td {
     /* border-left: 1px solid #2780e3; */
     color: var(--navbar-sec-color) !important;
   }
+  
+/* Hide the ToC when resized to mobile or tablet:  480px, 768px, 900px */
+@media screen and (max-width: 900px) {
+#TOC {
+    position: relative;
+  }
+}
+
+/* No navbar links on mobile except for the title and the nav-toggle */
+
+@media screen and (max-width: 768px) {
+  .distill-site-header a, .distill-site-header .nav-dropdown {
+    display: none;
+  }
+  
+  .distill-site-header a.title, .distill-site-header a.nav-toggle {
+    display: inline-block;
+    padding: 10px 0px;
+    margin: 10px 14px; 
+  }
+}
