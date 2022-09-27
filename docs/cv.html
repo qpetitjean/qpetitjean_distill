@@ -2167,7 +2167,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     /* Main font */
     --font-body:   'Roboto', sans-serif, Arial, sans-serif;
     --font-header: 'Edu QLD Beginner', cursive, Arial, sans-serif;
-    --font-navbar: 'Rubik Dirt', cursive, Arial, sans-serif;
+    --font-navbar: 'Edu QLD Beginner', cursive, Arial, sans-serif;
     
     /* color of the html pages background */
     --color-background:    rgba(215, 219, 219, 0.5);
@@ -2181,9 +2181,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     /* color of aside text */
     --aside-color:     rgba(82, 117, 131 , 0.8);
     /* color of navigation bar and footer */
-    --navbar-foot-color: rgba(37, 160, 160, 0.8);
+    --navbar-foot-color: rgba(37, 160, 160, 0.9);
     /* color of text within the navbar */
-    --navbar-prim-color: rgba(255, 255, 255, 0.8);
+    --navbar-prim-color: rgba(255, 255, 255, 0.9);
     /* color of text within the navbar when user move the mouse over */
     --navbar-sec-color: rgba(117, 112, 179, 0.8);
   }
@@ -2241,7 +2241,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --text-color:       var(--navbar-prim-color);
     --hover-color:      var(--navbar-sec-color);
     --bkgd-color:       var(--navbar-foot-color);
-    --letter-spacing:   0.125rem;
+    --letter-spacing:   0.25rem;
   }
 
   .distill-site-footer {
@@ -2257,16 +2257,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   /* Increase the size of the logo (in the navbar) */ 
   .distill-site-header .logo img{
-    max-height: 25px; /* Makes logo bigger, default was 20px */
+    max-height: 1.563rem; /* Makes logo bigger, default was 20px */
   }
 
   /* change search bar appearance */ 
   .algolia-autocomplete {
       display: inline-block;
       margin-left: 1.563rem;
-      vertical-align: sub;
-      background-color: #FFFFFF;
-      color: var(--header-color);  /* Color of text in drop-down*/
+      vertical-align: baseline;
+      background-color: rgba(255, 255, 255, 1);
+      color: var(--body-color);  /* Color of text in drop-down*/
       padding: 0.625rem;
       padding-top: 0.5rem;
       padding-bottom: 0rem;
@@ -2314,12 +2314,22 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     font-style: italic;
     border-bottom: 0px;
     text-decoration: none;
+    margin-right: 0px;
+    margin-left: 0px;
   }
 
+  /* Change link appearance in the navbar */
   a:hover, a:focus {
       color: var(--navbar-sec-color);
       text-decoration: none !important;
       border-bottom: 0px !important;
+  }
+
+
+  /* increase space between navbar links*/
+  a {
+      margin-left: 0.625rem;
+      margin-right: 0.625rem;
   }
 
   /* Postcard headers */
@@ -2736,12 +2746,12 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 <!-- TOC JAVASCRIPT ELEMENTS END -->
-<p style="color: font-family: var(--font-body); var(--header-color); text-align: center; text-decoration-line: underline; font-size: 150%">
+<p style="color: var(--title-color); font-family: var(--font-body); text-align: center; text-decoration-line: underline; font-size: 125%">
 <b>Currently looking for opportunities<b>
 </p>
 <br/>
-<p style="font-family: var(--font-body); font-weight: 900; color: var(--header-color); font-style: bold; font-size:200%;">
-Quentin PETITJEAN, Ph.D   <a href="mailto:q.petitjean1@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+<p style="font-family: var(--font-header); font-weight: 700; color: var(--header-color); font-style: bold; font-size:200%;">
+Quentin PETITJEAN, Ph.D <a href="mailto:q.petitjean1@gmail.com"><i class="fa fa-envelope fa-1.5x" aria-hidden="true"></i></a>
 </p>
 <div style="height: 0.125rem;">
 <br>
@@ -2782,7 +2792,7 @@ Details
 <tr>
 <td style="width: 80%; vertical-align: top;">
 <p class="detailed-text">
-During my stay at the <a href='https://www6.paca.inrae.fr/institut-sophia-agrobiotech'>Institut Sophia Agrobiotech—ISA</a>, I was involved in the <a href='https://ecophytopic.fr/recherche-innovation/proteger/projet-bidime'>BIDIME project</a>. Briefly, this project aimed to develop innovation in biological pest control solutions and transfer it to farmers and land managers.<br/> More particularly, I joined <a href='https://vcalcagnoresearch.wordpress.com/'>Vincent Calcagno</a>’s lab to investigate the variability of movements of insect groups to temperature among 35 populations sampled along a latitude gradient.<br/> Here I mainly collaborated with <a href='https://fr.linkedin.com/in/michela-ion-scotta'>Michela Ion Scotta</a> who reared the populations of small parasitoïd fly named <em>Trichogramma</em>. Michela has also camera-recorded the insect groups during steady decreases/increases in temperature (see fig. 1).
+During my stay at the <a href='https://www6.paca.inrae.fr/institut-sophia-agrobiotech'>Institut Sophia Agrobiotech—ISA</a>, I was involved in the <a href='https://ecophytopic.fr/recherche-innovation/proteger/projet-bidime'>BIDIME project</a>. Briefly, this project aimed to develop innovation in biological pest control solutions and transfer it to farmers and land managers.<br/> More particularly, I joined <a href='https://vcalcagnoresearch.wordpress.com/'>Vincent CALCAGNO</a>’s lab to investigate the variability of movements of insect groups to temperature among 35 populations sampled along a latitude gradient.<br/> Here I mainly collaborated with <a href='https://fr.linkedin.com/in/michela-ion-scotta'>Michela ION SCOTTA</a> who reared the populations of small parasitoid fly named <em>Trichogramma</em>. Michela has also video-recorded the insect groups during steady decreases/increases in temperature (2 hours, see fig. 1).
 </p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:Ramps"></span>
@@ -2793,7 +2803,7 @@ Figure 1: Temperature ramps over which flies’ movements were recorded and anal
 </div>
 </div>
 <p class="detailed-text">
-Once the videos were recorded, I used video-tracking solutions to retrieve flies’ movements over the temperature ramps for a relatively long time (1.5 hours, see Fig. 1).<br/> I then analyzed the movements of the 35 flies populations to test for the variability in thermal biology and movements. My aim here was to uncover potential patterns of local adaptation (i.e., relationship between resistance and the bioclimatic area of the origin of the populations) and test for the existence of adaptive trade-offs between resistance to cold and warm temperatures.<br/><br/> Besides this work also inspired the development of an <svg aria-hidden="true" role="img" viewBox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"/></svg> package (MoveR) to easily filter, clean and analyze movement data (Stay tuned for upcoming release).
+Once the videos were recorded, I used video-tracking solutions to retrieve flies’ movements over the temperature ramps.<br/> I then analyzed the movements of the 35 flies populations to test for the variability in thermal biology and movements. My aim here was to uncover potential patterns of local adaptation (i.e., relationship between resistance and the bioclimatic area of the origin of the populations) and test for the existence of adaptive trade-offs between resistance to cold and warm temperatures.<br/><br/> Besides this work also inspired the development of an <svg aria-hidden="true" role="img" viewBox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"/></svg> package (MoveR) to easily filter, clean and analyze movement data (Stay tuned for upcoming release).
 </p>
 </td>
 <td style="width: 20%; vertical-align: top;">
@@ -2858,9 +2868,19 @@ Details
 <summary class="summary">
 Details
 </summary>
+<table style="border: none; width=&#39;100%&#39;;">
+<tr>
+<td style="width: 80%; vertical-align: top;">
 <p class="detailed-text">
-<p>TODO</p>
+During my first year of master I conducted an internship with <a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=perso&nom=GIMBERT&prenom=Fr%C3%A9d%C3%A9ric'> Frédéric GIMBERT</a> and <a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=perso&nom=ALEYA&prenom=Lotfi'>Lotfi ALEYA</a> to work on the bioavailability of trace metal elements in a landfill leachate collection pond. Indeed, until 2002 household waste disposal was authorized in France, resulting in contamination of the surrounding environment, primarily through contaminants leaching. To reduce environmental contamination entailed by this mode of waste storage, the Etueffont landfill (study site) set up a lagoon ponds system draining landfill leachates.<br/> Here, we aimed to better understand how the leaching of trace metal elements may affect contaminant accumulation in biota (i.e., bioaccumulation kinetics) and how water and sediment compartments may contribute to the observed bioaccumulation’ patterns.<br/> To tackle these aims, we used an active biomonitoring approach through caging laboratory-raised midges larvae (<em>Chironomus riparius</em>) in the first landfill leachate collection pond. More particularly, we used two types of cages to either expose the larvae to water only or water and sediment for a five days maximum duration.<br/> Back in the laboratory, we performed subcellular fractionation of the midges to measure trace metal bioaccumulation in the cytosolic (i.e., sensitive fraction) and insoluble fractions. We then modeled the bioaccumulation kinetic for each contaminant and fraction. This helped to discuss the primary source of contaminant transfers (i.e., water and/or sediment), contaminant bioavailability, and the potentially harmful effects on biota.<br/><br/> For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_distill/publications.html#section-3'>Publication section</a> of this website.
 </p>
+</p>
+</td>
+<td style="width: 20%; vertical-align: top;">
+<a href='https://chrono-environnement.univ-fcomte.fr/'><img src="https://chrono-environnement.univ-fcomte.fr/IMG/siteon0.png?1512470683" height="50px" width="155px" /></a></br> <a href='https://www.univ-fcomte.fr/'><img src="https://www.univ-fcomte.fr/sites/all/themes/ufc_central/logo.png" height="43px" width="155px" /></a></br> <a href='https://www.cnrs.fr/'><img src="https://www.cnrs.fr/themes/custom/cnrs/logo.svg" height="155px" width="155px" /></a></br>
+</td>
+</tr>
+</table>
 </details>
 <hr />
 <h1 id="teaching-supervising">Teaching &amp; supervising</h1>

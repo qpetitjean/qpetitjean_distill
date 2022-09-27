@@ -1,5 +1,5 @@
 ---
-title: "<p style='font-family: var(--font-body); font-weight: 900; font-style: bold;'>Quentin PETITJEAN</p>"
+title: "Quentin PETITJEAN"
 image: images/Home_QP.png
 links:
   - label: '<i class="fa fa-envelope"></i>'

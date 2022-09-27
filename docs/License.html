@@ -2100,7 +2100,7 @@
     /* Main font */
     --font-body:   'Roboto', sans-serif, Arial, sans-serif;
     --font-header: 'Edu QLD Beginner', cursive, Arial, sans-serif;
-    --font-navbar: 'Rubik Dirt', cursive, Arial, sans-serif;
+    --font-navbar: 'Edu QLD Beginner', cursive, Arial, sans-serif;
     
     /* color of the html pages background */
     --color-background:    rgba(215, 219, 219, 0.5);
@@ -2114,9 +2114,9 @@
     /* color of aside text */
     --aside-color:     rgba(82, 117, 131 , 0.8);
     /* color of navigation bar and footer */
-    --navbar-foot-color: rgba(37, 160, 160, 0.8);
+    --navbar-foot-color: rgba(37, 160, 160, 0.9);
     /* color of text within the navbar */
-    --navbar-prim-color: rgba(255, 255, 255, 0.8);
+    --navbar-prim-color: rgba(255, 255, 255, 0.9);
     /* color of text within the navbar when user move the mouse over */
     --navbar-sec-color: rgba(117, 112, 179, 0.8);
   }
@@ -2174,7 +2174,7 @@
     --text-color:       var(--navbar-prim-color);
     --hover-color:      var(--navbar-sec-color);
     --bkgd-color:       var(--navbar-foot-color);
-    --letter-spacing:   0.125rem;
+    --letter-spacing:   0.25rem;
   }
 
   .distill-site-footer {
@@ -2190,16 +2190,16 @@
 
   /* Increase the size of the logo (in the navbar) */ 
   .distill-site-header .logo img{
-    max-height: 25px; /* Makes logo bigger, default was 20px */
+    max-height: 1.563rem; /* Makes logo bigger, default was 20px */
   }
 
   /* change search bar appearance */ 
   .algolia-autocomplete {
       display: inline-block;
       margin-left: 1.563rem;
-      vertical-align: sub;
-      background-color: #FFFFFF;
-      color: var(--header-color);  /* Color of text in drop-down*/
+      vertical-align: baseline;
+      background-color: rgba(255, 255, 255, 1);
+      color: var(--body-color);  /* Color of text in drop-down*/
       padding: 0.625rem;
       padding-top: 0.5rem;
       padding-bottom: 0rem;
@@ -2247,12 +2247,22 @@
     font-style: italic;
     border-bottom: 0px;
     text-decoration: none;
+    margin-right: 0px;
+    margin-left: 0px;
   }
 
+  /* Change link appearance in the navbar */
   a:hover, a:focus {
       color: var(--navbar-sec-color);
       text-decoration: none !important;
       border-bottom: 0px !important;
+  }
+
+
+  /* increase space between navbar links*/
+  a {
+      margin-left: 0.625rem;
+      margin-right: 0.625rem;
   }
 
   /* Postcard headers */

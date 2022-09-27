@@ -42,9 +42,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
 <!-- TOC JAVASCRIPT ELEMENTS END -->
 
-<p style="color: font-family: var(--font-body); var(--header-color); text-align: center; text-decoration-line: underline; font-size: 150%"> <b>Currently looking for opportunities<b></p>
+<p style="color: var(--title-color); font-family: var(--font-body); text-align: center; text-decoration-line: underline; font-size: 125%"> <b>Currently looking for opportunities<b></p>
 <br/>
-<p style='font-family: var(--font-body); font-weight: 900; color: var(--header-color); font-style: bold; font-size:200%;'>Quentin PETITJEAN, Ph.D &ensp; <a href="mailto:q.petitjean1@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></p>
+<p style='font-family: var(--font-header); font-weight: 700; color: var(--header-color); font-style: bold; font-size:200%;'>Quentin PETITJEAN, Ph.D&nbsp;<a href="mailto:q.petitjean1@gmail.com"><i class="fa fa-envelope fa-1.5x" aria-hidden="true"></i></a></p>
 <div style="height: 0.125rem;"><br></div>
 <p class="plain-text">
 `r fontawesome::fa("flag", fill = "#333333")` &ensp; Nationalities<br/>
@@ -95,13 +95,13 @@ window.addEventListener('DOMContentLoaded', () => {
     <td style="width: 80%; vertical-align: top;">
 <p class="detailed-text">
 During my stay at the <a href='https://www6.paca.inrae.fr/institut-sophia-agrobiotech'>Institut Sophia Agrobiotech—ISA</a>, I was involved in the <a href='https://ecophytopic.fr/recherche-innovation/proteger/projet-bidime'>BIDIME project</a>. Briefly, this project aimed to develop innovation in biological pest control solutions and transfer it to farmers and land managers.<br/>
-More particularly, I joined <a href='https://vcalcagnoresearch.wordpress.com/'>Vincent Calcagno</a>'s lab to investigate the variability of movements of insect groups to temperature among 35 populations sampled along a latitude gradient.<br/>
-Here I mainly collaborated with <a href='https://fr.linkedin.com/in/michela-ion-scotta'>Michela Ion Scotta</a> who reared the populations of small parasitoïd fly named <em>Trichogramma</em>. Michela has also camera-recorded the insect groups during steady decreases/increases in temperature (see fig. 1).</p>
+More particularly, I joined <a href='https://vcalcagnoresearch.wordpress.com/'>Vincent CALCAGNO</a>'s lab to investigate the variability of movements of insect groups to temperature among 35 populations sampled along a latitude gradient.<br/>
+Here I mainly collaborated with <a href='https://fr.linkedin.com/in/michela-ion-scotta'>Michela ION SCOTTA</a> who reared the populations of small parasitoid fly named <em>Trichogramma</em>. Michela has also video-recorded the insect groups during steady decreases/increases in temperature (2 hours, see fig. 1).</p>
 ```{r Ramps, echo=FALSE, message=FALSE, warning=FALSE, fig.align = 'center', out.width="90%", fig.cap="Temperature ramps over which flies' movements were recorded and analyzed."}
 # create the dataset
 time = seq(
   from = as.POSIXct("2021-01-01 00:00"),
-  to = as.POSIXct("2021-01-01 01:30"),
+  to = as.POSIXct("2021-01-01 02:00"),
   by = "min"
 )
 temp = seq(from = 18 ,
@@ -143,9 +143,9 @@ plot(
 )
 ```
 <p class="detailed-text">
-Once the videos were recorded, I used video-tracking solutions to retrieve flies' movements over the temperature ramps for a relatively long time (1.5 hours, see Fig. 1).<br/>
+Once the videos were recorded, I used video-tracking solutions to retrieve flies' movements over the temperature ramps.<br/>
 I then analyzed the movements of the 35 flies populations to test for the variability in thermal biology and movements. My aim here was to uncover potential patterns of local adaptation (i.e., relationship between resistance and the bioclimatic area of the origin of the populations) and test for the existence of adaptive trade-offs between resistance to cold and warm temperatures.<br/><br/>
-Besides this work also inspired the development of an `r fontawesome::fa("r-project", fill = "steelblue")` package (MoveR) to easily filter, clean and analyze movement data (Stay tuned for upcoming release). 
+Besides this work also inspired the development of an `r fontawesome::fa("r-project", fill = "steelblue")` package (MoveR) to easily filter, clean and analyze movement data (Stay tuned for upcoming release).
 </p>
 </td>
     <td style="width: 20%; vertical-align: top;">
@@ -226,12 +226,25 @@ TODO
   <summary class= "summary">
   Details
   </summary>
-
+<table style="border: none; width='100%';">
+  <tr>
+    <td style="width: 80%; vertical-align: top;">
 <p class="detailed-text">
-
-TODO
-
+During my first year of master I conducted an internship with <a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=perso&nom=GIMBERT&prenom=Fr%C3%A9d%C3%A9ric'> Frédéric GIMBERT</a> and <a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=perso&nom=ALEYA&prenom=Lotfi'>Lotfi ALEYA</a>  to work on the bioavailability of trace metal elements in a landfill leachate collection pond. Indeed, until 2002 household waste disposal was authorized in France, resulting in contamination of the surrounding environment, primarily through contaminants leaching. To reduce environmental contamination entailed by this mode of waste storage, the Etueffont landfill (study site) set up a lagoon ponds system draining landfill leachates.<br/>
+Here, we aimed to better understand how the leaching of trace metal elements may affect contaminant accumulation in biota (i.e., bioaccumulation kinetics) and how water and sediment compartments may contribute to the observed bioaccumulation' patterns.<br/>
+To tackle these aims, we used an active biomonitoring approach through caging laboratory-raised midges larvae (<em>Chironomus riparius</em>) in the first landfill leachate collection pond. More particularly, we used two types of cages to either expose the larvae to water only or water and sediment for a five days maximum duration.<br/>
+Back in the laboratory, we performed subcellular fractionation of the midges to measure trace metal bioaccumulation in the cytosolic (i.e., sensitive fraction) and insoluble fractions. We then modeled the bioaccumulation kinetic for each contaminant and fraction. This helped to discuss the primary source of contaminant transfers (i.e., water and/or sediment), contaminant bioavailability, and the potentially harmful effects on biota.<br/><br/>
+For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_distill/publications.html#section-3'>Publication section</a> of this website.</p>
 </p>
+</td>
+    <td style="width: 20%; vertical-align: top;">
+    <a href='https://chrono-environnement.univ-fcomte.fr/'><img src="https://chrono-environnement.univ-fcomte.fr/IMG/siteon0.png?1512470683" height="50px" width="155px" /></a></br>
+    <a href='https://www.univ-fcomte.fr/'><img src="https://www.univ-fcomte.fr/sites/all/themes/ufc_central/logo.png" height="43px" width="155px" /></a></br>
+    <a href='https://www.cnrs.fr/'><img src="https://www.cnrs.fr/themes/custom/cnrs/logo.svg" height="155px" width="155px" /></a></br>
+</td>
+  </tr>
+</table>
+    
 </details>
 ***
 
