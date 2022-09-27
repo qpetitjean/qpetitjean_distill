@@ -108,11 +108,6 @@ d-appendix {
 /*-- Additional custom styles --*/
 /* Add any additional CSS rules below  */
 
-/* Increase the size of the logo (in the navbar) */ 
-.distill-site-header .logo img{
-  max-height: 1.563rem; /* Makes logo bigger, default was 20px */
-}
-
 /* change search bar appearance */ 
 .algolia-autocomplete {
     display: inline-block;

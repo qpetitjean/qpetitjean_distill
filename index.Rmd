@@ -1,6 +1,10 @@
 ---
 title: "Quentin PETITJEAN"
 image: images/Home_QP.png
+favicon: images/FavIcon.png
+twitter:
+  creator: "@Q_PETITJEAN"
+  site: "@Q_PETITJEAN"
 links:
   - label: '<i class="fa fa-envelope"></i>'
     url: "mailto:q.petitjean1@gmail.com"
