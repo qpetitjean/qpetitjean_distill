@@ -1,5 +1,5 @@
 ---
-title: "Quentin PETITJEAN"
+title: "<p style='font-family: var(--font-body); font-weight: 900; font-style: bold;'>Quentin PETITJEAN</p>"
 image: images/Home_QP.png
 links:
   - label: '<i class="fa fa-envelope"></i>'
@@ -1162,7 +1162,7 @@ By gaining insight into intraspecific variability of responses to multiple stres
 <p class="plain-text">
 Besides, I'm an `r fontawesome::fa("r-project", fill = "steelblue")` enthusiast, using it to: <br/>
 `r fontawesome::fa("square-caret-right", fill = "#333333")` &ensp; Analyze data in a reliable and open framework. <br/>
-`r fontawesome::fa("square-caret-right", fill = "#333333")` &ensp; Create package -- see the MoveR package (Stay tuned for upcoming release. <br/>
+`r fontawesome::fa("square-caret-right", fill = "#333333")` &ensp; Create package -- see the MoveR package (Stay tuned for upcoming release). <br/>
 `r fontawesome::fa("square-caret-right", fill = "#333333")` &ensp; And recently, create this website. <br/>
 </p>
 </div>

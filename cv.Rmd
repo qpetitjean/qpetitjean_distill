@@ -42,9 +42,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
 <!-- TOC JAVASCRIPT ELEMENTS END -->
 
-<p style="color:var(--header-color);text-align:center;text-decoration-line: underline;font-size:150%"> <b>Currently looking for opportunities<b></p>
+<p style="color: font-family: var(--font-body); var(--header-color); text-align: center; text-decoration-line: underline; font-size: 150%"> <b>Currently looking for opportunities<b></p>
 <br/>
-<p style="color: var(--header-color); font-family:var(--font-header); font-size:200%;">Quentin PETITJEAN, Ph.D &ensp; <a href="mailto:q.petitjean1@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></p>
+<p style='font-family: var(--font-body); font-weight: 900; color: var(--header-color); font-style: bold; font-size:200%;'>Quentin PETITJEAN, Ph.D &ensp; <a href="mailto:q.petitjean1@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></p>
 <div style="height: 0.125rem;"><br></div>
 <p class="plain-text">
 `r fontawesome::fa("flag", fill = "#333333")` &ensp; Nationalities<br/>

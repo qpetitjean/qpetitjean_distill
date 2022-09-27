@@ -6,6 +6,7 @@ output:
     toc_float: true
     toc_depth: 2
     collapsed: true
+    self_contained: false
     code_folding: false
     css:
       - css/GlobalTheme.css
