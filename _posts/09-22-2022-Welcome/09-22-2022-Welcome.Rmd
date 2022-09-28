@@ -6,7 +6,7 @@ categories:
   - Welcome
 author:
   - name: Quentin PETITJEAN
-    url: "https://qpetitjean.github.io/Welcome"
+    url: "https://qpetitjean.github.io/qpetitjean_distill/index.html"
     affiliation: Institut Sophia Agrobiotech, UMR5254 ISA, INRAE, CNRS, Université Côte d’Azur, Sophia-Antipolis, France.
     affiliation_url: https://www6.paca.inrae.fr/institut-sophia-agrobiotech
 date: 09-22-2022

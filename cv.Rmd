@@ -44,7 +44,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 <p style="color: var(--title-color); font-family: var(--font-body); text-align: center; text-decoration-line: underline; font-size: 125%"> <b>Currently looking for opportunities<b></p>
 <br/>
-<p style='font-family: var(--font-header); font-weight: 700; color: var(--header-color); font-style: bold; font-size:200%;'>Quentin PETITJEAN, Ph.D&nbsp;<a href="mailto:q.petitjean1@gmail.com"><i class="fa fa-envelope fa-1.5x" aria-hidden="true"></i></a></p>
+<p style='font-family: var(--font-header); font-weight: 700; color: var(--header-color); font-style: bold; font-size:175%;'>Quentin PETITJEAN, Ph.D&nbsp;<a href="mailto:q.petitjean1@gmail.com"><i class="fa fa-envelope fa-1.5x" aria-hidden="true"></i></a></p>
 <div style="height: 0.125rem;"><br></div>
 <p class="plain-text">
 `r fontawesome::fa("flag", fill = "#333333")` &ensp; Nationalities<br/>
@@ -96,7 +96,7 @@ window.addEventListener('DOMContentLoaded', () => {
 <p class="detailed-text">
 During my stay at the <a href='https://www6.paca.inrae.fr/institut-sophia-agrobiotech'>Institut Sophia Agrobiotech—ISA</a>, I was involved in the <a href='https://ecophytopic.fr/recherche-innovation/proteger/projet-bidime'>BIDIME project</a>. Briefly, this project aimed to develop innovation in biological pest control solutions and transfer it to farmers and land managers.<br/>
 More particularly, I joined <a href='https://vcalcagnoresearch.wordpress.com/'>Vincent CALCAGNO</a>'s lab to investigate the variability of movements of insect groups to temperature among 35 populations sampled along a latitude gradient.<br/>
-Here I mainly collaborated with <a href='https://fr.linkedin.com/in/michela-ion-scotta'>Michela ION SCOTTA</a> who reared the populations of small parasitoid fly named <em>Trichogramma</em>. Michela has also video-recorded the insect groups during steady decreases/increases in temperature (2 hours, see fig. 1).</p>
+Here I mainly collaborated with <a href='https://fr.linkedin.com/in/michela-ion-scotta'>Michela ION SCOTTA</a> who reared the populations of small parasitoid fly named <em>Trichogramma</em>. Michela has also video-recorded the insect groups during steady decreases/increases in temperature (2 hours, see fig. \@ref(fig:Ramps)).</p>
 ```{r Ramps, echo=FALSE, message=FALSE, warning=FALSE, fig.align = 'center', out.width="90%", fig.cap="Temperature ramps over which flies' movements were recorded and analyzed."}
 # create the dataset
 time = seq(
@@ -145,7 +145,8 @@ plot(
 <p class="detailed-text">
 Once the videos were recorded, I used video-tracking solutions to retrieve flies' movements over the temperature ramps.<br/>
 I then analyzed the movements of the 35 flies populations to test for the variability in thermal biology and movements. My aim here was to uncover potential patterns of local adaptation (i.e., relationship between resistance and the bioclimatic area of the origin of the populations) and test for the existence of adaptive trade-offs between resistance to cold and warm temperatures.<br/><br/>
-Besides this work also inspired the development of an `r fontawesome::fa("r-project", fill = "steelblue")` package (MoveR) to easily filter, clean and analyze movement data (Stay tuned for upcoming release).
+Besides this work also inspired the development of an `r fontawesome::fa("r-project", fill = "steelblue")` package (MoveR) to easily filter, clean and analyze movement data. <br/><br/>
+Stay tuned for upcoming release.
 </p>
 </td>
     <td style="width: 20%; vertical-align: top;">
@@ -188,11 +189,36 @@ Besides this work also inspired the development of an `r fontawesome::fa("r-proj
   Details
   </summary>
 
+<table style="border: none; width='100%';">
+  <tr>
+    <td style="width: 80%; vertical-align: top;">
 <p class="detailed-text">
-
-TODO
+Following my Ph.D. defense, I was still Intending to increase the integration of multiple biological levels of organization in studying responses to multiple stressors. <br/><br/>
+Since the literature highlighting the close relationships between physiological and behavioral responses and gut microbiota composition was flourishing, my advisors (<a href='https://sites.google.com/site/jacquinlisa2'>Lisa JACQUIN</a>, S&eacute;verine JEAN and Pascal LAFFAILLE) and I started a collaboration with <a href='https://whitejoel.weebly.com/'>Jo&euml;l WHITE</a> to investigate how multiples stressors may affect gut microbiota composition among several populations of wild fish. <br/><br/>
+Fortunately, during my Ph.D., we collected the gut of all the fish involved in laboratory and reciprocal transplant experiments testing for the combined effect of trace metal contamination and immune challenge. <br/><br/>
+This provides a fair amount of samples to investigate the intraspecific variability of gut microbiota composition in wild fish populations exposed to environmentally relevant stressors. Plus, it allowed uncovering potential links between fish physiological and/or behavioral responses already measured during my Ph.D. and gut microbiota composition. <br/><br/>
+While the COVID-19 pandemic knocked at the world's door, we were coerced to delay laboratory analyses (DNA extractions – PCR – NGS). Fortunately, I just had enough time to finish lab' and bioinformatics analyses before leaving this position for the next one. 
+Currently, thanks to Margarita Granada (a Second-year master's student), final statistical analyses and writing are on the way! <br/><br/>
+Stay tuned for further news to come.</p>
 
 </p>
+</td>
+    <td style="width: 20%; vertical-align: top;">
+      <a href='https://www.eco.omp.eu/'><img src="https://www.eco.omp.eu/wp-content/uploads/2020/04/v2_logo_ecolab_baseline_cmjn.svg" height="56px" width="155px" /></a></br>
+    
+    <a href='https://edb.cnrs.fr/'><img src="https://www.univ-tlse3.fr/medias/photo/logo-edb_1576487603148-png?ID_FICHE=1136458590592" height="155px" width="155px" /></a></br>
+    
+    <a href='https://fr.wikipedia.org/wiki/%C3%89cole_nationale_sup%C3%A9rieure_agronomique_de_Toulouse'><img src="https://upload.wikimedia.org/wikipedia/fr/5/57/Logo_inp_ensat_2022.png" height="65px" width="155px" /></a></br>
+    
+    <a href='https://www.univ-toulouse.fr/'><img src="https://www.univ-toulouse.fr/sites/default/files/inline-images/logo_uftmp_horizontale.svg" height="80px" width="155px" /></a></br>
+    
+    <a href='https://www.cnrs.fr/'><img src="https://www.cnrs.fr/themes/custom/cnrs/logo.svg" height="155px" width="155px" /></a></br>
+    
+    <a href='https://www.genotoul.fr/'><img src="https://www.genotoul.fr/wp-content/uploads/2017/01/Genotoul_logo-rvb_min.png" height="44px" width="155px" /></a></br>
+</td>
+  </tr>
+</table>
+
 </details>
 <p class="plain-text">
 `r fontawesome::fa("briefcase", fill = "#333333")` &ensp; October 2016 - December 2019 | Ph.D candidate | <a href='https://www.univ-tlse3.fr/'>Paul Sabatier University—UPS</a>, Toulouse, FR </p>
@@ -201,11 +227,8 @@ TODO
   Details
   </summary>
 
-<p class="detailed-text">
-
 TODO
 
-</p>
 </details>
 <p class="plain-text">
 `r fontawesome::fa("briefcase", fill = "#333333")` &ensp; February 2016 - July 2016 | M.Sc. candidate | <a href='https://www.ubfc.fr/'>Bourgogne-Franche-Comté University—UBFC</a>, Besan&ccedil;on, FR </p>
@@ -213,12 +236,34 @@ TODO
   <summary class= "summary">
   Details
   </summary>
-
+<table style="border: none; width='100%';">
+  <tr>
+    <td style="width: 80%; vertical-align: top;">
 <p class="detailed-text">
-
-TODO
-
+During my second year of master I conducted an internship with <a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=perso&nom=GIMBERT&prenom=Fr%C3%A9d%C3%A9ric'> Frédéric GIMBERT</a> and <a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=perso&nom=DE%20VAUFLEURY&prenom=Annette'> Annette DE VAUFLEURY</a> to work on an interdisciplinary study involving archeology, mineralogy, environmental chemistry, and ecotoxicology. Indeed mining and metallurgical activities are the most ancient sources of anthropogenic contamination in the environment. While the evidence of this ancient contamination is scarce, archeological surveys in eastern France unveil several areas (i.e., districts) which have been significant places of mining and metallurgical activities in the medieval era (between the 8th and the 12th centuries). Currently, metallurgical wastes named slags are still present in numerous district soils and may represent a significant source of soil contamination. <br/><br/>
+Here we aimed to characterize the mineralogical composition of slags deposited one thousand years ago and to uncover whether it could still be a significant source of soil contamination that could transfer to organisms and have harmful effects. <br/><br/>
+To tackle these aims, we sampled slags and soil cores along transects starting from the center of the slag heap. We then used scanning electron microscopy with energy dispersive spectrometry (EDS) mapping and x-ray diffraction to analyze slags and soil mineralogical composition. We also conducted chemical extraction and ecotoxicity bioassays using land snail (<em>Cantareus aspersus</em>) on soil samples to assess contaminant transfers in plants and biota and infer possible harmful effects. <br/><br/>
+Briefly, We found that slags that remain in the soil still release a significant amount of manganese (Mn), which is consistent with their mineralogical composition. We also uncovered that a large proportion of the Mn contamination might be available for transfers in plants and animals, especially land snails. However, we did not find any evidence of toxicity caused by soils contamination on snails (see fig. \@ref(fig:GraphAbsChemos)). <br/>
+```{r GraphAbsChemos, echo=FALSE, results='asis', message=FALSE, warning=FALSE, fig.align = 'center', out.width="90%", fig.cap="Summary of the results discussed in <a href='https://qpetitjean.github.io/qpetitjean_distill/publications.html#section'>Petitjean et al., 2021 Origin, fate and ecotoxicity of manganese from legacy metallurgical wastes</a>."}
+GraphAbsChemos <- "https://ars.els-cdn.com/content/image/1-s2.0-S0045653521008079-ga1_lrg.jpg"
+knitr::include_graphics(GraphAbsChemos)
+```
+This study paved the way to further projects/studies investigating the spatial occurrence, transfers, fate and effects of metallic palaeo-pollution in eastern France (e.g., <a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=projet&projet=23'>SIDEROS</a> and <a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=projet&projet=53'>ALTERICS</a>).<br/><br/>
+For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_distill/publications.html#section'>Publication section</a> of this website.
 </p>
+</td>
+    <td style="width: 20%; vertical-align: top;">
+    <a href='https://chrono-environnement.univ-fcomte.fr/'><img src="https://chrono-environnement.univ-fcomte.fr/IMG/siteon0.png?1512470683" height="43px" width="155px" /></a></br>
+    
+    <a href='https://www.univ-fcomte.fr/'><img src="https://upload.wikimedia.org/wikipedia/fr/7/77/Logo_Universit%C3%A9_de_Franche-Comt%C3%A9_2018.png" height="43px" width="155px" /></a></br>
+    
+    <a href='https://www.ubfc.fr/'><img src="https://upload.wikimedia.org/wikipedia/fr/4/49/Logo_UBFC.png" height="72px" width="155px" /></a></br>
+    
+    <a href='https://www.cnrs.fr/'><img src="https://www.cnrs.fr/themes/custom/cnrs/logo.svg" height="155px" width="155px" /></a></br>
+</td>
+  </tr>
+</table>
+
 </details>
 <p class="plain-text">
 `r fontawesome::fa("briefcase", fill = "#333333")` &ensp; February 2015 - May 2015 |  M.Sc. candidate | <a href='https://www.ubfc.fr/'>Bourgogne-Franche-Comté University—UBFC</a>, Besan&ccedil;on, FR </p>
@@ -230,10 +275,10 @@ TODO
   <tr>
     <td style="width: 80%; vertical-align: top;">
 <p class="detailed-text">
-During my first year of master I conducted an internship with <a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=perso&nom=GIMBERT&prenom=Fr%C3%A9d%C3%A9ric'> Frédéric GIMBERT</a> and <a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=perso&nom=ALEYA&prenom=Lotfi'>Lotfi ALEYA</a>  to work on the bioavailability of trace metal elements in a landfill leachate collection pond. Indeed, until 2002 household waste disposal was authorized in France, resulting in contamination of the surrounding environment, primarily through contaminants leaching. To reduce environmental contamination entailed by this mode of waste storage, the Etueffont landfill (study site) set up a lagoon ponds system draining landfill leachates.<br/>
-Here, we aimed to better understand how the leaching of trace metal elements may affect contaminant accumulation in biota (i.e., bioaccumulation kinetics) and how water and sediment compartments may contribute to the observed bioaccumulation' patterns.<br/>
-To tackle these aims, we used an active biomonitoring approach through caging laboratory-raised midges larvae (<em>Chironomus riparius</em>) in the first landfill leachate collection pond. More particularly, we used two types of cages to either expose the larvae to water only or water and sediment for a five days maximum duration (see fig. 2).<br/>
-```{r CagesTypes, echo=FALSE, results='asis', message=FALSE, warning=FALSE, fig.align = 'center', out.width="80%", fig.cap="Type of cages used for active biomonitoring, the cage on the left allows exposing the midges to water and sediment. In contrast, the cage on the right allows exposing the midges only to water."}
+During my first year of master I conducted an internship with <a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=perso&nom=GIMBERT&prenom=Fr%C3%A9d%C3%A9ric'> Frédéric GIMBERT</a> and <a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=perso&nom=ALEYA&prenom=Lotfi'>Lotfi ALEYA</a>  to work on the bioavailability of trace metal elements in a landfill leachate collection pond. Indeed, until 2002 household waste disposal was authorized in France, resulting in contamination of the surrounding environment, primarily through contaminants leaching. To reduce environmental contamination entailed by this mode of waste storage, the Etueffont landfill (i.e., study site) set up a lagoon ponds system draining landfill leachates.<br/><br/>
+Here, we aimed to better understand how the leaching of trace metal elements may affect contaminant accumulation in biota (i.e., bioaccumulation kinetics) and how water and sediment compartments may contribute to the observed bioaccumulation' patterns.<br/><br/>
+To tackle these aims, we used an active biomonitoring approach through caging laboratory-raised midges larvae (<em>Chironomus riparius</em>) in the first landfill leachate collection pond. More particularly, we used two types of cages to either expose the larvae to water only or water and sediment for a five days maximum duration (see fig. \@ref(fig:CagesTypes)).<br/>
+```{r CagesTypes, echo=FALSE, results='asis', message=FALSE, warning=FALSE, fig.align = 'center', out.width="80%", fig.cap="Type of cages used for active biomonitoring, the cage on the left (WS) allows exposing the midges to water and sediment. In contrast, the cage on the right (W) allows exposing the midges to water only."}
 cagesURL <- "https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs11356-016-8261-1/MediaObjects/11356_2016_8261_Fig2_HTML.gif"
 knitr::include_graphics(cagesURL)
 ```
@@ -242,8 +287,12 @@ For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_d
 </p>
 </td>
     <td style="width: 20%; vertical-align: top;">
-    <a href='https://chrono-environnement.univ-fcomte.fr/'><img src="https://chrono-environnement.univ-fcomte.fr/IMG/siteon0.png?1512470683" height="50px" width="155px" /></a></br>
-    <a href='https://www.univ-fcomte.fr/'><img src="https://www.univ-fcomte.fr/sites/all/themes/ufc_central/logo.png" height="43px" width="155px" /></a></br>
+    <a href='https://chrono-environnement.univ-fcomte.fr/'><img src="https://chrono-environnement.univ-fcomte.fr/IMG/siteon0.png?1512470683" height="43px" width="155px" /></a></br>
+    
+    <a href='https://www.univ-fcomte.fr/'><img src="https://upload.wikimedia.org/wikipedia/fr/7/77/Logo_Universit%C3%A9_de_Franche-Comt%C3%A9_2018.png" height="43px" width="155px" /></a></br>
+    
+    <a href='https://www.ubfc.fr/'><img src="https://upload.wikimedia.org/wikipedia/fr/4/49/Logo_UBFC.png" height="72px" width="155px" /></a></br>
+    
     <a href='https://www.cnrs.fr/'><img src="https://www.cnrs.fr/themes/custom/cnrs/logo.svg" height="155px" width="155px" /></a></br>
 </td>
   </tr>
@@ -326,7 +375,7 @@ I have also worked to update the collection of the university of Galway' herbari
 <p class="detailed-text">
 The « Ecology and Behaviour » conferences are organized by and for young researchers. These events are an ideal opportunity for master, Ph.D. students, and postdocs to share their works with other researchers in ecology, evolutionary biology, and behavioral ecology. <br/></p>
 <p class="detailed-text">
-As Co-organizer, chairman (Ecotoxicology & Ecophysiology session), and financial manager (Fundraising: 20k€) of the <a href='https://eb2019.sciencesconf.org/'>14th meeting Ecology and Behaviour (E&B) 2019</a>, I was really proud of this great achievement which gathered more than 160 attendees and 14 keynote speakers around 56 platform presentations and 38 posters. <br/></p>
+As Co-organizer, chairman (Ecotoxicology & Ecophysiology session), and financial manager (Fundraising: 20k€) of the <a href='https://eb2019.sciencesconf.org/'>14th meeting Ecology and Behaviour (E&B) 2019</a>, I am delighted to have participated in this outstanding achievement which gathered more than 160 attendees and 14 keynote speakers around 56 platform presentations and 38 posters. <br/></p>
 <p style="text-align:center;">
   <img src="https://eb2019.sciencesconf.org/data/pages/affiche_EB2019finale500.jpg" height="778px" width="540px" /></p>
 </details>
