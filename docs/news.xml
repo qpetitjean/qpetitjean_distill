@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Quentin PETITJEAN</title>
+    <link>https://qpetitjean.github.io/qpetitjean_distill/</link>
+    <atom:link href="https://qpetitjean.github.io/qpetitjean_distill/news.xml" rel="self" type="application/rss+xml"/>
+    <description>Quentin PETITJEAN personal website.
+</description>
+    <image>
+      <title>Quentin PETITJEAN</title>
+      <url>https://qpetitjean.github.io/qpetitjean_distill/images/FavIcon.png</url>
+      <link>https://qpetitjean.github.io/qpetitjean_distill/</link>
+    </image>
+    <generator>Distill</generator>
+    <lastBuildDate>Thu, 22 Sep 2022 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Welcome to Quentin's website</title>
+      <dc:creator>Quentin PETITJEAN</dc:creator>
+      <link>https://qpetitjean.github.io/qpetitjean_distill/posts/09-22-2022-Welcome</link>
+      <description>Happy to open the 'News' section of my brand new website.</description>
+      <category>Welcome</category>
+      <guid>https://qpetitjean.github.io/qpetitjean_distill/posts/09-22-2022-Welcome</guid>
+      <pubDate>Thu, 22 Sep 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://media.giphy.com/media/Lr4HRF6DEEJo90SQXF/giphy.gif" medium="image" type="image/gif"/>
+    </item>
+  </channel>
+</rss>

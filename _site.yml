@@ -1,7 +1,9 @@
 name: "Distill_Website_QP"
 title: "Quentin PETITJEAN"
-base_url: "https://qpetitjean.github.io/"
-repository_url: "https://github.com/qpetitjean/qpetitjean.github.io"
+description: |
+  Quentin PETITJEAN personal website.
+base_url: "https://qpetitjean.github.io/qpetitjean_distill/"
+repository_url: "https://github.com/qpetitjean/qpetitjean_distill"
 twitter:
   creator: "@Q_PETITJEAN"
   site: "@Q_PETITJEAN"

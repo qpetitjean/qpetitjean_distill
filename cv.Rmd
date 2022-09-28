@@ -52,7 +52,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 <p class="plain-text">
 `r fontawesome::fa("location-dot", fill = "#333333")` &ensp; Present/last institutional address<br/>
-<a href="https://maps.google.com/maps?z=16&q=institut%2Bsophia%2Bagrobiotech%2Binrae-cnrs-universit%C3%A9%2Bc%C3%B4te%2Bd%27azur%2B400%2Broute%2Bdes%2Bchappes%2Bbp%2B167%2B06903%2Bsophia%2Bantipolis%2Bcedex%2Bfrance"> <small>Institut Sophia Agrobiotech, UMR5254 ISA, INRAE, CNRS, Université Côte d'Azur, Sophia-Antipolis, France.</small></a></p> 
+<a href="https://maps.google.com/maps?z=16&q=institut%2Bsophia%2Bagrobiotech%2Binrae-cnrs-universit%C3%A9%2Bc%C3%B4te%2Bd%27azur%2B400%2Broute%2Bdes%2Bchappes%2Bbp%2B167%2B06903%2Bsophia%2Bantipolis%2Bcedex%2Bfrance"> <small>Institut Sophia Agrobiotech, UMR5254 ISA, INRAE, CNRS, Universit&eacute; Côte d'Azur, Sophia-Antipolis, France.</small></a></p> 
 
 ***
 
@@ -78,8 +78,8 @@ window.addEventListener('DOMContentLoaded', () => {
 # Education 
 <p class="plain-text" style="text-align: left">
 `r fontawesome::fa("graduation-cap", fill = "#333333")` &ensp; 2019 | <a href='https://www.univ-tlse3.fr/'>Paul Sabatier University—UPS</a> | Ph.D in environmental sciences / functional ecology <br/>
-`r fontawesome::fa("graduation-cap", fill = "#333333")` &ensp; 2016 | <a href='https://www.ubfc.fr/'>Bourgogne-Franche-Comté University—UBFC</a> | M.Sc. in environmental sciences / ecotoxicology  <br/>
-`r fontawesome::fa("graduation-cap", fill = "#333333")` &ensp; 2014 | <a href='https://www.ubfc.fr/'>Bourgogne-Franche-Comté University—UBFC</a> | B.Sc. in biology & ecology
+`r fontawesome::fa("graduation-cap", fill = "#333333")` &ensp; 2016 | <a href='https://www.ubfc.fr/'>Bourgogne-Franche-Comt&eacute; University—UBFC</a> | M.Sc. in environmental sciences / ecotoxicology  <br/>
+`r fontawesome::fa("graduation-cap", fill = "#333333")` &ensp; 2014 | <a href='https://www.ubfc.fr/'>Bourgogne-Franche-Comt&eacute; University—UBFC</a> | B.Sc. in biology & ecology
 </p> 
 ***
 
@@ -94,8 +94,8 @@ window.addEventListener('DOMContentLoaded', () => {
   <tr>
     <td style="width: 80%; vertical-align: top;">
 <p class="detailed-text">
-During my stay at the <a href='https://www6.paca.inrae.fr/institut-sophia-agrobiotech'>Institut Sophia Agrobiotech—ISA</a>, I was involved in the <a href='https://ecophytopic.fr/recherche-innovation/proteger/projet-bidime'>BIDIME project</a>. Briefly, this project aimed to develop innovation in biological pest control solutions and transfer it to farmers and land managers.<br/>
-More particularly, I joined <a href='https://vcalcagnoresearch.wordpress.com/'>Vincent CALCAGNO</a>'s lab to investigate the variability of movements of insect groups to temperature among 35 populations sampled along a latitude gradient.<br/>
+During my stay at the <a href='https://www6.paca.inrae.fr/institut-sophia-agrobiotech'>Institut Sophia Agrobiotech—ISA</a>, I was involved in the <a href='https://ecophytopic.fr/recherche-innovation/proteger/projet-bidime'>BIDIME project</a>. Briefly, this project aimed to develop innovation in biological pest control solutions and transfer it to farmers and land managers.<br/><br/>
+More particularly, I joined <a href='https://vcalcagnoresearch.wordpress.com/'>Vincent CALCAGNO</a>'s lab to investigate the variability of movements of insect groups to temperature among 35 populations sampled along a latitude gradient.<br/><br/>
 Here I mainly collaborated with <a href='https://fr.linkedin.com/in/michela-ion-scotta'>Michela ION SCOTTA</a> who reared the populations of small parasitoid fly named <em>Trichogramma</em>. Michela has also video-recorded the insect groups during steady decreases/increases in temperature (2 hours, see fig. \@ref(fig:Ramps)).</p>
 ```{r Ramps, echo=FALSE, message=FALSE, warning=FALSE, fig.align = 'center', out.width="90%", fig.cap="Temperature ramps over which flies' movements were recorded and analyzed."}
 # create the dataset
@@ -195,8 +195,7 @@ Stay tuned for upcoming release.
 <p class="detailed-text">
 Following my Ph.D. defense, I was still Intending to increase the integration of multiple biological levels of organization in studying responses to multiple stressors. <br/><br/>
 Since the literature highlighting the close relationships between physiological and behavioral responses and gut microbiota composition was flourishing, my advisors (<a href='https://sites.google.com/site/jacquinlisa2'>Lisa JACQUIN</a>, S&eacute;verine JEAN and Pascal LAFFAILLE) and I started a collaboration with <a href='https://whitejoel.weebly.com/'>Jo&euml;l WHITE</a> to investigate how multiples stressors may affect gut microbiota composition among several populations of wild fish. <br/><br/>
-Fortunately, during my Ph.D., we collected the gut of all the fish involved in laboratory and reciprocal transplant experiments testing for the combined effect of trace metal contamination and immune challenge. <br/><br/>
-This provides a fair amount of samples to investigate the intraspecific variability of gut microbiota composition in wild fish populations exposed to environmentally relevant stressors. Plus, it allowed uncovering potential links between fish physiological and/or behavioral responses already measured during my Ph.D. and gut microbiota composition. <br/><br/>
+Fortunately, during my Ph.D., we collected the gut of all the fish involved in laboratory and reciprocal transplant experiments testing for the combined effect of trace metal contamination and immune challenge. This provided a fair amount of samples to investigate the intraspecific variability of gut microbiota composition in wild fish populations exposed to environmentally relevant stressors. Plus, it allowed uncovering potential links between fish physiological and/or behavioral responses already measured during my Ph.D. and gut microbiota composition. <br/><br/>
 While the COVID-19 pandemic knocked at the world's door, we were coerced to delay laboratory analyses (DNA extractions – PCR – NGS). Fortunately, I just had enough time to finish lab' and bioinformatics analyses before leaving this position for the next one. 
 Currently, thanks to Margarita Granada (a Second-year master's student), final statistical analyses and writing are on the way! <br/><br/>
 Stay tuned for further news to come.</p>
@@ -231,7 +230,7 @@ TODO
 
 </details>
 <p class="plain-text">
-`r fontawesome::fa("briefcase", fill = "#333333")` &ensp; February 2016 - July 2016 | M.Sc. candidate | <a href='https://www.ubfc.fr/'>Bourgogne-Franche-Comté University—UBFC</a>, Besan&ccedil;on, FR </p>
+`r fontawesome::fa("briefcase", fill = "#333333")` &ensp; February 2016 - July 2016 | M.Sc. candidate | <a href='https://www.ubfc.fr/'>Bourgogne-Franche-Comt&eacute; University—UBFC</a>, Besan&ccedil;on, FR </p>
 <details>
   <summary class= "summary">
   Details
@@ -240,7 +239,7 @@ TODO
   <tr>
     <td style="width: 80%; vertical-align: top;">
 <p class="detailed-text">
-During my second year of master I conducted an internship with <a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=perso&nom=GIMBERT&prenom=Fr%C3%A9d%C3%A9ric'> Frédéric GIMBERT</a> and <a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=perso&nom=DE%20VAUFLEURY&prenom=Annette'> Annette DE VAUFLEURY</a> to work on an interdisciplinary study involving archeology, mineralogy, environmental chemistry, and ecotoxicology. Indeed mining and metallurgical activities are the most ancient sources of anthropogenic contamination in the environment. While the evidence of this ancient contamination is scarce, archeological surveys in eastern France unveil several areas (i.e., districts) which have been significant places of mining and metallurgical activities in the medieval era (between the 8th and the 12th centuries). Currently, metallurgical wastes named slags are still present in numerous district soils and may represent a significant source of soil contamination. <br/><br/>
+During my second year of master I conducted an internship with <a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=perso&nom=GIMBERT&prenom=Fr%C3%A9d%C3%A9ric'> Fr&eacute;d&eacute;ric GIMBERT</a> and <a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=perso&nom=DE%20VAUFLEURY&prenom=Annette'> Annette DE VAUFLEURY</a> to work on an interdisciplinary study involving archeology, mineralogy, environmental chemistry, and ecotoxicology. Indeed mining and metallurgical activities are the most ancient sources of anthropogenic contamination in the environment. While the evidence of this ancient contamination is scarce, archeological surveys in eastern France unveil several areas (i.e., districts) which have been significant places of mining and metallurgical activities in the medieval era (between the 8th and the 12th centuries). Currently, metallurgical wastes named slags are still present in numerous district soils and may represent a significant source of soil contamination. <br/><br/>
 Here we aimed to characterize the mineralogical composition of slags deposited one thousand years ago and to uncover whether it could still be a significant source of soil contamination that could transfer to organisms and have harmful effects. <br/><br/>
 To tackle these aims, we sampled slags and soil cores along transects starting from the center of the slag heap. We then used scanning electron microscopy with energy dispersive spectrometry (EDS) mapping and x-ray diffraction to analyze slags and soil mineralogical composition. We also conducted chemical extraction and ecotoxicity bioassays using land snail (<em>Cantareus aspersus</em>) on soil samples to assess contaminant transfers in plants and biota and infer possible harmful effects. <br/><br/>
 Briefly, We found that slags that remain in the soil still release a significant amount of manganese (Mn), which is consistent with their mineralogical composition. We also uncovered that a large proportion of the Mn contamination might be available for transfers in plants and animals, especially land snails. However, we did not find any evidence of toxicity caused by soils contamination on snails (see fig. \@ref(fig:GraphAbsChemos)). <br/>
@@ -266,7 +265,7 @@ For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_d
 
 </details>
 <p class="plain-text">
-`r fontawesome::fa("briefcase", fill = "#333333")` &ensp; February 2015 - May 2015 |  M.Sc. candidate | <a href='https://www.ubfc.fr/'>Bourgogne-Franche-Comté University—UBFC</a>, Besan&ccedil;on, FR </p>
+`r fontawesome::fa("briefcase", fill = "#333333")` &ensp; February 2015 - May 2015 |  M.Sc. candidate | <a href='https://www.ubfc.fr/'>Bourgogne-Franche-Comt&eacute; University—UBFC</a>, Besan&ccedil;on, FR </p>
 <details>
   <summary class= "summary">
   Details
@@ -275,7 +274,7 @@ For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_d
   <tr>
     <td style="width: 80%; vertical-align: top;">
 <p class="detailed-text">
-During my first year of master I conducted an internship with <a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=perso&nom=GIMBERT&prenom=Fr%C3%A9d%C3%A9ric'> Frédéric GIMBERT</a> and <a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=perso&nom=ALEYA&prenom=Lotfi'>Lotfi ALEYA</a>  to work on the bioavailability of trace metal elements in a landfill leachate collection pond. Indeed, until 2002 household waste disposal was authorized in France, resulting in contamination of the surrounding environment, primarily through contaminants leaching. To reduce environmental contamination entailed by this mode of waste storage, the Etueffont landfill (i.e., study site) set up a lagoon ponds system draining landfill leachates.<br/><br/>
+During my first year of master I conducted an internship with <a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=perso&nom=GIMBERT&prenom=Fr%C3%A9d%C3%A9ric'> Fr&eacute;d&eacute;ric GIMBERT</a> and <a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=perso&nom=ALEYA&prenom=Lotfi'>Lotfi ALEYA</a>  to work on the bioavailability of trace metal elements in a landfill leachate collection pond. Indeed, until 2002 household waste disposal was authorized in France, resulting in contamination of the surrounding environment, primarily through contaminants leaching. To reduce environmental contamination entailed by this mode of waste storage, the Etueffont landfill (i.e., study site) set up a lagoon ponds system draining landfill leachates.<br/><br/>
 Here, we aimed to better understand how the leaching of trace metal elements may affect contaminant accumulation in biota (i.e., bioaccumulation kinetics) and how water and sediment compartments may contribute to the observed bioaccumulation' patterns.<br/><br/>
 To tackle these aims, we used an active biomonitoring approach through caging laboratory-raised midges larvae (<em>Chironomus riparius</em>) in the first landfill leachate collection pond. More particularly, we used two types of cages to either expose the larvae to water only or water and sediment for a five days maximum duration (see fig. \@ref(fig:CagesTypes)).<br/>
 ```{r CagesTypes, echo=FALSE, results='asis', message=FALSE, warning=FALSE, fig.align = 'center', out.width="80%", fig.cap="Type of cages used for active biomonitoring, the cage on the left (WS) allows exposing the midges to water and sediment. In contrast, the cage on the right (W) allows exposing the midges to water only."}
@@ -383,7 +382,7 @@ As Co-organizer, chairman (Ecotoxicology & Ecophysiology session), and financial
 ### Membership 
 <p class="plain-text" style="text-align: left">
 `r fontawesome::fa("handshake", fill = "#333333")` &ensp; British Ecological Society&nbsp;<a href='https://www.britishecologicalsociety.org/'>(BES)</a> <br/>
-`r fontawesome::fa("handshake", fill = "#333333")` &ensp; Société Française d’Écologie et d’Évolution&nbsp;<a href='https://sfecologie.org/'>(SFE²)</a> <br/>
+`r fontawesome::fa("handshake", fill = "#333333")` &ensp; Soci&eacute;t&eacute; Française d’&Eacute;cologie et d’&Eacute;volution&nbsp;<a href='https://sfecologie.org/'>(SFE²)</a> <br/>
 `r fontawesome::fa("handshake", fill = "#333333")` &ensp; Society of Environmental Toxicology and Chemistry&nbsp;<a href='https://www.setac.org/'>(SETAC)</a> <br/>
 `r fontawesome::fa("handshake", fill = "#333333")` &ensp; Society for open, reliable and transparent ecology and evolutionary biology&nbsp;<a href='https://www.sortee.org/'>(SORTEE)</a> <br/>
 `r fontawesome::fa("handshake", fill = "#333333")` &ensp; Statistical ecology research network&nbsp;<a href='https://sites.google.com/site/gdrecostat/'>(EcoStat)</a></p>

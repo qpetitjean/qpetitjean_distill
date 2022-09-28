@@ -76,4 +76,4 @@ window.addEventListener('DOMContentLoaded', () => {
 `r fontawesome::fa("square-caret-right", fill = "#333333")` &ensp; <strong>Q Petitjean</strong>*, J Côte, L Jacquin, A Perrault, O Morrisseau, P Laffaille, S Jean, Responses of freshwater fish to multiple stressors. Poster presentation at the FEE meeting 2017.
 
 ## 2016
-`r fontawesome::fa("square-caret-right", fill = "#333333")` &ensp; <strong>Q Petitjean</strong>*, A-V Walter-Simonnet, F Choulet, A-L Mariet, P Goncalves, H Laurent, P Rosenthal, A de Vaufleury, F Gimbert, Impacts de la présence de déchets sidérurgiques anciens sur la contamination des sols en métaux. Poster presentation at the <a href='https://asso-sefa.fr/colloque-de-la-sefa'>French SEFA meeting 2016.</a>
+`r fontawesome::fa("square-caret-right", fill = "#333333")` &ensp; <strong>Q Petitjean</strong>*, A-V Walter-Simonnet, F Choulet, A-L Mariet, P Goncalves, H Laurent, P Rosenthal, A de Vaufleury, F Gimbert, Impacts de la pr&eacute;sence de d&eacute;chets sid&eacute;rurgiques anciens sur la contamination des sols en m&eacute;taux. Poster presentation at the <a href='https://asso-sefa.fr/colloque-de-la-sefa'>French SEFA meeting 2016.</a>

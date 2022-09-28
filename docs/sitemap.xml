@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
   <url>
-    <loc>https://qpetitjean.github.io/communications.html</loc>
-    <lastmod>2022-09-28T09:53:59+02:00</lastmod>
+    <loc>https://qpetitjean.github.io/qpetitjean_distill/communications.html</loc>
+    <lastmod>2022-09-28T17:25:16+02:00</lastmod>
   </url>
   <url>
-    <loc>https://qpetitjean.github.io/cv.html</loc>
-    <lastmod>2022-09-28T16:31:34+02:00</lastmod>
+    <loc>https://qpetitjean.github.io/qpetitjean_distill/cv.html</loc>
+    <lastmod>2022-09-28T17:24:13+02:00</lastmod>
   </url>
   <url>
-    <loc>https://qpetitjean.github.io/</loc>
+    <loc>https://qpetitjean.github.io/qpetitjean_distill/</loc>
     <lastmod>2022-09-27T19:54:39+02:00</lastmod>
   </url>
   <url>
-    <loc>https://qpetitjean.github.io/License.html</loc>
-    <lastmod>2022-09-28T16:40:07+02:00</lastmod>
+    <loc>https://qpetitjean.github.io/qpetitjean_distill/License.html</loc>
+    <lastmod>2022-09-28T17:25:43+02:00</lastmod>
   </url>
   <url>
-    <loc>https://qpetitjean.github.io/news.html</loc>
+    <loc>https://qpetitjean.github.io/qpetitjean_distill/news.html</loc>
     <lastmod>2022-09-20T12:42:58+02:00</lastmod>
   </url>
   <url>
-    <loc>https://qpetitjean.github.io/publications.html</loc>
+    <loc>https://qpetitjean.github.io/qpetitjean_distill/publications.html</loc>
     <lastmod>2022-09-27T10:23:52+02:00</lastmod>
   </url>
   <url>
-    <loc>https://qpetitjean.github.io/posts/09-22-2022-Welcome/</loc>
+    <loc>https://qpetitjean.github.io/qpetitjean_distill/posts/09-22-2022-Welcome/</loc>
     <lastmod>2022-09-28T12:20:40+02:00</lastmod>
   </url>
 </urlset>
