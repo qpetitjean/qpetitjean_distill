@@ -257,6 +257,12 @@ For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_d
     <a href='https://www.univ-toulouse.fr/'><img src="https://www.univ-toulouse.fr/sites/default/files/inline-images/logo_uftmp_horizontale.svg" height="80px" width="155px" /></a></br>
     
     <a href='https://www.cnrs.fr/'><img src="https://www.cnrs.fr/themes/custom/cnrs/logo.svg" height="155px" width="155px" /></a></br>
+    
+    <a href='https://eau-grandsudouest.fr/'><img src="https://aides-territoires-prod.s3.fr-par.scw.cloud/aides-territoires-prod/backers/agence-de-leau-adour-garonne_logo.png" height="99px" width="155px" /></a></br>
+    
+    <a href='https://programmes.insu.cnrs.fr/ec2co/'><img src="https://programmes.insu.cnrs.fr/wp-content/uploads/2019/05/logo-768x322.png" height="65px" width="155px" /></a></br>
+    <a href='https://www.enseignementsup-recherche.gouv.fr/en'><img src="https://www.enseignementsup-recherche.gouv.fr/sites/default/files/site_logo/2022-05/1_MESR_RVB.svg" height="155px" width="155px" /></a></br>
+    
 </td>
   </tr>
 </table>
@@ -295,6 +301,8 @@ For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_d
     <a href='https://www.ubfc.fr/'><img src="https://upload.wikimedia.org/wikipedia/fr/4/49/Logo_UBFC.png" height="72px" width="155px" /></a></br>
     
     <a href='https://www.cnrs.fr/'><img src="https://www.cnrs.fr/themes/custom/cnrs/logo.svg" height="155px" width="155px" /></a></br>
+    
+    <a href='https://www.bourgognefranchecomte.fr/'><img src="https://www.bourgognefranchecomte.fr/themes/bourg/logo.svg" height="117px" width="155px" /></a></br>
     
     <a href='https://www.culture.gouv.fr/en/Regions/Drac-Bourgogne-Franche-Comte'><img src="https://www.culture.gouv.fr/var/culture/storage/images/_aliases/reference/7/3/0/4/3164037-1-fre-FR/LogoMCHP.PNG" height="119px" width="155px" /></a></br>
     
@@ -338,6 +346,9 @@ For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_d
     <a href='https://www.ubfc.fr/'><img src="https://upload.wikimedia.org/wikipedia/fr/4/49/Logo_UBFC.png" height="72px" width="155px" /></a></br>
     
     <a href='https://www.cnrs.fr/'><img src="https://www.cnrs.fr/themes/custom/cnrs/logo.svg" height="155px" width="155px" /></a></br>
+    
+    <a href='https://www.bourgognefranchecomte.fr/'><img src="https://www.bourgognefranchecomte.fr/themes/bourg/logo.svg" height="117px" width="155px" /></a></br>
+    
 </td>
   </tr>
 </table>
