@@ -1145,7 +1145,7 @@ knitr::include_graphics('images/WordCloud_QP.png', dpi = 150)
 
 # Bio
 <p class="plain-text">
-I'm a postdoctoral researcher working on the effects of global changes on various organisms, such as flies <img src="https://icon-library.com/images/fly-icon/fly-icon-29.jpg" height="18px" width="18px" />, snails <img src="https://cdn-icons-png.flaticon.com/512/616/616636.png" height="18px" width="18px" />, and fish `r fontawesome::fa("fish", fill = "#003366")`.
+I'm a postdoctoral researcher working on the effects of global changes on various organisms, such as micro-wasps <img src="https://icon-library.com/images/fly-icon/fly-icon-29.jpg" height="18px" width="18px" />, snails <img src="https://cdn-icons-png.flaticon.com/512/616/616636.png" height="18px" width="18px" />, and fish `r fontawesome::fa("fish", fill = "#003366")`.
 </p> 
 <p class="plain-text">
 `r fontawesome::fa("circle-question", fill = "#358378")` More particularly, I'm investigating how stressors such as temperature changes `r fontawesome::fa("temperature-arrow-up", fill = "#660000")` `r fontawesome::fa("temperature-arrow-down", fill = "#99CCFF")`, pollution `r fontawesome::fa("biohazard", fill = "#FF9900")`, and pathogens `r fontawesome::fa("bacteria", fill = "#330000")` `r fontawesome::fa("viruses", fill = "#330000")` interact and affect populations persistence in the wild. Also, I'm trying to better understand how and why, some individuals can cope with such stressors while others cannot even survive `r fontawesome::fa("skull-crossbones", fill = "#000000")`? 
