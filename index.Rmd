@@ -1139,7 +1139,7 @@ dev.off()
 
 ```
 
-```{r WordCloudDisplay, echo=FALSE, fig.align="center", message=FALSE, warning=FALSE, paged.print=FALSE}
+```{r WordCloudDisplay, echo=FALSE, results='asis', message=FALSE, warning=FALSE, fig.align = 'center', out.width="80%"}
 knitr::include_graphics('images/WordCloud_QP.png', dpi = 150)
 ```
 

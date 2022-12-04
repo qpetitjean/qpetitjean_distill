@@ -304,7 +304,7 @@ table, th, tr, td {
   }
   
 /* Hide the TOC when resized to mobile or tablet:  480px, 768px, 900px */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 992px) {
 #TOC {
     position: relative;
     left: 0;
@@ -317,7 +317,7 @@ table, th, tr, td {
   }
 
 /* No navbar links on mobile except for the title and the nav-toggle */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .distill-site-header a, .distill-site-header .nav-dropdown {
     display: none;
   }

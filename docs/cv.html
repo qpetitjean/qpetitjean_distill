@@ -2451,7 +2451,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     }
     
   /* Hide the TOC when resized to mobile or tablet:  480px, 768px, 900px */
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 992px) {
   #TOC {
       position: relative;
       left: 0;
@@ -2464,7 +2464,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     }
 
   /* No navbar links on mobile except for the title and the nav-toggle */
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 992px) {
     .distill-site-header a, .distill-site-header .nav-dropdown {
       display: none;
     }
@@ -2691,18 +2691,23 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#keywords">Keywords</a></li>
-<li><a href="#education">Education</a></li>
-<li><a href="#research-experience">Research experience</a></li>
-<li><a href="#teaching-supervising">Teaching &amp; supervising</a></li>
-<li><a href="#grants">Grants</a></li>
-<li><a href="#congress-professional-memberships">Congress &amp; Professional memberships</a>
+<li><a href="#keywords" id="toc-keywords">Keywords</a></li>
+<li><a href="#education" id="toc-education">Education</a></li>
+<li><a href="#research-experience" id="toc-research-experience">Research
+experience</a></li>
+<li><a href="#teaching-supervising"
+id="toc-teaching-supervising">Teaching &amp; supervising</a></li>
+<li><a href="#grants" id="toc-grants">Grants</a></li>
+<li><a href="#congress-professional-memberships"
+id="toc-congress-professional-memberships">Congress &amp; Professional
+memberships</a>
 <ul>
-<li><a href="#congress-organization">Congress organization</a></li>
-<li><a href="#membership">Membership</a></li>
+<li><a href="#congress-organization"
+id="toc-congress-organization">Congress organization</a></li>
+<li><a href="#membership" id="toc-membership">Membership</a></li>
 </ul></li>
-<li><a href="#peer-reviews">Peer reviews</a></li>
-<li><a href="#hobbies">Hobbies</a></li>
+<li><a href="#peer-reviews" id="toc-peer-reviews">Peer reviews</a></li>
+<li><a href="#hobbies" id="toc-hobbies">Hobbies</a></li>
 </ul>
 </nav>
 </div>
@@ -2739,38 +2744,71 @@ window.addEventListener('DOMContentLoaded', () => {
 </p>
 <br/>
 <p style="font-family: var(--font-header); font-weight: 700; color: var(--header-color); font-style: bold; font-size:175%;">
-Quentin PETITJEAN, Ph.D <a href="mailto:q.petitjean1@gmail.com"><i class="fa fa-envelope fa-1.5x" aria-hidden="true"></i></a>
+Quentin PETITJEAN,
+Ph.D <a href="mailto:q.petitjean1@gmail.com"><i class="fa fa-envelope fa-1.5x" aria-hidden="true"></i></a>
 </p>
 <div style="height: 0.125rem;">
 <br>
 </div>
 <p class="plain-text">
-<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M64 496C64 504.8 56.75 512 48 512h-32C7.25 512 0 504.8 0 496V32c0-17.75 14.25-32 32-32s32 14.25 32 32V496zM476.3 0c-6.365 0-13.01 1.35-19.34 4.233c-45.69 20.86-79.56 27.94-107.8 27.94c-59.96 0-94.81-31.86-163.9-31.87C160.9 .3055 131.6 4.867 96 15.75v350.5c32-9.984 59.87-14.1 84.85-14.1c73.63 0 124.9 31.78 198.6 31.78c31.91 0 68.02-5.971 111.1-23.09C504.1 355.9 512 344.4 512 332.1V30.73C512 11.1 495.3 0 476.3 0z"/></svg>   Nationalities<br/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg/langfr-225px-Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg.png" height="30px" width="45px" />   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Flag_of_Switzerland_%28Pantone%29.svg/langfr-800px-Flag_of_Switzerland_%28Pantone%29.svg.png" height="30px" width="30px" />
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M64 496C64 504.8 56.75 512 48 512h-32C7.25 512 0 504.8 0 496V32c0-17.75 14.25-32 32-32s32 14.25 32 32V496zM476.3 0c-6.365 0-13.01 1.35-19.34 4.233c-45.69 20.86-79.56 27.94-107.8 27.94c-59.96 0-94.81-31.86-163.9-31.87C160.9 .3055 131.6 4.867 96 15.75v350.5c32-9.984 59.87-14.1 84.85-14.1c73.63 0 124.9 31.78 198.6 31.78c31.91 0 68.02-5.971 111.1-23.09C504.1 355.9 512 344.4 512 332.1V30.73C512 11.1 495.3 0 476.3 0z"/></svg>
+  Nationalities<br/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg/langfr-225px-Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg.png" height="30px" width="45px" />
+ 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Flag_of_Switzerland_%28Pantone%29.svg/langfr-800px-Flag_of_Switzerland_%28Pantone%29.svg.png" height="30px" width="30px" />
 </p>
 <p class="plain-text">
-<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"/></svg>   Present/last institutional address<br/> <a href="https://maps.google.com/maps?z=16&q=institut%2Bsophia%2Bagrobiotech%2Binrae-cnrs-universit%C3%A9%2Bc%C3%B4te%2Bd%27azur%2B400%2Broute%2Bdes%2Bchappes%2Bbp%2B167%2B06903%2Bsophia%2Bantipolis%2Bcedex%2Bfrance"> <small>Institut Sophia Agrobiotech, UMR5254 ISA, INRAE, CNRS, Université Côte d’Azur, Sophia-Antipolis, France.</small></a>
+<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"/></svg>
+  Present/last institutional address<br/>
+<a href="https://maps.google.com/maps?z=16&q=institut%2Bsophia%2Bagrobiotech%2Binrae-cnrs-universit%C3%A9%2Bc%C3%B4te%2Bd%27azur%2B400%2Broute%2Bdes%2Bchappes%2Bbp%2B167%2B06903%2Bsophia%2Bantipolis%2Bcedex%2Bfrance">
+<small>Institut Sophia Agrobiotech, UMR5254 ISA, INRAE, CNRS, Université
+Côte d’Azur, Sophia-Antipolis, France.</small></a>
 </p>
 <hr />
 <h1 id="keywords">Keywords</h1>
 <table style="border: none;">
 <tr>
 <td width="50%">
-<svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M224 64C179.8 64 144 99.82 144 144V192H384C419.3 192 448 220.7 448 256V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V256C0 220.7 28.65 192 64 192H80V144C80 64.47 144.5 0 224 0C281.5 0 331 33.69 354.1 82.27C361.7 98.23 354.9 117.3 338.1 124.9C322.1 132.5 303.9 125.7 296.3 109.7C283.4 82.63 255.9 64 224 64H224zM256 384C273.7 384 288 369.7 288 352C288 334.3 273.7 320 256 320H192C174.3 320 160 334.3 160 352C160 369.7 174.3 384 192 384H256z"/></svg>   Evolutionary-ecotoxicology <br/> <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M224 64C179.8 64 144 99.82 144 144V192H384C419.3 192 448 220.7 448 256V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V256C0 220.7 28.65 192 64 192H80V144C80 64.47 144.5 0 224 0C281.5 0 331 33.69 354.1 82.27C361.7 98.23 354.9 117.3 338.1 124.9C322.1 132.5 303.9 125.7 296.3 109.7C283.4 82.63 255.9 64 224 64H224zM256 384C273.7 384 288 369.7 288 352C288 334.3 273.7 320 256 320H192C174.3 320 160 334.3 160 352C160 369.7 174.3 384 192 384H256z"/></svg>   Eco-physiology <br/> <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M224 64C179.8 64 144 99.82 144 144V192H384C419.3 192 448 220.7 448 256V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V256C0 220.7 28.65 192 64 192H80V144C80 64.47 144.5 0 224 0C281.5 0 331 33.69 354.1 82.27C361.7 98.23 354.9 117.3 338.1 124.9C322.1 132.5 303.9 125.7 296.3 109.7C283.4 82.63 255.9 64 224 64H224zM256 384C273.7 384 288 369.7 288 352C288 334.3 273.7 320 256 320H192C174.3 320 160 334.3 160 352C160 369.7 174.3 384 192 384H256z"/></svg>   Ecology
+<svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M224 64C179.8 64 144 99.82 144 144V192H384C419.3 192 448 220.7 448 256V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V256C0 220.7 28.65 192 64 192H80V144C80 64.47 144.5 0 224 0C281.5 0 331 33.69 354.1 82.27C361.7 98.23 354.9 117.3 338.1 124.9C322.1 132.5 303.9 125.7 296.3 109.7C283.4 82.63 255.9 64 224 64H224zM256 384C273.7 384 288 369.7 288 352C288 334.3 273.7 320 256 320H192C174.3 320 160 334.3 160 352C160 369.7 174.3 384 192 384H256z"/></svg>
+  Evolutionary-ecotoxicology <br/>
+<svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M224 64C179.8 64 144 99.82 144 144V192H384C419.3 192 448 220.7 448 256V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V256C0 220.7 28.65 192 64 192H80V144C80 64.47 144.5 0 224 0C281.5 0 331 33.69 354.1 82.27C361.7 98.23 354.9 117.3 338.1 124.9C322.1 132.5 303.9 125.7 296.3 109.7C283.4 82.63 255.9 64 224 64H224zM256 384C273.7 384 288 369.7 288 352C288 334.3 273.7 320 256 320H192C174.3 320 160 334.3 160 352C160 369.7 174.3 384 192 384H256z"/></svg>
+  Eco-physiology <br/>
+<svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M224 64C179.8 64 144 99.82 144 144V192H384C419.3 192 448 220.7 448 256V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V256C0 220.7 28.65 192 64 192H80V144C80 64.47 144.5 0 224 0C281.5 0 331 33.69 354.1 82.27C361.7 98.23 354.9 117.3 338.1 124.9C322.1 132.5 303.9 125.7 296.3 109.7C283.4 82.63 255.9 64 224 64H224zM256 384C273.7 384 288 369.7 288 352C288 334.3 273.7 320 256 320H192C174.3 320 160 334.3 160 352C160 369.7 174.3 384 192 384H256z"/></svg>
+  Ecology
 </td>
 <td width="50%">
-<svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M224 64C179.8 64 144 99.82 144 144V192H384C419.3 192 448 220.7 448 256V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V256C0 220.7 28.65 192 64 192H80V144C80 64.47 144.5 0 224 0C281.5 0 331 33.69 354.1 82.27C361.7 98.23 354.9 117.3 338.1 124.9C322.1 132.5 303.9 125.7 296.3 109.7C283.4 82.63 255.9 64 224 64H224zM256 384C273.7 384 288 369.7 288 352C288 334.3 273.7 320 256 320H192C174.3 320 160 334.3 160 352C160 369.7 174.3 384 192 384H256z"/></svg>   Multiple stressors <br/> <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M224 64C179.8 64 144 99.82 144 144V192H384C419.3 192 448 220.7 448 256V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V256C0 220.7 28.65 192 64 192H80V144C80 64.47 144.5 0 224 0C281.5 0 331 33.69 354.1 82.27C361.7 98.23 354.9 117.3 338.1 124.9C322.1 132.5 303.9 125.7 296.3 109.7C283.4 82.63 255.9 64 224 64H224zM256 384C273.7 384 288 369.7 288 352C288 334.3 273.7 320 256 320H192C174.3 320 160 334.3 160 352C160 369.7 174.3 384 192 384H256z"/></svg>   Behavior <br/> <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M224 64C179.8 64 144 99.82 144 144V192H384C419.3 192 448 220.7 448 256V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V256C0 220.7 28.65 192 64 192H80V144C80 64.47 144.5 0 224 0C281.5 0 331 33.69 354.1 82.27C361.7 98.23 354.9 117.3 338.1 124.9C322.1 132.5 303.9 125.7 296.3 109.7C283.4 82.63 255.9 64 224 64H224zM256 384C273.7 384 288 369.7 288 352C288 334.3 273.7 320 256 320H192C174.3 320 160 334.3 160 352C160 369.7 174.3 384 192 384H256z"/></svg>   Intraspecific variability
+<svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M224 64C179.8 64 144 99.82 144 144V192H384C419.3 192 448 220.7 448 256V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V256C0 220.7 28.65 192 64 192H80V144C80 64.47 144.5 0 224 0C281.5 0 331 33.69 354.1 82.27C361.7 98.23 354.9 117.3 338.1 124.9C322.1 132.5 303.9 125.7 296.3 109.7C283.4 82.63 255.9 64 224 64H224zM256 384C273.7 384 288 369.7 288 352C288 334.3 273.7 320 256 320H192C174.3 320 160 334.3 160 352C160 369.7 174.3 384 192 384H256z"/></svg>
+  Multiple stressors <br/>
+<svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M224 64C179.8 64 144 99.82 144 144V192H384C419.3 192 448 220.7 448 256V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V256C0 220.7 28.65 192 64 192H80V144C80 64.47 144.5 0 224 0C281.5 0 331 33.69 354.1 82.27C361.7 98.23 354.9 117.3 338.1 124.9C322.1 132.5 303.9 125.7 296.3 109.7C283.4 82.63 255.9 64 224 64H224zM256 384C273.7 384 288 369.7 288 352C288 334.3 273.7 320 256 320H192C174.3 320 160 334.3 160 352C160 369.7 174.3 384 192 384H256z"/></svg>
+  Behavior <br/>
+<svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M224 64C179.8 64 144 99.82 144 144V192H384C419.3 192 448 220.7 448 256V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V256C0 220.7 28.65 192 64 192H80V144C80 64.47 144.5 0 224 0C281.5 0 331 33.69 354.1 82.27C361.7 98.23 354.9 117.3 338.1 124.9C322.1 132.5 303.9 125.7 296.3 109.7C283.4 82.63 255.9 64 224 64H224zM256 384C273.7 384 288 369.7 288 352C288 334.3 273.7 320 256 320H192C174.3 320 160 334.3 160 352C160 369.7 174.3 384 192 384H256z"/></svg>
+  Intraspecific variability
 </td>
 </tr>
 </table>
 <hr />
 <h1 id="education">Education</h1>
 <p class="plain-text" style="text-align: left">
-<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M623.1 136.9l-282.7-101.2c-13.73-4.91-28.7-4.91-42.43 0L16.05 136.9C6.438 140.4 0 149.6 0 160s6.438 19.65 16.05 23.09L76.07 204.6c-11.89 15.8-20.26 34.16-24.55 53.95C40.05 263.4 32 274.8 32 288c0 9.953 4.814 18.49 11.94 24.36l-24.83 149C17.48 471.1 25 480 34.89 480H93.11c9.887 0 17.41-8.879 15.78-18.63l-24.83-149C91.19 306.5 96 297.1 96 288c0-10.29-5.174-19.03-12.72-24.89c4.252-17.76 12.88-33.82 24.94-47.03l190.6 68.23c13.73 4.91 28.7 4.91 42.43 0l282.7-101.2C633.6 179.6 640 170.4 640 160S633.6 140.4 623.1 136.9zM351.1 314.4C341.7 318.1 330.9 320 320 320c-10.92 0-21.69-1.867-32-5.555L142.8 262.5L128 405.3C128 446.6 213.1 480 320 480c105.1 0 192-33.4 192-74.67l-14.78-142.9L351.1 314.4z"/></svg>   2019 | <a href='https://www.univ-tlse3.fr/'>Paul Sabatier University—UPS</a> | Ph.D in environmental sciences/functional ecology <br/> <svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M623.1 136.9l-282.7-101.2c-13.73-4.91-28.7-4.91-42.43 0L16.05 136.9C6.438 140.4 0 149.6 0 160s6.438 19.65 16.05 23.09L76.07 204.6c-11.89 15.8-20.26 34.16-24.55 53.95C40.05 263.4 32 274.8 32 288c0 9.953 4.814 18.49 11.94 24.36l-24.83 149C17.48 471.1 25 480 34.89 480H93.11c9.887 0 17.41-8.879 15.78-18.63l-24.83-149C91.19 306.5 96 297.1 96 288c0-10.29-5.174-19.03-12.72-24.89c4.252-17.76 12.88-33.82 24.94-47.03l190.6 68.23c13.73 4.91 28.7 4.91 42.43 0l282.7-101.2C633.6 179.6 640 170.4 640 160S633.6 140.4 623.1 136.9zM351.1 314.4C341.7 318.1 330.9 320 320 320c-10.92 0-21.69-1.867-32-5.555L142.8 262.5L128 405.3C128 446.6 213.1 480 320 480c105.1 0 192-33.4 192-74.67l-14.78-142.9L351.1 314.4z"/></svg>   2016 | <a href='https://www.ubfc.fr/'>Bourgogne-Franche-Comté University—UBFC</a> | M.Sc. in environmental sciences/ecotoxicology <br/> <svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M623.1 136.9l-282.7-101.2c-13.73-4.91-28.7-4.91-42.43 0L16.05 136.9C6.438 140.4 0 149.6 0 160s6.438 19.65 16.05 23.09L76.07 204.6c-11.89 15.8-20.26 34.16-24.55 53.95C40.05 263.4 32 274.8 32 288c0 9.953 4.814 18.49 11.94 24.36l-24.83 149C17.48 471.1 25 480 34.89 480H93.11c9.887 0 17.41-8.879 15.78-18.63l-24.83-149C91.19 306.5 96 297.1 96 288c0-10.29-5.174-19.03-12.72-24.89c4.252-17.76 12.88-33.82 24.94-47.03l190.6 68.23c13.73 4.91 28.7 4.91 42.43 0l282.7-101.2C633.6 179.6 640 170.4 640 160S633.6 140.4 623.1 136.9zM351.1 314.4C341.7 318.1 330.9 320 320 320c-10.92 0-21.69-1.867-32-5.555L142.8 262.5L128 405.3C128 446.6 213.1 480 320 480c105.1 0 192-33.4 192-74.67l-14.78-142.9L351.1 314.4z"/></svg>   2014 | <a href='https://www.ubfc.fr/'>Bourgogne-Franche-Comté University—UBFC</a> | B.Sc. in biology &amp; ecology
+<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M623.1 136.9l-282.7-101.2c-13.73-4.91-28.7-4.91-42.43 0L16.05 136.9C6.438 140.4 0 149.6 0 160s6.438 19.65 16.05 23.09L76.07 204.6c-11.89 15.8-20.26 34.16-24.55 53.95C40.05 263.4 32 274.8 32 288c0 9.953 4.814 18.49 11.94 24.36l-24.83 149C17.48 471.1 25 480 34.89 480H93.11c9.887 0 17.41-8.879 15.78-18.63l-24.83-149C91.19 306.5 96 297.1 96 288c0-10.29-5.174-19.03-12.72-24.89c4.252-17.76 12.88-33.82 24.94-47.03l190.6 68.23c13.73 4.91 28.7 4.91 42.43 0l282.7-101.2C633.6 179.6 640 170.4 640 160S633.6 140.4 623.1 136.9zM351.1 314.4C341.7 318.1 330.9 320 320 320c-10.92 0-21.69-1.867-32-5.555L142.8 262.5L128 405.3C128 446.6 213.1 480 320 480c105.1 0 192-33.4 192-74.67l-14.78-142.9L351.1 314.4z"/></svg>
+  2019 | <a href='https://www.univ-tlse3.fr/'>Paul Sabatier
+University—UPS</a> | Ph.D in environmental sciences/functional ecology
+<br/>
+<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M623.1 136.9l-282.7-101.2c-13.73-4.91-28.7-4.91-42.43 0L16.05 136.9C6.438 140.4 0 149.6 0 160s6.438 19.65 16.05 23.09L76.07 204.6c-11.89 15.8-20.26 34.16-24.55 53.95C40.05 263.4 32 274.8 32 288c0 9.953 4.814 18.49 11.94 24.36l-24.83 149C17.48 471.1 25 480 34.89 480H93.11c9.887 0 17.41-8.879 15.78-18.63l-24.83-149C91.19 306.5 96 297.1 96 288c0-10.29-5.174-19.03-12.72-24.89c4.252-17.76 12.88-33.82 24.94-47.03l190.6 68.23c13.73 4.91 28.7 4.91 42.43 0l282.7-101.2C633.6 179.6 640 170.4 640 160S633.6 140.4 623.1 136.9zM351.1 314.4C341.7 318.1 330.9 320 320 320c-10.92 0-21.69-1.867-32-5.555L142.8 262.5L128 405.3C128 446.6 213.1 480 320 480c105.1 0 192-33.4 192-74.67l-14.78-142.9L351.1 314.4z"/></svg>
+  2016 | <a href='https://www.ubfc.fr/'>Bourgogne-Franche-Comté
+University—UBFC</a> | M.Sc. in environmental sciences/ecotoxicology
+<br/>
+<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M623.1 136.9l-282.7-101.2c-13.73-4.91-28.7-4.91-42.43 0L16.05 136.9C6.438 140.4 0 149.6 0 160s6.438 19.65 16.05 23.09L76.07 204.6c-11.89 15.8-20.26 34.16-24.55 53.95C40.05 263.4 32 274.8 32 288c0 9.953 4.814 18.49 11.94 24.36l-24.83 149C17.48 471.1 25 480 34.89 480H93.11c9.887 0 17.41-8.879 15.78-18.63l-24.83-149C91.19 306.5 96 297.1 96 288c0-10.29-5.174-19.03-12.72-24.89c4.252-17.76 12.88-33.82 24.94-47.03l190.6 68.23c13.73 4.91 28.7 4.91 42.43 0l282.7-101.2C633.6 179.6 640 170.4 640 160S633.6 140.4 623.1 136.9zM351.1 314.4C341.7 318.1 330.9 320 320 320c-10.92 0-21.69-1.867-32-5.555L142.8 262.5L128 405.3C128 446.6 213.1 480 320 480c105.1 0 192-33.4 192-74.67l-14.78-142.9L351.1 314.4z"/></svg>
+  2014 | <a href='https://www.ubfc.fr/'>Bourgogne-Franche-Comté
+University—UBFC</a> | B.Sc. in biology &amp; ecology
 </p>
 <hr />
 <h1 id="research-experience">Research experience</h1>
 <p class="plain-text">
-<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M320 336c0 8.844-7.156 16-16 16h-96C199.2 352 192 344.8 192 336V288H0v144C0 457.6 22.41 480 48 480h416c25.59 0 48-22.41 48-48V288h-192V336zM464 96H384V48C384 22.41 361.6 0 336 0h-160C150.4 0 128 22.41 128 48V96H48C22.41 96 0 118.4 0 144V256h512V144C512 118.4 489.6 96 464 96zM336 96h-160V48h160V96z"/></svg>   Mars 2021 - October 2022 | Postdoctoral researcher | <a href='https://www6.paca.inrae.fr/institut-sophia-agrobiotech'>National Research Institute for Agriculture, Food and Environment—INRAE</a>, Sophia-Antipolis, FR
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M320 336c0 8.844-7.156 16-16 16h-96C199.2 352 192 344.8 192 336V288H0v144C0 457.6 22.41 480 48 480h416c25.59 0 48-22.41 48-48V288h-192V336zM464 96H384V48C384 22.41 361.6 0 336 0h-160C150.4 0 128 22.41 128 48V96H48C22.41 96 0 118.4 0 144V256h512V144C512 118.4 489.6 96 464 96zM336 96h-160V48h160V96z"/></svg>
+  Mars 2021 - October 2022 | Postdoctoral researcher |
+<a href='https://www6.paca.inrae.fr/institut-sophia-agrobiotech'>National
+Research Institute for Agriculture, Food and Environment—INRAE</a>,
+Sophia-Antipolis, FR
 </p>
 <details>
 <summary class="summary">
@@ -2780,18 +2818,53 @@ Details
 <tr>
 <td style="width: 80%; vertical-align: top;">
 <p class="detailed-text">
-<em><u>Title:</u> «Study of intraspecific variability and thermal adaptation traits in parasitic micro-wasps using computer-vision approaches».<br/> <u>Supervisor(s):</u> Dr. Vincent CALCAGNO.</em><br/><br/> Following my previous postdoctoral experience performing lab (DNA extractions – PCR) and bioinformatics analyses, my growing interest in the intraspecific variability of responses to global changes guided me to join <a href='https://www6.paca.inrae.fr/institut-sophia-agrobiotech'>Institut Sophia Agrobiotech (ISA)</a>.<br/><br/> More particularly, I joined <a href='https://vcalcagnoresearch.wordpress.com/'>Vincent CALCAGNO</a>’s lab to investigate the variability in activity and movement among insect populations facing temperature changes. I was involved in the <a href='https://ecophytopic.fr/recherche-innovation/proteger/projet-bidime'>BIDIME project (ANR)</a> targeted at developing innovative biological control solutions with insects, and transfer them to farmers and land managers. I collaborated with <a href='https://fr.linkedin.com/in/michela-ion-scotta'>Michela ION SCOTTA</a>, who reared 35 populations of small parasitic micro-wasps (genus <em>Trichogramma</em>) that were sampled in France along a latitudinal gradient. Michela also performed experiments in which each population was subjected to steady decreases/increases in temperature (over 2 hours, see fig. <a href="#fig:Ramps">1</a>).
+<em><u>Title:</u> «Study of intraspecific variability and thermal
+adaptation traits in parasitic micro-wasps using computer-vision
+approaches».<br/> <u>Supervisor(s):</u> Dr. Vincent
+CALCAGNO.</em><br/><br/> Following my previous postdoctoral experience
+performing lab (DNA extractions – PCR) and bioinformatics analyses, my
+growing interest in the intraspecific variability of responses to global
+changes guided me to join
+<a href='https://www6.paca.inrae.fr/institut-sophia-agrobiotech'>Institut
+Sophia Agrobiotech (ISA)</a>.<br/><br/> More particularly, I joined
+<a href='https://vcalcagnoresearch.wordpress.com/'>Vincent
+CALCAGNO</a>’s lab to investigate the variability in activity and
+movement among insect populations facing temperature changes. I was
+involved in the
+<a href='https://ecophytopic.fr/recherche-innovation/proteger/projet-bidime'>BIDIME
+project (ANR)</a> targeted at developing innovative biological control
+solutions with insects, and transfer them to farmers and land managers.
+I collaborated with
+<a href='https://fr.linkedin.com/in/michela-ion-scotta'>Michela ION
+SCOTTA</a>, who reared 35 populations of small parasitic micro-wasps
+(genus <em>Trichogramma</em>) that were sampled in France along a
+latitudinal gradient. Michela also performed experiments in which each
+population was subjected to steady decreases/increases in temperature
+(over 2 hours, see fig. <a href="#fig:Ramps">1</a>).
 </p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:Ramps"></span>
 <img src="cv_files/figure-html5/Ramps-1.png" alt="Temperature ramps over which micro-wasps movements were recorded and analyzed." width="90%" />
 <p class="caption">
-Figure 1: Temperature ramps over which micro-wasps movements were recorded and analyzed.
+Figure 1: Temperature ramps over which micro-wasps movements were
+recorded and analyzed.
 </p>
 </div>
 </div>
 <p class="detailed-text">
-The experiments were video-recorded, and my task was to use video-tracking solutions to quantify insect movements and their changes in response to temperature ramps.<br/> I analyzed the movements of the 35 wasp populations to test for variability in thermal biology and activity patterns. My aim was to uncover patterns of local adaptation (i.e., relationship between thermal resistance and the bioclimatic area of the origin of the populations) and test for adaptive trade-offs between resistance to cold and warm temperatures.<br/><br/> This work also inspired the development of an <svg aria-hidden="true" role="img" viewBox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"/></svg> package (MoveR) to easily process, filter, clean and analyze movement data obtained from video-tracking.<br/><br/> Stay tuned for upcoming release.
+The experiments were video-recorded, and my task was to use
+video-tracking solutions to quantify insect movements and their changes
+in response to temperature ramps.<br/> I analyzed the movements of the
+35 wasp populations to test for variability in thermal biology and
+activity patterns. My aim was to uncover patterns of local adaptation
+(i.e., relationship between thermal resistance and the bioclimatic area
+of the origin of the populations) and test for adaptive trade-offs
+between resistance to cold and warm temperatures.<br/><br/> This work
+also inspired the development of an
+<svg aria-hidden="true" role="img" viewBox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"/></svg>
+package (MoveR) to easily process, filter, clean and analyze movement
+data obtained from video-tracking.<br/><br/> Stay tuned for upcoming
+release.
 </p>
 </td>
 <td style="width: 20%; vertical-align: top;">
@@ -2809,7 +2882,10 @@ The experiments were video-recorded, and my task was to use video-tracking solut
 </tr>
 </table>
 <p class="detailed-text" style="text-align: center">
-<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M256 512c141.4 0 256-114.6 256-256s-114.6-256-256-256C114.6 0 0 114.6 0 256S114.6 512 256 512zM129.2 265.9C131.7 259.9 137.5 256 144 256h64V160c0-17.67 14.33-32 32-32h32c17.67 0 32 14.33 32 32v96h64c6.469 0 12.31 3.891 14.78 9.875c2.484 5.984 1.109 12.86-3.469 17.44l-112 112c-6.248 6.248-16.38 6.248-22.62 0l-112-112C128.1 278.7 126.7 271.9 129.2 265.9z"/></svg> For more insight about what I did within the project check the video below <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M256 512c141.4 0 256-114.6 256-256s-114.6-256-256-256C114.6 0 0 114.6 0 256S114.6 512 256 512zM129.2 265.9C131.7 259.9 137.5 256 144 256h64V160c0-17.67 14.33-32 32-32h32c17.67 0 32 14.33 32 32v96h64c6.469 0 12.31 3.891 14.78 9.875c2.484 5.984 1.109 12.86-3.469 17.44l-112 112c-6.248 6.248-16.38 6.248-22.62 0l-112-112C128.1 278.7 126.7 271.9 129.2 265.9z"/></svg>
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M256 512c141.4 0 256-114.6 256-256s-114.6-256-256-256C114.6 0 0 114.6 0 256S114.6 512 256 512zM129.2 265.9C131.7 259.9 137.5 256 144 256h64V160c0-17.67 14.33-32 32-32h32c17.67 0 32 14.33 32 32v96h64c6.469 0 12.31 3.891 14.78 9.875c2.484 5.984 1.109 12.86-3.469 17.44l-112 112c-6.248 6.248-16.38 6.248-22.62 0l-112-112C128.1 278.7 126.7 271.9 129.2 265.9z"/></svg>
+For more insight about what I did within the project check the video
+below
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M256 512c141.4 0 256-114.6 256-256s-114.6-256-256-256C114.6 0 0 114.6 0 256S114.6 512 256 512zM129.2 265.9C131.7 259.9 137.5 256 144 256h64V160c0-17.67 14.33-32 32-32h32c17.67 0 32 14.33 32 32v96h64c6.469 0 12.31 3.891 14.78 9.875c2.484 5.984 1.109 12.86-3.469 17.44l-112 112c-6.248 6.248-16.38 6.248-22.62 0l-112-112C128.1 278.7 126.7 271.9 129.2 265.9z"/></svg>
 </p>
 <div class="video-container">
 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Y9ltf08Iqb4" title="Video-phenotyping of thermal performances in minute wasps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
@@ -2817,7 +2893,10 @@ The experiments were video-recorded, and my task was to use video-tracking solut
 </div>
 </details>
 <p class="plain-text">
-<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M320 336c0 8.844-7.156 16-16 16h-96C199.2 352 192 344.8 192 336V288H0v144C0 457.6 22.41 480 48 480h416c25.59 0 48-22.41 48-48V288h-192V336zM464 96H384V48C384 22.41 361.6 0 336 0h-160C150.4 0 128 22.41 128 48V96H48C22.41 96 0 118.4 0 144V256h512V144C512 118.4 489.6 96 464 96zM336 96h-160V48h160V96z"/></svg>   January 2020 - December 2021 | Postdoctoral researcher | <a href='https://www.inp-toulouse.fr/fr/index.html'>National Polytechnic Institute—INP</a>, Toulouse, FR
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M320 336c0 8.844-7.156 16-16 16h-96C199.2 352 192 344.8 192 336V288H0v144C0 457.6 22.41 480 48 480h416c25.59 0 48-22.41 48-48V288h-192V336zM464 96H384V48C384 22.41 361.6 0 336 0h-160C150.4 0 128 22.41 128 48V96H48C22.41 96 0 118.4 0 144V256h512V144C512 118.4 489.6 96 464 96zM336 96h-160V48h160V96z"/></svg>
+  January 2020 - December 2021 | Postdoctoral researcher |
+<a href='https://www.inp-toulouse.fr/fr/index.html'>National Polytechnic
+Institute—INP</a>, Toulouse, FR
 </p>
 <details>
 <summary class="summary">
@@ -2827,7 +2906,38 @@ Details
 <tr>
 <td style="width: 80%; vertical-align: top;">
 <p class="detailed-text">
-<em><u>Title:</u> «Gut microbiota shifts among freshwater fish populations exposed to multiple stressors under lab and field conditions».<br/> <u>Supervisor(s):</u> Dr. Lisa JACQUIN, Dr. Joël WHITE &amp; Pr. Pascal LAFFAILLE.</em><br/><br/> Following my Ph.D. defense, I was still Intending to increase the integration of multiple biological levels of organization in studying responses to multiple stressors. <br/><br/> Since the literature highlighting the close relationships between physiological and behavioral responses and gut microbiota composition was flourishing, my supervisors (<a href='https://sites.google.com/site/jacquinlisa2'>Lisa JACQUIN</a>, <a href='https://scholar.google.com/citations?hl=fr&user=eI53HscAAAAJ&view_op=list_works&sortby=pubdate'>Séverine JEAN</a> and <a href='https://scholar.google.fr/citations?hl=fr&user=qMa0F0gAAAAJ&view_op=list_works&sortby=pubdate'>Pascal LAFFAILLE</a>) and I started a collaboration with <a href='https://whitejoel.weebly.com/'>Joël WHITE</a> to investigate how multiples stressors may affect gut microbiota composition among several populations of wild fish. <br/><br/> Fortunately, during my Ph.D., we collected the gut of all the fish involved in laboratory and reciprocal transplant experiments testing for the combined effect of trace metal contamination and immune challenge. This provided a fair amount of samples to investigate the intraspecific variability of gut microbiota composition in wild fish populations exposed to environmentally relevant stressors. Also, it allowed uncovering potential links between fish physiological and/or behavioral responses already measured during my Ph.D. and gut microbiota composition. <br/><br/> While the COVID-19 pandemic knocked at the world’s door, we were coerced to delay laboratory analyses (DNA extractions – PCR – NGS). Fortunately, I just had enough time to finish lab’ and bioinformatic analyses before leaving this position for the next one. Currently, thanks to Margarita Granada (a Second-year master’s student), final statistical analyses and writing are on the way! <br/><br/> Stay tuned for further news to come.
+<em><u>Title:</u> «Gut microbiota shifts among freshwater fish
+populations exposed to multiple stressors under lab and field
+conditions».<br/> <u>Supervisor(s):</u> Dr. Lisa JACQUIN, Dr. Joël WHITE
+&amp; Pr. Pascal LAFFAILLE.</em><br/><br/> Following my Ph.D. defense, I
+was still Intending to increase the integration of multiple biological
+levels of organization in studying responses to multiple stressors.
+<br/><br/> Since the literature highlighting the close relationships
+between physiological and behavioral responses and gut microbiota
+composition was flourishing, my supervisors
+(<a href='https://sites.google.com/site/jacquinlisa2'>Lisa JACQUIN</a>,
+<a href='https://scholar.google.com/citations?hl=fr&user=eI53HscAAAAJ&view_op=list_works&sortby=pubdate'>Séverine
+JEAN</a> and
+<a href='https://scholar.google.fr/citations?hl=fr&user=qMa0F0gAAAAJ&view_op=list_works&sortby=pubdate'>Pascal
+LAFFAILLE</a>) and I started a collaboration with
+<a href='https://whitejoel.weebly.com/'>Joël WHITE</a> to investigate
+how multiples stressors may affect gut microbiota composition among
+several populations of wild fish. <br/><br/> Fortunately, during my
+Ph.D., we collected the gut of all the fish involved in laboratory and
+reciprocal transplant experiments testing for the combined effect of
+trace metal contamination and immune challenge. This provided a fair
+amount of samples to investigate the intraspecific variability of gut
+microbiota composition in wild fish populations exposed to
+environmentally relevant stressors. Also, it allowed uncovering
+potential links between fish physiological and/or behavioral responses
+already measured during my Ph.D. and gut microbiota composition.
+<br/><br/> While the COVID-19 pandemic knocked at the world’s door, we
+were coerced to delay laboratory analyses (DNA extractions – PCR – NGS).
+Fortunately, I just had enough time to finish lab’ and bioinformatic
+analyses before leaving this position for the next one. Currently,
+thanks to Margarita Granada (a Second-year master’s student), final
+statistical analyses and writing are on the way! <br/><br/> Stay tuned
+for further news to come.
 </p>
 </p>
 </td>
@@ -2843,7 +2953,10 @@ Details
 </table>
 </details>
 <p class="plain-text">
-<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M320 336c0 8.844-7.156 16-16 16h-96C199.2 352 192 344.8 192 336V288H0v144C0 457.6 22.41 480 48 480h416c25.59 0 48-22.41 48-48V288h-192V336zM464 96H384V48C384 22.41 361.6 0 336 0h-160C150.4 0 128 22.41 128 48V96H48C22.41 96 0 118.4 0 144V256h512V144C512 118.4 489.6 96 464 96zM336 96h-160V48h160V96z"/></svg>   October 2016 - December 2019 | Ph.D candidate | <a href='https://www.univ-tlse3.fr/'>Paul Sabatier University—UPS</a>, Toulouse, FR
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M320 336c0 8.844-7.156 16-16 16h-96C199.2 352 192 344.8 192 336V288H0v144C0 457.6 22.41 480 48 480h416c25.59 0 48-22.41 48-48V288h-192V336zM464 96H384V48C384 22.41 361.6 0 336 0h-160C150.4 0 128 22.41 128 48V96H48C22.41 96 0 118.4 0 144V256h512V144C512 118.4 489.6 96 464 96zM336 96h-160V48h160V96z"/></svg>
+  October 2016 - December 2019 | Ph.D candidate |
+<a href='https://www.univ-tlse3.fr/'>Paul Sabatier University—UPS</a>,
+Toulouse, FR
 </p>
 <details>
 <summary class="summary">
@@ -2853,25 +2966,79 @@ Details
 <tr>
 <td style="width: 80%; vertical-align: top;">
 <p class="detailed-text">
-<em><u>Title:</u> «Variability of responses among freshwater fish populations exposed to multiple stressors».<br/> <u>Supervisor(s):</u> Dr. Lisa JACQUIN, Dr. Séverine JEAN &amp; Pr. Pascal LAFFAILLE.</em><br/><br/> Freshly Graduated from Bourgogne-Franche-Comté University with a master’s in environmental sciences/ecotoxicology, I was lucky enough to work with very supportive people on stimulating and interdisciplinary projects (see my previous experiences below). Briefly, I was working on transfer, fate, and effects of contaminants on laboratory-raised organisms when new exciting questions arose. For example, could the outcomes of contaminants exposure differ according to the origin of the populations? <br/>Focusing on this question would imply working with wild populations. Still, in the wild, organisms are not only exposed to contaminants but rather to a combination of stressful conditions such as temperature changes or pathogens. This brings me to drill into evolutionary ecology and intraspecific variability to better understand how multiple stressors interact and whether the outcome of stressors exposure may differ among populations.<br/><br/> Accordingly, I started a Ph.D. program with <a href='https://sites.google.com/site/jacquinlisa2'>Lisa JACQUIN</a>, <a href='https://scholar.google.com/citations?hl=fr&user=eI53HscAAAAJ&view_op=list_works&sortby=pubdate'>Séverine JEAN</a> and <a href='https://scholar.google.fr/citations?hl=fr&user=qMa0F0gAAAAJ&view_op=list_works&sortby=pubdate'>Pascal LAFFAILLE</a> to investigate the intraspecific variability of responses to multiple stressors among wild fish populations (<em>Gobio occitaniae</em>) and across levels of biological organization.<br/><br/> To tackle these aims, I used complementary approaches (see fig. <a href="#fig:PhDApproaches">2</a> below) such as the analysis of large datasets collated in the field to uncover potential relationships between stressors exposure and fish health <a href='https://qpetitjean.github.io/qpetitjean_distill/publications.html#section-1'>(Petitjean et al., 2020)</a>. But also, full factorial design conducted in the lab to identify causal link between stressors exposure and plastic responses of fish from several populuations <a href='https://qpetitjean.github.io/qpetitjean_distill/publications.html#section-1'>(Petitjean et al., 2020;</a> <a href='https://qpetitjean.github.io/qpetitjean_distill/publications.html#section'> Petitjean et al., 2021)</a>. Finally, I performed a reciprocal transplant experiment in the field to unveil potential pattern of local adaptation to stressors exposure (Petitjean et al., under review).<br/>
+<em><u>Title:</u> «Variability of responses among freshwater fish
+populations exposed to multiple stressors».<br/> <u>Supervisor(s):</u>
+Dr. Lisa JACQUIN, Dr. Séverine JEAN &amp; Pr. Pascal
+LAFFAILLE.</em><br/><br/> Freshly Graduated from Bourgogne-Franche-Comté
+University with a master’s in environmental sciences/ecotoxicology, I
+was lucky enough to work with very supportive people on stimulating and
+interdisciplinary projects (see my previous experiences below). Briefly,
+I was working on transfer, fate, and effects of contaminants on
+laboratory-raised organisms when new exciting questions arose. For
+example, could the outcomes of contaminants exposure differ according to
+the origin of the populations? <br/>Focusing on this question would
+imply working with wild populations. Still, in the wild, organisms are
+not only exposed to contaminants but rather to a combination of
+stressful conditions such as temperature changes or pathogens. This
+brings me to drill into evolutionary ecology and intraspecific
+variability to better understand how multiple stressors interact and
+whether the outcome of stressors exposure may differ among
+populations.<br/><br/> Accordingly, I started a Ph.D. program with
+<a href='https://sites.google.com/site/jacquinlisa2'>Lisa JACQUIN</a>,
+<a href='https://scholar.google.com/citations?hl=fr&user=eI53HscAAAAJ&view_op=list_works&sortby=pubdate'>Séverine
+JEAN</a> and
+<a href='https://scholar.google.fr/citations?hl=fr&user=qMa0F0gAAAAJ&view_op=list_works&sortby=pubdate'>Pascal
+LAFFAILLE</a> to investigate the intraspecific variability of responses
+to multiple stressors among wild fish populations (<em>Gobio
+occitaniae</em>) and across levels of biological organization.<br/><br/>
+To tackle these aims, I used complementary approaches (see
+fig. <a href="#fig:PhDApproaches">2</a> below) such as the analysis of large
+datasets collated in the field to uncover potential relationships
+between stressors exposure and fish health
+<a href='https://qpetitjean.github.io/qpetitjean_distill/publications.html#section-1'>(Petitjean
+et al., 2020)</a>. But also, full factorial design conducted in the lab
+to identify causal link between stressors exposure and plastic responses
+of fish from several populuations
+<a href='https://qpetitjean.github.io/qpetitjean_distill/publications.html#section-1'>(Petitjean
+et al., 2020;</a>
+<a href='https://qpetitjean.github.io/qpetitjean_distill/publications.html#section'>
+Petitjean et al., 2021)</a>. Finally, I performed a reciprocal
+transplant experiment in the field to unveil potential pattern of local
+adaptation to stressors exposure (Petitjean et al., under review).<br/>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:PhDApproaches"></span>
 <img src="images/PhDApproaches.png" alt="Summary of the research questions investigated during my Ph.D. and the complementary approaches used to tackle them." width="90%" />
 <p class="caption">
-Figure 2: Summary of the research questions investigated during my Ph.D. and the complementary approaches used to tackle them.
+Figure 2: Summary of the research questions investigated
+during my Ph.D. and the complementary approaches used to tackle them.
 </p>
 </div>
 </div>
-Briefly, we found that combinations of stressors resulted in different outcomes than exposure to single stressors. Still, interactions were antagonistic, synergistic, or additive depending on the traits and level of biological organization. Accordingly, among the numerous traits measured, behavior appeared to be the most sensitive to stressors exposure. Also, populations’ responses to stressors differed according to their origin. By using reciprocal transplant approaches, we found that some populations were more resistant to stream contamination with no apparent costs (no trade-off). the results of my Ph.D suggest that we need to rely on integrative and interdisciplinary approaches to improve our knowledge of the effect of multiple stressors and, more generally, global changes on populations’ adaptive potential and vulnerability (see fig. <a href="#fig:PhDVensDiag">3</a>).
+Briefly, we found that combinations of stressors resulted in different
+outcomes than exposure to single stressors. Still, interactions were
+antagonistic, synergistic, or additive depending on the traits and level
+of biological organization. Accordingly, among the numerous traits
+measured, behavior appeared to be the most sensitive to stressors
+exposure. Also, populations’ responses to stressors differed according
+to their origin. By using reciprocal transplant approaches, we found
+that some populations were more resistant to stream contamination with
+no apparent costs (no trade-off). the results of my Ph.D suggest that we
+need to rely on integrative and interdisciplinary approaches to improve
+our knowledge of the effect of multiple stressors and, more generally,
+global changes on populations’ adaptive potential and vulnerability (see
+fig. <a href="#fig:PhDVensDiag">3</a>).
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:PhDVensDiag"></span>
 <img src="images/PhDVensDiag.png" alt="Summary of the research questions investigated during during my Ph.D. and the complementary approaches used to tackle them." width="65%" />
 <p class="caption">
-Figure 3: Summary of the research questions investigated during during my Ph.D. and the complementary approaches used to tackle them.
+Figure 3: Summary of the research questions investigated during
+during my Ph.D. and the complementary approaches used to tackle them.
 </p>
 </div>
 </div>
-For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_distill/publications.html#section-2'>Publication section</a> of this website.
+For more information, see the
+<a href='https://qpetitjean.github.io/qpetitjean_distill/publications.html#section-2'>Publication
+section</a> of this website.
 </p>
 </td>
 <td style="width: 20%; vertical-align: top;">
@@ -2881,13 +3048,17 @@ For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_d
 <p><a href='https://www.univ-toulouse.fr/'><img src="https://www.univ-toulouse.fr/sites/default/files/inline-images/logo_uftmp_horizontale.svg" height="80px" width="155px" /></a></br></p>
 <p><a href='https://www.cnrs.fr/'><img src="https://www.cnrs.fr/themes/custom/cnrs/logo.svg" height="155px" width="155px" /></a></br></p>
 <p><a href='https://eau-grandsudouest.fr/'><img src="https://aides-territoires-prod.s3.fr-par.scw.cloud/aides-territoires-prod/backers/agence-de-leau-adour-garonne_logo.png" height="99px" width="155px" /></a></br></p>
-<p><a href='https://programmes.insu.cnrs.fr/ec2co/'><img src="https://programmes.insu.cnrs.fr/wp-content/uploads/2019/05/logo-768x322.png" height="65px" width="155px" /></a></br> <a href='https://www.enseignementsup-recherche.gouv.fr/en'><img src="https://www.enseignementsup-recherche.gouv.fr/sites/default/files/site_logo/2022-05/1_MESR_RVB.svg" height="155px" width="155px" /></a></br></p>
+<p><a href='https://programmes.insu.cnrs.fr/ec2co/'><img src="https://programmes.insu.cnrs.fr/wp-content/uploads/2019/05/logo-768x322.png" height="65px" width="155px" /></a></br>
+<a href='https://www.enseignementsup-recherche.gouv.fr/en'><img src="https://www.enseignementsup-recherche.gouv.fr/sites/default/files/site_logo/2022-05/1_MESR_RVB.svg" height="155px" width="155px" /></a></br></p>
 </td>
 </tr>
 </table>
 </details>
 <p class="plain-text">
-<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M320 336c0 8.844-7.156 16-16 16h-96C199.2 352 192 344.8 192 336V288H0v144C0 457.6 22.41 480 48 480h416c25.59 0 48-22.41 48-48V288h-192V336zM464 96H384V48C384 22.41 361.6 0 336 0h-160C150.4 0 128 22.41 128 48V96H48C22.41 96 0 118.4 0 144V256h512V144C512 118.4 489.6 96 464 96zM336 96h-160V48h160V96z"/></svg>   February 2016 - July 2016 | M.Sc. candidate | <a href='https://www.ubfc.fr/'>Bourgogne-Franche-Comté University—UBFC</a>, Besançon, FR
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M320 336c0 8.844-7.156 16-16 16h-96C199.2 352 192 344.8 192 336V288H0v144C0 457.6 22.41 480 48 480h416c25.59 0 48-22.41 48-48V288h-192V336zM464 96H384V48C384 22.41 361.6 0 336 0h-160C150.4 0 128 22.41 128 48V96H48C22.41 96 0 118.4 0 144V256h512V144C512 118.4 489.6 96 464 96zM336 96h-160V48h160V96z"/></svg>
+  February 2016 - July 2016 | M.Sc. candidate |
+<a href='https://www.ubfc.fr/'>Bourgogne-Franche-Comté
+University—UBFC</a>, Besançon, FR
 </p>
 <details>
 <summary class="summary">
@@ -2897,16 +3068,68 @@ Details
 <tr>
 <td style="width: 80%; vertical-align: top;">
 <p class="detailed-text">
-<em><u>Title:</u> «Impacts of metallurgical wastes on soil contamination: transfer and fate of trace metal elements».<br/> <u>Supervisor(s):</u> Dr. Annette DE VAUFLEURY &amp; Dr. Frédéric GIMBERT.</em><br/><br/> During my second year of my master’s, I was still motivated to strengthen our knowledge about the effects of contaminants from different sources on animals. Also, although short, my previous research experience aroused my curiosity and the need to broaden my scope by interacting with researchers embracing various disciplines. At that time, <a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=perso&nom=GIMBERT&prenom=Fr%C3%A9d%C3%A9ric'> Frédéric GIMBERT</a> and <a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=perso&nom=DE%20VAUFLEURY&prenom=Annette'> Annette DE VAUFLEURY</a> gave me the opportunity to work on an interdisciplinary study involving archeology, mineralogy, environmental chemistry, and ecotoxicology. <br/><br/> Indeed mining and metallurgical activities are the most ancient sources of anthropogenic contamination in the environment. While the evidence of this ancient contamination is scarce, archeological surveys in eastern France unveiled several areas (i.e., districts) which have been significant places of mining and metallurgical activities in the medieval era (between the 8th and the 12th centuries). Currently, metallurgical wastes named slags are still present in numerous district soils and may represent a significant source of soil contamination. <br/><br/> Here we aimed to characterize the mineralogical composition of slags deposited one thousand years ago and to uncover whether it could still be a significant source of soil contamination that could transfer to organisms and have harmful effects. <br/><br/> To tackle these aims, we sampled slags and soil cores along transects starting from the center of the slag heap. We then used scanning electron microscopy with energy dispersive spectrometry (EDS) mapping and x-ray diffraction to analyze slags and soil mineralogical composition. We also conducted chemical extraction and ecotoxicity bioassays using land snail (<em>Cantareus aspersus</em>) on soil samples to assess contaminant transfers in plants and biota and infer possible harmful effects. <br/><br/> Briefly, We found that slags that remain in the soil still release a significant amount of manganese (Mn), which is consistent with their mineralogical composition. We also uncovered that a large proportion of the Mn contamination might be available for transfers in plants and animals, especially land snails. However, we did not find any evidence of toxicity caused by soils contamination on snails (see fig. <a href="#fig:GraphAbsChemos">4</a>). <br/>
+<em><u>Title:</u> «Impacts of metallurgical wastes on soil
+contamination: transfer and fate of trace metal elements».<br/>
+<u>Supervisor(s):</u> Dr. Annette DE VAUFLEURY &amp; Dr. Frédéric
+GIMBERT.</em><br/><br/> During my second year of my master’s, I was
+still motivated to strengthen our knowledge about the effects of
+contaminants from different sources on animals. Also, although short, my
+previous research experience aroused my curiosity and the need to
+broaden my scope by interacting with researchers embracing various
+disciplines. At that time,
+<a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=perso&nom=GIMBERT&prenom=Fr%C3%A9d%C3%A9ric'>
+Frédéric GIMBERT</a> and
+<a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=perso&nom=DE%20VAUFLEURY&prenom=Annette'>
+Annette DE VAUFLEURY</a> gave me the opportunity to work on an
+interdisciplinary study involving archeology, mineralogy, environmental
+chemistry, and ecotoxicology. <br/><br/> Indeed mining and metallurgical
+activities are the most ancient sources of anthropogenic contamination
+in the environment. While the evidence of this ancient contamination is
+scarce, archeological surveys in eastern France unveiled several areas
+(i.e., districts) which have been significant places of mining and
+metallurgical activities in the medieval era (between the 8th and the
+12th centuries). Currently, metallurgical wastes named slags are still
+present in numerous district soils and may represent a significant
+source of soil contamination. <br/><br/> Here we aimed to characterize
+the mineralogical composition of slags deposited one thousand years ago
+and to uncover whether it could still be a significant source of soil
+contamination that could transfer to organisms and have harmful effects.
+<br/><br/> To tackle these aims, we sampled slags and soil cores along
+transects starting from the center of the slag heap. We then used
+scanning electron microscopy with energy dispersive spectrometry (EDS)
+mapping and x-ray diffraction to analyze slags and soil mineralogical
+composition. We also conducted chemical extraction and ecotoxicity
+bioassays using land snail (<em>Cantareus aspersus</em>) on soil samples
+to assess contaminant transfers in plants and biota and infer possible
+harmful effects. <br/><br/> Briefly, We found that slags that remain in
+the soil still release a significant amount of manganese (Mn), which is
+consistent with their mineralogical composition. We also uncovered that
+a large proportion of the Mn contamination might be available for
+transfers in plants and animals, especially land snails. However, we did
+not find any evidence of toxicity caused by soils contamination on
+snails (see fig. <a href="#fig:GraphAbsChemos">4</a>). <br/>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:GraphAbsChemos"></span>
 <img src="https://ars.els-cdn.com/content/image/1-s2.0-S0045653521008079-ga1_lrg.jpg" alt="Summary of the results discussed in &lt;a href='https://qpetitjean.github.io/qpetitjean_distill/publications.html#section'&gt;Petitjean et al., 2021 Origin, fate and ecotoxicity of manganese from legacy metallurgical wastes&lt;/a&gt;." width="90%" />
 <p class="caption">
-Figure 4: Summary of the results discussed in <a href='https://qpetitjean.github.io/qpetitjean_distill/publications.html#section'>Petitjean et al., 2021 Origin, fate and ecotoxicity of manganese from legacy metallurgical wastes</a>.
+Figure 4: Summary of the results discussed in
+<a href='https://qpetitjean.github.io/qpetitjean_distill/publications.html#section'>Petitjean
+et al., 2021 Origin, fate and ecotoxicity of manganese from legacy
+metallurgical wastes</a>.
 </p>
 </div>
 </div>
-This study and <a href='https://www.theses.fr/en/2016BESA2077'>previous work by Anne-Lise Mariet (former Ph.D. student) in the Vosges Mountains</a> paved the way to further projects/studies investigating the spatial occurrence, transfers, fate, and effects of metallic palaeo-pollution in eastern France (e.g., <a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=projet&projet=23'>SIDEROS</a> and <a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=projet&projet=53'>ALTERICS</a>).<br/><br/> For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_distill/publications.html#section'>Publication section</a> of this website.
+This study and <a href='https://www.theses.fr/en/2016BESA2077'>previous
+work by Anne-Lise Mariet (former Ph.D. student) in the Vosges
+Mountains</a> paved the way to further projects/studies investigating
+the spatial occurrence, transfers, fate, and effects of metallic
+palaeo-pollution in eastern France (e.g.,
+<a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=projet&projet=23'>SIDEROS</a>
+and
+<a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=projet&projet=53'>ALTERICS</a>).<br/><br/>
+For more information, see the
+<a href='https://qpetitjean.github.io/qpetitjean_distill/publications.html#section'>Publication
+section</a> of this website.
 </p>
 </td>
 <td style="width: 20%; vertical-align: top;">
@@ -2923,7 +3146,10 @@ This study and <a href='https://www.theses.fr/en/2016BESA2077'>previous work by 
 </table>
 </details>
 <p class="plain-text">
-<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M320 336c0 8.844-7.156 16-16 16h-96C199.2 352 192 344.8 192 336V288H0v144C0 457.6 22.41 480 48 480h416c25.59 0 48-22.41 48-48V288h-192V336zM464 96H384V48C384 22.41 361.6 0 336 0h-160C150.4 0 128 22.41 128 48V96H48C22.41 96 0 118.4 0 144V256h512V144C512 118.4 489.6 96 464 96zM336 96h-160V48h160V96z"/></svg>   February 2015 - May 2015 | M.Sc. candidate | <a href='https://www.ubfc.fr/'>Bourgogne-Franche-Comté University—UBFC</a>, Besançon, FR
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M320 336c0 8.844-7.156 16-16 16h-96C199.2 352 192 344.8 192 336V288H0v144C0 457.6 22.41 480 48 480h416c25.59 0 48-22.41 48-48V288h-192V336zM464 96H384V48C384 22.41 361.6 0 336 0h-160C150.4 0 128 22.41 128 48V96H48C22.41 96 0 118.4 0 144V256h512V144C512 118.4 489.6 96 464 96zM336 96h-160V48h160V96z"/></svg>
+  February 2015 - May 2015 | M.Sc. candidate |
+<a href='https://www.ubfc.fr/'>Bourgogne-Franche-Comté
+University—UBFC</a>, Besançon, FR
 </p>
 <details>
 <summary class="summary">
@@ -2933,16 +3159,55 @@ Details
 <tr>
 <td style="width: 80%; vertical-align: top;">
 <p class="detailed-text">
-<em><u>Title:</u> «Trace metal availability and transfers assessment in a leachates pond collector from a municipal solid waste landfill using Chironomus riparius».<br/> <u>Supervisor(s):</u> Dr. Frédéric GIMBERT &amp; Pr. Aleya LOTFI.</em><br/><br/> While aware of the need to mitigate the increasing degradation of the environment caused by anthropogenic activities, I was motivated to strengthen our knowledge about the effects of contaminants on animals. In this context, I had the opportunity to conduct an internship with <a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=perso&nom=GIMBERT&prenom=Fr%C3%A9d%C3%A9ric'> Frédéric GIMBERT</a> and <a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=perso&nom=ALEYA&prenom=Lotfi'>Lotfi ALEYA</a> to investigate the bioavailability of trace metal elements in a landfill leachate collection pond.<br/><br/> Indeed, until 2002 household waste disposal was authorized in France, resulting in contamination of the surrounding environment, primarily through contaminants leaching. To reduce environmental contamination entailed by this mode of waste storage, the Etueffont landfill (i.e., study site) set up a lagoon ponds system collecting landfill leachates.<br/><br/> Here, we aimed to better understand whether leachates released in the ponds may induce the accumulation of trace metal elements in biota (i.e., bioaccumulation kinetics) and how water and sediment may contribute to the observed bioaccumulation’ patterns.<br/><br/> To tackle these aims, we used an active biomonitoring approach through caging laboratory-raised midges larvae (<em>Chironomus riparius</em>) in the first landfill leachate collection pond. More particularly, we used two types of cages to either expose the larvae to water only or water and sediment for a five days maximum duration (see fig. <a href="#fig:CagesTypes">5</a>).<br/>
+<em><u>Title:</u> «Trace metal availability and transfers assessment in
+a leachates pond collector from a municipal solid waste landfill using
+Chironomus riparius».<br/> <u>Supervisor(s):</u> Dr. Frédéric GIMBERT
+&amp; Pr. Aleya LOTFI.</em><br/><br/> While aware of the need to
+mitigate the increasing degradation of the environment caused by
+anthropogenic activities, I was motivated to strengthen our knowledge
+about the effects of contaminants on animals. In this context, I had the
+opportunity to conduct an internship with
+<a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=perso&nom=GIMBERT&prenom=Fr%C3%A9d%C3%A9ric'>
+Frédéric GIMBERT</a> and
+<a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=perso&nom=ALEYA&prenom=Lotfi'>Lotfi
+ALEYA</a> to investigate the bioavailability of trace metal elements in
+a landfill leachate collection pond.<br/><br/> Indeed, until 2002
+household waste disposal was authorized in France, resulting in
+contamination of the surrounding environment, primarily through
+contaminants leaching. To reduce environmental contamination entailed by
+this mode of waste storage, the Etueffont landfill (i.e., study site)
+set up a lagoon ponds system collecting landfill leachates.<br/><br/>
+Here, we aimed to better understand whether leachates released in the
+ponds may induce the accumulation of trace metal elements in biota
+(i.e., bioaccumulation kinetics) and how water and sediment may
+contribute to the observed bioaccumulation’ patterns.<br/><br/> To
+tackle these aims, we used an active biomonitoring approach through
+caging laboratory-raised midges larvae (<em>Chironomus riparius</em>) in
+the first landfill leachate collection pond. More particularly, we used
+two types of cages to either expose the larvae to water only or water
+and sediment for a five days maximum duration (see
+fig. <a href="#fig:CagesTypes">5</a>).<br/>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:CagesTypes"></span>
 <img src="https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs11356-016-8261-1/MediaObjects/11356_2016_8261_Fig2_HTML.gif" alt="Type of cages used for active biomonitoring, the cage on the left (WS) allows exposing the midges to water and sediment. In contrast, the cage on the right (W) allows exposing the midges to water only." width="80%" />
 <p class="caption">
-Figure 5: Type of cages used for active biomonitoring, the cage on the left (WS) allows exposing the midges to water and sediment. In contrast, the cage on the right (W) allows exposing the midges to water only.
+Figure 5: Type of cages used for active biomonitoring, the cage
+on the left (WS) allows exposing the midges to water and sediment. In
+contrast, the cage on the right (W) allows exposing the midges to water
+only.
 </p>
 </div>
 </div>
-Back in the laboratory, we performed subcellular fractionation of the midges to measure trace metal bioaccumulation in the cytosolic (i.e., sensitive fraction) and insoluble fractions. We then modeled the bioaccumulation kinetic for each contaminant and fraction. This helped to discuss the primary source of contaminant transfers (i.e., water and/or sediment), contaminant bioavailability, and the potential threat entailed by landfill leachates on biota.<br/><br/> For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_distill/publications.html#section-3'>Publication section</a> of this website.
+Back in the laboratory, we performed subcellular fractionation of the
+midges to measure trace metal bioaccumulation in the cytosolic (i.e.,
+sensitive fraction) and insoluble fractions. We then modeled the
+bioaccumulation kinetic for each contaminant and fraction. This helped
+to discuss the primary source of contaminant transfers (i.e., water
+and/or sediment), contaminant bioavailability, and the potential threat
+entailed by landfill leachates on biota.<br/><br/> For more information,
+see the
+<a href='https://qpetitjean.github.io/qpetitjean_distill/publications.html#section-3'>Publication
+section</a> of this website.
 </p>
 </p>
 </td>
@@ -2959,12 +3224,22 @@ Back in the laboratory, we performed subcellular fractionation of the midges to 
 <hr />
 <h1 id="teaching-supervising">Teaching &amp; supervising</h1>
 <p class="plain-text" style="text-align: left">
-<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M592 0h-384C181.5 0 160 22.25 160 49.63V96c23.42 0 45.1 6.781 63.1 17.81V64h352v288h-64V304c0-8.838-7.164-16-16-16h-96c-8.836 0-16 7.162-16 16V352H287.3c22.07 16.48 39.54 38.5 50.76 64h253.9C618.5 416 640 393.8 640 366.4V49.63C640 22.25 618.5 0 592 0zM160 320c53.02 0 96-42.98 96-96c0-53.02-42.98-96-96-96C106.1 128 64 170.1 64 224C64 277 106.1 320 160 320zM192 352H128c-70.69 0-128 57.31-128 128c0 17.67 14.33 32 32 32h256c17.67 0 32-14.33 32-32C320 409.3 262.7 352 192 352z"/></svg>   <a href='https://www.inp-toulouse.fr/fr/index.html'>National Polytechnic Institute—INP</a> | Electrofishing/inventory of fish species (≈16h) <br/> <svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M592 0h-384C181.5 0 160 22.25 160 49.63V96c23.42 0 45.1 6.781 63.1 17.81V64h352v288h-64V304c0-8.838-7.164-16-16-16h-96c-8.836 0-16 7.162-16 16V352H287.3c22.07 16.48 39.54 38.5 50.76 64h253.9C618.5 416 640 393.8 640 366.4V49.63C640 22.25 618.5 0 592 0zM160 320c53.02 0 96-42.98 96-96c0-53.02-42.98-96-96-96C106.1 128 64 170.1 64 224C64 277 106.1 320 160 320zM192 352H128c-70.69 0-128 57.31-128 128c0 17.67 14.33 32 32 32h256c17.67 0 32-14.33 32-32C320 409.3 262.7 352 192 352z"/></svg>   <a href='https://www.univ-tlse3.fr/'>Paul Sabatier University—UPS</a> | Multivariate data analysis (≈50h) <br/> <svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M592 0h-384C181.5 0 160 22.25 160 49.63V96c23.42 0 45.1 6.781 63.1 17.81V64h352v288h-64V304c0-8.838-7.164-16-16-16h-96c-8.836 0-16 7.162-16 16V352H287.3c22.07 16.48 39.54 38.5 50.76 64h253.9C618.5 416 640 393.8 640 366.4V49.63C640 22.25 618.5 0 592 0zM160 320c53.02 0 96-42.98 96-96c0-53.02-42.98-96-96-96C106.1 128 64 170.1 64 224C64 277 106.1 320 160 320zM192 352H128c-70.69 0-128 57.31-128 128c0 17.67 14.33 32 32 32h256c17.67 0 32-14.33 32-32C320 409.3 262.7 352 192 352z"/></svg>   Students internship co-supervision | 8 B.Sc and 5 M.Sc students
+<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M592 0h-384C181.5 0 160 22.25 160 49.63V96c23.42 0 45.1 6.781 63.1 17.81V64h352v288h-64V304c0-8.838-7.164-16-16-16h-96c-8.836 0-16 7.162-16 16V352H287.3c22.07 16.48 39.54 38.5 50.76 64h253.9C618.5 416 640 393.8 640 366.4V49.63C640 22.25 618.5 0 592 0zM160 320c53.02 0 96-42.98 96-96c0-53.02-42.98-96-96-96C106.1 128 64 170.1 64 224C64 277 106.1 320 160 320zM192 352H128c-70.69 0-128 57.31-128 128c0 17.67 14.33 32 32 32h256c17.67 0 32-14.33 32-32C320 409.3 262.7 352 192 352z"/></svg>
+  <a href='https://www.inp-toulouse.fr/fr/index.html'>National
+Polytechnic Institute—INP</a> | Electrofishing/inventory of fish
+species (≈16h) <br/>
+<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M592 0h-384C181.5 0 160 22.25 160 49.63V96c23.42 0 45.1 6.781 63.1 17.81V64h352v288h-64V304c0-8.838-7.164-16-16-16h-96c-8.836 0-16 7.162-16 16V352H287.3c22.07 16.48 39.54 38.5 50.76 64h253.9C618.5 416 640 393.8 640 366.4V49.63C640 22.25 618.5 0 592 0zM160 320c53.02 0 96-42.98 96-96c0-53.02-42.98-96-96-96C106.1 128 64 170.1 64 224C64 277 106.1 320 160 320zM192 352H128c-70.69 0-128 57.31-128 128c0 17.67 14.33 32 32 32h256c17.67 0 32-14.33 32-32C320 409.3 262.7 352 192 352z"/></svg>
+  <a href='https://www.univ-tlse3.fr/'>Paul Sabatier University—UPS</a>
+| Multivariate data analysis (≈50h) <br/>
+<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M592 0h-384C181.5 0 160 22.25 160 49.63V96c23.42 0 45.1 6.781 63.1 17.81V64h352v288h-64V304c0-8.838-7.164-16-16-16h-96c-8.836 0-16 7.162-16 16V352H287.3c22.07 16.48 39.54 38.5 50.76 64h253.9C618.5 416 640 393.8 640 366.4V49.63C640 22.25 618.5 0 592 0zM160 320c53.02 0 96-42.98 96-96c0-53.02-42.98-96-96-96C106.1 128 64 170.1 64 224C64 277 106.1 320 160 320zM192 352H128c-70.69 0-128 57.31-128 128c0 17.67 14.33 32 32 32h256c17.67 0 32-14.33 32-32C320 409.3 262.7 352 192 352z"/></svg>
+  Students internship co-supervision | 8 B.Sc and 5 M.Sc students
 </p>
 <hr />
 <h1 id="grants">Grants</h1>
 <p class="plain-text" style="text-align: left">
-<svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M572.1 82.38C569.5 71.59 559.8 64 548.7 64h-100.8c.2422-12.45 .1078-23.7-.1559-33.02C447.3 13.63 433.2 0 415.8 0H160.2C142.8 0 128.7 13.63 128.2 30.98C127.1 40.3 127.8 51.55 128.1 64H27.26C16.16 64 6.537 71.59 3.912 82.38C3.1 85.78-15.71 167.2 37.07 245.9c37.44 55.82 100.6 95.03 187.5 117.4c18.7 4.805 31.41 22.06 31.41 41.37C256 428.5 236.5 448 212.6 448H208c-26.51 0-47.99 21.49-47.99 48c0 8.836 7.163 16 15.1 16h223.1c8.836 0 15.1-7.164 15.1-16c0-26.51-21.48-48-47.99-48h-4.644c-23.86 0-43.36-19.5-43.36-43.35c0-19.31 12.71-36.57 31.41-41.37c86.96-22.34 150.1-61.55 187.5-117.4C591.7 167.2 572.9 85.78 572.1 82.38zM77.41 219.8C49.47 178.6 47.01 135.7 48.38 112h80.39c5.359 59.62 20.35 131.1 57.67 189.1C137.4 281.6 100.9 254.4 77.41 219.8zM498.6 219.8c-23.44 34.6-59.94 61.75-109 81.22C426.9 243.1 441.9 171.6 447.2 112h80.39C528.1 135.7 526.5 178.7 498.6 219.8z"/></svg>   2019 | Travel grant for the SETAC Europe 29<sup>th</sup> meeting (≈430€)
+<svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M572.1 82.38C569.5 71.59 559.8 64 548.7 64h-100.8c.2422-12.45 .1078-23.7-.1559-33.02C447.3 13.63 433.2 0 415.8 0H160.2C142.8 0 128.7 13.63 128.2 30.98C127.1 40.3 127.8 51.55 128.1 64H27.26C16.16 64 6.537 71.59 3.912 82.38C3.1 85.78-15.71 167.2 37.07 245.9c37.44 55.82 100.6 95.03 187.5 117.4c18.7 4.805 31.41 22.06 31.41 41.37C256 428.5 236.5 448 212.6 448H208c-26.51 0-47.99 21.49-47.99 48c0 8.836 7.163 16 15.1 16h223.1c8.836 0 15.1-7.164 15.1-16c0-26.51-21.48-48-47.99-48h-4.644c-23.86 0-43.36-19.5-43.36-43.35c0-19.31 12.71-36.57 31.41-41.37c86.96-22.34 150.1-61.55 187.5-117.4C591.7 167.2 572.9 85.78 572.1 82.38zM77.41 219.8C49.47 178.6 47.01 135.7 48.38 112h80.39c5.359 59.62 20.35 131.1 57.67 189.1C137.4 281.6 100.9 254.4 77.41 219.8zM498.6 219.8c-23.44 34.6-59.94 61.75-109 81.22C426.9 243.1 441.9 171.6 447.2 112h80.39C528.1 135.7 526.5 178.7 498.6 219.8z"/></svg>
+  2019 | Travel grant for the SETAC Europe 29<sup>th</sup>
+meeting (≈430€)
 </p>
 <details>
 <summary class="summary">
@@ -2974,58 +3249,99 @@ Details
 <img src="https://helsinki.setac.org/wp-content/uploads/2018/02/Helsinki-website-logos-banner-.jpg" height="80px" width="470px" />
 </p>
 <p class="detailed-text">
-Grant programme supported by the SETAC Europe reinvestment fund and Syngenta to help student members participating to the <a href='https://helsinki.setac.org/welcome/'>SETAC Europe 29<sup>th</sup> meeting</a> meeting (Up to maximum 250€, Travel costs only, visa and accommodation are not included).
+Grant programme supported by the SETAC Europe reinvestment fund and
+Syngenta to help student members participating to the
+<a href='https://helsinki.setac.org/welcome/'>SETAC Europe
+29<sup>th</sup> meeting</a> meeting (Up to maximum 250€, Travel costs
+only, visa and accommodation are not included).
 </p>
 </details>
 <p class="plain-text">
-<svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M572.1 82.38C569.5 71.59 559.8 64 548.7 64h-100.8c.2422-12.45 .1078-23.7-.1559-33.02C447.3 13.63 433.2 0 415.8 0H160.2C142.8 0 128.7 13.63 128.2 30.98C127.1 40.3 127.8 51.55 128.1 64H27.26C16.16 64 6.537 71.59 3.912 82.38C3.1 85.78-15.71 167.2 37.07 245.9c37.44 55.82 100.6 95.03 187.5 117.4c18.7 4.805 31.41 22.06 31.41 41.37C256 428.5 236.5 448 212.6 448H208c-26.51 0-47.99 21.49-47.99 48c0 8.836 7.163 16 15.1 16h223.1c8.836 0 15.1-7.164 15.1-16c0-26.51-21.48-48-47.99-48h-4.644c-23.86 0-43.36-19.5-43.36-43.35c0-19.31 12.71-36.57 31.41-41.37c86.96-22.34 150.1-61.55 187.5-117.4C591.7 167.2 572.9 85.78 572.1 82.38zM77.41 219.8C49.47 178.6 47.01 135.7 48.38 112h80.39c5.359 59.62 20.35 131.1 57.67 189.1C137.4 281.6 100.9 254.4 77.41 219.8zM498.6 219.8c-23.44 34.6-59.94 61.75-109 81.22C426.9 243.1 441.9 171.6 447.2 112h80.39C528.1 135.7 526.5 178.7 498.6 219.8z"/></svg>   2016 | Ph.D grant from French research and education ministry (≈60k€)
+<svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M572.1 82.38C569.5 71.59 559.8 64 548.7 64h-100.8c.2422-12.45 .1078-23.7-.1559-33.02C447.3 13.63 433.2 0 415.8 0H160.2C142.8 0 128.7 13.63 128.2 30.98C127.1 40.3 127.8 51.55 128.1 64H27.26C16.16 64 6.537 71.59 3.912 82.38C3.1 85.78-15.71 167.2 37.07 245.9c37.44 55.82 100.6 95.03 187.5 117.4c18.7 4.805 31.41 22.06 31.41 41.37C256 428.5 236.5 448 212.6 448H208c-26.51 0-47.99 21.49-47.99 48c0 8.836 7.163 16 15.1 16h223.1c8.836 0 15.1-7.164 15.1-16c0-26.51-21.48-48-47.99-48h-4.644c-23.86 0-43.36-19.5-43.36-43.35c0-19.31 12.71-36.57 31.41-41.37c86.96-22.34 150.1-61.55 187.5-117.4C591.7 167.2 572.9 85.78 572.1 82.38zM77.41 219.8C49.47 178.6 47.01 135.7 48.38 112h80.39c5.359 59.62 20.35 131.1 57.67 189.1C137.4 281.6 100.9 254.4 77.41 219.8zM498.6 219.8c-23.44 34.6-59.94 61.75-109 81.22C426.9 243.1 441.9 171.6 447.2 112h80.39C528.1 135.7 526.5 178.7 498.6 219.8z"/></svg>
+  2016 | Ph.D grant from French research and education ministry (≈60k€)
 </p>
 <details>
 <summary class="summary">
 Details
 </summary>
 <p style="text-align:center;">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Minist%C3%A8re_de_l%27Enseignement_Sup%C3%A9rieur_et_de_la_Recherche.png/1280px-Minist%C3%A8re_de_l%27Enseignement_Sup%C3%A9rieur_et_de_la_Recherche.png" height="75px" width="105px" />   <img src="https://www.univ-tlse3.fr/medias/photo/logo-ed-sdu2e_1578590506112-jpg?ID_FICHE=1136458588340" height="80px" width="113px" />   <img src="https://www.univ-toulouse.fr/sites/default/files/inline-images/logo_uftmp_horizontale.svg" height="75px" width="143px" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Minist%C3%A8re_de_l%27Enseignement_Sup%C3%A9rieur_et_de_la_Recherche.png/1280px-Minist%C3%A8re_de_l%27Enseignement_Sup%C3%A9rieur_et_de_la_Recherche.png" height="75px" width="105px" />
+ 
+<img src="https://www.univ-tlse3.fr/medias/photo/logo-ed-sdu2e_1578590506112-jpg?ID_FICHE=1136458588340" height="80px" width="113px" />
+ 
+<img src="https://www.univ-toulouse.fr/sites/default/files/inline-images/logo_uftmp_horizontale.svg" height="75px" width="143px" />
 </p>
 <p class="detailed-text">
-3 years stipend allowed by the French research and education ministry to study the variability of responses among freshwater fish populations (<em>Gobio occitaniae</em>) exposed to multiple stressors at the <a href='https://www.univ-tlse3.fr/'>Paul Sabatier University—UPS</a>.
+3 years stipend allowed by the French research and education ministry to
+study the variability of responses among freshwater fish populations
+(<em>Gobio occitaniae</em>) exposed to multiple stressors at the
+<a href='https://www.univ-tlse3.fr/'>Paul Sabatier University—UPS</a>.
 </p>
 </details>
 <p class="plain-text">
-<svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M572.1 82.38C569.5 71.59 559.8 64 548.7 64h-100.8c.2422-12.45 .1078-23.7-.1559-33.02C447.3 13.63 433.2 0 415.8 0H160.2C142.8 0 128.7 13.63 128.2 30.98C127.1 40.3 127.8 51.55 128.1 64H27.26C16.16 64 6.537 71.59 3.912 82.38C3.1 85.78-15.71 167.2 37.07 245.9c37.44 55.82 100.6 95.03 187.5 117.4c18.7 4.805 31.41 22.06 31.41 41.37C256 428.5 236.5 448 212.6 448H208c-26.51 0-47.99 21.49-47.99 48c0 8.836 7.163 16 15.1 16h223.1c8.836 0 15.1-7.164 15.1-16c0-26.51-21.48-48-47.99-48h-4.644c-23.86 0-43.36-19.5-43.36-43.35c0-19.31 12.71-36.57 31.41-41.37c86.96-22.34 150.1-61.55 187.5-117.4C591.7 167.2 572.9 85.78 572.1 82.38zM77.41 219.8C49.47 178.6 47.01 135.7 48.38 112h80.39c5.359 59.62 20.35 131.1 57.67 189.1C137.4 281.6 100.9 254.4 77.41 219.8zM498.6 219.8c-23.44 34.6-59.94 61.75-109 81.22C426.9 243.1 441.9 171.6 447.2 112h80.39C528.1 135.7 526.5 178.7 498.6 219.8z"/></svg>   2015 | Leonard Da Vinci international mobility grant (≈2.5k€)
+<svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M572.1 82.38C569.5 71.59 559.8 64 548.7 64h-100.8c.2422-12.45 .1078-23.7-.1559-33.02C447.3 13.63 433.2 0 415.8 0H160.2C142.8 0 128.7 13.63 128.2 30.98C127.1 40.3 127.8 51.55 128.1 64H27.26C16.16 64 6.537 71.59 3.912 82.38C3.1 85.78-15.71 167.2 37.07 245.9c37.44 55.82 100.6 95.03 187.5 117.4c18.7 4.805 31.41 22.06 31.41 41.37C256 428.5 236.5 448 212.6 448H208c-26.51 0-47.99 21.49-47.99 48c0 8.836 7.163 16 15.1 16h223.1c8.836 0 15.1-7.164 15.1-16c0-26.51-21.48-48-47.99-48h-4.644c-23.86 0-43.36-19.5-43.36-43.35c0-19.31 12.71-36.57 31.41-41.37c86.96-22.34 150.1-61.55 187.5-117.4C591.7 167.2 572.9 85.78 572.1 82.38zM77.41 219.8C49.47 178.6 47.01 135.7 48.38 112h80.39c5.359 59.62 20.35 131.1 57.67 189.1C137.4 281.6 100.9 254.4 77.41 219.8zM498.6 219.8c-23.44 34.6-59.94 61.75-109 81.22C426.9 243.1 441.9 171.6 447.2 112h80.39C528.1 135.7 526.5 178.7 498.6 219.8z"/></svg>
+  2015 | Leonard Da Vinci international mobility grant (≈2.5k€)
 </p>
 <details>
 <summary class="summary">
 Details
 </summary>
 <p style="text-align:center;">
-<img src="https://upload.wikimedia.org/wikipedia/fr/c/ce/NUI%2C_Galway.png" height="70px" width="155px" />   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/1280px-Flag_of_Europe.svg.png" height="70px" width="105px" />
+<img src="https://upload.wikimedia.org/wikipedia/fr/c/ce/NUI%2C_Galway.png" height="70px" width="155px" />
+ 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/1280px-Flag_of_Europe.svg.png" height="70px" width="105px" />
 </p>
 <p class="detailed-text">
-European grant supporting individual mobility projects to acquire training and professional experience within Europe. <br/>
+European grant supporting individual mobility projects to acquire
+training and professional experience within Europe. <br/>
 </p>
 <p class="detailed-text">
-I conducted a 3.5 month internship (June 2014 to mid-september 2014) in the Plant Ecology Research Unit (PERU) of the <a href='https://www.nuigalway.ie/'>National University of Ireland Galway (NUIG)</a> under the supervision of <a href='https://www.universityofgalway.ie/science-engineering/school-of-natural-sciences/disciplines/botany-plant-science/research/plant-and-algal-marine-ecology/michelinesheehyskeffington/'>Micheline Sheehy Skeffington</a>. Micheline is currently emeritus at NUIG and a long-standing fighter of gender discrimination (<a href='https://michelinesthreeconditions.wordpress.com/'>see here for more infos</a>). I have mainly assisted Micheline and it’s former team members (James Owens and Sarah O’loughlin-Irwin) to conduct plants inventories in heatland and hay meadows. I have also worked to update the collection of the university of Galway’ herbarium. <br/>
+I conducted a 3.5 month internship (June 2014 to mid-september 2014) in
+the Plant Ecology Research Unit (PERU) of the
+<a href='https://www.nuigalway.ie/'>National University of Ireland
+Galway (NUIG)</a> under the supervision of
+<a href='https://www.universityofgalway.ie/science-engineering/school-of-natural-sciences/disciplines/botany-plant-science/research/plant-and-algal-marine-ecology/michelinesheehyskeffington/'>Micheline
+Sheehy Skeffington</a>. Micheline is currently emeritus at NUIG and a
+long-standing fighter of gender discrimination
+(<a href='https://michelinesthreeconditions.wordpress.com/'>see here for
+more infos</a>). I have mainly assisted Micheline and it’s former team
+members (James Owens and Sarah O’loughlin-Irwin) to conduct plants
+inventories in heatland and hay meadows. I have also worked to update
+the collection of the university of Galway’ herbarium. <br/>
 </p>
 <p class="detailed-text">
-<u>Internship subjects:</u> <br/> «Restoring plant species richness and forage quality to hay meadows on the River Shannon, Ireland.» <br/> «Ecology and conservation of <em>Arctostaphylos</em> heath in the Burren, Western Ireland.»
+<u>Internship subjects:</u> <br/> «Restoring plant species richness and
+forage quality to hay meadows on the River Shannon, Ireland.» <br/>
+«Ecology and conservation of <em>Arctostaphylos</em> heath in the
+Burren, Western Ireland.»
 </p>
 </details>
 <hr />
-<h1 id="congress-professional-memberships">Congress &amp; Professional memberships</h1>
+<h1 id="congress-professional-memberships">Congress &amp; Professional
+memberships</h1>
 <h3 id="congress-organization">Congress organization</h3>
 <p class="plain-text">
-<svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M208 80C208 53.49 229.5 32 256 32H320C346.5 32 368 53.49 368 80V144C368 170.5 346.5 192 320 192H312V232H464C494.9 232 520 257.1 520 288V320H528C554.5 320 576 341.5 576 368V432C576 458.5 554.5 480 528 480H464C437.5 480 416 458.5 416 432V368C416 341.5 437.5 320 464 320H472V288C472 283.6 468.4 280 464 280H312V320H320C346.5 320 368 341.5 368 368V432C368 458.5 346.5 480 320 480H256C229.5 480 208 458.5 208 432V368C208 341.5 229.5 320 256 320H264V280H112C107.6 280 104 283.6 104 288V320H112C138.5 320 160 341.5 160 368V432C160 458.5 138.5 480 112 480H48C21.49 480 0 458.5 0 432V368C0 341.5 21.49 320 48 320H56V288C56 257.1 81.07 232 112 232H264V192H256C229.5 192 208 170.5 208 144V80z"/></svg>   14th meeting Ecology and Behaviour (E&amp;B) 2019
+<svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M208 80C208 53.49 229.5 32 256 32H320C346.5 32 368 53.49 368 80V144C368 170.5 346.5 192 320 192H312V232H464C494.9 232 520 257.1 520 288V320H528C554.5 320 576 341.5 576 368V432C576 458.5 554.5 480 528 480H464C437.5 480 416 458.5 416 432V368C416 341.5 437.5 320 464 320H472V288C472 283.6 468.4 280 464 280H312V320H320C346.5 320 368 341.5 368 368V432C368 458.5 346.5 480 320 480H256C229.5 480 208 458.5 208 432V368C208 341.5 229.5 320 256 320H264V280H112C107.6 280 104 283.6 104 288V320H112C138.5 320 160 341.5 160 368V432C160 458.5 138.5 480 112 480H48C21.49 480 0 458.5 0 432V368C0 341.5 21.49 320 48 320H56V288C56 257.1 81.07 232 112 232H264V192H256C229.5 192 208 170.5 208 144V80z"/></svg>
+  14th meeting Ecology and Behaviour (E&amp;B) 2019
 </p>
 <details>
 <summary class="summary">
 Details
 </summary>
 <p class="detailed-text">
-The « Ecology and Behaviour » conferences are organized by and for young researchers. These events are an ideal opportunity for master, Ph.D. students, and postdocs to share their works with other researchers in ecology, evolutionary biology, and behavioral ecology. <br/>
+The « Ecology and Behaviour » conferences are organized by and for young
+researchers. These events are an ideal opportunity for master,
+Ph.D. students, and postdocs to share their works with other researchers
+in ecology, evolutionary biology, and behavioral ecology. <br/>
 </p>
 <p class="detailed-text">
-As Co-organizer, chairman (Ecotoxicology &amp; Ecophysiology session), and financial manager (Fundraising: 20k€) of the <a href='https://eb2019.sciencesconf.org/'>14th meeting Ecology and Behaviour (E&amp;B) 2019</a>, I am delighted to have participated in this outstanding achievement which gathered more than 160 attendees and 14 keynote speakers around 56 platform presentations and 38 posters. <br/>
+As Co-organizer, chairman (Ecotoxicology &amp; Ecophysiology session),
+and financial manager (Fundraising: 20k€) of the
+<a href='https://eb2019.sciencesconf.org/'>14th meeting Ecology and
+Behaviour (E&amp;B) 2019</a>, I am delighted to have participated in
+this outstanding achievement which gathered more than 160 attendees and
+14 keynote speakers around 56 platform presentations and 38 posters.
+<br/>
 </p>
 <p style="text-align:center;">
 <img src="https://eb2019.sciencesconf.org/data/pages/affiche_EB2019finale500.jpg" height="778px" width="540px" />
@@ -3033,19 +3349,57 @@ As Co-organizer, chairman (Ecotoxicology &amp; Ecophysiology session), and finan
 </details>
 <h3 id="membership">Membership</h3>
 <p class="plain-text" style="text-align: left">
-<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M0 383.9l64 .0404c17.75 0 32-14.29 32-32.03V128.3L0 128.3V383.9zM48 320.1c8.75 0 16 7.118 16 15.99c0 8.742-7.25 15.99-16 15.99S32 344.8 32 336.1C32 327.2 39.25 320.1 48 320.1zM348.8 64c-7.941 0-15.66 2.969-21.52 8.328L228.9 162.3C228.8 162.5 228.8 162.7 228.6 162.7C212 178.3 212.3 203.2 226.5 218.7c12.75 13.1 39.38 17.62 56.13 2.75C282.8 221.3 282.9 221.3 283 221.2l79.88-73.1c6.5-5.871 16.75-5.496 22.62 1c6 6.496 5.5 16.62-1 22.62l-26.12 23.87L504 313.7c2.875 2.496 5.5 4.996 7.875 7.742V127.1c-40.98-40.96-96.48-63.88-154.4-63.88L348.8 64zM334.6 217.4l-30 27.49c-29.75 27.11-75.25 24.49-101.8-4.371C176 211.2 178.1 165.7 207.3 138.9L289.1 64H282.5C224.7 64 169.1 87.08 128.2 127.9L128 351.8l18.25 .0369l90.5 81.82c27.5 22.37 67.75 18.12 90-9.246l18.12 15.24c15.88 12.1 39.38 10.5 52.38-5.371l31.38-38.6l5.374 4.498c13.75 11 33.88 9.002 45-4.748l9.538-11.78c11.12-13.75 9.036-33.78-4.694-44.93L334.6 217.4zM544 128.4v223.6c0 17.62 14.25 32.05 31.1 32.05L640 384V128.1L544 128.4zM592 352c-8.75 0-16-7.246-16-15.99c0-8.875 7.25-15.99 16-15.99S608 327.2 608 336.1C608 344.8 600.8 352 592 352z"/></svg>   British Ecological Society <a href='https://www.britishecologicalsociety.org/'>(BES)</a> <br/> <svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M0 383.9l64 .0404c17.75 0 32-14.29 32-32.03V128.3L0 128.3V383.9zM48 320.1c8.75 0 16 7.118 16 15.99c0 8.742-7.25 15.99-16 15.99S32 344.8 32 336.1C32 327.2 39.25 320.1 48 320.1zM348.8 64c-7.941 0-15.66 2.969-21.52 8.328L228.9 162.3C228.8 162.5 228.8 162.7 228.6 162.7C212 178.3 212.3 203.2 226.5 218.7c12.75 13.1 39.38 17.62 56.13 2.75C282.8 221.3 282.9 221.3 283 221.2l79.88-73.1c6.5-5.871 16.75-5.496 22.62 1c6 6.496 5.5 16.62-1 22.62l-26.12 23.87L504 313.7c2.875 2.496 5.5 4.996 7.875 7.742V127.1c-40.98-40.96-96.48-63.88-154.4-63.88L348.8 64zM334.6 217.4l-30 27.49c-29.75 27.11-75.25 24.49-101.8-4.371C176 211.2 178.1 165.7 207.3 138.9L289.1 64H282.5C224.7 64 169.1 87.08 128.2 127.9L128 351.8l18.25 .0369l90.5 81.82c27.5 22.37 67.75 18.12 90-9.246l18.12 15.24c15.88 12.1 39.38 10.5 52.38-5.371l31.38-38.6l5.374 4.498c13.75 11 33.88 9.002 45-4.748l9.538-11.78c11.12-13.75 9.036-33.78-4.694-44.93L334.6 217.4zM544 128.4v223.6c0 17.62 14.25 32.05 31.1 32.05L640 384V128.1L544 128.4zM592 352c-8.75 0-16-7.246-16-15.99c0-8.875 7.25-15.99 16-15.99S608 327.2 608 336.1C608 344.8 600.8 352 592 352z"/></svg>   Société Française d’Écologie et d’Évolution <a href='https://sfecologie.org/'>(SFE²)</a> <br/> <svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M0 383.9l64 .0404c17.75 0 32-14.29 32-32.03V128.3L0 128.3V383.9zM48 320.1c8.75 0 16 7.118 16 15.99c0 8.742-7.25 15.99-16 15.99S32 344.8 32 336.1C32 327.2 39.25 320.1 48 320.1zM348.8 64c-7.941 0-15.66 2.969-21.52 8.328L228.9 162.3C228.8 162.5 228.8 162.7 228.6 162.7C212 178.3 212.3 203.2 226.5 218.7c12.75 13.1 39.38 17.62 56.13 2.75C282.8 221.3 282.9 221.3 283 221.2l79.88-73.1c6.5-5.871 16.75-5.496 22.62 1c6 6.496 5.5 16.62-1 22.62l-26.12 23.87L504 313.7c2.875 2.496 5.5 4.996 7.875 7.742V127.1c-40.98-40.96-96.48-63.88-154.4-63.88L348.8 64zM334.6 217.4l-30 27.49c-29.75 27.11-75.25 24.49-101.8-4.371C176 211.2 178.1 165.7 207.3 138.9L289.1 64H282.5C224.7 64 169.1 87.08 128.2 127.9L128 351.8l18.25 .0369l90.5 81.82c27.5 22.37 67.75 18.12 90-9.246l18.12 15.24c15.88 12.1 39.38 10.5 52.38-5.371l31.38-38.6l5.374 4.498c13.75 11 33.88 9.002 45-4.748l9.538-11.78c11.12-13.75 9.036-33.78-4.694-44.93L334.6 217.4zM544 128.4v223.6c0 17.62 14.25 32.05 31.1 32.05L640 384V128.1L544 128.4zM592 352c-8.75 0-16-7.246-16-15.99c0-8.875 7.25-15.99 16-15.99S608 327.2 608 336.1C608 344.8 600.8 352 592 352z"/></svg>   Society of Environmental Toxicology and Chemistry <a href='https://www.setac.org/'>(SETAC)</a> <br/> <svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M0 383.9l64 .0404c17.75 0 32-14.29 32-32.03V128.3L0 128.3V383.9zM48 320.1c8.75 0 16 7.118 16 15.99c0 8.742-7.25 15.99-16 15.99S32 344.8 32 336.1C32 327.2 39.25 320.1 48 320.1zM348.8 64c-7.941 0-15.66 2.969-21.52 8.328L228.9 162.3C228.8 162.5 228.8 162.7 228.6 162.7C212 178.3 212.3 203.2 226.5 218.7c12.75 13.1 39.38 17.62 56.13 2.75C282.8 221.3 282.9 221.3 283 221.2l79.88-73.1c6.5-5.871 16.75-5.496 22.62 1c6 6.496 5.5 16.62-1 22.62l-26.12 23.87L504 313.7c2.875 2.496 5.5 4.996 7.875 7.742V127.1c-40.98-40.96-96.48-63.88-154.4-63.88L348.8 64zM334.6 217.4l-30 27.49c-29.75 27.11-75.25 24.49-101.8-4.371C176 211.2 178.1 165.7 207.3 138.9L289.1 64H282.5C224.7 64 169.1 87.08 128.2 127.9L128 351.8l18.25 .0369l90.5 81.82c27.5 22.37 67.75 18.12 90-9.246l18.12 15.24c15.88 12.1 39.38 10.5 52.38-5.371l31.38-38.6l5.374 4.498c13.75 11 33.88 9.002 45-4.748l9.538-11.78c11.12-13.75 9.036-33.78-4.694-44.93L334.6 217.4zM544 128.4v223.6c0 17.62 14.25 32.05 31.1 32.05L640 384V128.1L544 128.4zM592 352c-8.75 0-16-7.246-16-15.99c0-8.875 7.25-15.99 16-15.99S608 327.2 608 336.1C608 344.8 600.8 352 592 352z"/></svg>   Society for open, reliable and transparent ecology and evolutionary biology <a href='https://www.sortee.org/'>(SORTEE)</a> <br/> <svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M0 383.9l64 .0404c17.75 0 32-14.29 32-32.03V128.3L0 128.3V383.9zM48 320.1c8.75 0 16 7.118 16 15.99c0 8.742-7.25 15.99-16 15.99S32 344.8 32 336.1C32 327.2 39.25 320.1 48 320.1zM348.8 64c-7.941 0-15.66 2.969-21.52 8.328L228.9 162.3C228.8 162.5 228.8 162.7 228.6 162.7C212 178.3 212.3 203.2 226.5 218.7c12.75 13.1 39.38 17.62 56.13 2.75C282.8 221.3 282.9 221.3 283 221.2l79.88-73.1c6.5-5.871 16.75-5.496 22.62 1c6 6.496 5.5 16.62-1 22.62l-26.12 23.87L504 313.7c2.875 2.496 5.5 4.996 7.875 7.742V127.1c-40.98-40.96-96.48-63.88-154.4-63.88L348.8 64zM334.6 217.4l-30 27.49c-29.75 27.11-75.25 24.49-101.8-4.371C176 211.2 178.1 165.7 207.3 138.9L289.1 64H282.5C224.7 64 169.1 87.08 128.2 127.9L128 351.8l18.25 .0369l90.5 81.82c27.5 22.37 67.75 18.12 90-9.246l18.12 15.24c15.88 12.1 39.38 10.5 52.38-5.371l31.38-38.6l5.374 4.498c13.75 11 33.88 9.002 45-4.748l9.538-11.78c11.12-13.75 9.036-33.78-4.694-44.93L334.6 217.4zM544 128.4v223.6c0 17.62 14.25 32.05 31.1 32.05L640 384V128.1L544 128.4zM592 352c-8.75 0-16-7.246-16-15.99c0-8.875 7.25-15.99 16-15.99S608 327.2 608 336.1C608 344.8 600.8 352 592 352z"/></svg>   Statistical ecology research network <a href='https://sites.google.com/site/gdrecostat/'>(EcoStat)</a>
+<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M0 383.9l64 .0404c17.75 0 32-14.29 32-32.03V128.3L0 128.3V383.9zM48 320.1c8.75 0 16 7.118 16 15.99c0 8.742-7.25 15.99-16 15.99S32 344.8 32 336.1C32 327.2 39.25 320.1 48 320.1zM348.8 64c-7.941 0-15.66 2.969-21.52 8.328L228.9 162.3C228.8 162.5 228.8 162.7 228.6 162.7C212 178.3 212.3 203.2 226.5 218.7c12.75 13.1 39.38 17.62 56.13 2.75C282.8 221.3 282.9 221.3 283 221.2l79.88-73.1c6.5-5.871 16.75-5.496 22.62 1c6 6.496 5.5 16.62-1 22.62l-26.12 23.87L504 313.7c2.875 2.496 5.5 4.996 7.875 7.742V127.1c-40.98-40.96-96.48-63.88-154.4-63.88L348.8 64zM334.6 217.4l-30 27.49c-29.75 27.11-75.25 24.49-101.8-4.371C176 211.2 178.1 165.7 207.3 138.9L289.1 64H282.5C224.7 64 169.1 87.08 128.2 127.9L128 351.8l18.25 .0369l90.5 81.82c27.5 22.37 67.75 18.12 90-9.246l18.12 15.24c15.88 12.1 39.38 10.5 52.38-5.371l31.38-38.6l5.374 4.498c13.75 11 33.88 9.002 45-4.748l9.538-11.78c11.12-13.75 9.036-33.78-4.694-44.93L334.6 217.4zM544 128.4v223.6c0 17.62 14.25 32.05 31.1 32.05L640 384V128.1L544 128.4zM592 352c-8.75 0-16-7.246-16-15.99c0-8.875 7.25-15.99 16-15.99S608 327.2 608 336.1C608 344.8 600.8 352 592 352z"/></svg>
+  British Ecological
+Society <a href='https://www.britishecologicalsociety.org/'>(BES)</a>
+<br/>
+<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M0 383.9l64 .0404c17.75 0 32-14.29 32-32.03V128.3L0 128.3V383.9zM48 320.1c8.75 0 16 7.118 16 15.99c0 8.742-7.25 15.99-16 15.99S32 344.8 32 336.1C32 327.2 39.25 320.1 48 320.1zM348.8 64c-7.941 0-15.66 2.969-21.52 8.328L228.9 162.3C228.8 162.5 228.8 162.7 228.6 162.7C212 178.3 212.3 203.2 226.5 218.7c12.75 13.1 39.38 17.62 56.13 2.75C282.8 221.3 282.9 221.3 283 221.2l79.88-73.1c6.5-5.871 16.75-5.496 22.62 1c6 6.496 5.5 16.62-1 22.62l-26.12 23.87L504 313.7c2.875 2.496 5.5 4.996 7.875 7.742V127.1c-40.98-40.96-96.48-63.88-154.4-63.88L348.8 64zM334.6 217.4l-30 27.49c-29.75 27.11-75.25 24.49-101.8-4.371C176 211.2 178.1 165.7 207.3 138.9L289.1 64H282.5C224.7 64 169.1 87.08 128.2 127.9L128 351.8l18.25 .0369l90.5 81.82c27.5 22.37 67.75 18.12 90-9.246l18.12 15.24c15.88 12.1 39.38 10.5 52.38-5.371l31.38-38.6l5.374 4.498c13.75 11 33.88 9.002 45-4.748l9.538-11.78c11.12-13.75 9.036-33.78-4.694-44.93L334.6 217.4zM544 128.4v223.6c0 17.62 14.25 32.05 31.1 32.05L640 384V128.1L544 128.4zM592 352c-8.75 0-16-7.246-16-15.99c0-8.875 7.25-15.99 16-15.99S608 327.2 608 336.1C608 344.8 600.8 352 592 352z"/></svg>
+  Société Française d’Écologie et
+d’Évolution <a href='https://sfecologie.org/'>(SFE²)</a> <br/>
+<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M0 383.9l64 .0404c17.75 0 32-14.29 32-32.03V128.3L0 128.3V383.9zM48 320.1c8.75 0 16 7.118 16 15.99c0 8.742-7.25 15.99-16 15.99S32 344.8 32 336.1C32 327.2 39.25 320.1 48 320.1zM348.8 64c-7.941 0-15.66 2.969-21.52 8.328L228.9 162.3C228.8 162.5 228.8 162.7 228.6 162.7C212 178.3 212.3 203.2 226.5 218.7c12.75 13.1 39.38 17.62 56.13 2.75C282.8 221.3 282.9 221.3 283 221.2l79.88-73.1c6.5-5.871 16.75-5.496 22.62 1c6 6.496 5.5 16.62-1 22.62l-26.12 23.87L504 313.7c2.875 2.496 5.5 4.996 7.875 7.742V127.1c-40.98-40.96-96.48-63.88-154.4-63.88L348.8 64zM334.6 217.4l-30 27.49c-29.75 27.11-75.25 24.49-101.8-4.371C176 211.2 178.1 165.7 207.3 138.9L289.1 64H282.5C224.7 64 169.1 87.08 128.2 127.9L128 351.8l18.25 .0369l90.5 81.82c27.5 22.37 67.75 18.12 90-9.246l18.12 15.24c15.88 12.1 39.38 10.5 52.38-5.371l31.38-38.6l5.374 4.498c13.75 11 33.88 9.002 45-4.748l9.538-11.78c11.12-13.75 9.036-33.78-4.694-44.93L334.6 217.4zM544 128.4v223.6c0 17.62 14.25 32.05 31.1 32.05L640 384V128.1L544 128.4zM592 352c-8.75 0-16-7.246-16-15.99c0-8.875 7.25-15.99 16-15.99S608 327.2 608 336.1C608 344.8 600.8 352 592 352z"/></svg>
+  Society of Environmental Toxicology and
+Chemistry <a href='https://www.setac.org/'>(SETAC)</a> <br/>
+<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M0 383.9l64 .0404c17.75 0 32-14.29 32-32.03V128.3L0 128.3V383.9zM48 320.1c8.75 0 16 7.118 16 15.99c0 8.742-7.25 15.99-16 15.99S32 344.8 32 336.1C32 327.2 39.25 320.1 48 320.1zM348.8 64c-7.941 0-15.66 2.969-21.52 8.328L228.9 162.3C228.8 162.5 228.8 162.7 228.6 162.7C212 178.3 212.3 203.2 226.5 218.7c12.75 13.1 39.38 17.62 56.13 2.75C282.8 221.3 282.9 221.3 283 221.2l79.88-73.1c6.5-5.871 16.75-5.496 22.62 1c6 6.496 5.5 16.62-1 22.62l-26.12 23.87L504 313.7c2.875 2.496 5.5 4.996 7.875 7.742V127.1c-40.98-40.96-96.48-63.88-154.4-63.88L348.8 64zM334.6 217.4l-30 27.49c-29.75 27.11-75.25 24.49-101.8-4.371C176 211.2 178.1 165.7 207.3 138.9L289.1 64H282.5C224.7 64 169.1 87.08 128.2 127.9L128 351.8l18.25 .0369l90.5 81.82c27.5 22.37 67.75 18.12 90-9.246l18.12 15.24c15.88 12.1 39.38 10.5 52.38-5.371l31.38-38.6l5.374 4.498c13.75 11 33.88 9.002 45-4.748l9.538-11.78c11.12-13.75 9.036-33.78-4.694-44.93L334.6 217.4zM544 128.4v223.6c0 17.62 14.25 32.05 31.1 32.05L640 384V128.1L544 128.4zM592 352c-8.75 0-16-7.246-16-15.99c0-8.875 7.25-15.99 16-15.99S608 327.2 608 336.1C608 344.8 600.8 352 592 352z"/></svg>
+  Society for open, reliable and transparent ecology and evolutionary
+biology <a href='https://www.sortee.org/'>(SORTEE)</a> <br/>
+<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M0 383.9l64 .0404c17.75 0 32-14.29 32-32.03V128.3L0 128.3V383.9zM48 320.1c8.75 0 16 7.118 16 15.99c0 8.742-7.25 15.99-16 15.99S32 344.8 32 336.1C32 327.2 39.25 320.1 48 320.1zM348.8 64c-7.941 0-15.66 2.969-21.52 8.328L228.9 162.3C228.8 162.5 228.8 162.7 228.6 162.7C212 178.3 212.3 203.2 226.5 218.7c12.75 13.1 39.38 17.62 56.13 2.75C282.8 221.3 282.9 221.3 283 221.2l79.88-73.1c6.5-5.871 16.75-5.496 22.62 1c6 6.496 5.5 16.62-1 22.62l-26.12 23.87L504 313.7c2.875 2.496 5.5 4.996 7.875 7.742V127.1c-40.98-40.96-96.48-63.88-154.4-63.88L348.8 64zM334.6 217.4l-30 27.49c-29.75 27.11-75.25 24.49-101.8-4.371C176 211.2 178.1 165.7 207.3 138.9L289.1 64H282.5C224.7 64 169.1 87.08 128.2 127.9L128 351.8l18.25 .0369l90.5 81.82c27.5 22.37 67.75 18.12 90-9.246l18.12 15.24c15.88 12.1 39.38 10.5 52.38-5.371l31.38-38.6l5.374 4.498c13.75 11 33.88 9.002 45-4.748l9.538-11.78c11.12-13.75 9.036-33.78-4.694-44.93L334.6 217.4zM544 128.4v223.6c0 17.62 14.25 32.05 31.1 32.05L640 384V128.1L544 128.4zM592 352c-8.75 0-16-7.246-16-15.99c0-8.875 7.25-15.99 16-15.99S608 327.2 608 336.1C608 344.8 600.8 352 592 352z"/></svg>
+  Statistical ecology research
+network <a href='https://sites.google.com/site/gdrecostat/'>(EcoStat)</a>
 </p>
 <hr />
 <h1 id="peer-reviews">Peer reviews</h1>
 <p class="plain-text" style="text-align: left">
-<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M256 0v128h128L256 0zM224 128L224 0H48C21.49 0 0 21.49 0 48v416C0 490.5 21.49 512 48 512h288c26.51 0 48-21.49 48-48V160h-127.1C238.3 160 224 145.7 224 128zM272 416h-160C103.2 416 96 408.8 96 400C96 391.2 103.2 384 112 384h160c8.836 0 16 7.162 16 16C288 408.8 280.8 416 272 416zM272 352h-160C103.2 352 96 344.8 96 336C96 327.2 103.2 320 112 320h160c8.836 0 16 7.162 16 16C288 344.8 280.8 352 272 352zM288 272C288 280.8 280.8 288 272 288h-160C103.2 288 96 280.8 96 272C96 263.2 103.2 256 112 256h160C280.8 256 288 263.2 288 272z"/></svg>   <a href='https://www.springer.com/journal/11356'>Environmental Science and Pollution Research</a> (n=4)<br/> <svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M256 0v128h128L256 0zM224 128L224 0H48C21.49 0 0 21.49 0 48v416C0 490.5 21.49 512 48 512h288c26.51 0 48-21.49 48-48V160h-127.1C238.3 160 224 145.7 224 128zM272 416h-160C103.2 416 96 408.8 96 400C96 391.2 103.2 384 112 384h160c8.836 0 16 7.162 16 16C288 408.8 280.8 416 272 416zM272 352h-160C103.2 352 96 344.8 96 336C96 327.2 103.2 320 112 320h160c8.836 0 16 7.162 16 16C288 344.8 280.8 352 272 352zM288 272C288 280.8 280.8 288 272 288h-160C103.2 288 96 280.8 96 272C96 263.2 103.2 256 112 256h160C280.8 256 288 263.2 288 272z"/></svg>   <a href='https://www.tandfonline.com/journals/best20'>Critical Reviews in Environmental Sciences and Technology</a> (n=2)<br/> <svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M256 0v128h128L256 0zM224 128L224 0H48C21.49 0 0 21.49 0 48v416C0 490.5 21.49 512 48 512h288c26.51 0 48-21.49 48-48V160h-127.1C238.3 160 224 145.7 224 128zM272 416h-160C103.2 416 96 408.8 96 400C96 391.2 103.2 384 112 384h160c8.836 0 16 7.162 16 16C288 408.8 280.8 416 272 416zM272 352h-160C103.2 352 96 344.8 96 336C96 327.2 103.2 320 112 320h160c8.836 0 16 7.162 16 16C288 344.8 280.8 352 272 352zM288 272C288 280.8 280.8 288 272 288h-160C103.2 288 96 280.8 96 272C96 263.2 103.2 256 112 256h160C280.8 256 288 263.2 288 272z"/></svg>   <a href='https://onlinelibrary.wiley.com/journal/24715646'>Journal of Experimental Zoology Part A: Ecological Genetics and Physiology</a> (n=1)<br/> <svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M256 0v128h128L256 0zM224 128L224 0H48C21.49 0 0 21.49 0 48v416C0 490.5 21.49 512 48 512h288c26.51 0 48-21.49 48-48V160h-127.1C238.3 160 224 145.7 224 128zM272 416h-160C103.2 416 96 408.8 96 400C96 391.2 103.2 384 112 384h160c8.836 0 16 7.162 16 16C288 408.8 280.8 416 272 416zM272 352h-160C103.2 352 96 344.8 96 336C96 327.2 103.2 320 112 320h160c8.836 0 16 7.162 16 16C288 344.8 280.8 352 272 352zM288 272C288 280.8 280.8 288 272 288h-160C103.2 288 96 280.8 96 272C96 263.2 103.2 256 112 256h160C280.8 256 288 263.2 288 272z"/></svg>   <a href='https://www.sciencedirect.com/journal/science-of-the-total-environment'>Science of The Total Environment</a> (n=1)<br/> <svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M256 0v128h128L256 0zM224 128L224 0H48C21.49 0 0 21.49 0 48v416C0 490.5 21.49 512 48 512h288c26.51 0 48-21.49 48-48V160h-127.1C238.3 160 224 145.7 224 128zM272 416h-160C103.2 416 96 408.8 96 400C96 391.2 103.2 384 112 384h160c8.836 0 16 7.162 16 16C288 408.8 280.8 416 272 416zM272 352h-160C103.2 352 96 344.8 96 336C96 327.2 103.2 320 112 320h160c8.836 0 16 7.162 16 16C288 344.8 280.8 352 272 352zM288 272C288 280.8 280.8 288 272 288h-160C103.2 288 96 280.8 96 272C96 263.2 103.2 256 112 256h160C280.8 256 288 263.2 288 272z"/></svg>   <a href='https://onlinelibrary.wiley.com/journal/14610248'>Ecology Letters</a> (n=1)
+<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M256 0v128h128L256 0zM224 128L224 0H48C21.49 0 0 21.49 0 48v416C0 490.5 21.49 512 48 512h288c26.51 0 48-21.49 48-48V160h-127.1C238.3 160 224 145.7 224 128zM272 416h-160C103.2 416 96 408.8 96 400C96 391.2 103.2 384 112 384h160c8.836 0 16 7.162 16 16C288 408.8 280.8 416 272 416zM272 352h-160C103.2 352 96 344.8 96 336C96 327.2 103.2 320 112 320h160c8.836 0 16 7.162 16 16C288 344.8 280.8 352 272 352zM288 272C288 280.8 280.8 288 272 288h-160C103.2 288 96 280.8 96 272C96 263.2 103.2 256 112 256h160C280.8 256 288 263.2 288 272z"/></svg>
+  <a href='https://www.springer.com/journal/11356'>Environmental Science
+and Pollution Research</a> (n=4)<br/>
+<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M256 0v128h128L256 0zM224 128L224 0H48C21.49 0 0 21.49 0 48v416C0 490.5 21.49 512 48 512h288c26.51 0 48-21.49 48-48V160h-127.1C238.3 160 224 145.7 224 128zM272 416h-160C103.2 416 96 408.8 96 400C96 391.2 103.2 384 112 384h160c8.836 0 16 7.162 16 16C288 408.8 280.8 416 272 416zM272 352h-160C103.2 352 96 344.8 96 336C96 327.2 103.2 320 112 320h160c8.836 0 16 7.162 16 16C288 344.8 280.8 352 272 352zM288 272C288 280.8 280.8 288 272 288h-160C103.2 288 96 280.8 96 272C96 263.2 103.2 256 112 256h160C280.8 256 288 263.2 288 272z"/></svg>
+  <a href='https://www.tandfonline.com/journals/best20'>Critical Reviews
+in Environmental Sciences and Technology</a> (n=2)<br/>
+<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M256 0v128h128L256 0zM224 128L224 0H48C21.49 0 0 21.49 0 48v416C0 490.5 21.49 512 48 512h288c26.51 0 48-21.49 48-48V160h-127.1C238.3 160 224 145.7 224 128zM272 416h-160C103.2 416 96 408.8 96 400C96 391.2 103.2 384 112 384h160c8.836 0 16 7.162 16 16C288 408.8 280.8 416 272 416zM272 352h-160C103.2 352 96 344.8 96 336C96 327.2 103.2 320 112 320h160c8.836 0 16 7.162 16 16C288 344.8 280.8 352 272 352zM288 272C288 280.8 280.8 288 272 288h-160C103.2 288 96 280.8 96 272C96 263.2 103.2 256 112 256h160C280.8 256 288 263.2 288 272z"/></svg>
+  <a href='https://onlinelibrary.wiley.com/journal/24715646'>Journal of
+Experimental Zoology Part A: Ecological Genetics and
+Physiology</a> (n=1)<br/>
+<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M256 0v128h128L256 0zM224 128L224 0H48C21.49 0 0 21.49 0 48v416C0 490.5 21.49 512 48 512h288c26.51 0 48-21.49 48-48V160h-127.1C238.3 160 224 145.7 224 128zM272 416h-160C103.2 416 96 408.8 96 400C96 391.2 103.2 384 112 384h160c8.836 0 16 7.162 16 16C288 408.8 280.8 416 272 416zM272 352h-160C103.2 352 96 344.8 96 336C96 327.2 103.2 320 112 320h160c8.836 0 16 7.162 16 16C288 344.8 280.8 352 272 352zM288 272C288 280.8 280.8 288 272 288h-160C103.2 288 96 280.8 96 272C96 263.2 103.2 256 112 256h160C280.8 256 288 263.2 288 272z"/></svg>
+ 
+<a href='https://www.sciencedirect.com/journal/science-of-the-total-environment'>Science
+of The Total Environment</a> (n=1)<br/>
+<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M256 0v128h128L256 0zM224 128L224 0H48C21.49 0 0 21.49 0 48v416C0 490.5 21.49 512 48 512h288c26.51 0 48-21.49 48-48V160h-127.1C238.3 160 224 145.7 224 128zM272 416h-160C103.2 416 96 408.8 96 400C96 391.2 103.2 384 112 384h160c8.836 0 16 7.162 16 16C288 408.8 280.8 416 272 416zM272 352h-160C103.2 352 96 344.8 96 336C96 327.2 103.2 320 112 320h160c8.836 0 16 7.162 16 16C288 344.8 280.8 352 272 352zM288 272C288 280.8 280.8 288 272 288h-160C103.2 288 96 280.8 96 272C96 263.2 103.2 256 112 256h160C280.8 256 288 263.2 288 272z"/></svg>
+  <a href='https://onlinelibrary.wiley.com/journal/14610248'>Ecology
+Letters</a> (n=1)
 </p>
 <hr />
 <h1 id="hobbies">Hobbies</h1>
 <p class="plain-text">
-<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M240 96c26.5 0 48-21.5 48-48S266.5 0 240 0C213.5 0 192 21.5 192 48S213.5 96 240 96zM80.01 287.1c7.31 0 13.97-4.762 15.87-11.86L137 117c.3468-1.291 .5125-2.588 .5125-3.866c0-7.011-4.986-13.44-12.39-15.13C118.4 96.38 111.7 95.6 105.1 95.6c-36.65 0-70 23.84-79.32 59.53L.5119 253.3C.1636 254.6-.0025 255.9-.0025 257.2c0 7.003 4.961 13.42 12.36 15.11L76.01 287.5C77.35 287.8 78.69 287.1 80.01 287.1zM368 160h-15.1c-8.875 0-15.1 7.125-15.1 16V192h-34.75l-46.75-46.75C243.4 134.1 228.6 128 212.9 128C185.9 128 162.5 146.3 155.9 172.5L129 280.3C128.4 282.8 128 285.5 128 288.1c0 8.325 3.265 16.44 9.354 22.53l86.62 86.63V480c0 17.62 14.37 32 31.1 32s32-14.38 32-32v-82.75c0-17.12-6.625-33.13-18.75-45.25l-46.87-46.88c.25-.5 .5-.875 .625-1.375l19.1-79.5l22.37 22.38C271.4 252.6 279.5 256 288 256h47.1v240c0 8.875 7.125 16 15.1 16h15.1C376.9 512 384 504.9 384 496v-320C384 167.1 376.9 160 368 160zM81.01 472.3c-.672 2.63-.993 5.267-.993 7.86c0 14.29 9.749 27.29 24.24 30.89C106.9 511.8 109.5 512 112 512c14.37 0 27.37-9.75 30.1-24.25l25.25-101l-52.75-52.75L81.01 472.3z"/></svg>   Hiking/fishing: Fauna and flora watching and photography <br/> <svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M240 96c26.5 0 48-21.5 48-48S266.5 0 240 0C213.5 0 192 21.5 192 48S213.5 96 240 96zM80.01 287.1c7.31 0 13.97-4.762 15.87-11.86L137 117c.3468-1.291 .5125-2.588 .5125-3.866c0-7.011-4.986-13.44-12.39-15.13C118.4 96.38 111.7 95.6 105.1 95.6c-36.65 0-70 23.84-79.32 59.53L.5119 253.3C.1636 254.6-.0025 255.9-.0025 257.2c0 7.003 4.961 13.42 12.36 15.11L76.01 287.5C77.35 287.8 78.69 287.1 80.01 287.1zM368 160h-15.1c-8.875 0-15.1 7.125-15.1 16V192h-34.75l-46.75-46.75C243.4 134.1 228.6 128 212.9 128C185.9 128 162.5 146.3 155.9 172.5L129 280.3C128.4 282.8 128 285.5 128 288.1c0 8.325 3.265 16.44 9.354 22.53l86.62 86.63V480c0 17.62 14.37 32 31.1 32s32-14.38 32-32v-82.75c0-17.12-6.625-33.13-18.75-45.25l-46.87-46.88c.25-.5 .5-.875 .625-1.375l19.1-79.5l22.37 22.38C271.4 252.6 279.5 256 288 256h47.1v240c0 8.875 7.125 16 15.1 16h15.1C376.9 512 384 504.9 384 496v-320C384 167.1 376.9 160 368 160zM81.01 472.3c-.672 2.63-.993 5.267-.993 7.86c0 14.29 9.749 27.29 24.24 30.89C106.9 511.8 109.5 512 112 512c14.37 0 27.37-9.75 30.1-24.25l25.25-101l-52.75-52.75L81.01 472.3z"/></svg>   Sports: Basket ball, volley-ball <br/> <svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M240 96c26.5 0 48-21.5 48-48S266.5 0 240 0C213.5 0 192 21.5 192 48S213.5 96 240 96zM80.01 287.1c7.31 0 13.97-4.762 15.87-11.86L137 117c.3468-1.291 .5125-2.588 .5125-3.866c0-7.011-4.986-13.44-12.39-15.13C118.4 96.38 111.7 95.6 105.1 95.6c-36.65 0-70 23.84-79.32 59.53L.5119 253.3C.1636 254.6-.0025 255.9-.0025 257.2c0 7.003 4.961 13.42 12.36 15.11L76.01 287.5C77.35 287.8 78.69 287.1 80.01 287.1zM368 160h-15.1c-8.875 0-15.1 7.125-15.1 16V192h-34.75l-46.75-46.75C243.4 134.1 228.6 128 212.9 128C185.9 128 162.5 146.3 155.9 172.5L129 280.3C128.4 282.8 128 285.5 128 288.1c0 8.325 3.265 16.44 9.354 22.53l86.62 86.63V480c0 17.62 14.37 32 31.1 32s32-14.38 32-32v-82.75c0-17.12-6.625-33.13-18.75-45.25l-46.87-46.88c.25-.5 .5-.875 .625-1.375l19.1-79.5l22.37 22.38C271.4 252.6 279.5 256 288 256h47.1v240c0 8.875 7.125 16 15.1 16h15.1C376.9 512 384 504.9 384 496v-320C384 167.1 376.9 160 368 160zM81.01 472.3c-.672 2.63-.993 5.267-.993 7.86c0 14.29 9.749 27.29 24.24 30.89C106.9 511.8 109.5 512 112 512c14.37 0 27.37-9.75 30.1-24.25l25.25-101l-52.75-52.75L81.01 472.3z"/></svg>   Travel: Cultural and naturalist trip (Western Europe, China, Sri Lanka, Malaysia, Nicaragua)
+<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M240 96c26.5 0 48-21.5 48-48S266.5 0 240 0C213.5 0 192 21.5 192 48S213.5 96 240 96zM80.01 287.1c7.31 0 13.97-4.762 15.87-11.86L137 117c.3468-1.291 .5125-2.588 .5125-3.866c0-7.011-4.986-13.44-12.39-15.13C118.4 96.38 111.7 95.6 105.1 95.6c-36.65 0-70 23.84-79.32 59.53L.5119 253.3C.1636 254.6-.0025 255.9-.0025 257.2c0 7.003 4.961 13.42 12.36 15.11L76.01 287.5C77.35 287.8 78.69 287.1 80.01 287.1zM368 160h-15.1c-8.875 0-15.1 7.125-15.1 16V192h-34.75l-46.75-46.75C243.4 134.1 228.6 128 212.9 128C185.9 128 162.5 146.3 155.9 172.5L129 280.3C128.4 282.8 128 285.5 128 288.1c0 8.325 3.265 16.44 9.354 22.53l86.62 86.63V480c0 17.62 14.37 32 31.1 32s32-14.38 32-32v-82.75c0-17.12-6.625-33.13-18.75-45.25l-46.87-46.88c.25-.5 .5-.875 .625-1.375l19.1-79.5l22.37 22.38C271.4 252.6 279.5 256 288 256h47.1v240c0 8.875 7.125 16 15.1 16h15.1C376.9 512 384 504.9 384 496v-320C384 167.1 376.9 160 368 160zM81.01 472.3c-.672 2.63-.993 5.267-.993 7.86c0 14.29 9.749 27.29 24.24 30.89C106.9 511.8 109.5 512 112 512c14.37 0 27.37-9.75 30.1-24.25l25.25-101l-52.75-52.75L81.01 472.3z"/></svg>
+  Hiking/fishing: Fauna and flora watching and photography <br/>
+<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M240 96c26.5 0 48-21.5 48-48S266.5 0 240 0C213.5 0 192 21.5 192 48S213.5 96 240 96zM80.01 287.1c7.31 0 13.97-4.762 15.87-11.86L137 117c.3468-1.291 .5125-2.588 .5125-3.866c0-7.011-4.986-13.44-12.39-15.13C118.4 96.38 111.7 95.6 105.1 95.6c-36.65 0-70 23.84-79.32 59.53L.5119 253.3C.1636 254.6-.0025 255.9-.0025 257.2c0 7.003 4.961 13.42 12.36 15.11L76.01 287.5C77.35 287.8 78.69 287.1 80.01 287.1zM368 160h-15.1c-8.875 0-15.1 7.125-15.1 16V192h-34.75l-46.75-46.75C243.4 134.1 228.6 128 212.9 128C185.9 128 162.5 146.3 155.9 172.5L129 280.3C128.4 282.8 128 285.5 128 288.1c0 8.325 3.265 16.44 9.354 22.53l86.62 86.63V480c0 17.62 14.37 32 31.1 32s32-14.38 32-32v-82.75c0-17.12-6.625-33.13-18.75-45.25l-46.87-46.88c.25-.5 .5-.875 .625-1.375l19.1-79.5l22.37 22.38C271.4 252.6 279.5 256 288 256h47.1v240c0 8.875 7.125 16 15.1 16h15.1C376.9 512 384 504.9 384 496v-320C384 167.1 376.9 160 368 160zM81.01 472.3c-.672 2.63-.993 5.267-.993 7.86c0 14.29 9.749 27.29 24.24 30.89C106.9 511.8 109.5 512 112 512c14.37 0 27.37-9.75 30.1-24.25l25.25-101l-52.75-52.75L81.01 472.3z"/></svg>
+  Sports: Basket ball, volley-ball <br/>
+<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M240 96c26.5 0 48-21.5 48-48S266.5 0 240 0C213.5 0 192 21.5 192 48S213.5 96 240 96zM80.01 287.1c7.31 0 13.97-4.762 15.87-11.86L137 117c.3468-1.291 .5125-2.588 .5125-3.866c0-7.011-4.986-13.44-12.39-15.13C118.4 96.38 111.7 95.6 105.1 95.6c-36.65 0-70 23.84-79.32 59.53L.5119 253.3C.1636 254.6-.0025 255.9-.0025 257.2c0 7.003 4.961 13.42 12.36 15.11L76.01 287.5C77.35 287.8 78.69 287.1 80.01 287.1zM368 160h-15.1c-8.875 0-15.1 7.125-15.1 16V192h-34.75l-46.75-46.75C243.4 134.1 228.6 128 212.9 128C185.9 128 162.5 146.3 155.9 172.5L129 280.3C128.4 282.8 128 285.5 128 288.1c0 8.325 3.265 16.44 9.354 22.53l86.62 86.63V480c0 17.62 14.37 32 31.1 32s32-14.38 32-32v-82.75c0-17.12-6.625-33.13-18.75-45.25l-46.87-46.88c.25-.5 .5-.875 .625-1.375l19.1-79.5l22.37 22.38C271.4 252.6 279.5 256 288 256h47.1v240c0 8.875 7.125 16 15.1 16h15.1C376.9 512 384 504.9 384 496v-320C384 167.1 376.9 160 368 160zM81.01 472.3c-.672 2.63-.993 5.267-.993 7.86c0 14.29 9.749 27.29 24.24 30.89C106.9 511.8 109.5 512 112 512c14.37 0 27.37-9.75 30.1-24.25l25.25-101l-52.75-52.75L81.01 472.3z"/></svg>
+  Travel: Cultural and naturalist trip (Western Europe, China, Sri
+Lanka, Malaysia, Nicaragua)
 </p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
