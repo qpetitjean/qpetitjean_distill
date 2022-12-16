@@ -86,16 +86,17 @@ window.addEventListener('DOMContentLoaded', () => {
 # Research experience
 <p class="plain-text">
 `r fontawesome::fa("briefcase", fill = "#333333")` &ensp; Mars 2021 - October 2022 | Postdoctoral researcher | <a href='https://www6.paca.inrae.fr/institut-sophia-agrobiotech'>National Research Institute for Agriculture, Food and Environment—INRAE</a>, Sophia-Antipolis, FR </p>
+<p class="detailed-text">
+<em><u>Title:</u> «Study of intraspecific variability and thermal adaptation traits in parasitic micro-wasps using computer-vision approaches».<br/>
+<u>Supervisor(s):</u> Dr. Vincent CALCAGNO.</em><br/></p>
 <details>
   <summary class= "summary">
-  Details
+  Read the story behind
   </summary>
 <table style="border: none; width='100%';">
   <tr>
     <td style="width: 80%; vertical-align: top;">
 <p class="detailed-text">
-<em><u>Title:</u> «Study of intraspecific variability and thermal adaptation traits in parasitic micro-wasps using computer-vision approaches».<br/>
-<u>Supervisor(s):</u> Dr. Vincent CALCAGNO.</em><br/><br/>
 Following my previous postdoctoral experience performing lab (DNA extractions – PCR) and bioinformatics analyses, my growing interest in the intraspecific variability of responses to global changes guided me to join <a href='https://www6.paca.inrae.fr/institut-sophia-agrobiotech'>Institut Sophia Agrobiotech (ISA)</a>.<br/><br/>
 More particularly, I joined <a href='https://vcalcagnoresearch.wordpress.com/'>Vincent CALCAGNO</a>'s lab to investigate the variability in activity and movement among insect populations facing temperature changes. I was involved in the <a href='https://ecophytopic.fr/recherche-innovation/proteger/projet-bidime'>BIDIME project (ANR)</a> targeted at developing innovative biological control solutions with insects, and transfer them to farmers and land managers. I collaborated with <a href='https://fr.linkedin.com/in/michela-ion-scotta'>Michela ION SCOTTA</a>, who reared 35 populations of small parasitic micro-wasps (genus <em>Trichogramma</em>) that were sampled in France along a latitudinal gradient. Michela also performed experiments in which each population was subjected to steady decreases/increases in temperature (over 2 hours, see fig. \@ref(fig:Ramps)).</p>
 ```{r Ramps, echo=FALSE, message=FALSE, warning=FALSE, fig.align = 'center', out.width="90%", fig.cap="Temperature ramps over which micro-wasps movements were recorded and analyzed."}
@@ -169,7 +170,8 @@ Stay tuned for upcoming release.
 
 <a href='https://paca.chambres-agriculture.fr/'><img src="https://paca.chambres-agriculture.fr/fileadmin/user_upload/Provence-Alpes-Cote_d_Azur/020_Inst_Paca/Interface/Logo_CA-PACA_mobile.jpg" height="55px" width="155px" /></a></br>
 
-<a href='https://www.biolineagrosciences.com/fr/'><img src="https://www.invivo-group.com/sites/default/files/styles/editorial_presentation/public/thumbnails/image/jpg_bd-logo_bioline_rvb.jpg?itok=cn1QhOvO" height="80px" width="155px" /></a></br>
+<a href='https://biolineagrosciences.com/'><img src="https://www.biolineagrosciences.com/wp-content/themes/bioline/img/logo-bioline_172.png" height="54px" width="155px" /></a></br>
+
 </td>
   </tr>
 </table>
@@ -185,17 +187,18 @@ Stay tuned for upcoming release.
 </details>
 <p class="plain-text">
 `r fontawesome::fa("briefcase", fill = "#333333")` &ensp; January 2020 - December 2021 | Postdoctoral researcher | <a href='https://www.inp-toulouse.fr/fr/index.html'>National Polytechnic Institute—INP</a>, Toulouse, FR </p>
+<p class="detailed-text">
+<em><u>Title:</u> «Gut microbiota shifts among freshwater fish populations exposed to multiple stressors under lab and field conditions».<br/>
+<u>Supervisor(s):</u> Dr. Lisa JACQUIN, Dr. Jo&euml;l WHITE & Pr. Pascal LAFFAILLE.</em><br/></p>
 <details>
   <summary class= "summary">
-  Details
+  Read the story behind
   </summary>
 
 <table style="border: none; width='100%';">
   <tr>
     <td style="width: 80%; vertical-align: top;">
 <p class="detailed-text">
-<em><u>Title:</u> «Gut microbiota shifts among freshwater fish populations exposed to multiple stressors under lab and field conditions».<br/>
-<u>Supervisor(s):</u> Dr. Lisa JACQUIN, Dr. Jo&euml;l WHITE & Pr. Pascal LAFFAILLE.</em><br/><br/>
 Following my Ph.D. defense, I was still Intending to increase the integration of multiple biological levels of organization in studying responses to multiple stressors. <br/><br/>
 Since the literature highlighting the close relationships between physiological and behavioral responses and gut microbiota composition was flourishing, my supervisors (<a href='https://sites.google.com/site/jacquinlisa2'>Lisa JACQUIN</a>, <a href='https://scholar.google.com/citations?hl=fr&user=eI53HscAAAAJ&view_op=list_works&sortby=pubdate'>S&eacute;verine JEAN</a> and <a href='https://scholar.google.fr/citations?hl=fr&user=qMa0F0gAAAAJ&view_op=list_works&sortby=pubdate'>Pascal LAFFAILLE</a>) and I started a collaboration with <a href='https://whitejoel.weebly.com/'>Jo&euml;l WHITE</a> to investigate how multiples stressors may affect gut microbiota composition among several populations of wild fish. <br/><br/>
 Fortunately, during my Ph.D., we collected the gut of all the fish involved in laboratory and reciprocal transplant experiments testing for the combined effect of trace metal contamination and immune challenge. This provided a fair amount of samples to investigate the intraspecific variability of gut microbiota composition in wild fish populations exposed to environmentally relevant stressors. Also, it allowed uncovering potential links between fish physiological and/or behavioral responses already measured during my Ph.D. and gut microbiota composition. <br/><br/>
@@ -224,16 +227,17 @@ Stay tuned for further news to come.</p>
 </details>
 <p class="plain-text">
 `r fontawesome::fa("briefcase", fill = "#333333")` &ensp; October 2016 - December 2019 | Ph.D candidate | <a href='https://www.univ-tlse3.fr/'>Paul Sabatier University—UPS</a>, Toulouse, FR </p>
+<p class="detailed-text">
+<em><u>Title:</u> «Variability of responses among freshwater fish populations exposed to multiple stressors».<br/>
+<u>Supervisor(s):</u> Dr. Lisa JACQUIN, Dr. S&eacute;verine JEAN & Pr. Pascal LAFFAILLE.</em><br/></p>
 <details>
   <summary class= "summary">
-  Details
+  Read the story behind
   </summary>
 <table style="border: none; width='100%';">
   <tr>
     <td style="width: 80%; vertical-align: top;">
 <p class="detailed-text"> 
-<em><u>Title:</u> «Variability of responses among freshwater fish populations exposed to multiple stressors».<br/>
-<u>Supervisor(s):</u> Dr. Lisa JACQUIN, Dr. S&eacute;verine JEAN & Pr. Pascal LAFFAILLE.</em><br/><br/>
 Freshly Graduated from Bourgogne-Franche-Comt&eacute; University with a master's in environmental sciences/ecotoxicology, I was lucky enough to work with very supportive people on stimulating and interdisciplinary projects (see my previous experiences below). Briefly, I was working on transfer, fate, and effects of contaminants on laboratory-raised organisms when new exciting questions arose. For example, could the outcomes of contaminants exposure differ according to the origin of the populations? <br/>Focusing on this question would imply working with wild populations. Still, in the wild, organisms are not only exposed to contaminants but rather to a combination of stressful conditions such as temperature changes or pathogens. This brings me to drill into evolutionary ecology and intraspecific variability to better understand how multiple stressors interact and whether the outcome of stressors exposure may differ among populations.<br/><br/>
 Accordingly, I started a Ph.D. program with <a href='https://sites.google.com/site/jacquinlisa2'>Lisa JACQUIN</a>, <a href='https://scholar.google.com/citations?hl=fr&user=eI53HscAAAAJ&view_op=list_works&sortby=pubdate'>S&eacute;verine JEAN</a> and <a href='https://scholar.google.fr/citations?hl=fr&user=qMa0F0gAAAAJ&view_op=list_works&sortby=pubdate'>Pascal LAFFAILLE</a> to investigate the intraspecific variability of responses to multiple stressors among wild fish populations (<em>Gobio occitaniae</em>) and across levels of biological organization.<br/><br/>
 To tackle these aims, I used complementary approaches (see fig. \@ref(fig:PhDApproaches) below) such as the analysis of large datasets collated in the field to uncover potential relationships between stressors exposure and fish health <a href='https://qpetitjean.github.io/qpetitjean_distill/publications.html#section-1'>(Petitjean et al., 2020)</a>. But also, full factorial design conducted in the lab to identify causal link between stressors exposure and plastic responses of fish from several populuations <a href='https://qpetitjean.github.io/qpetitjean_distill/publications.html#section-1'>(Petitjean et al., 2020;</a> <a href='https://qpetitjean.github.io/qpetitjean_distill/publications.html#section'> Petitjean et al., 2021)</a>. Finally, I performed a reciprocal transplant experiment in the field to unveil potential pattern of local adaptation to stressors exposure (Petitjean et al., under review).<br/>
@@ -270,16 +274,17 @@ For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_d
 </details> 
 <p class="plain-text">
 `r fontawesome::fa("briefcase", fill = "#333333")` &ensp; February 2016 - July 2016 | M.Sc. candidate | <a href='https://www.ubfc.fr/'>Bourgogne-Franche-Comt&eacute; University—UBFC</a>, Besan&ccedil;on, FR </p>
+<p class="detailed-text">
+<em><u>Title:</u> «Impacts of metallurgical wastes on soil contamination: transfer and fate of trace metal elements».<br/>
+<u>Supervisor(s):</u> Dr. Annette DE VAUFLEURY & Dr. Fr&eacute;d&eacute;ric GIMBERT.</em><br/></p>
 <details>
   <summary class= "summary">
-  Details
+  Read the story behind
   </summary>
 <table style="border: none; width='100%';">
   <tr>
     <td style="width: 80%; vertical-align: top;">
 <p class="detailed-text">
-<em><u>Title:</u> «Impacts of metallurgical wastes on soil contamination: transfer and fate of trace metal elements».<br/>
-<u>Supervisor(s):</u> Dr. Annette DE VAUFLEURY & Dr. Fr&eacute;d&eacute;ric GIMBERT.</em><br/><br/>
 During my second year of my master's, I was still motivated to strengthen our knowledge about the effects of contaminants from different sources on animals. Also, although short, my previous research experience aroused my curiosity and the need to broaden my scope by interacting with researchers embracing various disciplines. At that time, <a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=perso&nom=GIMBERT&prenom=Fr%C3%A9d%C3%A9ric'> Fr&eacute;d&eacute;ric GIMBERT</a> and <a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=perso&nom=DE%20VAUFLEURY&prenom=Annette'> Annette DE VAUFLEURY</a> gave me the opportunity to work on an interdisciplinary study involving archeology, mineralogy, environmental chemistry, and ecotoxicology. <br/><br/>
 Indeed mining and metallurgical activities are the most ancient sources of anthropogenic contamination in the environment. While the evidence of this ancient contamination is scarce, archeological surveys in eastern France unveiled several areas (i.e., districts) which have been significant places of mining and metallurgical activities in the medieval era (between the 8th and the 12th centuries). Currently, metallurgical wastes named slags are still present in numerous district soils and may represent a significant source of soil contamination. <br/><br/>
 Here we aimed to characterize the mineralogical composition of slags deposited one thousand years ago and to uncover whether it could still be a significant source of soil contamination that could transfer to organisms and have harmful effects. <br/><br/>
@@ -316,16 +321,17 @@ For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_d
 </details>
 <p class="plain-text">
 `r fontawesome::fa("briefcase", fill = "#333333")` &ensp; February 2015 - May 2015 |  M.Sc. candidate | <a href='https://www.ubfc.fr/'>Bourgogne-Franche-Comt&eacute; University—UBFC</a>, Besan&ccedil;on, FR </p>
+<p class="detailed-text">
+<em><u>Title:</u> «Trace metal availability and transfers assessment in a leachates pond collector from a municipal solid waste landfill using Chironomus riparius».<br/>
+<u>Supervisor(s):</u> Dr. Fr&eacute;d&eacute;ric GIMBERT & Pr. Aleya LOTFI.</em><br/></p>
 <details>
   <summary class= "summary">
-  Details
+  Read the story behind
   </summary>
 <table style="border: none; width='100%';">
   <tr>
     <td style="width: 80%; vertical-align: top;">
 <p class="detailed-text">
-<em><u>Title:</u> «Trace metal availability and transfers assessment in a leachates pond collector from a municipal solid waste landfill using Chironomus riparius».<br/>
-<u>Supervisor(s):</u> Dr. Fr&eacute;d&eacute;ric GIMBERT & Pr. Aleya LOTFI.</em><br/><br/>
 While aware of the need to mitigate the increasing degradation of the environment caused by anthropogenic activities, I was motivated to strengthen our knowledge about the effects of contaminants on animals. In this context, I had the opportunity to conduct an internship with <a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=perso&nom=GIMBERT&prenom=Fr%C3%A9d%C3%A9ric'> Fr&eacute;d&eacute;ric GIMBERT</a> and <a href='https://chrono-environnement.univ-fcomte.fr/spip.php?page=perso&nom=ALEYA&prenom=Lotfi'>Lotfi ALEYA</a> to investigate the bioavailability of trace metal elements in a landfill leachate collection pond.<br/><br/>
 Indeed, until 2002 household waste disposal was authorized in France, resulting in contamination of the surrounding environment, primarily through contaminants leaching. To reduce environmental contamination entailed by this mode of waste storage, the Etueffont landfill (i.e., study site) set up a lagoon ponds system collecting landfill leachates.<br/><br/>
 Here, we aimed to better understand whether leachates released in the ponds may induce the accumulation of trace metal elements in biota (i.e., bioaccumulation kinetics) and how water and sediment may contribute to the observed bioaccumulation' patterns.<br/><br/>
@@ -450,7 +456,7 @@ As Co-organizer, chairman (Ecotoxicology & Ecophysiology session), and financial
 `r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://www.springer.com/journal/11356'>Environmental Science and Pollution Research</a>&nbsp;(n=4)<br/>
 `r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://www.tandfonline.com/journals/best20'>Critical Reviews in Environmental Sciences and Technology</a>&nbsp;(n=2)<br/>
 `r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://onlinelibrary.wiley.com/journal/24715646'>Journal of Experimental Zoology Part A: Ecological Genetics and Physiology</a>&nbsp;(n=1)<br/>
-`r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://www.sciencedirect.com/journal/science-of-the-total-environment'>Science of The Total Environment</a>&nbsp;(n=1)<br/>
+`r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://www.sciencedirect.com/journal/science-of-the-total-environment'>Science of The Total Environment</a>&nbsp;(n=2)<br/>
 `r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://onlinelibrary.wiley.com/journal/14610248'>Ecology Letters</a>&nbsp;(n=1)</p>
 
 ***
