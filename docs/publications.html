@@ -2350,6 +2350,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       background-color: var(--navbar-sec-color);
   }
 
+  /* icon link buttons - see https://www.jhelvy.com/posts/2021-03-25-customizing-distill-with-htmltools-and-css/*/
+  .icon-link {
+      background-color: var(--header-color);
+      color: var(--navbar-prim-color);
+      padding: 3px 5px 3px 5px;
+      margin: 0 2px 0 2px;
+      border-radius: 5px; /* Rounded edges */
+  }
+
+  .icon-link:hover {
+      background-color: var(--navbar-sec-color);
+      font-weight: 500;
+      color: var(--navbar-prim-color);
+  }
+
   /* Change tables appearence */
   table, th, tr, td {
     font-family: var(--font-body);
@@ -2728,7 +2743,7 @@ window.addEventListener('DOMContentLoaded', () => {
 <!-- TOC JAVASCRIPT ELEMENTS END -->
 <div class="layout-chunk" data-layout="l-body">
 <div class="small-text">
-Last updated December 16, 2022 – Pulled automatically from
+Last updated December 19, 2022 – Pulled automatically from
 <a href='https://scholar.google.com/citations?user=GMudi1sAAAAJ&hl=en'>Google
 Scholar</a>.
 </div>
@@ -2744,8 +2759,9 @@ Cousseau, P Laffaille, S Jean (2021)
 <a href=https://www.sciencedirect.com/science/article/pii/S0269749120367312>Intraspecific
 variability of responses to combined metal contamination and immune
 challenge among wild fish populations</a></a>, Environmental Pollution,
-272, 116042, doi: 10.1016/j.envpol.2020.116042.<br/> <a
-href="pubList/Petitjeanetal2021-ENVIRON_POLLUT.pdf"><svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1.5em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#0E8BB7;overflow:visible;position:relative;"><path d="M88 304H80V256H88C101.3 256 112 266.7 112 280C112 293.3 101.3 304 88 304zM192 256H200C208.8 256 216 263.2 216 272V336C216 344.8 208.8 352 200 352H192V256zM224 0V128C224 145.7 238.3 160 256 160H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V64C0 28.65 28.65 0 64 0H224zM64 224C55.16 224 48 231.2 48 240V368C48 376.8 55.16 384 64 384C72.84 384 80 376.8 80 368V336H88C118.9 336 144 310.9 144 280C144 249.1 118.9 224 88 224H64zM160 368C160 376.8 167.2 384 176 384H200C226.5 384 248 362.5 248 336V272C248 245.5 226.5 224 200 224H176C167.2 224 160 231.2 160 240V368zM288 224C279.2 224 272 231.2 272 240V368C272 376.8 279.2 384 288 384C296.8 384 304 376.8 304 368V320H336C344.8 320 352 312.8 352 304C352 295.2 344.8 288 336 288H304V256H336C344.8 256 352 248.8 352 240C352 231.2 344.8 224 336 224H288zM256 0L384 128H256V0z"/></svg></a>
+272, 116042, doi: 10.1016/j.envpol.2020.116042.<br/>
+<a href="pubList/Petitjeanetal2021-ENVIRON_POLLUT.pdf" class="icon-link"><i class="fa fa-file-pdf"></i>
+PDF</a>
 <div style="display: flex; space-between; width: 140px;">
 <div class="altmetric-embed" data-badge-popover="right"
 data-badge-type="1" data-doi="10.1016/j.envpol.2020.116042">
@@ -2768,8 +2784,9 @@ A Mariet, H Laurent, P Rosenthal, A Vaufleury, F Gimbert (2021)
 <a href=https://www.sciencedirect.com/science/article/pii/S0045653521008079>Origin,
 fate and ecotoxicity of manganese from legacy metallurgical
 wastes</a></a>, Chemosphere, 277, 130337, doi:
-10.1016/j.chemosphere.2021.130337.<br/> <a
-href="pubList/Petitjeanetal2021-CHEMOSPHERE.pdf"><svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1.5em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#0E8BB7;overflow:visible;position:relative;"><path d="M88 304H80V256H88C101.3 256 112 266.7 112 280C112 293.3 101.3 304 88 304zM192 256H200C208.8 256 216 263.2 216 272V336C216 344.8 208.8 352 200 352H192V256zM224 0V128C224 145.7 238.3 160 256 160H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V64C0 28.65 28.65 0 64 0H224zM64 224C55.16 224 48 231.2 48 240V368C48 376.8 55.16 384 64 384C72.84 384 80 376.8 80 368V336H88C118.9 336 144 310.9 144 280C144 249.1 118.9 224 88 224H64zM160 368C160 376.8 167.2 384 176 384H200C226.5 384 248 362.5 248 336V272C248 245.5 226.5 224 200 224H176C167.2 224 160 231.2 160 240V368zM288 224C279.2 224 272 231.2 272 240V368C272 376.8 279.2 384 288 384C296.8 384 304 376.8 304 368V320H336C344.8 320 352 312.8 352 304C352 295.2 344.8 288 336 288H304V256H336C344.8 256 352 248.8 352 240C352 231.2 344.8 224 336 224H288zM256 0L384 128H256V0z"/></svg></a>
+10.1016/j.chemosphere.2021.130337.<br/>
+<a href="pubList/Petitjeanetal2021-CHEMOSPHERE.pdf" class="icon-link"><i class="fa fa-file-pdf"></i>
+PDF</a>
 <div style="display: flex; space-between; width: 140px;">
 <div class="altmetric-embed" data-badge-popover="right"
 data-badge-type="1" data-doi="10.1016/j.chemosphere.2021.130337">
@@ -2792,8 +2809,9 @@ Cousseau, P Laffaille, S Jean (2021)
 <a href=https://onlinelibrary.wiley.com/doi/abs/10.1002/jez.2430>Dose-and
 time-dependent effects of an immune challenge on fish across biological
 levels</a></a>, Journal of Experimental Zoology Part A: Ecological and
-Integrative Physiology, 335, 250-264, doi: 10.1002/jez.2430.<br/> <a
-href="pubList/Petitjeanetal2021-J_EXP_ZOOL_PART_A.pdf"><svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1.5em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#0E8BB7;overflow:visible;position:relative;"><path d="M88 304H80V256H88C101.3 256 112 266.7 112 280C112 293.3 101.3 304 88 304zM192 256H200C208.8 256 216 263.2 216 272V336C216 344.8 208.8 352 200 352H192V256zM224 0V128C224 145.7 238.3 160 256 160H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V64C0 28.65 28.65 0 64 0H224zM64 224C55.16 224 48 231.2 48 240V368C48 376.8 55.16 384 64 384C72.84 384 80 376.8 80 368V336H88C118.9 336 144 310.9 144 280C144 249.1 118.9 224 88 224H64zM160 368C160 376.8 167.2 384 176 384H200C226.5 384 248 362.5 248 336V272C248 245.5 226.5 224 200 224H176C167.2 224 160 231.2 160 240V368zM288 224C279.2 224 272 231.2 272 240V368C272 376.8 279.2 384 288 384C296.8 384 304 376.8 304 368V320H336C344.8 320 352 312.8 352 304C352 295.2 344.8 288 336 288H304V256H336C344.8 256 352 248.8 352 240C352 231.2 344.8 224 336 224H288zM256 0L384 128H256V0z"/></svg></a>
+Integrative Physiology, 335, 250-264, doi: 10.1002/jez.2430.<br/>
+<a href="pubList/Petitjeanetal2021-J_EXP_ZOOL_PART_A.pdf" class="icon-link"><i class="fa fa-file-pdf"></i>
+PDF</a>
 <div style="display: flex; space-between; width: 140px;">
 <div class="altmetric-embed" data-badge-popover="right"
 data-badge-type="1" data-doi="10.1002/jez.2430">
@@ -2816,8 +2834,9 @@ L Jacquin, <strong>Q Petitjean</strong>, J Côte, P Laffaille, S Jean
 <a href=https://www.frontiersin.org/articles/10.3389/fevo.2020.00086/full>Effects
 of pollution on fish behavior, personality, and cognition: some research
 perspectives</a></a>, Frontiers in Ecology and Evolution, 8, 86, doi:
-10.3389/fevo.2020.00086.<br/> <a
-href="https://www.frontiersin.org/articles/10.3389/fevo.2020.00086/pdf"><svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1.5em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#0E8BB7;overflow:visible;position:relative;"><path d="M88 304H80V256H88C101.3 256 112 266.7 112 280C112 293.3 101.3 304 88 304zM192 256H200C208.8 256 216 263.2 216 272V336C216 344.8 208.8 352 200 352H192V256zM224 0V128C224 145.7 238.3 160 256 160H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V64C0 28.65 28.65 0 64 0H224zM64 224C55.16 224 48 231.2 48 240V368C48 376.8 55.16 384 64 384C72.84 384 80 376.8 80 368V336H88C118.9 336 144 310.9 144 280C144 249.1 118.9 224 88 224H64zM160 368C160 376.8 167.2 384 176 384H200C226.5 384 248 362.5 248 336V272C248 245.5 226.5 224 200 224H176C167.2 224 160 231.2 160 240V368zM288 224C279.2 224 272 231.2 272 240V368C272 376.8 279.2 384 288 384C296.8 384 304 376.8 304 368V320H336C344.8 320 352 312.8 352 304C352 295.2 344.8 288 336 288H304V256H336C344.8 256 352 248.8 352 240C352 231.2 344.8 224 336 224H288zM256 0L384 128H256V0z"/></svg></a>
+10.3389/fevo.2020.00086.<br/>
+<a href="https://www.frontiersin.org/articles/10.3389/fevo.2020.00086/pdf" class="icon-link"><i class="fa fa-file-pdf"></i>
+PDF</a>
 <div style="display: flex; space-between; width: 140px;">
 <div class="altmetric-embed" data-badge-popover="right"
 data-badge-type="1" data-doi="10.3389/fevo.2020.00086">
@@ -2840,8 +2859,9 @@ Ribout, A Perrault, P Laffaille, L Jacquin (2020)
 <a href=https://www.sciencedirect.com/science/article/pii/S0048969720341796>Direct
 and indirect effects of multiple environmental stressors on fish health
 in human-altered rivers</a></a>, Science of the Total Environment, 742,
-140657, doi: 10.1016/j.scitotenv.2020.140657.<br/> <a
-href="pubList/Petitjeanetal2020-SCI_TOTAL_ENVIRON.pdf"><svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1.5em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#0E8BB7;overflow:visible;position:relative;"><path d="M88 304H80V256H88C101.3 256 112 266.7 112 280C112 293.3 101.3 304 88 304zM192 256H200C208.8 256 216 263.2 216 272V336C216 344.8 208.8 352 200 352H192V256zM224 0V128C224 145.7 238.3 160 256 160H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V64C0 28.65 28.65 0 64 0H224zM64 224C55.16 224 48 231.2 48 240V368C48 376.8 55.16 384 64 384C72.84 384 80 376.8 80 368V336H88C118.9 336 144 310.9 144 280C144 249.1 118.9 224 88 224H64zM160 368C160 376.8 167.2 384 176 384H200C226.5 384 248 362.5 248 336V272C248 245.5 226.5 224 200 224H176C167.2 224 160 231.2 160 240V368zM288 224C279.2 224 272 231.2 272 240V368C272 376.8 279.2 384 288 384C296.8 384 304 376.8 304 368V320H336C344.8 320 352 312.8 352 304C352 295.2 344.8 288 336 288H304V256H336C344.8 256 352 248.8 352 240C352 231.2 344.8 224 336 224H288zM256 0L384 128H256V0z"/></svg></a>
+140657, doi: 10.1016/j.scitotenv.2020.140657.<br/>
+<a href="pubList/Petitjeanetal2020-SCI_TOTAL_ENVIRON.pdf" class="icon-link"><i class="fa fa-file-pdf"></i>
+PDF</a>
 <div style="display: flex; space-between; width: 140px;">
 <div class="altmetric-embed" data-badge-popover="right"
 data-badge-type="1" data-doi="10.1016/j.scitotenv.2020.140657">
@@ -2864,8 +2884,9 @@ Santos, A Perrault, P Laffaille, L Jacquin (2020)
 <a href=https://link.springer.com/article/10.1007/s10695-019-00706-6>Combined
 effects of temperature increase and immune challenge in two wild gudgeon
 populations</a></a>, Fish physiology and biochemistry, 46, 157-176, doi:
-10.1007/s10695-019-00706-6.<br/> <a
-href="pubList/Petitjeanetal2020-FISH_PHYSIOL_BIOCHEM.pdf"><svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1.5em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#0E8BB7;overflow:visible;position:relative;"><path d="M88 304H80V256H88C101.3 256 112 266.7 112 280C112 293.3 101.3 304 88 304zM192 256H200C208.8 256 216 263.2 216 272V336C216 344.8 208.8 352 200 352H192V256zM224 0V128C224 145.7 238.3 160 256 160H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V64C0 28.65 28.65 0 64 0H224zM64 224C55.16 224 48 231.2 48 240V368C48 376.8 55.16 384 64 384C72.84 384 80 376.8 80 368V336H88C118.9 336 144 310.9 144 280C144 249.1 118.9 224 88 224H64zM160 368C160 376.8 167.2 384 176 384H200C226.5 384 248 362.5 248 336V272C248 245.5 226.5 224 200 224H176C167.2 224 160 231.2 160 240V368zM288 224C279.2 224 272 231.2 272 240V368C272 376.8 279.2 384 288 384C296.8 384 304 376.8 304 368V320H336C344.8 320 352 312.8 352 304C352 295.2 344.8 288 336 288H304V256H336C344.8 256 352 248.8 352 240C352 231.2 344.8 224 336 224H288zM256 0L384 128H256V0z"/></svg></a>
+10.1007/s10695-019-00706-6.<br/>
+<a href="pubList/Petitjeanetal2020-FISH_PHYSIOL_BIOCHEM.pdf" class="icon-link"><i class="fa fa-file-pdf"></i>
+PDF</a>
 <div style="display: flex; space-between; width: 140px;">
 <div class="altmetric-embed" data-badge-popover="right"
 data-badge-type="1" data-doi="10.1007/s10695-019-00706-6">
@@ -2889,8 +2910,9 @@ Jacquin (2019)
 <a href=https://www.sciencedirect.com/science/article/pii/S0048969719324106>Stress
 responses in fish: From molecular to evolutionary processes</a></a>,
 Science of The Total Environment, 684, 371-380, doi:
-10.1016/j.scitotenv.2019.05.357.<br/> <a
-href="pubList/Petitjeanetal2019-SCI_TOTAL_ENVIRON.pdf"><svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1.5em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#0E8BB7;overflow:visible;position:relative;"><path d="M88 304H80V256H88C101.3 256 112 266.7 112 280C112 293.3 101.3 304 88 304zM192 256H200C208.8 256 216 263.2 216 272V336C216 344.8 208.8 352 200 352H192V256zM224 0V128C224 145.7 238.3 160 256 160H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V64C0 28.65 28.65 0 64 0H224zM64 224C55.16 224 48 231.2 48 240V368C48 376.8 55.16 384 64 384C72.84 384 80 376.8 80 368V336H88C118.9 336 144 310.9 144 280C144 249.1 118.9 224 88 224H64zM160 368C160 376.8 167.2 384 176 384H200C226.5 384 248 362.5 248 336V272C248 245.5 226.5 224 200 224H176C167.2 224 160 231.2 160 240V368zM288 224C279.2 224 272 231.2 272 240V368C272 376.8 279.2 384 288 384C296.8 384 304 376.8 304 368V320H336C344.8 320 352 312.8 352 304C352 295.2 344.8 288 336 288H304V256H336C344.8 256 352 248.8 352 240C352 231.2 344.8 224 336 224H288zM256 0L384 128H256V0z"/></svg></a>
+10.1016/j.scitotenv.2019.05.357.<br/>
+<a href="pubList/Petitjeanetal2019-SCI_TOTAL_ENVIRON.pdf" class="icon-link"><i class="fa fa-file-pdf"></i>
+PDF</a>
 <div style="display: flex; space-between; width: 140px;">
 <div class="altmetric-embed" data-badge-popover="right"
 data-badge-type="1" data-doi="10.1016/j.scitotenv.2019.05.357">
@@ -2911,8 +2933,9 @@ data-style="large_rectangle"></span>
 <strong>Q Petitjean</strong> (2019)
 <a href=https://tel.archives-ouvertes.fr/tel-03132551/>Variabilité de
 réponse aux stress multiples chez le goujon (Gobio occitaniae)</a></a>,
-Université Paul Sabatier-Toulouse III.<br/> <a
-href="https://tel.archives-ouvertes.fr/tel-03132551/document"><svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1.5em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#0E8BB7;overflow:visible;position:relative;"><path d="M88 304H80V256H88C101.3 256 112 266.7 112 280C112 293.3 101.3 304 88 304zM192 256H200C208.8 256 216 263.2 216 272V336C216 344.8 208.8 352 200 352H192V256zM224 0V128C224 145.7 238.3 160 256 160H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V64C0 28.65 28.65 0 64 0H224zM64 224C55.16 224 48 231.2 48 240V368C48 376.8 55.16 384 64 384C72.84 384 80 376.8 80 368V336H88C118.9 336 144 310.9 144 280C144 249.1 118.9 224 88 224H64zM160 368C160 376.8 167.2 384 176 384H200C226.5 384 248 362.5 248 336V272C248 245.5 226.5 224 200 224H176C167.2 224 160 231.2 160 240V368zM288 224C279.2 224 272 231.2 272 240V368C272 376.8 279.2 384 288 384C296.8 384 304 376.8 304 368V320H336C344.8 320 352 312.8 352 304C352 295.2 344.8 288 336 288H304V256H336C344.8 256 352 248.8 352 240C352 231.2 344.8 224 336 224H288zM256 0L384 128H256V0z"/></svg></a> 
+Université Paul Sabatier-Toulouse III.<br/>
+<a href="https://tel.archives-ouvertes.fr/tel-03132551/document" class="icon-link"><i class="fa fa-file-pdf"></i>
+PDF</a> 
 </table>
 <h2 id="section-3">2018</h2>
 <table style='border: none;'>
@@ -2926,8 +2949,9 @@ Aleya (2018)
 Chironomus riparius larvae in assessment of trace metal bioavailability
 and transfer in a landfill leachate collection pond</a></a>,
 Environmental Science and Pollution Research, 25, 11303-11312, doi:
-10.1007/s11356-016-8261-1.<br/> <a
-href="pubList/Gimbertetal2018-ENVIRON_SCI_POLLUT_R.pdf"><svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1.5em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#0E8BB7;overflow:visible;position:relative;"><path d="M88 304H80V256H88C101.3 256 112 266.7 112 280C112 293.3 101.3 304 88 304zM192 256H200C208.8 256 216 263.2 216 272V336C216 344.8 208.8 352 200 352H192V256zM224 0V128C224 145.7 238.3 160 256 160H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V64C0 28.65 28.65 0 64 0H224zM64 224C55.16 224 48 231.2 48 240V368C48 376.8 55.16 384 64 384C72.84 384 80 376.8 80 368V336H88C118.9 336 144 310.9 144 280C144 249.1 118.9 224 88 224H64zM160 368C160 376.8 167.2 384 176 384H200C226.5 384 248 362.5 248 336V272C248 245.5 226.5 224 200 224H176C167.2 224 160 231.2 160 240V368zM288 224C279.2 224 272 231.2 272 240V368C272 376.8 279.2 384 288 384C296.8 384 304 376.8 304 368V320H336C344.8 320 352 312.8 352 304C352 295.2 344.8 288 336 288H304V256H336C344.8 256 352 248.8 352 240C352 231.2 344.8 224 336 224H288zM256 0L384 128H256V0z"/></svg></a>
+10.1007/s11356-016-8261-1.<br/>
+<a href="pubList/Gimbertetal2018-ENVIRON_SCI_POLLUT_R.pdf" class="icon-link"><i class="fa fa-file-pdf"></i>
+PDF</a>
 <div style="display: flex; space-between; width: 140px;">
 <div class="altmetric-embed" data-badge-popover="right"
 data-badge-type="1" data-doi="10.1007/s11356-016-8261-1">

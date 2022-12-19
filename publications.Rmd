@@ -59,6 +59,10 @@ if(!require(rvest)){
     install.packages("rvest")
 }
 
+# load the function from https://www.jhelvy.com/posts/2021-03-25-customizing-distill-with-htmltools-and-css/
+# to create button link redirecting to pdf file
+source(file.path("R", "Jp-Helveston-Func.R"))
+
 # create some useful functions and data:
 ####################################
 ## escape some special chars, german umlauts, ... (adapted from Thomas Hackl' blog post: https://thackl.github.io/automatically-update-publications-with-R-scholar to handle more special character)
@@ -284,12 +288,7 @@ for (i in names(html2)) {
               sep = "."
             ),
             # the block to make the correspondence between publication title and the link to ddl the pdf (either a pdf stored in github repository or a weblink to              the pdf when the article is OA)
-            paste0(
-              "[",
-              fontawesome::fa("file-pdf", fill = "#0E8BB7", height = "1.5em"),
-              "]",
-              "(",
-              ifelse(
+            icon_link(icon = "fa fa-file-pdf", text = " PDF", url =  ifelse(
                 pubList[which(tolower(gsub(
                   "[^[:alnum:]]", " ", char2html(pubList[["Title"]]), perl = T
                 )) == tolower(gsub(
@@ -309,9 +308,7 @@ for (i in names(html2)) {
                 )) == tolower(gsub(
                   "[^[:alnum:]]", " ", char2html(x[["title"]]), perl = T
                 ))), "FileName"]
-              ),
-              ")"
-            ),
+              )),
             sep = " "
           ),
           ifelse(
