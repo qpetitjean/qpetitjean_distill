@@ -35,7 +35,16 @@ This section is currently in progress, but some content will be added soon.
   <i class="fa fa-spin fa-gear fa-2x"></i>
 </i>
 </div>
+<p class="plain-text">
+While introducing my website, I should give credit where credit is due by citing several resources I used myself to build and customize my own website using <a href="https://rstudio.github.io/distill/">Distill for R Markdown</a>. 
 
+After a first look to the <a href="https://rstudio.github.io/distill/">Distill for R Markdown tutorial webpage</a>, one of the most useful resources I used is the <a href="https://distillery.rbind.io/">The Distillery website</a>, which contains a nice <a href="https://distillery.rbind.io/showcase.html">showcase</a> that can be explored to find some inspiration, but also a great <a href="https://distillery.rbind.io/tips_and_tricks.html">Tips & tricks</a> section where you can find many ways to customize or add new features to your own blog or website.
+
+Also, the blog of <a href="https://ellakaye.rbind.io/">Ella Kaye</a>, <a href="https://blog.djnavarro.net/">Danielle Navarro</a>,  <a href="https://www.jhelvy.com">John Paul Helveston</a> and <a href="https://themockup.blog/">Tom Mock</a> contain much advice to improve the appearance and add several functionalities to your Distill blog or website. 
+
+Finally, it is possible to customize website's style by using icons and animals silhouette using internet libraries such as <a href="https://fontawesome.com/search">Font Awesome</a>, <a href="https://jpswalsh.github.io/academicons/">Academicons</a> and <a href="http://phylopic.org/">phylopic</a> or by embedding <a href="https://api.altmetric.com/embeds.html">altmetric</a> and <a href="https://badge.dimensions.ai/#build">dimension</a> badges to your publication record.
+</p> 
+ 
  
 ## Last updated on {.appendix}
 ```{r,echo=FALSE}
