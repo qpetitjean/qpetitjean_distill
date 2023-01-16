@@ -93,7 +93,8 @@ Finally, it is possible to customize website's style by using icons and animals 
 
  </td>
  <td style="width: 20%; vertical-align: middle;">
-  <a title="Cyprinus carpio Linnaeus 1758; Uploaded by Carlos Cano-Barbacil, CC0 1.0 Universal &lt;https://creativecommons.org/publicdomain/zero/1.0&gt;, via phylopic" href='http://phylopic.org/'><img  height="100px" alt="Cyprinus carpio Linnaeus 1758" src="http://phylopic.org/assets/images/submissions/25a76141-cca2-4b56-bd9f-9f5fdcd8efa1.256.png" /></a>
+ 
+  <a title="Cyprinus carpio Linnaeus 1758; Uploaded by Carlos Cano-Barbacil, CC0 1.0 Universal &lt;https://creativecommons.org/publicdomain/zero/1.0&gt;, via phylopic" href="http://phylopic.org/"><img height="100px" alt="Cyprinus carpio Linnaeus 1758" src="http://phylopic.org/assets/images/submissions/25a76141-cca2-4b56-bd9f-9f5fdcd8efa1.256.png"></a>
 
  </td>
   </tr>
