@@ -1,7 +1,7 @@
 [
   {
     "path": "posts/09-22-2022-Welcome/",
-    "title": "Welcome to Quentin's website",
+    "title": "Welcome",
     "description": "Happy to open the 'News' section of my brand new website.",
     "author": [
       {
@@ -13,9 +13,9 @@
     "categories": [
       "Welcome"
     ],
-    "contents": "\r\n\r\nWelcome; I’m happy to open my brand-new website’s “News” section.\r\n\r\n\r\nHere you’ll find news about recently published articles, new positions,\r\nand more generally scientific and lab. actualities.\r\n\r\n\r\n\r\n\r\nThis section is currently in progress, but some content will be added\r\nsoon.\r\n\r\n\r\n\r\n\r\n          \r\n\r\n\r\n\r\nWhile introducing my website, I should give credit where credit is\r\ndue by citing several resources I used myself to build and customize my\r\nown website using Distill\r\nfor R Markdown.\r\nAfter a first look to the\r\nDistill for R Markdown\r\ntutorial webpage, one of the most useful resources I used is the\r\nThe Distillery website, which\r\ncontains a nice\r\nshowcase that\r\ncan be explored to find some inspiration, but also a great\r\nTips &\r\ntricks section where you can find many ways to customize or add new\r\nfeatures to your own blog or website.\r\nAlso, the blog of Ella Kaye,\r\nDanielle Navarro,\r\nJohn Paul Helveston and\r\nTom Mock contain much advice to\r\nimprove the appearance and add several functionalities to your Distill\r\nblog or website.\r\nFinally, it is possible to customize website’s style by using icons\r\nand animals silhouette using internet libraries such as\r\nFont Awesome,\r\nAcademicons and\r\nphylopic or by embedding\r\naltmetric and\r\ndimension badges to\r\nyour publication record.\r\n\r\nLast updated on\r\n\r\n[1] \"2023-01-15 13:15:53 CET\"\r\n\r\n\r\n\r\n\r\n",
+    "contents": "\r\n\r\n\r\nWelcome; I’m happy to open my brand-new website’s\r\n“News” section. Here you’ll find news about recently published articles,\r\nnew positions, and scientific and lab actualities.\r\n\r\n\r\n\r\n\r\n          \r\n\r\n\r\n\r\n\r\n\r\nWhile introducing my website, I want to give credit where credit is due\r\nby citing several resources I used myself to build and customize my own\r\nwebsite using Distill for R\r\nMarkdown.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nAfter a first look to the\r\nDistill for R Markdown\r\ntutorial webpage, one of the most useful resources I used is the\r\nThe Distillery, which\r\ncontains a nice\r\nshowcase that\r\ncan be explored to find some inspiration, but also a great\r\nTips &\r\ntricks section where you can find many ways to customize or add new\r\nfeatures to your own blog or website.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nAlso, the blogs of Ella Kaye,\r\nDanielle Navarro,\r\nJohn Paul Helveston and\r\nTom Mock contain much advice to\r\nimprove the appearance and add several functionalities to your Distill\r\nblog or website.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nFinally, it is possible to customize website’s style by using icons and\r\nanimals silhouette using internet libraries such as\r\nFont Awesome,\r\nAcademicons and\r\nPhylopic or by embedding\r\nAltmetric and\r\nDimension badges to\r\nyour publication record.\r\n\r\n\r\n\r\n\r\n\r\nLast updated on\r\n\r\n[1] \"2023-01-16 12:53:54 CET\"\r\n\r\n\r\n\r\n\r\n",
     "preview": "https://media.giphy.com/media/Lr4HRF6DEEJo90SQXF/giphy.gif",
-    "last_modified": "2023-01-15T13:15:55+01:00",
+    "last_modified": "2023-01-16T12:53:55+01:00",
     "input_file": {}
   }
 ]
