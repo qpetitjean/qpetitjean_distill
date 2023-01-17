@@ -2437,7 +2437,7 @@ table, th, tr, td {
   font-weight: 400;
 }
 
-/* Css rules to use an image as an overlay on another image */
+/* use an image as an overlay on another image */
 #container{
   position: relative;
 }
@@ -2448,6 +2448,11 @@ table, th, tr, td {
 }
 #container img:first-child{
   z-index: 2;
+}
+
+/* unauthorize click */
+.avoid-clicks {
+  pointer-events: none;
 }
 
 /* adjust the size of the blog post' preview (code from austinweisgrau retrieved from https://github.com/rstudio/distill/issues/92) */

@@ -38,8 +38,10 @@ I'm happy to share that our research about <a href='https://www.frontiersin.org/
 <p class="plain-text">
 Undark is a non-profit and editorially independent online magazine co-founded in 2016, which explores the intersection of science and society (<a href='https://undark.org/who-is-undark/'>More about it</a>).</p> 
 
+
 <a title="https://undark.org/" href='https://undark.org/'>
-<iframe src="https://undark.org/" height="405px" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" scrolling="no"></iframe>
+<div class="avoid-clicks">
+<iframe src="https://undark.org/" height="405px" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" scrolling="no"></iframe></div>
 </a>
 
 # A bit of context

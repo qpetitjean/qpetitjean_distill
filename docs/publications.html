@@ -2415,7 +2415,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     font-weight: 400;
   }
 
-  /* Css rules to use an image as an overlay on another image */
+  /* use an image as an overlay on another image */
   #container{
     position: relative;
   }
@@ -2426,6 +2426,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   }
   #container img:first-child{
     z-index: 2;
+  }
+
+  /* unauthorize click */
+  .avoid-clicks {
+    pointer-events: none;
   }
 
   /* adjust the size of the blog post' preview (code from austinweisgrau retrieved from https://github.com/rstudio/distill/issues/92) */
