@@ -2415,6 +2415,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     font-weight: 400;
   }
 
+  /* Css rules to use an image as an overlay on another image */
+  #container{
+    position: relative;
+  }
+  #container img{
+    position: absolute;
+    top:0;
+    left:0;
+  }
+  #container img:first-child{
+    z-index: 2;
+  }
+
   /* adjust the size of the blog post' preview (code from austinweisgrau retrieved from https://github.com/rstudio/distill/issues/92) */
   .thumbnail {
       padding: 0px!important;
@@ -2743,7 +2756,7 @@ window.addEventListener('DOMContentLoaded', () => {
 <!-- TOC JAVASCRIPT ELEMENTS END -->
 <div class="layout-chunk" data-layout="l-body">
 <div class="small-text">
-Last updated January 16, 2023 – Pulled automatically from
+Last updated January 17, 2023 – Pulled automatically from
 <a href='https://scholar.google.com/citations?user=GMudi1sAAAAJ&hl=en'>Google
 Scholar</a>.
 </div>

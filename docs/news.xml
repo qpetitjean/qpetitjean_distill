@@ -12,7 +12,17 @@
       <link>https://qpetitjean.github.io/qpetitjean_distill/</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 21 Sep 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Dirty Waterways May Alter Fish Behavior</title>
+      <dc:creator>Quentin PETITJEAN</dc:creator>
+      <link>https://qpetitjean.github.io/qpetitjean_distill/posts/01-17-2023-Dirty-Waterways-May-Alter-Fish-Behavior</link>
+      <description>Our research about the effects of pollution on fish behavior has been covered in Undark Magazine.</description>
+      <category>Press articles</category>
+      <guid>https://qpetitjean.github.io/qpetitjean_distill/posts/01-17-2023-Dirty-Waterways-May-Alter-Fish-Behavior</guid>
+      <pubDate>Tue, 17 Jan 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://undark.org/wp-content/uploads/2019/09/undark-logo-black@2x.png" medium="image" type="image/png"/>
+    </item>
     <item>
       <title>Welcome</title>
       <dc:creator>Quentin PETITJEAN</dc:creator>
@@ -20,7 +30,7 @@
       <description>Happy to open the 'News' section of my brand new website.</description>
       <category>Welcome</category>
       <guid>https://qpetitjean.github.io/qpetitjean_distill/posts/09-22-2022-Welcome</guid>
-      <pubDate>Wed, 21 Sep 2022 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 22 Sep 2022 00:00:00 +0000</pubDate>
       <media:content url="https://media.giphy.com/media/Lr4HRF6DEEJo90SQXF/giphy.gif" medium="image" type="image/gif"/>
     </item>
   </channel>

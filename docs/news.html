@@ -2416,6 +2416,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     font-weight: 400;
   }
 
+  /* Css rules to use an image as an overlay on another image */
+  #container{
+    position: relative;
+  }
+  #container img{
+    position: absolute;
+    top:0;
+    left:0;
+  }
+  #container img:first-child{
+    z-index: 2;
+  }
+
   /* adjust the size of the blog post' preview (code from austinweisgrau retrieved from https://github.com/rstudio/distill/issues/92) */
   .thumbnail {
       padding: 0px!important;
@@ -2829,10 +2842,29 @@ function init_posts_list() {
 <div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
 <div class="posts-list">
 <h1 class="posts-list-caption" data-caption="News">News</h1>
+<a href="posts/01-17-2023-Dirty-Waterways-May-Alter-Fish-Behavior/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["Press articles"]}</script>
+<div class="metadata">
+<div class="publishedDate">Jan. 17, 2023</div>
+<div class="dt-authors">
+<div class="dt-author">Quentin PETITJEAN</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="https://undark.org/wp-content/uploads/2019/09/undark-logo-black@2x.png"/>
+</div>
+<div class="description">
+<h2>Dirty Waterways May Alter Fish Behavior</h2>
+<div class="dt-tags">
+<div class="dt-tag">Press articles</div>
+</div>
+<p>Our research about the effects of pollution on fish behavior has been covered in Undark Magazine.</p>
+</div>
+</a>
 <a href="posts/09-22-2022-Welcome/" class="post-preview">
 <script class="post-metadata" type="text/json">{"categories":["Welcome"]}</script>
 <div class="metadata">
-<div class="publishedDate">Sept. 21, 2022</div>
+<div class="publishedDate">Sept. 22, 2022</div>
 <div class="dt-authors">
 <div class="dt-author">Quentin PETITJEAN</div>
 </div>
@@ -2855,6 +2887,10 @@ function init_posts_list() {
 <ul>
 <li>
 <a href="#category:Articles">Articles</a>
+<span class="category-count">(2)</span>
+</li>
+<li>
+<a href="#category:Press_articles">Press articles</a>
 <span class="category-count">(1)</span>
 </li>
 <li>
@@ -2868,7 +2904,7 @@ function init_posts_list() {
 <a href="#">More articles &raquo;</a>
 </div>
 </div>
-<!--/radix_placeholder_article_listing-->
+<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
 <h1>News</h1>
@@ -2916,4 +2952,9 @@ Site constructed using <a href="https://rstudio.github.io/distill/">Distill for 
 </script> 
 </html>
 </div>
-<!--/radix_placeholder_navigation_after_b
+<!--/radix_placeholder_navigation_after_body-->
+
+
+</body>
+
+</html>

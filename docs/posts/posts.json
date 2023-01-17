@@ -1,5 +1,24 @@
 [
   {
+    "path": "posts/01-17-2023-Dirty-Waterways-May-Alter-Fish-Behavior/",
+    "title": "Dirty Waterways May Alter Fish Behavior",
+    "description": "Our research about the effects of pollution on fish behavior has been covered in Undark Magazine.",
+    "author": [
+      {
+        "name": "Quentin PETITJEAN",
+        "url": "https://qpetitjean.github.io/qpetitjean_distill/index.html"
+      }
+    ],
+    "date": "2023-01-17",
+    "categories": [
+      "Press articles"
+    ],
+    "contents": "\r\n\r\n\r\nI’m happy to share that our research about\r\nthe\r\neffects of pollution on fish behavior has been featured in\r\nUndark Magazine.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nUndark Magazine\r\n\r\nUndark is a non-profit and editorially independent online magazine\r\nco-founded in 2016, which explores the intersection of science and\r\nsociety (More about it).\r\n\r\n\r\n\r\n\r\nA bit of context\r\n\r\nBack in 2020, my P.h.D focusing on the effects of multiple stressors on\r\nfish health just ended, with exciting results, particularly about the\r\nvariability of behavioral responses to contaminants exposure among fish\r\npopulations (check out\r\nhere\r\nfor further information).\r\n\r\n\r\nBriefly,\r\nin\r\nan article from 2021, we found that when exposed to a metal mixture\r\nin the laboratory, some fish populations (particularly those originating\r\nfrom historically contaminated sites) displayed increased activity\r\npatterns compared to populations from study sites with low levels of\r\ncontaminants. We hypothesized that these differences in behavior may\r\nhave an adaptive value and stressed the need to verify this hypothesis.\r\n\r\n\r\nIndeed, because behavior and cognitive abilities are very sensitive to\r\nexposure to stressors and may drastically alter ecosystem functioning,\r\nsuch changes may have highly detrimental consequences in the wild.\r\nHence, These preliminary results may be of great importance to help\r\nmitigate the effects of pollutants and improve conservation strategies\r\nin the wild.\r\n\r\n\r\nAccordingly, We had many ideas and perspectives about how stressors\r\ncould affect behavior and, by extension, cognitive abilities in wild\r\nfish. Meanwhile, recently, increasing our understanding of the\r\nrelationships between cognitive ability and fitness in wild animals\r\nbecame a highly topical issue. Accordingly, we gathered and wrote down\r\nour ideas in a\r\nperspective\r\narticle about the effects of pollutants, and more broadly stressors,\r\non fish cognition and behavior.\r\n\r\n\r\nThe resulting article was then published in a special issue of\r\nFrontiers\r\nin Ecology and Evolution, focusing on the underlying mechanisms and\r\nconstraints linking cognition and fitness in the wild (check out\r\nthe\r\nspecial issue editorial article).\r\n\r\nThe feature\r\n\r\nRecently, I was pleased to be interviewed by\r\nDoug Johnson to talk\r\nabout\r\nour\r\narticle published in Frontiers in Ecology and Evolution. Following\r\nour talk, our paper has been covered in\r\nthe Undark Magazine. The full free\r\narticle can be read\r\non\r\nthe Undark Magazine webpage\r\n\r\n\r\nSee also my twitter thread about this feature\r\n:\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+    "preview": "https://undark.org/wp-content/uploads/2019/09/undark-logo-black@2x.png",
+    "last_modified": "2023-01-17T20:21:07+01:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/09-22-2022-Welcome/",
     "title": "Welcome",
     "description": "Happy to open the 'News' section of my brand new website.",
@@ -16,6 +35,6 @@
     "contents": "\r\n\r\n\r\nWelcome; I’m happy to open my brand-new website’s\r\n“News” section. Here you’ll find news about recently published articles,\r\nnew positions, and scientific and lab actualities.\r\n\r\n\r\n\r\n\r\n          \r\n\r\n\r\n\r\n\r\n\r\nWhile introducing my website, I want to give credit where credit is due\r\nby citing several resources I used myself to build and customize my own\r\nwebsite using Distill for R\r\nMarkdown.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nAfter a first look to the\r\nDistill for R Markdown\r\ntutorial webpage, one of the most useful resources I used is the\r\nThe Distillery, which\r\ncontains a nice\r\nshowcase that\r\ncan be explored to find some inspiration, but also a great\r\nTips &\r\ntricks section where you can find many ways to customize or add new\r\nfeatures to your own blog or website.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nAlso, the blogs of Ella Kaye,\r\nDanielle Navarro,\r\nJohn Paul Helveston and\r\nTom Mock contain much advice to\r\nimprove the appearance and add several functionalities to your Distill\r\nblog or website.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nFinally, it is possible to customize website’s style by using icons and\r\nanimals silhouette using internet libraries such as\r\nFont Awesome,\r\nAcademicons and\r\nPhylopic or by embedding\r\nAltmetric and\r\nDimension badges to\r\nyour publication record.\r\n\r\n\r\n\r\n\r\n\r\nLast updated on\r\n\r\n[1] \"2023-01-16 13:26:53 CET\"\r\n\r\n\r\n\r\n\r\n",
     "preview": "https://media.giphy.com/media/Lr4HRF6DEEJo90SQXF/giphy.gif",
     "last_modified": "2023-01-16T13:26:54+01:00",
-    "input_file": "09-22-2022-Welcome.knit.md"
+    "input_file": {}
   }
 ]

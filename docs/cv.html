@@ -2415,6 +2415,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     font-weight: 400;
   }
 
+  /* Css rules to use an image as an overlay on another image */
+  #container{
+    position: relative;
+  }
+  #container img{
+    position: absolute;
+    top:0;
+    left:0;
+  }
+  #container img:first-child{
+    z-index: 2;
+  }
+
   /* adjust the size of the blog post' preview (code from austinweisgrau retrieved from https://github.com/rstudio/distill/issues/92) */
   .thumbnail {
       padding: 0px!important;
