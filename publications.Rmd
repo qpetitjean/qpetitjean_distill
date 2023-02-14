@@ -251,85 +251,102 @@ html3 <- list()
 for (i in names(html2)) {
   temp <- apply(html2[[i]], 1, function(x)
     # break the line after publication reference
-    paste(
-        # add the altimetric and dimension badges to the publication reference
-        paste0(
-          # add the pdf icon and the link to pdf to the publication reference
+    paste(# add the altimetric and dimension badges to the publication reference
+      paste0(
+        # add the pdf icon and the link to pdf to the publication reference
+        paste(
+          # add a dot and break the line at the end of the publication reference
           paste(
-            # add a dot and break the line at the end of the publication reference
+            # concatenate the journal name, volume, page and DOI (when present) to the line containing authors names, publication title with its URL
             paste(
-              # concatenate the journal name, volume, page and DOI (when present) to the line containing authors names, publication title with its URL
-              paste(
-                # create the line containing authors names, publication title with its URL
-                paste0(
-                  "<table style='border: none;'><td width='100%'>",
-                  # add a bullet in front of each publication
-                  fontawesome::fa("square-caret-right", fill = "#333333"),
-                  # create link to publisher website for each publication
-                  paste(
-                    x[["AuthorsFUll"]],
-                    paste0("(", x[["year"]], ")"),
-                    paste0("<a href=",
-                           x[["PubUrl"]],
-                           ">",
-                           x[["title"]],
-                           "</a>"),
-                    sep = " "
-                  ),
-                  "</a>"
+              # create the line containing authors names, publication title with its URL
+              paste0(
+                "<table style='border: none;'><td width='100%'>",
+                # add a bullet in front of each publication
+                fontawesome::fa("square-caret-right", fill = "#333333"),
+                # create link to publisher website for each publication
+                paste(
+                  x[["AuthorsFUll"]],
+                  paste0("(", x[["year"]], ")"),
+                  paste0("<a href=",
+                         x[["PubUrl"]],
+                         ">",
+                         x[["title"]],
+                         "</a>"),
+                  sep = " "
                 ),
-                ifelse(is.null(x[["Journal"]]), x[["journal"]], x[["Journal"]]),
-                x[["Volume"]],
-                x[["Pages"]],
-                ifelse(x[["DOI"]] == '', x[["DOI"]], paste("doi:", x[["DOI"]], sep = " ")),
-                sep = ", "
+                "</a>"
               ),
-              "<br/>",
-              sep = "."
+              ifelse(is.null(x[["Journal"]]), x[["journal"]], x[["Journal"]]),
+              x[["Volume"]],
+              x[["Pages"]],
+              ifelse(x[["DOI"]] == '', x[["DOI"]], paste("doi:", x[["DOI"]], sep = " ")),
+              sep = ", "
             ),
-            # the block to make the correspondence between publication title and the link to ddl the pdf (either a pdf stored in github repository or a weblink to              the pdf when the article is OA)
-            icon_link(icon = "fa fa-file-pdf", text = " PDF", url =  ifelse(
-                pubList[which(tolower(gsub(
-                  "[^[:alnum:]]", " ", char2html(pubList[["Title"]]), perl = T
-                )) == tolower(gsub(
-                  "[^[:alnum:]]", " ", char2html(x[["title"]]), perl = T
-                ))), "Extension"] == ".pdf",
-                paste0("pubList/", pubList[which(tolower(gsub(
-                  "[^[:alnum:]]", " ", char2html(pubList[["Title"]]), perl = T
-                )) == tolower(gsub(
-                  "[^[:alnum:]]",              " ", char2html(x[["title"]]), perl = T
-                ))), "FileName"], pubList[which(tolower(gsub(
-                  "[^[:alnum:]]", " ", char2html(pubList[["Title"]]), perl = T
-                )) == tolower(gsub(
-                  "[^[:alnum:]]", " ", char2html(x[["title"]]), perl = T
-                ))), "Extension"]),
-                pubList[which(tolower(gsub(
-                  "[^[:alnum:]]", " ", char2html(pubList[["Title"]]), perl = T
-                )) == tolower(gsub(
-                  "[^[:alnum:]]", " ", char2html(x[["title"]]), perl = T
-                ))), "FileName"]
-              )),
-            sep = " "
+            "<br/>",
+            sep = "."
           ),
-          ifelse(
-            x[["DOI"]] == '',
-            "",
-            paste0(
-              "<div style='display: flex; space-between; width: 140px;'>",
-              "<div data-badge-popover='right' data-badge-type='1' data-doi=",
-              dQuote(x[["DOI"]], q = F),
-              "class='altmetric-embed'></div>",
-              " &ensp; ",
-              "<span class='__dimensions_badge_embed__' data-doi=",
-              dQuote(x[["DOI"]], q = F),
-              "data-legend='hover-right' data-style='large_rectangle'></span><script async src='https://badge.dimensions.ai/badge.js' charset='utf-8'></script>",
-              "</div>"
+          # the block to make the correspondence between publication title and the link to ddl the pdf (either a pdf stored in github repository or a weblink to the pdf when the article is OA)
+          icon_link(
+            icon = "fa fa-file-pdf",
+            text = " PDF",
+            url =  ifelse(
+              pubList[which(tolower(gsub(
+                "[^[:alnum:]]", " ", char2html(pubList[["Title"]]), perl = T
+              )) == tolower(gsub(
+                "[^[:alnum:]]", " ", char2html(x[["title"]]), perl = T
+              ))), "Extension"] == ".pdf",
+              paste0("pubList/", pubList[which(tolower(gsub(
+                "[^[:alnum:]]", " ", char2html(pubList[["Title"]]), perl = T
+              )) == tolower(gsub(
+                "[^[:alnum:]]",              " ", char2html(x[["title"]]), perl = T
+              ))), "FileName"], pubList[which(tolower(gsub(
+                "[^[:alnum:]]", " ", char2html(pubList[["Title"]]), perl = T
+              )) == tolower(gsub(
+                "[^[:alnum:]]", " ", char2html(x[["title"]]), perl = T
+              ))), "Extension"]),
+              pubList[which(tolower(gsub(
+                "[^[:alnum:]]", " ", char2html(pubList[["Title"]]), perl = T
+              )) == tolower(gsub(
+                "[^[:alnum:]]", " ", char2html(x[["title"]]), perl = T
+              ))), "FileName"]
             )
+          ),
+          # in case the data are open access, add the DATA icon and the link to data repository
+          if (pubList[which(tolower(gsub(
+            "[^[:alnum:]]", " ", char2html(pubList[["Title"]]), perl = T
+          )) == tolower(gsub(
+            "[^[:alnum:]]", " ", char2html(x[["title"]]), perl = T
+          ))), "Data"] != "") {
+            icon_link(icon = "fa fa-database",
+                      text = " DATA",
+                      url =
+                        pubList[which(tolower(gsub(
+                          "[^[:alnum:]]", " ", char2html(pubList[["Title"]]), perl = T
+                        )) == tolower(gsub(
+                          "[^[:alnum:]]", " ", char2html(x[["title"]]), perl = T
+                        ))), "Data"])
+          },
+          sep = " "
+        ),
+        ifelse(
+          x[["DOI"]] == '',
+          "",
+          paste0(
+            "<div style='display: flex; space-between; width: 140px;'>",
+            "<div data-badge-popover='right' data-badge-type='1' data-doi=",
+            dQuote(x[["DOI"]], q = F),
+            "class='altmetric-embed'></div>",
+            " &ensp; ",
+            "<span class='__dimensions_badge_embed__' data-doi=",
+            dQuote(x[["DOI"]], q = F),
+            "data-legend='hover-right' data-style='large_rectangle'></span><script async src='https://badge.dimensions.ai/badge.js' charset='utf-8'></script>",
+            "</div>"
           )
-        ), 
-        "</table>",
-      sep = "&ensp;"
-    ))
+        )
+      ),
+      "</table>",
+      sep = "&ensp;"))
   
   # remove special characters (see function above)
   temp <- as.list(char2html(temp))
@@ -341,10 +358,10 @@ for (i in names(html2)) {
 }
 
 # in case there is some null values (e.g., journal, volume, pages...), remove the extra comma
-html3 <- gsub("(, )+",", ", html3)
+html3 <- gsub("(, )+", ", ", html3)
 
 # also, if there is null values at the end of the string, the comma might be followed a period, in this case remove the comma
-html3 <- gsub('(, \\.)|(,\\.)',".", html3)
+html3 <- gsub('(, \\.)|(,\\.)', ".", html3)
 
 # add a sentence to the upper right corner of the page to specify the date at which the publication list has been updated
 # (from Thomas Hackl' blog post: https://thackl.github.io/automatically-update-publications-with-R-scholar)
