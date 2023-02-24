@@ -31,7 +31,7 @@ output:
     metathis::meta(),
     title = "Quentin PETITJEAN webpage",
     description = "The personal website of Quentin PETITJEAN",
-    url = "https://qpetitjean.github.io/",
+    url = "https://github.com/qpetitjean",
     image = "images/Home_QP.png",
     image_alt = "A photo of Quentin PETITJEAN",
     og_type = "website",
