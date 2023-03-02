@@ -1,5 +1,5 @@
 name: "Distill_Website_QP"
-title: "Quentin PETITJEAN"
+title: "QUENTIN PETITJEAN"
 description: |
   Quentin PETITJEAN personal website.
 base_url: "https://qpetitjean.github.io/qpetitjean_distill/"
@@ -14,15 +14,34 @@ theme: css/GlobalTheme.css
 navbar:
   search: true
   right:
-#    - text: "Home"
-    - icon: fa-home
-      href: index.html
-    - text: "News"
+    - text: "NEWS"  
+      #icon: fa-newspaper
       href: news.html
-    - text: "Publications"
+    - text: "PUBLICATIONS"
+      #icon: fa-edit
       href: publications.html
-    - text: "Communications"
+    - text: "COMMUNICATIONS"
+      #icon: fa-bullhorn 
       href: communications.html
     - text: "CV"
+      #icon: fa-graduation-cap
       href: cv.html
-output: distill::distill_article
+  left:
+    #- icon: fa-adjust
+    - icon: fa-home
+      href: index.html
+    - icon: fa-github
+      href: https://github.com/qpetitjean/
+collections:
+  posts:
+    share: [twitter, linkedin]      
+output: 
+  distill::distill_article:
+    css: css/GlobalTheme.css
+    includes:
+      in_header: 
+        - _others/_FloatingTOC.html
+        #- _others/_GiscusComment.html
+      after_body: 
+        - _others/_TargetBlank.html
+        #- _others/_after_body.html

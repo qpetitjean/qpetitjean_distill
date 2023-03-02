@@ -1,5 +1,5 @@
 ---
-title: "Quentin PETITJEAN"
+title: "QUENTIN PETITJEAN"
 image: images/Home_QP.png
 favicon: images/FavIcon.png
 twitter:
@@ -1143,7 +1143,7 @@ dev.off()
 knitr::include_graphics('images/WordCloud_QP.png', dpi = 150)
 ```
 
-# Bio
+# BIO
 <p class="plain-text">
 I'm a postdoctoral researcher working on the effects of global changes on various organisms, such as micro-wasps <img src="https://icon-library.com/images/fly-icon/fly-icon-29.jpg" height="18px" width="18px" />, snails <img src="https://cdn-icons-png.flaticon.com/512/616/616636.png" height="18px" width="18px" />, and fish `r fontawesome::fa("fish", fill = "#003366")`.
 </p> 

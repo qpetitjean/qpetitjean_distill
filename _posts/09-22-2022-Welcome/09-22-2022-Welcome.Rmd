@@ -11,10 +11,7 @@ author:
     affiliation_url: https://www6.paca.inrae.fr/institut-sophia-agrobiotech
 date: 09-22-2022
 output:
-  distill::distill_article:
-    embed-resources: false
-    css:
-      - css/GlobalTheme.css
+  distill::distill_article
 ---
    
  <table style="border: none; width='100%';">
@@ -48,7 +45,7 @@ While introducing my website, I want to give credit where credit is due by citin
  </td>
  <td style="width: 20%; vertical-align: middle;">
 
-   <a title="Dacostario, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Build-website.jpg"><img height="100px" alt="Build-website" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Build-website.jpg/512px-Build-website.jpg"></a>
+   <a title="Dacostario, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Build-website.jpg/800px-Build-website.jpg"><img height="100px" alt="Build-website" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Build-website.jpg/800px-Build-website.jpg"></a>
    
  </td>
   </tr>
@@ -77,8 +74,7 @@ Also, the blogs of <a href="https://ellakaye.rbind.io/">Ella Kaye</a>, <a href="
 
  </td>
  <td style="width: 20%; vertical-align: middle;">
-<a title="Jonatan Svensson Glad, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Multiple_colored_pencils_07.jpg"><img height="100px" alt="Multiple colored pencils 07" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Multiple_colored_pencils_07.jpg/512px-Multiple_colored_pencils_07.jpg"></a>
-  
+<a title="Jonatan Svensson Glad, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Multiple_colored_pencils_07.jpg/800px-Multiple_colored_pencils_07.jpg"><img height="100px" alt="Multiple colored pencils 07" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Multiple_colored_pencils_07.jpg/800px-Multiple_colored_pencils_07.jpg"></a>
  </td>
   </tr>
 </table>

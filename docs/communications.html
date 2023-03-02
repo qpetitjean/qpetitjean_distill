@@ -88,7 +88,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>Quentin PETITJEAN: Communications</title>
+  <title>QUENTIN PETITJEAN: COMMUNICATIONS</title>
 
 
   <link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"/>
@@ -96,14 +96,14 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Quentin PETITJEAN: Communications"/>
+  <meta property="og:title" content="QUENTIN PETITJEAN: COMMUNICATIONS"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="Quentin PETITJEAN"/>
+  <meta property="og:site_name" content="QUENTIN PETITJEAN"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Quentin PETITJEAN: Communications"/>
+  <meta property="twitter:title" content="QUENTIN PETITJEAN: COMMUNICATIONS"/>
   <meta property="twitter:site" content="@Q_PETITJEAN"/>
   <meta property="twitter:creator" content="@Q_PETITJEAN"/>
 
@@ -111,7 +111,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output"]}},"value":[{"type":"character","attributes":{},"value":["Communications"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_float","toc_depth","collapsed","self_contained","code_folding","css"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]},{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["css/GlobalTheme.css"]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output"]}},"value":[{"type":"character","attributes":{},"value":["COMMUNICATIONS"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_float","toc_depth","collapsed","self_contained","code_folding","css"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]},{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["css/GlobalTheme.css"]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2173,19 +2173,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --color-background:    rgba(215, 219, 219, 0.5);
     
     /* color of titles */
-    --title-color:    rgba(0, 0, 0, 0.8);
+    --title-color:    rgba(19, 122, 105, 1);
     /* color of headers */
-    --header-color:    rgba(19, 122, 105, 0.8);
+    --header-color:    rgba(44, 62, 80, 1);
     /* color of text */
-    --body-color:      rgba(5, 55, 65, 0.8);
+    --body-color:      rgba(5, 55, 65, 1);
     /* color of aside text */
-    --aside-color:     rgba(82, 117, 131 , 0.8);
+    --aside-color:     rgba(82, 117, 131 , 1);
     /* color of navigation bar and footer */
-    --navbar-foot-color: rgba(37, 160, 160, 0.9);
+    --navbar-foot-color: rgba(44, 62, 80, 1);
     /* color of text within the navbar */
-    --navbar-prim-color: rgba(255, 255, 255, 0.9);
+    --navbar-prim-color: rgba(24, 188, 156, 1);
     /* color of text within the navbar when user move the mouse over */
-    --navbar-sec-color: rgba(117, 112, 179, 0.8);
+    --navbar-sec-color: rgba(117, 112, 179, 1);
+    /* color of the links */
+    --links-prim-color: rgba(20, 130, 125, 1);
   }
 
   html {
@@ -2270,6 +2272,14 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       width: 12.5rem;
   }
 
+  /* Switch site appearance to darkmode - see https://jmbuhr.de/posts/2021-03-14-making-a-darkmode-for-your-distill-site/ */ 
+  /*.darkmode d-article,
+  .darkmode d-appendix,
+  .darkmode body {
+    background-color: black;
+    color: white;
+  } */ 
+
   /* Change the appearence of embeded video (e.g., youtube video) */
   .video-container { 
     text-align: center;
@@ -2305,7 +2315,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     
   /* Change link appearance */
   d-article a {
-    color: var(--header-color);
+    color: var(--links-prim-color);
     font-style: italic;
     border-bottom: 0px;
     text-decoration: none;
@@ -2352,7 +2362,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   /* icon link buttons - see https://www.jhelvy.com/posts/2021-03-25-customizing-distill-with-htmltools-and-css/*/
   .icon-link {
-      background-color: var(--header-color);
+      background-color: var(--navbar-foot-color);
       color: var(--navbar-prim-color);
       padding: 3px 5px 3px 5px;
       margin: 0 2px 0 2px;
@@ -2673,6 +2683,411 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
   <script src="site_libs/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
+  <!-- TOC JAVASCRIPT ELEMENTS - code from the "A poor manâ€™s TOC in {distill}" page -->
+  <!-- https://distillery.rbind.io/posts/2022-01-24-the-toc-in-distill/?panelset1=css-elements2&panelset2=javascript-elements2&panelset=yaml-output -->
+
+  <script>
+  function toggle () {
+    document.getElementById("TOC").classList.toggle("hide");
+  };
+
+  window.addEventListener('DOMContentLoaded', () => {
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        const id = entry.target.getAttribute('id');
+        if (entry.intersectionRatio > 0) {
+          document.querySelector(`[href="#${id}"]`).parentElement.classList.add('active');
+        } else {
+          document.querySelector(`[href="#${id}"]`).parentElement.classList.remove('active');
+        }
+      });
+    });
+
+    // Track all headings that have an `id` applied
+    document.querySelectorAll('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').forEach((h1, h2, h3, h4, h5, h6) => {
+      observer.observe(h1, h2, h3, h4, h5, h6);
+    });
+    
+  });
+  </script>
+
+  <!-- TOC JAVASCRIPT ELEMENTS END -->
+  <style type="text/css">
+
+  /* base variables */
+
+  /* Edit the CSS properties in this file to create a custom
+     Distill theme. Only edit values in the right column
+     for each row; values shown are the CSS defaults.
+     To return any property to the default,
+     you may set its value to: unset
+     All rows must end with a semi-colon.                      */
+
+  /* Optional: embed custom fonts here with `@import`          */
+  @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400;500;600;700&family=Merienda:wght@400;700&family=Mochiy+Pop+P+One&family=Rampart+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Dirt&family=Saira+Stencil+One&display=swap');
+  /* Optional: embed some icons from academicons here with `@import`          */
+  @import url("https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css");
+  /* This must remain at the top of this file.                 */
+
+  :root {
+    /* Main font */
+    --font-body:   'Roboto', sans-serif, Arial, sans-serif;
+    --font-header: 'Edu QLD Beginner', cursive, Arial, sans-serif;
+    --font-navbar: 'Edu QLD Beginner', cursive, Arial, sans-serif;
+    
+    /* color of the html pages background */
+    --color-background:    rgba(215, 219, 219, 0.5);
+    
+    /* color of titles */
+    --title-color:    rgba(19, 122, 105, 1);
+    /* color of headers */
+    --header-color:    rgba(44, 62, 80, 1);
+    /* color of text */
+    --body-color:      rgba(5, 55, 65, 1);
+    /* color of aside text */
+    --aside-color:     rgba(82, 117, 131 , 1);
+    /* color of navigation bar and footer */
+    --navbar-foot-color: rgba(44, 62, 80, 1);
+    /* color of text within the navbar */
+    --navbar-prim-color: rgba(24, 188, 156, 1);
+    /* color of text within the navbar when user move the mouse over */
+    --navbar-sec-color: rgba(117, 112, 179, 1);
+    /* color of the links */
+    --links-prim-color: rgba(20, 130, 125, 1);
+  }
+
+  html {
+    /*-- Main font sizes --*/
+    --title-size:      3rem;
+    --body-size:       1.06rem;
+    --code-size:       0.875rem;
+    --aside-size:      0.75rem;
+    --fig-cap-size:    0.75rem;
+    /*-- Main font colors --*/
+    --title-color:     var(--title-color);
+    --header-color:    var(--header-color);
+    --body-color:      var(--body-color);
+    --aside-color:     var(--aside-color);
+    --fig-cap-color:   rgba(0, 0, 0, 0.6);
+    /*-- Specify custom fonts ~~~ must be imported above   --*/
+    --heading-font:    var(--font-header);
+    --mono-font:       monospace;
+    --body-font:       var(--font-body);
+    --navbar-font:     var(--font-navbar);  /* websites + blogs only */
+    --scroll-behavior: auto; /* The scrolling box scrolls instantly */
+  }
+
+  /*-- ARTICLE METADATA --*/
+  d-byline {
+    --heading-size:    0.6rem;
+    --heading-color:   rgba(0, 0, 0, 0.5);
+    --body-size:       0.8rem;
+    --body-color:      rgba(0, 0, 0, 0.8);
+  }
+
+  /*-- ARTICLE TABLE OF CONTENTS --*/
+  .d-contents {
+    --heading-size:    1.125rem;
+    --contents-size:   0.813rem;
+  }
+
+  /*-- ARTICLE APPENDIX --*/
+  d-appendix {
+    --heading-size:    0.938rem;
+    --heading-color:   rgba(0, 0, 0, 0.65);
+    --text-size:       0.8em;
+    --text-color:      rgba(0, 0, 0, 0.5);
+  }
+
+  /*-- WEBSITE HEADER + FOOTER --*/
+  /* These properties only apply to Distill sites and blogs  */
+
+  .distill-site-header {
+    --font-family:      var(--font-navbar);
+    --title-size:       1.375rem;
+    --text-size:        1.125rem;
+    --text-color:       var(--navbar-prim-color);
+    --hover-color:      var(--navbar-sec-color);
+    --bkgd-color:       var(--navbar-foot-color);
+    --letter-spacing:   0.25rem;
+  }
+
+  .distill-site-footer {
+    --font-family:      var(--font-navbar);
+    --text-size:        1.125rem;
+    --text-color:       var(--navbar-prim-color);
+    --hover-color:      var(--navbar-sec-color);
+    --bkgd-color:       var(--navbar-foot-color);
+  }
+
+  /*-- Additional custom styles --*/
+  /* Add any additional CSS rules below  */
+
+  /* change search bar appearance */ 
+  .algolia-autocomplete {
+      display: inline-block;
+      margin-left: 1.563rem;
+      vertical-align: baseline;
+      background-color: rgba(255, 255, 255, 1);
+      color: var(--body-color);  /* Color of text in drop-down*/
+      padding: 0.625rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0rem;
+      border-radius: 1.563rem;
+      border: 0rem;  /* Removed border */
+      width: 12.5rem;
+  }
+
+  /* Switch site appearance to darkmode - see https://jmbuhr.de/posts/2021-03-14-making-a-darkmode-for-your-distill-site/ */ 
+  /*.darkmode d-article,
+  .darkmode d-appendix,
+  .darkmode body {
+    background-color: black;
+    color: white;
+  } */ 
+
+  /* Change the appearence of embeded video (e.g., youtube video) */
+  .video-container { 
+    text-align: center;
+    width: 43.75rem;
+    height: 24.625rem;
+    display: block;
+    margin: auto;
+    position: relative; 
+    padding-bottom: 56.25%; 
+    padding-top: 30px; 
+    height: 0; 
+    overflow: hidden; 
+    
+  }
+
+  .video-container iframe, .video-container object, .video-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    
+  }
+
+  /* change html background appearance */ 
+  html body {
+      background-color: var(--color-background);
+  }
+
+  d-article {
+      contain: none;
+    }
+    
+  /* Change link appearance */
+  d-article a {
+    color: var(--links-prim-color);
+    font-style: italic;
+    border-bottom: 0px;
+    text-decoration: none;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  /* Change link appearance in the navbar */
+  a:hover, a:focus {
+      color: var(--navbar-sec-color);
+      text-decoration: none !important;
+      border-bottom: 0px !important;
+  }
+
+  /* Postcard headers */
+  h1, h2, h3 {
+    color:    var(--header-color);
+    /*-- Specify custom fonts ~~~ must be imported above   --*/
+    font-family:   var(--font-header);
+    /*-- Specify custom fonts ~~~ must be imported above   --*/
+    font-weight:   500;
+    font-style:    bold;
+  }
+
+  /* Postcard main text */
+  div#content p {
+    font-family: var(--font-body);
+    font-style: normal;
+    font-size: 1.06rem;
+    text-align: justify;
+    color: var(--body-color);
+  }
+
+  /* Buttons on home page - code from https://github.com/jhelvy/jhelvy_distill/blob/master/css/jhelvy.css */
+  .btn-outline-dark {
+      background-color: var(--header-color);
+      color:  rgba(255, 255, 255, 0.8);
+      border: 0px;
+  }
+
+  .btn-outline-dark:hover {
+      background-color: var(--navbar-sec-color);
+  }
+
+  /* icon link buttons - see https://www.jhelvy.com/posts/2021-03-25-customizing-distill-with-htmltools-and-css/*/
+  .icon-link {
+      background-color: var(--navbar-foot-color);
+      color: var(--navbar-prim-color);
+      padding: 3px 5px 3px 5px;
+      margin: 0 2px 0 2px;
+      border-radius: 5px; /* Rounded edges */
+  }
+
+  .icon-link:hover {
+      background-color: var(--navbar-sec-color);
+      font-weight: 500;
+      color: var(--navbar-prim-color);
+  }
+
+  /* Change tables appearence */
+  table, th, tr, td {
+    font-family: var(--font-body);
+    font-style: normal;
+    font-size: 1.06rem;
+    font-weight: 400;
+    color: var(--body-color);
+    text-align: justify;
+    border-collapse: collapse;
+    border: none;
+  }
+
+  /* add small text appearence */
+  .small-text {
+    font-family: var(--font-body);
+    font-style: italic;
+    font-size: 0.8em;
+    color: var(--aside-color);
+    text-align: right;
+  }
+
+  /* add a special appearence for the title of the detailed section */
+  .summary {
+    font-family: var(--font-body);
+    font-style: italic;
+    font-size: 0.938rem;
+    color: var(--navbar-sec-color);
+    text-align: left;
+  }
+
+  /* add a special appearence for detailed section */
+  .detailed-text {
+    font-family: var(--font-body);
+    font-style: normal;
+    font-size: 0.938em;
+    color: var(--body-color);
+    text-align: justify;
+    font-weight: 400;
+  }
+
+  /* add a special appearence for plain text section */
+  .plain-text {
+    font-family: var(--font-body);
+    font-style: normal;
+    font-size: 1.06rem;
+    color: var(--body-color);
+    text-align: justify;
+    font-weight: 400;
+  }
+
+  /* use an image as an overlay on another image */
+  #container{
+    position: relative;
+  }
+  #container img{
+    position: absolute;
+    top:0;
+    left:0;
+  }
+  #container img:first-child{
+    z-index: 2;
+  }
+
+  /* unauthorize click */
+  .avoid-clicks {
+    pointer-events: none;
+  }
+
+  /* adjust the size of the blog post' preview (code from austinweisgrau retrieved from https://github.com/rstudio/distill/issues/92) */
+  .thumbnail {
+      padding: 0px!important;
+      margin: 0px!important;
+      max-width: 10%!important;
+      height: auto!important;
+      vertical-align: text-top!important;
+  }
+
+  /* Change the TOC to fix it to the upper left (code from https://distillery.rbind.io/posts/2022-01-24-the-toc-in-distill)/ */
+  #TOC {
+    opacity: 1;
+    position: fixed;
+    left: 2em; /* changes the left edge gap */
+    top: 15em; /* changes the top edge gap */
+    /* width: 20%; */
+    max-width: 260px;
+    max-height: 85%;
+    overflow-y: auto;
+    background: none;            /* Optional, remove to enable the blur filter (just for fun). */
+    padding: 10px;                /* Optional */
+    /* border-right: 1px solid rgba(0, 0, 0, 0.1); */
+    border: none;
+    /* border-radius: 1px; */
+    transition: all 0.5s;
+    z-index: 999;                 /* Optional */
+    }
+
+  /* ðŸ’¡ This small transition makes setting of the active state smooth */
+  .d-contents nav a {
+        transition: all 0.1s ease-in-out;
+    }
+
+  .d-contents nav a:hover {
+      color: var(--navbar-sec-color);
+      font-weight: 500;
+      border-color: var(--navbar-sec-color);
+      transform: scale(1.01); /* change scale to control hover zoom, now it is in 1:1 ratio */
+      padding-left:0%; /* change percentage value to control left gap during hover */
+      background-color: none; /* background colour on hover, kept as white as it is my bg colour */
+      display: block; /* keep it as block to station the text on hover */
+  }
+
+  /* ScrollSpy active styles (see JAVASCRIPT tab for activation) */
+  .d-contents nav ul li.active > a { 
+      font-weight: bold;  
+      /* border-left: 1px solid #2780e3; */
+      color: var(--navbar-sec-color) !important;
+    }
+    
+  /* Hide the TOC when resized to mobile or tablet:  480px, 768px, 900px */
+  @media screen and (max-width: 992px) {
+  #TOC {
+      position: relative;
+      left: 0;
+      top: 0;
+      max-width: none;
+      max-height: none;
+      overflow-y: auto;
+      border: none;
+      background: none; }
+    }
+
+  /* No navbar links on mobile except for the title and the nav-toggle */
+  @media screen and (max-width: 992px) {
+    .distill-site-header a, .distill-site-header .nav-dropdown {
+      display: none;
+    }
+    
+    .distill-site-header a.title, .distill-site-header a.nav-toggle {
+      display: inline-block;
+      padding: 10px 0px;
+      margin: 10px 14px; 
+    }
+  }
+  </style>
   <!--/radix_placeholder_site_in_header-->
 
   <link rel="stylesheet" href="css/GlobalTheme.css" type="text/css"/>
@@ -2684,7 +3099,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Communications","authors":[]}
+{"title":"COMMUNICATIONS","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2692,16 +3107,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <header class="header header--fixed" role="banner">
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
-<a href="index.html" class="title">Quentin PETITJEAN</a>
-<input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
-</div>
-<div class="nav-right">
+<a href="index.html" class="title">QUENTIN PETITJEAN</a>
 <a href="index.html">
 <i class="fa fa-home" aria-hidden="true"></i>
 </a>
-<a href="news.html">News</a>
-<a href="publications.html">Publications</a>
-<a href="communications.html">Communications</a>
+<a href="https://github.com/qpetitjean/">
+<i class="fa fa-github" aria-hidden="true"></i>
+</a>
+<input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
+</div>
+<div class="nav-right">
+<a href="news.html">NEWS</a>
+<a href="publications.html">PUBLICATIONS</a>
+<a href="communications.html">COMMUNICATIONS</a>
 <a href="cv.html">CV</a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
@@ -2712,7 +3130,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Communications</h1>
+<h1>COMMUNICATIONS</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2724,8 +3142,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#oral-communications" id="toc-oral-communications">Oral
-communications</a>
+<li><a href="#oral-communications" id="toc-oral-communications">ORAL
+COMMUNICATIONS</a>
 <ul>
 <li><a href="#section" id="toc-section">2021</a></li>
 <li><a href="#section-1" id="toc-section-1">2019</a></li>
@@ -2733,8 +3151,8 @@ communications</a>
 <li><a href="#section-3" id="toc-section-3">2017</a></li>
 <li><a href="#section-4" id="toc-section-4">2016</a></li>
 </ul></li>
-<li><a href="#poster-presentations" id="toc-poster-presentations">Poster
-presentations</a>
+<li><a href="#poster-presentations" id="toc-poster-presentations">POSTER
+PRESENTATIONS</a>
 <ul>
 <li><a href="#section-5" id="toc-section-5">2019</a></li>
 <li><a href="#section-6" id="toc-section-6">2018</a></li>
@@ -2744,38 +3162,10 @@ presentations</a>
 </ul>
 </nav>
 </div>
-<!-- TOC JAVASCRIPT ELEMENTS - code from the "A poor man’s TOC in {distill}" page -->
-<!-- https://distillery.rbind.io/posts/2022-01-24-the-toc-in-distill/?panelset1=css-elements2&panelset2=javascript-elements2&panelset=yaml-output -->
-<script>
-function toggle () {
-  document.getElementById("TOC").classList.toggle("hide");
-};
-
-window.addEventListener('DOMContentLoaded', () => {
-
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      const id = entry.target.getAttribute('id');
-      if (entry.intersectionRatio > 0) {
-        document.querySelector(`[href="#${id}"]`).parentElement.classList.add('active');
-      } else {
-        document.querySelector(`[href="#${id}"]`).parentElement.classList.remove('active');
-      }
-    });
-  });
-
-  // Track all headings that have an `id` applied
-  document.querySelectorAll('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').forEach((h1, h2, h3, h4, h5, h6) => {
-    observer.observe(h1, h2, h3, h4, h5, h6);
-  });
-  
-});
-</script>
-<!-- TOC JAVASCRIPT ELEMENTS END -->
 <p class="small-text">
 <span>*</span> indicate the person who presented the work.
 </p>
-<h1 id="oral-communications">Oral communications</h1>
+<h1 id="oral-communications">ORAL COMMUNICATIONS</h1>
 <h2 id="section">2021</h2>
 <p><svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M384 32H64C28.65 32 0 60.65 0 96v320c0 35.34 28.65 64 64 64h320c35.35 0 64-28.66 64-64V96C448 60.65 419.3 32 384 32zM312.3 273.6l-112 104C195.8 381.8 189.9 384 184 384c-3.25 0-6.5-.6562-9.594-2C165.7 378.2 160 369.5 160 360v-208c0-9.531 5.656-18.19 14.41-22c8.75-3.75 18.94-2.062 25.94 4.406l112 104C317.2 242.1 320 249.3 320 256S317.2 269 312.3 273.6z"/></svg>
   <strong>Q Petitjean</strong>*, Variable responses to multiple
@@ -2813,7 +3203,7 @@ From iron ore to ecotoxicological impacts: One thousand years of
 manganese history. Oral communication at the
 <a href='https://ichmet2016.ugent.be/'>ICHMET meeting 2016.</a></p>
 <p><br/></p>
-<h1 id="poster-presentations">Poster presentations</h1>
+<h1 id="poster-presentations">POSTER PRESENTATIONS</h1>
 <h2 id="section-5">2019</h2>
 <p><svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M384 32H64C28.65 32 0 60.65 0 96v320c0 35.34 28.65 64 64 64h320c35.35 0 64-28.66 64-64V96C448 60.65 419.3 32 384 32zM312.3 273.6l-112 104C195.8 381.8 189.9 384 184 384c-3.25 0-6.5-.6562-9.594-2C165.7 378.2 160 369.5 160 360v-208c0-9.531 5.656-18.19 14.41-22c8.75-3.75 18.94-2.062 25.94 4.406l112 104C317.2 242.1 320 249.3 320 256S317.2 269 312.3 273.6z"/></svg>
   M Pitout*, <strong>Q Petitjean</strong>, A Perrault, M Cousseau, P
@@ -2852,6 +3242,18 @@ class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"><
 
 
 <!--radix_placeholder_site_after_body-->
+<!-- Open external link in a new window - JAVASCRIPT ELEMENTS - code from stackoverflow.com -->
+<!-- https://stackoverflow.com/questions/56797898/rmarkdown-html-site-yml-navbar-href-links-open-in-new-tab-with-target-blank from user https://stackoverflow.com/users/3980820/abdessabour-mtk-->
+
+<script>
+(function() {
+  for (const link of document.getElementsByTagName('a')) {
+    if (/^(https?:)?\/\//.test(link.getAttribute('href'))) link.target = '_blank';
+  }
+})();
+</script>
+
+<!-- Open external link in a new window - JAVASCRIPT ELEMENTS END -->
 <!--/radix_placeholder_site_after_body-->
 <!--radix_placeholder_appendices-->
 <div class="appendix-bottom">

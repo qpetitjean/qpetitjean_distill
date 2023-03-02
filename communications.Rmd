@@ -1,5 +1,5 @@
 ---
-title: "Communications"
+title: "COMMUNICATIONS"
 output: 
   distill::distill_article:
     toc: true
@@ -12,40 +12,9 @@ output:
       - css/GlobalTheme.css
 ---
 
-<!-- TOC JAVASCRIPT ELEMENTS - code from the "A poor man’s TOC in {distill}" page -->
-<!-- https://distillery.rbind.io/posts/2022-01-24-the-toc-in-distill/?panelset1=css-elements2&panelset2=javascript-elements2&panelset=yaml-output -->
-
-<script>
-function toggle () {
-  document.getElementById("TOC").classList.toggle("hide");
-};
-
-window.addEventListener('DOMContentLoaded', () => {
-
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      const id = entry.target.getAttribute('id');
-      if (entry.intersectionRatio > 0) {
-        document.querySelector(`[href="#${id}"]`).parentElement.classList.add('active');
-      } else {
-        document.querySelector(`[href="#${id}"]`).parentElement.classList.remove('active');
-      }
-    });
-  });
-
-  // Track all headings that have an `id` applied
-  document.querySelectorAll('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').forEach((h1, h2, h3, h4, h5, h6) => {
-    observer.observe(h1, h2, h3, h4, h5, h6);
-  });
-  
-});
-</script>
-
-<!-- TOC JAVASCRIPT ELEMENTS END -->
-
 <p class="small-text"><span>&#42;</span> indicate the person who presented the work.</p>
 
-# Oral communications
+# ORAL COMMUNICATIONS
 
 ## 2021
 `r fontawesome::fa("square-caret-right", fill = "#333333")` &ensp; <strong>Q Petitjean</strong>*, Variable responses to multiple stressors in a wild freshwater fish: Gobio occitaniae. Oral communication at the <a href='https://www.biologie.uni-hamburg.de/en/forschung/grk2530/'>Department of Biology of the university of Hamburg (RTG 2530).</a> 
@@ -64,7 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 <br/>
 
-# Poster presentations
+# POSTER PRESENTATIONS
 
 ## 2019
 `r fontawesome::fa("square-caret-right", fill = "#333333")` &ensp; M Pitout*, <strong>Q Petitjean</strong>, A Perrault, M Cousseau, P Laffaille, L Jacquin, S Jean, Physiological and transcriptomic responses to metal contamination and immune challenge in gudgeon. Poster presentation at the <a href='https://eb2019.sciencesconf.org/'>E&B meeting 2019.</a>

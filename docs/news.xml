@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
   <channel>
-    <title>Quentin PETITJEAN</title>
+    <title>QUENTIN PETITJEAN</title>
     <link>https://qpetitjean.github.io/qpetitjean_distill/</link>
     <atom:link href="https://qpetitjean.github.io/qpetitjean_distill/news.xml" rel="self" type="application/rss+xml"/>
     <description>Quentin PETITJEAN personal website.
 </description>
     <image>
-      <title>Quentin PETITJEAN</title>
+      <title>QUENTIN PETITJEAN</title>
       <url>https://qpetitjean.github.io/qpetitjean_distill/images/FavIcon.png</url>
       <link>https://qpetitjean.github.io/qpetitjean_distill/</link>
     </image>

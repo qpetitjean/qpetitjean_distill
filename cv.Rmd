@@ -1,5 +1,5 @@
 ---
-title: "CV"
+title: "CURRICULUM VITAE"
 output: 
   distill::distill_article:
     toc: true
@@ -7,40 +7,10 @@ output:
     toc_depth: 3
     self_contained: false
     code_folding: false
+    includes:
     css:
       - css/GlobalTheme.css
 ---
-
-<!-- TOC JAVASCRIPT ELEMENTS - code from the "A poor man’s TOC in {distill}" page -->
-<!-- https://distillery.rbind.io/posts/2022-01-24-the-toc-in-distill/?panelset1=css-elements2&panelset2=javascript-elements2&panelset=yaml-output -->
-
-<script>
-function toggle () {
-  document.getElementById("TOC").classList.toggle("hide");
-};
-
-window.addEventListener('DOMContentLoaded', () => {
-
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      const id = entry.target.getAttribute('id');
-      if (entry.intersectionRatio > 0) {
-        document.querySelector(`[href="#${id}"]`).parentElement.classList.add('active');
-      } else {
-        document.querySelector(`[href="#${id}"]`).parentElement.classList.remove('active');
-      }
-    });
-  });
-
-  // Track all headings that have an `id` applied
-  document.querySelectorAll('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').forEach((h1, h2, h3, h4, h5, h6) => {
-    observer.observe(h1, h2, h3, h4, h5, h6);
-  });
-  
-});
-</script>
-
-<!-- TOC JAVASCRIPT ELEMENTS END -->
 
 <p style="color: var(--title-color); font-family: var(--font-body); text-align: center; text-decoration-line: underline; font-size: 125%"> <b>Currently looking for opportunities<b></p>
 <br/>
@@ -56,7 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 ***
 
-# Keywords
+# KEYWORDS
 
 <table style="border: none;">
   <tr>
@@ -75,7 +45,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 ***
 
-# Education 
+# EDUCATION 
 <p class="plain-text" style="text-align: left">
 `r fontawesome::fa("graduation-cap", fill = "#333333")` &ensp; 2019 | <a href='https://www.univ-tlse3.fr/'>Paul Sabatier University—UPS</a> | Ph.D in environmental sciences/functional ecology <br/>
 `r fontawesome::fa("graduation-cap", fill = "#333333")` &ensp; 2016 | <a href='https://www.ubfc.fr/'>Bourgogne-Franche-Comt&eacute; University—UBFC</a> | M.Sc. in environmental sciences/ecotoxicology  <br/>
@@ -83,7 +53,7 @@ window.addEventListener('DOMContentLoaded', () => {
 </p> 
 ***
 
-# Research experience
+# RESEARCH EXPERIENCE
 <p class="plain-text">
 `r fontawesome::fa("briefcase", fill = "#333333")` &ensp; Mars 2021 - October 2022 | Postdoctoral researcher | <a href='https://www6.paca.inrae.fr/institut-sophia-agrobiotech'>National Research Institute for Agriculture, Food and Environment—INRAE</a>, Sophia-Antipolis, FR </p>
 <p class="detailed-text">
@@ -181,7 +151,7 @@ Stay tuned for upcoming release.
 </p>
 
 <div class="video-container">
-<a href='https://www.youtube.com/embed/Y9ltf08Iqb4'><iframe width="100%" height="100%" src="https://www.youtube.com/embed/Y9ltf08Iqb4" title="Video-phenotyping of thermal performances in minute wasps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<a href='https://www.youtube.com/embed/Y9ltf08Iqb4'><iframe width="100%" height="100%" src="https://www.youtube.com/embed/Y9ltf08Iqb4" title="Video-phenotyping of thermal performances in minute wasps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
 </div>
 
 </details>
@@ -362,7 +332,7 @@ For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_d
 </details>
 ***
 
-# Teaching & supervising
+# TEACHING & SUPERVISING
 <p class="plain-text" style="text-align: left">
 `r fontawesome::fa("chalkboard-user", fill = "#333333")` &ensp; <a href='https://www.inp-toulouse.fr/fr/index.html'>National Polytechnic Institute—INP</a> | Electrofishing/inventory of fish species&nbsp;(≈16h) <br/>
 `r fontawesome::fa("chalkboard-user", fill = "#333333")` &ensp; <a href='https://www.univ-tlse3.fr/'>Paul Sabatier University—UPS</a> | Multivariate data analysis&nbsp;(≈50h) <br/>
@@ -370,7 +340,7 @@ For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_d
 </p>
 ***
 
-# Grants
+# GRANTS
 <p class="plain-text" style="text-align: left">
 `r fontawesome::fa("trophy", fill = "#333333")` &ensp; 2019 | Travel grant for the SETAC Europe 29<sup>th</sup> meeting&nbsp;(≈430€) </p>
 <details>
@@ -425,8 +395,8 @@ I have also worked to update the collection of the university of Galway' herbari
 
 ***
 
-# Congress & Professional memberships 
-### Congress organization
+# CONGRESS & PROFESSIONAL MEMBERSHIP
+### CONGRESS ORGANIZATION
 <p class="plain-text">
 `r fontawesome::fa("sitemap", fill = "#333333")` &ensp; 14th meeting Ecology and Behaviour (E&B) 2019</p>
 <details>
@@ -441,7 +411,7 @@ As Co-organizer, chairman (Ecotoxicology & Ecophysiology session), and financial
   <img src="https://eb2019.sciencesconf.org/data/pages/affiche_EB2019finale500.jpg" height="778px" width="540px" /></p>
 </details>
 
-### Membership 
+### MEMBERSHIP 
 <p class="plain-text" style="text-align: left">
 `r fontawesome::fa("handshake", fill = "#333333")` &ensp; British Ecological Society&nbsp;<a href='https://www.britishecologicalsociety.org/'>(BES)</a> <br/>
 `r fontawesome::fa("handshake", fill = "#333333")` &ensp; Soci&eacute;t&eacute; Française d’&Eacute;cologie et d’&Eacute;volution&nbsp;<a href='https://sfecologie.org/'>(SFE²)</a> <br/>
@@ -451,17 +421,19 @@ As Co-organizer, chairman (Ecotoxicology & Ecophysiology session), and financial
 
 ***
 
-# Peer reviews
+# PEER REVIEWS
 <p class="plain-text" style="text-align: left">
-`r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://www.springer.com/journal/11356'>Environmental Science and Pollution Research</a>&nbsp;(n=4)<br/>
 `r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://www.tandfonline.com/journals/best20'>Critical Reviews in Environmental Sciences and Technology</a>&nbsp;(n=2)<br/>
+`r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://onlinelibrary.wiley.com/journal/14610248'>Ecology Letters</a>&nbsp;(n=1)<br/>
+`r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://www.sciencedirect.com/journal/environmental-pollution'>Environmental Pollution</a>&nbsp;(n=1)<br/>
+`r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://www.springer.com/journal/11356'>Environmental Science and Pollution Research</a>&nbsp;(n=4)<br/>
 `r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://onlinelibrary.wiley.com/journal/24715646'>Journal of Experimental Zoology Part A: Ecological Genetics and Physiology</a>&nbsp;(n=1)<br/>
-`r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://www.sciencedirect.com/journal/science-of-the-total-environment'>Science of The Total Environment</a>&nbsp;(n=2)<br/>
-`r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://onlinelibrary.wiley.com/journal/14610248'>Ecology Letters</a>&nbsp;(n=1)</p>
+`r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://www.sciencedirect.com/journal/science-of-the-total-environment'>Science of The Total Environment</a>&nbsp;(n=3)<br/>
+</p>
 
 ***
 
-# Hobbies
+# HOBBIES
 <p class="plain-text">
 `r fontawesome::fa("person-hiking", fill = "#333333")` &ensp; Hiking/fishing: Fauna and flora watching and photography <br/>
 `r fontawesome::fa("person-hiking", fill = "#333333")` &ensp; Sports: Basket ball, volley-ball <br/>
