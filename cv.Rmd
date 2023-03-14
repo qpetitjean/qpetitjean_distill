@@ -428,7 +428,7 @@ As Co-organizer, chairman (Ecotoxicology & Ecophysiology session), and financial
 `r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://www.sciencedirect.com/journal/environmental-pollution'>Environmental Pollution</a>&nbsp;(n=1)<br/>
 `r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://www.springer.com/journal/11356'>Environmental Science and Pollution Research</a>&nbsp;(n=4)<br/>
 `r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://onlinelibrary.wiley.com/journal/24715646'>Journal of Experimental Zoology Part A: Ecological Genetics and Physiology</a>&nbsp;(n=1)<br/>
-`r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://www.sciencedirect.com/journal/science-of-the-total-environment'>Science of The Total Environment</a>&nbsp;(n=3)<br/>
+`r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://www.sciencedirect.com/journal/science-of-the-total-environment'>Science of The Total Environment</a>&nbsp;(n=4)<br/>
 </p>
 
 ***
