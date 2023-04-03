@@ -313,14 +313,14 @@ for (i in names(html2)) {
                           "[^[:alnum:]]", " ", char2html(x[["title"]]), perl = T
                         ))), "Code"])
           },
-          # in case their is an online statistical report (Rmarkdown), add the code icon and the link to the                report
+          # in case their is an online statistical report (Rmarkdown), add the code icon and the link to the report
           if (pubList[which(tolower(gsub(
             "[^[:alnum:]]", " ", char2html(pubList[["Title"]]), perl = T
           )) == tolower(gsub(
             "[^[:alnum:]]", " ", char2html(x[["title"]]), perl = T
           ))), "StatReport"] != "") {
             icon_link(icon = "fas fa-file-invoice",
-                      text = " Stats Report",
+                      text = " RMarkdown",
                       url =
                         pubList[which(tolower(gsub(
                           "[^[:alnum:]]", " ", char2html(pubList[["Title"]]), perl = T

@@ -12,7 +12,7 @@ output:
       - css/GlobalTheme.css
 ---
 
-<p style="color: var(--title-color); font-family: var(--font-body); text-align: center; text-decoration-line: underline; font-size: 125%"> <b>Currently looking for opportunities<b></p>
+<!-- <p style="color: var(--title-color); font-family: var(--font-body); text-align: center; text-decoration-line: underline; font-size: 125%"> <b>Currently looking for opportunities<b></p> --> 
 <br/>
 <p style='font-family: var(--font-header); font-weight: 700; color: var(--header-color); font-style: bold; font-size:175%;'>Quentin PETITJEAN, Ph.D&nbsp;<a href="mailto:q.petitjean1@gmail.com"><i class="fa fa-envelope fa-1.5x" aria-hidden="true"></i></a></p>
 <div style="height: 0.125rem;"><br></div>
@@ -22,7 +22,7 @@ output:
 
 <p class="plain-text">
 `r fontawesome::fa("location-dot", fill = "#333333")` &ensp; Present/last institutional address<br/>
-<a href="https://maps.google.com/maps?z=16&q=institut%2Bsophia%2Bagrobiotech%2Binrae-cnrs-universit%C3%A9%2Bc%C3%B4te%2Bd%27azur%2B400%2Broute%2Bdes%2Bchappes%2Bbp%2B167%2B06903%2Bsophia%2Bantipolis%2Bcedex%2Bfrance"> <small>Institut Sophia Agrobiotech, UMR5254 ISA, INRAE, CNRS, Universit&eacute; Côte d'Azur, Sophia-Antipolis, France.</small></a></p> 
+<a href="https://www.google.com/maps/place/%C3%89cole+Nationale+Sup%C3%A9rieure+Agronomique+de+Toulouse+(INP-ENSAT)/@43.535057,1.4910043,17z/data=!3m1!4b1!4m6!3m5!1s0x12aebe68ea1cca3b:0xe3a06d7502d26937!8m2!3d43.535057!4d1.493193!16s%2Fm%2F0gx1q6l"> <small>Laboratoire Ecologie Fonctionnelle et Environnement (LEFE), UMR 5245 CNRS – UT3 – INPT, Castanet-Tolosan, France.</small></a></p> 
 
 ***
 
@@ -425,10 +425,10 @@ As Co-organizer, chairman (Ecotoxicology & Ecophysiology session), and financial
 <p class="plain-text" style="text-align: left">
 `r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://www.tandfonline.com/journals/best20'>Critical Reviews in Environmental Sciences and Technology</a>&nbsp;(n=2)<br/>
 `r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://onlinelibrary.wiley.com/journal/14610248'>Ecology Letters</a>&nbsp;(n=1)<br/>
-`r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://www.sciencedirect.com/journal/environmental-pollution'>Environmental Pollution</a>&nbsp;(n=1)<br/>
+`r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://www.sciencedirect.com/journal/environmental-pollution'>Environmental Pollution</a>&nbsp;(n=2)<br/>
 `r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://www.springer.com/journal/11356'>Environmental Science and Pollution Research</a>&nbsp;(n=4)<br/>
 `r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://onlinelibrary.wiley.com/journal/24715646'>Journal of Experimental Zoology Part A: Ecological Genetics and Physiology</a>&nbsp;(n=1)<br/>
-`r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://www.sciencedirect.com/journal/science-of-the-total-environment'>Science of The Total Environment</a>&nbsp;(n=4)<br/>
+`r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://www.sciencedirect.com/journal/science-of-the-total-environment'>Science of The Total Environment</a>&nbsp;(n=3)<br/>
 </p>
 
 ***

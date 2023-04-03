@@ -2252,8 +2252,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --text-color:       var(--navbar-prim-color);
     --hover-color:      var(--navbar-sec-color);
     --bkgd-color:       var(--navbar-foot-color);
+    --width:            100%;
   }
-
+   
   /*-- Additional custom styles --*/
   /* Add any additional CSS rules below  */
 
@@ -2363,7 +2364,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /* icon link buttons - see https://www.jhelvy.com/posts/2021-03-25-customizing-distill-with-htmltools-and-css/*/
   .icon-link {
       background-color: var(--navbar-foot-color);
-      color: var(--navbar-prim-color);
+      color: rgba(255, 255, 255, 0.8);
       padding: 3px 5px 3px 5px;
       margin: 0 2px 0 2px;
       border-radius: 5px; /* Rounded edges */
@@ -2372,7 +2373,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   .icon-link:hover {
       background-color: var(--navbar-sec-color);
       font-weight: 500;
-      color: var(--navbar-prim-color);
+      color: rgba(255, 255, 255, 0.8);
   }
 
   /* Change tables appearence */
@@ -2493,8 +2494,24 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       color: var(--navbar-sec-color) !important;
     }
     
-  /* Hide the TOC when resized to mobile or tablet:  480px, 768px, 900px */
-  @media screen and (max-width: 992px) {
+  /*  mobile or tablet display */
+  @media screen and (max-width: 1015px) {
+    /* reduce the search bar */  
+  .algolia-autocomplete{
+      width: 6.5rem; }
+      
+    /* By default the footer is not taking up the full width of the screen on mobile devices - the following helps to correct it */ 
+  .distill-site-footer {
+      padding: 1rem 0;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  @media screen and (max-width: 890px) {
+    /* Hide the TOC when resized to mobile or tablet:  480px, 768px, 900px */
   #TOC {
       position: relative;
       left: 0;
@@ -2504,19 +2521,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       overflow-y: auto;
       border: none;
       background: none; }
-    }
-
-  /* No navbar links on mobile except for the title and the nav-toggle */
-  @media screen and (max-width: 992px) {
-    .distill-site-header a, .distill-site-header .nav-dropdown {
-      display: none;
-    }
+      
+    /* hide the search bar */  
+  .algolia-autocomplete{
+      display: none; }
+      
+    /* No navbar links on mobile except for the title and the nav-toggle */
+  .distill-site-header a, .distill-site-header .nav-dropdown {
+      display: none; }
     
-    .distill-site-header a.title, .distill-site-header a.nav-toggle {
+  .distill-site-header a.title, .distill-site-header a.nav-toggle {
       display: inline-block;
       padding: 10px 0px;
-      margin: 10px 14px; 
-    }
+      margin: 10px 14px; }
   }</style>
   <style type="text/css">
   /* base style */
@@ -2821,8 +2838,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --text-color:       var(--navbar-prim-color);
     --hover-color:      var(--navbar-sec-color);
     --bkgd-color:       var(--navbar-foot-color);
+    --width:            100%;
   }
-
+   
   /*-- Additional custom styles --*/
   /* Add any additional CSS rules below  */
 
@@ -2932,7 +2950,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /* icon link buttons - see https://www.jhelvy.com/posts/2021-03-25-customizing-distill-with-htmltools-and-css/*/
   .icon-link {
       background-color: var(--navbar-foot-color);
-      color: var(--navbar-prim-color);
+      color: rgba(255, 255, 255, 0.8);
       padding: 3px 5px 3px 5px;
       margin: 0 2px 0 2px;
       border-radius: 5px; /* Rounded edges */
@@ -2941,7 +2959,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   .icon-link:hover {
       background-color: var(--navbar-sec-color);
       font-weight: 500;
-      color: var(--navbar-prim-color);
+      color: rgba(255, 255, 255, 0.8);
   }
 
   /* Change tables appearence */
@@ -3062,8 +3080,24 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       color: var(--navbar-sec-color) !important;
     }
     
-  /* Hide the TOC when resized to mobile or tablet:  480px, 768px, 900px */
-  @media screen and (max-width: 992px) {
+  /*  mobile or tablet display */
+  @media screen and (max-width: 1015px) {
+    /* reduce the search bar */  
+  .algolia-autocomplete{
+      width: 6.5rem; }
+      
+    /* By default the footer is not taking up the full width of the screen on mobile devices - the following helps to correct it */ 
+  .distill-site-footer {
+      padding: 1rem 0;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  @media screen and (max-width: 890px) {
+    /* Hide the TOC when resized to mobile or tablet:  480px, 768px, 900px */
   #TOC {
       position: relative;
       left: 0;
@@ -3073,20 +3107,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       overflow-y: auto;
       border: none;
       background: none; }
-    }
-
-  /* No navbar links on mobile except for the title and the nav-toggle */
-  @media screen and (max-width: 992px) {
-    .distill-site-header a, .distill-site-header .nav-dropdown {
-      display: none;
-    }
+      
+    /* hide the search bar */  
+  .algolia-autocomplete{
+      display: none; }
+      
+    /* No navbar links on mobile except for the title and the nav-toggle */
+  .distill-site-header a, .distill-site-header .nav-dropdown {
+      display: none; }
     
-    .distill-site-header a.title, .distill-site-header a.nav-toggle {
+  .distill-site-header a.title, .distill-site-header a.nav-toggle {
       display: inline-block;
       padding: 10px 0px;
-      margin: 10px 14px; 
-    }
+      margin: 10px 14px; }
   }
+
   </style>
   <!--/radix_placeholder_site_in_header-->
 

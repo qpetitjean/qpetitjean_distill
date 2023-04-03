@@ -2252,8 +2252,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --text-color:       var(--navbar-prim-color);
     --hover-color:      var(--navbar-sec-color);
     --bkgd-color:       var(--navbar-foot-color);
+    --width:            100%;
   }
-
+   
   /*-- Additional custom styles --*/
   /* Add any additional CSS rules below  */
 
@@ -2363,7 +2364,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /* icon link buttons - see https://www.jhelvy.com/posts/2021-03-25-customizing-distill-with-htmltools-and-css/*/
   .icon-link {
       background-color: var(--navbar-foot-color);
-      color: var(--navbar-prim-color);
+      color: rgba(255, 255, 255, 0.8);
       padding: 3px 5px 3px 5px;
       margin: 0 2px 0 2px;
       border-radius: 5px; /* Rounded edges */
@@ -2372,7 +2373,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   .icon-link:hover {
       background-color: var(--navbar-sec-color);
       font-weight: 500;
-      color: var(--navbar-prim-color);
+      color: rgba(255, 255, 255, 0.8);
   }
 
   /* Change tables appearence */
@@ -2493,8 +2494,24 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       color: var(--navbar-sec-color) !important;
     }
     
-  /* Hide the TOC when resized to mobile or tablet:  480px, 768px, 900px */
-  @media screen and (max-width: 992px) {
+  /*  mobile or tablet display */
+  @media screen and (max-width: 1015px) {
+    /* reduce the search bar */  
+  .algolia-autocomplete{
+      width: 6.5rem; }
+      
+    /* By default the footer is not taking up the full width of the screen on mobile devices - the following helps to correct it */ 
+  .distill-site-footer {
+      padding: 1rem 0;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  @media screen and (max-width: 890px) {
+    /* Hide the TOC when resized to mobile or tablet:  480px, 768px, 900px */
   #TOC {
       position: relative;
       left: 0;
@@ -2504,19 +2521,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       overflow-y: auto;
       border: none;
       background: none; }
-    }
-
-  /* No navbar links on mobile except for the title and the nav-toggle */
-  @media screen and (max-width: 992px) {
-    .distill-site-header a, .distill-site-header .nav-dropdown {
-      display: none;
-    }
+      
+    /* hide the search bar */  
+  .algolia-autocomplete{
+      display: none; }
+      
+    /* No navbar links on mobile except for the title and the nav-toggle */
+  .distill-site-header a, .distill-site-header .nav-dropdown {
+      display: none; }
     
-    .distill-site-header a.title, .distill-site-header a.nav-toggle {
+  .distill-site-header a.title, .distill-site-header a.nav-toggle {
       display: inline-block;
       padding: 10px 0px;
-      margin: 10px 14px; 
-    }
+      margin: 10px 14px; }
   }</style>
   <style type="text/css">
   /* base style */
@@ -2821,8 +2838,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --text-color:       var(--navbar-prim-color);
     --hover-color:      var(--navbar-sec-color);
     --bkgd-color:       var(--navbar-foot-color);
+    --width:            100%;
   }
-
+   
   /*-- Additional custom styles --*/
   /* Add any additional CSS rules below  */
 
@@ -2932,7 +2950,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /* icon link buttons - see https://www.jhelvy.com/posts/2021-03-25-customizing-distill-with-htmltools-and-css/*/
   .icon-link {
       background-color: var(--navbar-foot-color);
-      color: var(--navbar-prim-color);
+      color: rgba(255, 255, 255, 0.8);
       padding: 3px 5px 3px 5px;
       margin: 0 2px 0 2px;
       border-radius: 5px; /* Rounded edges */
@@ -2941,7 +2959,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   .icon-link:hover {
       background-color: var(--navbar-sec-color);
       font-weight: 500;
-      color: var(--navbar-prim-color);
+      color: rgba(255, 255, 255, 0.8);
   }
 
   /* Change tables appearence */
@@ -3062,8 +3080,24 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       color: var(--navbar-sec-color) !important;
     }
     
-  /* Hide the TOC when resized to mobile or tablet:  480px, 768px, 900px */
-  @media screen and (max-width: 992px) {
+  /*  mobile or tablet display */
+  @media screen and (max-width: 1015px) {
+    /* reduce the search bar */  
+  .algolia-autocomplete{
+      width: 6.5rem; }
+      
+    /* By default the footer is not taking up the full width of the screen on mobile devices - the following helps to correct it */ 
+  .distill-site-footer {
+      padding: 1rem 0;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  @media screen and (max-width: 890px) {
+    /* Hide the TOC when resized to mobile or tablet:  480px, 768px, 900px */
   #TOC {
       position: relative;
       left: 0;
@@ -3073,20 +3107,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       overflow-y: auto;
       border: none;
       background: none; }
-    }
-
-  /* No navbar links on mobile except for the title and the nav-toggle */
-  @media screen and (max-width: 992px) {
-    .distill-site-header a, .distill-site-header .nav-dropdown {
-      display: none;
-    }
+      
+    /* hide the search bar */  
+  .algolia-autocomplete{
+      display: none; }
+      
+    /* No navbar links on mobile except for the title and the nav-toggle */
+  .distill-site-header a, .distill-site-header .nav-dropdown {
+      display: none; }
     
-    .distill-site-header a.title, .distill-site-header a.nav-toggle {
+  .distill-site-header a.title, .distill-site-header a.nav-toggle {
       display: inline-block;
       padding: 10px 0px;
-      margin: 10px 14px; 
-    }
+      margin: 10px 14px; }
   }
+
   </style>
   <!--/radix_placeholder_site_in_header-->
 
@@ -3162,9 +3197,7 @@ id="toc-congress-organization">CONGRESS ORGANIZATION</a></li>
 </ul>
 </nav>
 </div>
-<p style="color: var(--title-color); font-family: var(--font-body); text-align: center; text-decoration-line: underline; font-size: 125%">
-<b>Currently looking for opportunities<b>
-</p>
+<!-- <p style="color: var(--title-color); font-family: var(--font-body); text-align: center; text-decoration-line: underline; font-size: 125%"> <b>Currently looking for opportunities<b></p> -->
 <br/>
 <p style="font-family: var(--font-header); font-weight: 700; color: var(--header-color); font-style: bold; font-size:175%;">
 Quentin PETITJEAN,
@@ -3183,9 +3216,9 @@ Ph.D <a href="mailto:q.petitjean1@gmail.com"><i class="fa fa-envelope fa-1.5x" 
 <p class="plain-text">
 <svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"/></svg>
   Present/last institutional address<br/>
-<a href="https://maps.google.com/maps?z=16&q=institut%2Bsophia%2Bagrobiotech%2Binrae-cnrs-universit%C3%A9%2Bc%C3%B4te%2Bd%27azur%2B400%2Broute%2Bdes%2Bchappes%2Bbp%2B167%2B06903%2Bsophia%2Bantipolis%2Bcedex%2Bfrance">
-<small>Institut Sophia Agrobiotech, UMR5254 ISA, INRAE, CNRS, Université
-Côte d’Azur, Sophia-Antipolis, France.</small></a>
+<a href="https://www.google.com/maps/place/%C3%89cole+Nationale+Sup%C3%A9rieure+Agronomique+de+Toulouse+(INP-ENSAT)/@43.535057,1.4910043,17z/data=!3m1!4b1!4m6!3m5!1s0x12aebe68ea1cca3b:0xe3a06d7502d26937!8m2!3d43.535057!4d1.493193!16s%2Fm%2F0gx1q6l">
+<small>Laboratoire Ecologie Fonctionnelle et Environnement (LEFE), UMR
+5245 CNRS – UT3 – INPT, Castanet-Tolosan, France.</small></a>
 </p>
 <hr />
 <h1 id="keywords">KEYWORDS</h1>
@@ -3813,7 +3846,7 @@ Letters</a> (n=1)<br/>
 <svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M256 0v128h128L256 0zM224 128L224 0H48C21.49 0 0 21.49 0 48v416C0 490.5 21.49 512 48 512h288c26.51 0 48-21.49 48-48V160h-127.1C238.3 160 224 145.7 224 128zM272 416h-160C103.2 416 96 408.8 96 400C96 391.2 103.2 384 112 384h160c8.836 0 16 7.162 16 16C288 408.8 280.8 416 272 416zM272 352h-160C103.2 352 96 344.8 96 336C96 327.2 103.2 320 112 320h160c8.836 0 16 7.162 16 16C288 344.8 280.8 352 272 352zM288 272C288 280.8 280.8 288 272 288h-160C103.2 288 96 280.8 96 272C96 263.2 103.2 256 112 256h160C280.8 256 288 263.2 288 272z"/></svg>
  
 <a href='https://www.sciencedirect.com/journal/environmental-pollution'>Environmental
-Pollution</a> (n=1)<br/>
+Pollution</a> (n=2)<br/>
 <svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M256 0v128h128L256 0zM224 128L224 0H48C21.49 0 0 21.49 0 48v416C0 490.5 21.49 512 48 512h288c26.51 0 48-21.49 48-48V160h-127.1C238.3 160 224 145.7 224 128zM272 416h-160C103.2 416 96 408.8 96 400C96 391.2 103.2 384 112 384h160c8.836 0 16 7.162 16 16C288 408.8 280.8 416 272 416zM272 352h-160C103.2 352 96 344.8 96 336C96 327.2 103.2 320 112 320h160c8.836 0 16 7.162 16 16C288 344.8 280.8 352 272 352zM288 272C288 280.8 280.8 288 272 288h-160C103.2 288 96 280.8 96 272C96 263.2 103.2 256 112 256h160C280.8 256 288 263.2 288 272z"/></svg>
   <a href='https://www.springer.com/journal/11356'>Environmental Science
 and Pollution Research</a> (n=4)<br/>
@@ -3824,7 +3857,7 @@ Physiology</a> (n=1)<br/>
 <svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M256 0v128h128L256 0zM224 128L224 0H48C21.49 0 0 21.49 0 48v416C0 490.5 21.49 512 48 512h288c26.51 0 48-21.49 48-48V160h-127.1C238.3 160 224 145.7 224 128zM272 416h-160C103.2 416 96 408.8 96 400C96 391.2 103.2 384 112 384h160c8.836 0 16 7.162 16 16C288 408.8 280.8 416 272 416zM272 352h-160C103.2 352 96 344.8 96 336C96 327.2 103.2 320 112 320h160c8.836 0 16 7.162 16 16C288 344.8 280.8 352 272 352zM288 272C288 280.8 280.8 288 272 288h-160C103.2 288 96 280.8 96 272C96 263.2 103.2 256 112 256h160C280.8 256 288 263.2 288 272z"/></svg>
  
 <a href='https://www.sciencedirect.com/journal/science-of-the-total-environment'>Science
-of The Total Environment</a> (n=4)<br/>
+of The Total Environment</a> (n=3)<br/>
 </p>
 <hr />
 <h1 id="hobbies">HOBBIES</h1>
