@@ -12,7 +12,7 @@
       <link>https://qpetitjean.github.io/qpetitjean_distill/</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 07 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Jul 2023 00:00:00 +0000</lastBuildDate>
     <item>
       <title>MoveR Package</title>
       <dc:creator>Quentin PETITJEAN</dc:creator>
@@ -20,7 +20,7 @@
       <description>MoveR: An R package for easy analysis of animal video-tracking data</description>
       <category>R package</category>
       <guid>https://qpetitjean.github.io/qpetitjean_distill/posts/2023-07-12-mover-package</guid>
-      <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
       <media:content url="https://github.com/qpetitjean/MoveR/blob/Main/man/figures/hexsticker.png?raw=true" medium="image" type="text/plain"/>
     </item>
     <item>

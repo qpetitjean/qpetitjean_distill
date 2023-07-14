@@ -9,13 +9,13 @@
         "url": "https://qpetitjean.github.io/qpetitjean_distill/index.html"
       }
     ],
-    "date": "2023-12-07",
+    "date": "2023-07-12",
     "categories": [
       "R package"
     ],
-    "contents": "\r\n\r\n\r\nI’m happy to share the first release (v0.1.0) of the MoveR package.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nMoveR in a nutshell\r\n\r\nThe MoveR  is a lightweight R package (mostly coded with base R) representing a full workflow for importing, filtering, visualizing, and analyzing data from common video-tracking solutions.\r\n\r\n\r\nAccordingly, MoveR includes flexible tools for polishing data, removing tracking artifacts, subsetting and plotting individual paths, and computing different movement and behavior metrics.\r\n\r\n\r\nAlso, MoveR is very versatile and is intended to ease the management and analysis of video-tracking data for both beginners and advanced R users.\r\n\r\nFor a quick overview of the MoveR functionalities with a short illustrative example, check the poster I have presented to the 43èmes journées des Entomophagistes. below:\r\n\r\n\r\n\r\n\r\n\r\nWant to know more about MoveR?\r\n\r\nCheck the MoveR documentation website and the associated GitHub repository.\r\n\r\nAlso, note that MoveR is still under active development, documentation and GitHub repository content may regularly be updated.\r\nAccordingly, if you find any issues, please report them using the GitHub issue section!\r\n\r\n\r\n\r\n",
+    "contents": "\r\n\r\n\r\nI’m happy to share the first release (v0.1.0) of the MoveR package.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nMoveR in a nutshell\r\n\r\nThe MoveR  is a lightweight R package (mostly coded with base R) representing a full workflow for importing, filtering, visualizing, and analyzing data from common video-tracking solutions.\r\n\r\n\r\nAccordingly, MoveR includes flexible tools for polishing data, removing tracking artifacts, subsetting and plotting individual paths, and computing different movement and behavior metrics.\r\n\r\n\r\nAlso, MoveR is very versatile and is intended to ease the management and analysis of video-tracking data for both beginners and advanced R users.\r\n\r\nFor a quick overview of the MoveR functionalities with a short illustrative example, check the poster I have presented to the 43èmes journées des Entomophagistes. below:\r\n\r\n\r\n\r\n\r\n\r\nWant to know more about MoveR?\r\n\r\nCheck the MoveR documentation website and the associated GitHub repository.\r\n\r\nAlso, note that MoveR is still under active development, documentation and GitHub repository content may hence regularly be updated.\r\nAccordingly, if you find any issues, please report them using the GitHub issue section!\r\n\r\n\r\n\r\n",
     "preview": "https://github.com/qpetitjean/MoveR/blob/Main/man/figures/hexsticker.png?raw=true",
-    "last_modified": "2023-07-14T15:49:44+02:00",
+    "last_modified": "2023-07-14T16:40:02+02:00",
     "input_file": {}
   },
   {

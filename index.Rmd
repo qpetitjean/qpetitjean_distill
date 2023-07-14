@@ -1166,7 +1166,7 @@ By gaining insight into intraspecific variability of responses to multiple stres
 <p class="plain-text">
 Besides, I'm an `r fontawesome::fa("r-project", fill = "steelblue")` enthusiast, using it to: <br/>
 `r fontawesome::fa("square-caret-right", fill = "#333333")` &ensp; Analyze data in a reliable and open framework. <br/>
-`r fontawesome::fa("square-caret-right", fill = "#333333")` &ensp; Create the <a href="https://qpetitjean.github.io/MoveR/index.html">MoveR package</a>. <br/>
+`r fontawesome::fa("square-caret-right", fill = "#333333")` &ensp; Create the <a href="https://qpetitjean.github.io/MoveR/index.html"style="color:rgba(20, 130, 125, 1); font-style: italic; border-bottom: 0px; text-decoration: none; margin-right: 0px; margin-left: 0px;">MoveR package</a>. <br/>
 `r fontawesome::fa("square-caret-right", fill = "#333333")` &ensp; And recently, create this website. <br/>
 </p>
 </div>
