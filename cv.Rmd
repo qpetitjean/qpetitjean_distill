@@ -117,8 +117,8 @@ plot(
 <p class="detailed-text">
 The experiments were video-recorded, and my task was to use video-tracking solutions to quantify insect movements and their changes in response to temperature ramps.<br/>
 I analyzed the movements of the 35 wasp populations to test for variability in thermal biology and activity patterns. My aim was to uncover patterns of local adaptation (i.e., relationship between thermal resistance and the bioclimatic area of the origin of the populations) and test for adaptive trade-offs between resistance to cold and warm temperatures.<br/><br/>
-This work also inspired the development of an `r fontawesome::fa("r-project", fill = "steelblue")` package (MoveR) to easily process, filter, clean and analyze movement data obtained from video-tracking.<br/><br/>
-Stay tuned for upcoming release.
+This work also inspired the development of the MoveR `r fontawesome::fa("r-project", fill = "steelblue")` package, intending to easily import, visualize,  process, filter, and analyze movement data obtained from video-tracking softwares.<br/><br/>
+<a href="https://qpetitjean.github.io/MoveR/index.html">See here for package documentation</a>.
 </p>
 </td>
     <td style="width: 20%; vertical-align: top;">
@@ -421,7 +421,8 @@ As Co-organizer, chairman (Ecotoxicology & Ecophysiology session), and financial
 
 ***
 
-# PEER REVIEWS
+# PEER REVIEWS & EDITORIAL DUTIES
+### PEER REVIEWS
 <p class="plain-text" style="text-align: left">
 `r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://www.tandfonline.com/journals/best20'>Critical Reviews in Environmental Sciences and Technology</a>&nbsp;(n=2)<br/>
 `r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://onlinelibrary.wiley.com/journal/14610248'>Ecology Letters</a>&nbsp;(n=1)<br/>
@@ -430,6 +431,9 @@ As Co-organizer, chairman (Ecotoxicology & Ecophysiology session), and financial
 `r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://onlinelibrary.wiley.com/journal/24715646'>Journal of Experimental Zoology Part A: Ecological Genetics and Physiology</a>&nbsp;(n=1)<br/>
 `r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://www.sciencedirect.com/journal/science-of-the-total-environment'>Science of The Total Environment</a>&nbsp;(n=4)<br/>
 </p>
+
+### EDITORIAL DUTIES
+`r fontawesome::fa("file-lines", fill = "#333333")` &ensp; Data editor at&nbsp;<a href='https://onlinelibrary.wiley.com/journal/14610248'>Ecology Letters</a> <br/>
 
 ***
 

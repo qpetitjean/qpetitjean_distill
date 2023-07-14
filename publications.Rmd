@@ -49,18 +49,26 @@ char2html <- function(x) {
 ## remove some elements form the publication' list
 toRemove <- function(toExclude, from, data) {
   Res <- c()
-  for (i in seq(length(toExclude))) {
+  for (i in seq_along(toExclude)) {
+    if(length(grep(toExclude[[i]], data[[from]])) == 0){
+      next
+    }else{
     Res <- c(Res, grep(toExclude[[i]], data[[from]]))
+  }
   }
   if (length(which(duplicated(Res))) > 0) {
     Res <- Res[-which(duplicated(Res)),]
   }
+  if(is.null(Res)){
+    cleaned <- data
+  }else{
   cleaned <- data[-Res, ]
+  }
   return(cleaned)
 }
 
 ## Look for a given element within lists or dataframes
-listGet  <- function(myList, toFind) {
+listGet <- function(myList, toFind) {
   #### if myList is a simple list or a df
   if (toFind %in% names(myList) == TRUE) {
     return(myList[[toFind]])
@@ -118,7 +126,7 @@ html1 <- scholar::get_publications(Qpetitjean)
 
 # remove the oral communications and posters from the publication list (see function above)
 html1 <- toRemove(
-  toExclude = c("Oral Communication", "oral communication", "Poster", "poster"),
+  toExclude = c("Oral Communication", "oral communication", "Poster", "poster", "Presses universitaires de Franche-Comté"),
   from = "journal",
   data = html1
 )
@@ -211,143 +219,172 @@ html2 <- html2[sort(names(html2), decreasing = T)]
 # see https://api.altmetric.com/embeds.html and https://badge.dimensions.ai/#build for more details
 
 # load the file containing the correspondence between the publication title and the pdf file name located in the github repository or a weblink to the pdf when #the article is OA
-pubList <- read.csv2(list.files("PubList",
+pubList <- read.csv(list.files("PubList",
                                 pattern = ".csv",
-                                full.names = TRUE))
+                                full.names = TRUE),
+                    sep = ";",
+                    dec = ".",
+                    encoding = "latin1")
 
 # NA may interfer with the next code bloc, replace them by none
 pubList[is.na(pubList)] <- ""
 
 html3 <- list()
 for (i in names(html2)) {
-  temp <- apply(html2[[i]], 1, function(x)
-    # break the line after publication reference
-    paste(# add the altimetric and dimension badges to the publication reference
-      paste0(
-        # add the pdf icon and the link to pdf to the publication reference
-        paste(
-          # add a dot and break the line at the end of the publication reference
-          paste(
-            # concatenate the journal name, volume, page and DOI (when present) to the line containing authors names, publication title with its URL
-            paste(
-              # create the line containing authors names, publication title with its URL
-              paste0(
-                "<table style='border: none;'><td width='100%'>",
-                # add a bullet in front of each publication
-                fontawesome::fa("square-caret-right", fill = "#333333"),
-                # create link to publisher website for each publication
-                paste(
-                  x[["AuthorsFUll"]],
-                  paste0("(", x[["year"]], ")"),
-                  paste0("<a href=",
-                         x[["PubUrl"]],
-                         ">",
-                         x[["title"]],
-                         "</a>"),
-                  sep = " "
-                ),
-                "</a>"
-              ),
-              ifelse(is.null(x[["Journal"]]), x[["journal"]], x[["Journal"]]),
-              x[["Volume"]],
-              x[["Pages"]],
-              ifelse(x[["DOI"]] == '', x[["DOI"]], paste("doi:", x[["DOI"]], sep = " ")),
-              sep = ", "
-            ),
-            "<br/>",
-            sep = "."
-          ),
-          # the block to make the correspondence between publication title and the link to download the pdf (either a pdf stored in github repository or a web link to the pdf when the article is OA)
-          icon_link(
+  temp <- list()
+  for(j in seq(nrow(html2[[i]]))){
+    dat <- html2[[i]][j,]
+    # create the line containing authors names, publication title with its URL
+    AuthTitle <- paste0(
+      "<table style='border: none;'><td width='100%'>",
+      # add a bullet in front of each publication
+      fontawesome::fa("square-caret-right", fill = "#333333"),
+      # create link to publisher website for each publication
+      paste(
+        dat[["AuthorsFUll"]],
+        paste0("(", dat[["year"]], ")"),
+        paste0("<a href=",
+               dat[["PubUrl"]],
+               ">",
+               dat[["title"]],
+               "</a>"),
+        sep = " "
+      ),
+      "</a>"
+    )
+    # concatenate the journal name, volume, page and DOI (when present) to the line containing authors names, publication title with its URL
+    AuthTitlePub <- paste(AuthTitle,
+                          ifelse(is.null(dat[["Journal"]][[1]]), dat[["journal"]], dat[["Journal"]]),
+                          dat[["Volume"]],
+                          dat[["Pages"]],
+                          ifelse(dat[["DOI"]] == '', dat[["DOI"]], paste("doi:", dat[["DOI"]], sep = " ")),
+                          sep = ", ")
+    
+    # add a dot and break the line at the end of the publication reference
+    AuthTitlePubEnd <- paste(AuthTitlePub,
+                             "<br/>",
+                             sep = ".")
+    
+    
+    # make the correspondence between publication title and the link to download the pdf (either a pdf stored in github repository or a web link to     the pdf when the article is OA)
+    ## retrieve extension of the publication file in the pubList
+    datHtml <- char2html(dat[["title"]])
+    pubListTitleHTML <- char2html(pubList[["Title"]])
+    ext <- pubList[which(tolower(gsub(
+                "[^[:alnum:]]", " ", pubListTitleHTML, perl = T
+              )) == tolower(gsub(
+                "[^[:alnum:]]", " ", datHtml, perl = T
+              ))), "Extension"]
+    
+    # create the lines to generate the icon
+    pdfLink <- icon_link(
             icon = "fa fa-file-pdf",
             text = " PDF",
-            url =  ifelse(
-              pubList[which(tolower(gsub(
-                "[^[:alnum:]]", " ", char2html(pubList[["Title"]]), perl = T
-              )) == tolower(gsub(
-                "[^[:alnum:]]", " ", char2html(x[["title"]]), perl = T
-              ))), "Extension"] == ".pdf",
+            url =  ifelse(ext == ".pdf",
               paste0("PubList/", pubList[which(tolower(gsub(
-                "[^[:alnum:]]", " ", char2html(pubList[["Title"]]), perl = T
+                "[^[:alnum:]]", " ", pubListTitleHTML, perl = T
               )) == tolower(gsub(
-                "[^[:alnum:]]",              " ", char2html(x[["title"]]), perl = T
+                "[^[:alnum:]]",              " ", datHtml, perl = T
               ))), "FileName"], pubList[which(tolower(gsub(
-                "[^[:alnum:]]", " ", char2html(pubList[["Title"]]), perl = T
+                "[^[:alnum:]]", " ", pubListTitleHTML, perl = T
               )) == tolower(gsub(
-                "[^[:alnum:]]", " ", char2html(x[["title"]]), perl = T
+                "[^[:alnum:]]", " ", datHtml, perl = T
               ))), "Extension"]),
               pubList[which(tolower(gsub(
-                "[^[:alnum:]]", " ", char2html(pubList[["Title"]]), perl = T
+                "[^[:alnum:]]", " ", pubListTitleHTML, perl = T
               )) == tolower(gsub(
-                "[^[:alnum:]]", " ", char2html(x[["title"]]), perl = T
+                "[^[:alnum:]]", " ", datHtml, perl = T
               ))), "FileName"]
             )
-          ),
-          # in case the data are open access, add the DATA icon and the link to data repository
+          )
+    
+    # add the pdf icon and the link to pdf to the publication reference
+       AuthTitlePubEndLink <- paste(
+          AuthTitlePubEnd, 
+          pdfLink,
+          sep = " ")
+       
+    # in case the data are open access, add the DATA icon and the link to data repository
           if (pubList[which(tolower(gsub(
-            "[^[:alnum:]]", " ", char2html(pubList[["Title"]]), perl = T
+            "[^[:alnum:]]", " ", pubListTitleHTML, perl = T
           )) == tolower(gsub(
-            "[^[:alnum:]]", " ", char2html(x[["title"]]), perl = T
+            "[^[:alnum:]]", " ", datHtml, perl = T
           ))), "Data"] != "") {
+            AuthTitlePubEndLink <- paste(AuthTitlePubEndLink,
             icon_link(icon = "fa fa-database",
                       text = " DATA",
                       url =
                         pubList[which(tolower(gsub(
-                          "[^[:alnum:]]", " ", char2html(pubList[["Title"]]), perl = T
+                          "[^[:alnum:]]", " ", pubListTitleHTML, perl = T
                         )) == tolower(gsub(
-                          "[^[:alnum:]]", " ", char2html(x[["title"]]), perl = T
-                        ))), "Data"])
-          },
-          # in case the code is open access, add the code icon and the link to code repository
+                          "[^[:alnum:]]", " ", datHtml, perl = T
+                        ))), "Data"]),
+            
+          sep = " ")
+          }
+       
+       # in case the code is open access, add the code icon and the link to code repository
           if (pubList[which(tolower(gsub(
-            "[^[:alnum:]]", " ", char2html(pubList[["Title"]]), perl = T
+            "[^[:alnum:]]", " ", pubListTitleHTML, perl = T
           )) == tolower(gsub(
-            "[^[:alnum:]]", " ", char2html(x[["title"]]), perl = T
+            "[^[:alnum:]]", " ", datHtml, perl = T
           ))), "Code"] != "") {
+            AuthTitlePubEndLink <- paste(AuthTitlePubEndLink,
             icon_link(icon = "fa fa-file-code-o",
                       text = " R CODE",
                       url =
                         pubList[which(tolower(gsub(
-                          "[^[:alnum:]]", " ", char2html(pubList[["Title"]]), perl = T
+                          "[^[:alnum:]]", " ", pubListTitleHTML, perl = T
                         )) == tolower(gsub(
-                          "[^[:alnum:]]", " ", char2html(x[["title"]]), perl = T
-                        ))), "Code"])
-          },
+                          "[^[:alnum:]]", " ", datHtml, perl = T
+                        ))), "Code"]),
+          sep = " ")
+          }
+       
           # in case their is an online statistical report (Rmarkdown), add the code icon and the link to the report
           if (pubList[which(tolower(gsub(
-            "[^[:alnum:]]", " ", char2html(pubList[["Title"]]), perl = T
+            "[^[:alnum:]]", " ", pubListTitleHTML, perl = T
           )) == tolower(gsub(
-            "[^[:alnum:]]", " ", char2html(x[["title"]]), perl = T
+            "[^[:alnum:]]", " ", datHtml, perl = T
           ))), "StatReport"] != "") {
+            AuthTitlePubEndLink <- paste(AuthTitlePubEndLink,
             icon_link(icon = "fas fa-file-invoice",
                       text = " RMarkdown",
                       url =
                         pubList[which(tolower(gsub(
-                          "[^[:alnum:]]", " ", char2html(pubList[["Title"]]), perl = T
+                          "[^[:alnum:]]", " ", pubListTitleHTML, perl = T
                         )) == tolower(gsub(
-                          "[^[:alnum:]]", " ", char2html(x[["title"]]), perl = T
-                        ))), "StatReport"])
-          },
-          sep = " "
-        ),
+                          "[^[:alnum:]]", " ", datHtml, perl = T
+                        ))), "StatReport"]),
+          sep = " ")
+          }
+       
+    # add the altimetric and dimension badges to the publication reference
+      AuthTitlePubEndLinkAltim <- paste0(AuthTitlePubEndLink,
         ifelse(
-          x[["DOI"]] == '',
+          dat[["DOI"]] == '',
           "",
           paste0(
             "<div style='display: flex; space-between; width: 140px;'>",
             "<div data-badge-popover='right' data-badge-type='1' data-doi=",
-            dQuote(x[["DOI"]], q = F),
+            dQuote(dat[["DOI"]], q = F),
             "class='altmetric-embed'></div>",
             " &ensp; ",
             "<span class='__dimensions_badge_embed__' data-doi=",
-            dQuote(x[["DOI"]], q = F),
+            dQuote(dat[["DOI"]], q = F),
             "data-legend='hover-right' data-style='large_rectangle'></span><script async src='https://badge.dimensions.ai/badge.js' charset='utf-8'></script>",
             "</div>"
           )
         )
-      ),
+      )
+       
+    # break the line after publication reference
+    AuthTitlePubEndLinkAltim <- paste(AuthTitlePubEndLinkAltim,
       "</table>",
-      sep = "&ensp;"))
+      sep = "&ensp;")
+    
+    temp[[j]] <- AuthTitlePubEndLinkAltim
+  }
   
   # remove special characters (see function above)
   temp <- as.list(char2html(temp))
@@ -359,6 +396,7 @@ for (i in names(html2)) {
 }
 
 # in case there is some null values (e.g., journal, volume, pages...), remove the extra comma
+html3 <- gsub("NULL", "", html3)
 html3 <- gsub("(, )+", ", ", html3)
 
 # also, if there is null values at the end of the string, the comma might be followed a period, in this case remove the comma

@@ -11,7 +11,11 @@ output:
     css:
       - css/GlobalTheme.css
 ---
-
+```{r SourceFunc, message=FALSE, warning=FALSE, include=FALSE}
+# load the function from https://www.jhelvy.com/posts/2021-03-25-customizing-distill-with-htmltools-and-css/
+# to create button link redirecting to pdf file
+source(file.path("R", "Jp-Helveston-Func.R"))
+```
 <p class="small-text"><span>&#42;</span> indicate the person who presented the work.</p>
 
 # ORAL COMMUNICATIONS
@@ -35,14 +39,17 @@ output:
 
 # POSTER PRESENTATIONS
 
+## 2023
+`r fontawesome::fa("square-caret-right", fill = "#333333")` &ensp; <strong>Q Petitjean</strong>*, S Lartigue, M Cointe, R LeClech,  M Ion Scotta, N Ris, L Van Oudenhove , V Calcagno, MoveR: a package for the visualization and analysis of video-tracking data in R. Poster presentation at the <a href='https://entomo2023.sciencesconf.org/'>43èmes journées des Entomophagistes.</a><br/>`r icon_link(icon = "fa fa-file-pdf", text = "Poster", url ="Posters/Petitjeanetal-MOVER-POSTER.pdf")`
+
 ## 2019
 `r fontawesome::fa("square-caret-right", fill = "#333333")` &ensp; M Pitout*, <strong>Q Petitjean</strong>, A Perrault, M Cousseau, P Laffaille, L Jacquin, S Jean, Physiological and transcriptomic responses to metal contamination and immune challenge in gudgeon. Poster presentation at the <a href='https://eb2019.sciencesconf.org/'>E&B meeting 2019.</a>
 
 ## 2018
-`r fontawesome::fa("square-caret-right", fill = "#333333")` &ensp; <strong>Q Petitjean</strong>*, S Jean, J Côte, A Lamarins, A Perrault, P Laffaille, L Jacquin, Responses to combined temperature and immune stressors in wild gudgeon. Poster presentation at the <a href='https://sfecologie2018.sciencesconf.org/'>SFE² meeting 2018.</a>
+`r fontawesome::fa("square-caret-right", fill = "#333333")` &ensp; <strong>Q Petitjean</strong>*, S Jean, J Côte, A Lamarins, A Perrault, P Laffaille, L Jacquin, Responses to combined temperature and immune stressors in wild gudgeon. Poster presentation at the <a href='https://sfecologie2018.sciencesconf.org/'>SFE² meeting 2018.</a><br/>`r icon_link(icon = "fa fa-file-pdf", text = "Poster", url ="Posters/Petitjeanetal-TempImmStress-POSTER.pdf")`
 
 ## 2017
 `r fontawesome::fa("square-caret-right", fill = "#333333")` &ensp; <strong>Q Petitjean</strong>*, J Côte, L Jacquin, A Perrault, O Morrisseau, P Laffaille, S Jean, Responses of freshwater fish to multiple stressors. Poster presentation at the FEE meeting 2017.
 
 ## 2016
-`r fontawesome::fa("square-caret-right", fill = "#333333")` &ensp; <strong>Q Petitjean</strong>*, A-V Walter-Simonnet, F Choulet, A-L Mariet, P Goncalves, H Laurent, P Rosenthal, A de Vaufleury, F Gimbert, Impacts de la pr&eacute;sence de d&eacute;chets sid&eacute;rurgiques anciens sur la contamination des sols en m&eacute;taux. Poster presentation at the <a href='https://asso-sefa.fr/colloque-de-la-sefa'>French SEFA meeting 2016.</a>
+`r fontawesome::fa("square-caret-right", fill = "#333333")` &ensp; <strong>Q Petitjean</strong>*, A-V Walter-Simonnet, F Choulet, A-L Mariet, P Goncalves, H Laurent, P Rosenthal, A de Vaufleury, F Gimbert, Impacts de la pr&eacute;sence de d&eacute;chets sid&eacute;rurgiques anciens sur la contamination des sols en m&eacute;taux. Poster presentation at the <a href='https://asso-sefa.fr/colloque-de-la-sefa'>French SEFA meeting 2016.</a><br/>`r icon_link(icon = "fa fa-file-pdf", text = "Poster", url ="Posters/Petitjeanetal-MineWastes-POSTER.pdf")`

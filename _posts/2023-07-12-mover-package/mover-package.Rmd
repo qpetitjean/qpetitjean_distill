@@ -1,0 +1,54 @@
+---
+title: "MoveR Package"
+description: "MoveR: An R package for easy analysis of animal video-tracking data"
+preview: https://github.com/qpetitjean/MoveR/blob/Main/man/figures/hexsticker.png?raw=true
+categories:
+  - R package
+author:
+  - name: Quentin PETITJEAN
+    url: "https://qpetitjean.github.io/qpetitjean_distill/index.html"
+    affiliation: Institut Sophia Agrobiotech, UMR5254 ISA, INRAE, CNRS, Université Côte d’Azur, Sophia-Antipolis, France.
+    affiliation_url: https://www6.paca.inrae.fr/institut-sophia-agrobiotech
+date: 12-07-2023
+output:
+  distill::distill_article
+---
+
+<table style="border: none; width='100%';">
+  <tr>
+    <td style="width: 70%; vertical-align: top;">
+<p class="plain-text">
+I'm happy to share the first release (v0.1.0) of the <a href='https://qpetitjean.github.io/MoveR/index.html'>MoveR package</a>.</p>
+</td>
+    <td style="width: 20%; vertical-align: top;">
+<a title="MoveR" href='https://qpetitjean.github.io/MoveR/index.html'>
+<div id="container" >
+  <img src="https://github.com/qpetitjean/MoveR/blob/Main/man/figures/hexsticker.png?raw=true" style=" height: 150px; left: 20px; top: -20px;"/>
+</div></a>
+</td>
+  </tr>
+</table>
+
+# MoveR in a nutshell
+
+<p class="plain-text">
+The `MoveR` `r fontawesome::fa("r-project", fill = "steelblue")` is a lightweight R package (mostly coded with base R) representing a full workflow for importing, filtering, visualizing, and analyzing data from common video-tracking solutions.</p>  
+<p class="plain-text">
+Accordingly, `MoveR` includes flexible tools for polishing data, removing tracking artifacts, subsetting and plotting individual paths, and computing different movement and behavior metrics.</p>  
+<p class="plain-text">
+Also, `MoveR` is very versatile and is intended to ease the management and analysis of video-tracking data for both beginners and advanced R users.</p> 
+For a quick overview of the `MoveR` functionalities with a short illustrative example, check the poster I have presented to the <a href='https://entomo2023.sciencesconf.org/'>43èmes journées des Entomophagistes.</a> below:
+
+<a title="MoveR-Poster.pdf" href='https://github.com/qpetitjean/qpetitjean_distill/raw/main/Posters/Petitjeanetal-MOVER-POSTER.pdf'>
+```{r MoveRPoster, echo = FALSE, fig.align = 'center', out.width = '100%'} 
+knitr::include_graphics("https://github.com/qpetitjean/qpetitjean_distill/raw/main/images/Petitjeanetal-MOVER-POSTER.png")  
+```
+</a>
+
+
+# Want to know more about MoveR?
+
+<p class="plain-text">
+Check the <a href="https://qpetitjean.github.io/MoveR/index.html">MoveR documentation website</a> and the associated <a href="https://github.com/qpetitjean/MoveR">GitHub repository</a>.</p>
+Also, note that MoveR is still under active development, documentation and GitHub repository content may hence regularly be updated. 
+Accordingly, if you find any issues, please report them using <a href="https://github.com/qpetitjean/MoveR/issues/new">the GitHub issue section</a>!

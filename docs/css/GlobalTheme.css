@@ -106,6 +106,7 @@ d-appendix {
   --hover-color:      var(--navbar-sec-color);
   --bkgd-color:       var(--navbar-foot-color);
   --width:            100%;
+  --padding:          0.5rem 0;
 }
  
 /*-- Additional custom styles --*/
@@ -360,13 +361,22 @@ table, th, tr, td {
     
   /* By default the footer is not taking up the full width of the screen on mobile devices - the following helps to correct it */ 
 .distill-site-footer {
-    padding: 1rem 0;
+    padding: 0.25rem 0;
     width: 100%;
     position: fixed;
     bottom: 0;
     left: 0;
+    margin-top: 1rem;
   }
+  /* The correction above (footer position: fixed) make the footer overlaping text in mobile device - the following helps to correct it */  
+html body {
+    background-color: var(--color-background);
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 5rem;
+  }  
 }
+
 
 @media screen and (max-width: 890px) {
   /* Hide the TOC when resized to mobile or tablet:  480px, 768px, 900px */

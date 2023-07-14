@@ -15,15 +15,15 @@ output:
 ---
 <table style="border: none; width='100%';">
   <tr>
-    <td style="width: 70%; vertical-align: top;">
+    <td style="width: 65%; vertical-align: top;">
 <p class="plain-text">
 I'm happy to share that our research about <a href='https://www.frontiersin.org/articles/10.3389/fevo.2020.00086/full'>the effects of pollution on fish behavior</a> has been featured in <a href='https://undark.org/'>Undark Magazine</a>.</p> 
 
 </td>
-    <td style="width: 20%; vertical-align: top;">
+    <td style="width: 35%; vertical-align: top;">
 <a title="https://undark.org/" href='https://undark.org/'>
 <div id="container" >
-  <img src="https://undark.org/wp-content/themes/undark-theme-2019/assets/img/u-outline@2x.png" style=" height: 90px; left: 45px; top: -20px;"/>
+  <img src="https://undark.org/wp-content/themes/undark-theme-2019/assets/img/u-outline@2x.png" style=" height: 120px; left: 20px; top: -30px;"/>
   <img src="https://undark.org/wp-content/uploads/2019/09/undark-logo-black@2x.png" style=" height: 30px; left: -5px; top: 5px;"/>
 </div></a>
 </td>
