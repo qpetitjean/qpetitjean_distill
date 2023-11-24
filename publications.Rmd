@@ -27,6 +27,9 @@ if(!require(stats)){
 if(!require(rvest)){
     install.packages("rvest")
 }
+if(!require(easyPubMed)){
+    install.packages("easyPubMed")
+}
 
 # load the function from https://www.jhelvy.com/posts/2021-03-25-customizing-distill-with-htmltools-and-css/
 # to create button link redirecting to pdf file
@@ -95,16 +98,18 @@ DOIHTMLClass <-
       "Springer",
       "Frontiers",
       "TheRoyalSocietyPublishing",
-      "Wiley"
+      "WileyOnlineLibrary",
+      "ColdSpringHarborLaboratory"
     ),
     HTMLNode = c(
-      ".ArticleIdentifierLinks .doi",
+      "NotAllowed",
       ".ArticleIdentifierLinks .doi",
       ".c-bibliographic-information__value",
       ".header-bar-three",
       ".epub-section",
-      "NotAllowed" # wiley online library does not allow web scaping for DOi, fortunately, the DOI is included within URL 
-    )
+      "NotAllowed", 
+      ".highwire-cite-metadata-doi"
+      )
   )
 
 ####################################
@@ -146,67 +151,101 @@ Res <-
 
 ## loop over the publications to retrieve the complementary informations
 for (i in seq(nrow(html1))) {
+  PubMedDataXML <- NULL
   ### get the infos
   temp <-
     scholar::get_publication_data_extended(Qpetitjean, html1[i, "pubid"])
+  
   ### if "PubUrl" is specified in toRetrieve, look for the publication URL
   if ("PubUrl" %in% toRetrieve) {
-    PubUrl <- scholar::get_publication_url(Qpetitjean, html1[i, "pubid"])
+    PubUrl <-
+      scholar::get_publication_url(Qpetitjean, html1[i, "pubid"])
     temp <- cbind(temp, PubUrl)
   }
-  ### if "DOI" is specified in toRetrieve, look for the publication DOI
-  if ("PubUrl" %in% toRetrieve && "DOI" %in% toRetrieve) {
-    #### if the publisher is not found in the DOIHTMLClass dataframe, return NA  
-    if (length(which(DOIHTMLClass[["Publisher"]] == gsub(" .*$", "", temp[["Publisher"]]))) == 0) {
-      DOI <- ""
-    #### if the publisher website does not allow webscaping of the DOI, try to retrieve the DOI from the URL (e.g., Wiley)  
-    } else if(DOIHTMLClass[which(DOIHTMLClass[["Publisher"]] == gsub(" .*$", "", temp[["Publisher"]])),
-                            "HTMLNode"] == "NotAllowed") {
-      DOI <-
-        regmatches(temp[["PubUrl"]],
-                   regexpr("10.\\d{4,9}/[-._;()/:a-z0-9A-Z]+", temp[["PubUrl"]], perl = F))
-    #### otherwise, retrieve the DOI from the publisher website according to the DOIHTMLClass
-    } else{
-      DOI <-
-        rvest::html_text(rvest::html_nodes(rvest::read_html(temp[["PubUrl"]]),
-                                           DOIHTMLClass[which(DOIHTMLClass[["Publisher"]] == gsub(" .*$", "", temp[["Publisher"]])),
-                                                        "HTMLNode"]))
-      ##### extract the DOI from other text elements
-      DOI <- data.frame(DOI = regmatches(DOI,
-                                         regexpr(
-                                           "10.\\d{4,9}/[-._;()/:a-z0-9A-Z]+", DOI, perl = F
-                                         )))
+  
+  #### use PubMed data
+  PubMedData <-
+    easyPubMed::get_pubmed_ids_by_fulltitle(html1[i, "title"])
+ 
+  tryCatch({
+    PubMedDataXML <- R.utils::withTimeout({
+      easyPubMed::fetch_pubmed_data(PubMedData)
+    }, timeout = 5)
+  }, error = function(err)
+    NULL)
+  
+  if (!is.null(PubMedDataXML)) {
+    DOI <- regmatches(
+      PubMedDataXML,
+      regexpr("10.\\d{4,9}/[-._;()/:a-z0-9A-Z]+", PubMedDataXML, perl = F)
+    )
+    #### or if it does not work, retrieve the DOI from from the URL of the article (e.g., Wiley)
+  } else if (!is.null(temp[["Publisher"]])){
+    if (DOIHTMLClass[which(DOIHTMLClass[["Publisher"]] == gsub(" .*$", "", gsub(" ", "", temp[["Publisher"]]))),
+                          "HTMLNode"] == "NotAllowed") {
+    DOI <-
+      regmatches(temp[["PubUrl"]],
+                 regexpr("10.\\d{4,9}/[-._;()/:a-z0-9A-Z]+", temp[["PubUrl"]], perl = F))
+    #### otherwise, try to retrieve the DOI from the publisher website (webscrapping) according to the DOIHTMLClass
+  } else{
+    DOI <-
+      rvest::html_text(rvest::html_nodes(rvest::read_html(temp[["PubUrl"]]),
+                                         DOIHTMLClass[which(DOIHTMLClass[["Publisher"]] == gsub(" .*$", "", gsub(" ", "", temp[["Publisher"]]))),
+                                                      "HTMLNode"]))
+
+    ##### extract the DOI from other text elements
+    DOI <- data.frame(DOI = regmatches(
+      DOI,
+      regexpr("10.\\d{4,9}/[-._;()/:a-z0-9A-Z]+", DOI, perl = F)
+    ))
+    if(nrow(DOI) > 1){
+      DOI <- unique(DOI)
     }
-    temp <-
-      cbind(temp, DOI)
   }
+  } else {
+    DOI <- ""
+  }
+  temp <-
+    cbind(temp, DOI)
   ### fill the Res dataframe with the retrieved informations
-  Res[i,] <-
-    stats::setNames(as.data.frame(t(
-      sapply(toRetrieve, function(x)
-        listGet(temp, x))
-    )), toRetrieve)
+  Res[i, ] <-
+    stats::setNames(as.data.frame(t(sapply(toRetrieve, function(x)
+      listGet(temp, x)))), toRetrieve)
 }
 
 # bind the Res dataframe to html1
 html1 <- cbind(html1, Res)
 
 # To use the Authors full list, we need keep only the first letter of the firstname and the whole last name
-AuthorsFUll <- apply(html1, 1, function(y)
-  paste(sapply(strsplit(y[["Authors"]], ", "), function(x)
-    gsub("(\\w).*(\\s+\\w+)$", "\\1\\2", x, perl = F)), collapse = ", "))
+AuthorsFUll <- apply(html1, 1, function(y) {
+  temp <- unlist(strsplit(y[["Authors"]], ", "))
+  # manage hyphenation in firstname
+  Fn <- sub("^(.*?)\\s.*$", "\\1", temp)
+  Ln <- sub("^[^ ]* ", "", temp)
+  Ln <- gsub("(^|-)(.)", "\\1\\U\\2", tolower(Ln), perl = TRUE)
+  hyphenPos <- which(grepl("-", Fn) == TRUE)
+  FnIni <- substr(Fn, 1, 1)
+  if (length(hyphenPos) > 0) {
+    toShorten <- strsplit(Fn[hyphenPos], "-")
+    Shortened <- lapply(toShorten, function(z) {
+      paste(substr(z, 1, 1), collapse = ".")
+    })
+    Shortened <- gsub("\\.", ".-", Shortened)
+    FnIni[hyphenPos] <- Shortened
+  }
+  FnIni <- paste0(FnIni, ".,")
+  # merge firstName first letter and lastname and add dots and comma according to APA style
+  temp <- paste(paste0(Ln, ","), FnIni, collapse = " ")
+  ## remove the last comma
+  temp <- substr(temp, 1, nchar(temp) - 1)
+  return(temp)
+})
 
 html1 <- cbind(html1, AuthorsFUll)
 
-# Now we have the full dataset 
-
-# replace "..." by et "al." when  there is numerous authors
-html1[["author"]] <-
-  gsub(", \\.\\.\\.", " et al.", html1[["author"]])
-
 # add tag specifying bold text (HTML language) to highltght my own name
 html1[["AuthorsFUll"]] <-
-  gsub("Q Petitjean", "<strong>Q Petitjean</strong>", html1[["AuthorsFUll"]])
+  gsub("PETITJEAN, Q.", "<strong>PETITJEAN, Q.</strong>", html1[["AuthorsFUll"]])
 
 # split the publication record according to the year of publication
 html2 <- split(html1, html1[["year"]])
@@ -242,7 +281,7 @@ for (i in names(html2)) {
       # create link to publisher website for each publication
       paste(
         dat[["AuthorsFUll"]],
-        paste0("(", dat[["year"]], ")"),
+        paste0("(", dat[["year"]], ")."),
         paste0("<a href=",
                dat[["PubUrl"]],
                ">",
@@ -253,12 +292,13 @@ for (i in names(html2)) {
       "</a>"
     )
     # concatenate the journal name, volume, page and DOI (when present) to the line containing authors names, publication title with its URL
-    AuthTitlePub <- paste(AuthTitle,
-                          ifelse(is.null(dat[["Journal"]][[1]]), dat[["journal"]], dat[["Journal"]]),
-                          dat[["Volume"]],
-                          dat[["Pages"]],
+    AuthTitlePub <- paste(paste(paste(AuthTitle,
+                                      dat[["journal"]], sep = ". "),
+                                dat[["Volume"]],
+                                dat[["Pages"]],
+                                sep = ", "),
                           ifelse(dat[["DOI"]] == '', dat[["DOI"]], paste("doi:", dat[["DOI"]], sep = " ")),
-                          sep = ", ")
+                          sep = ". ")
     
     # add a dot and break the line at the end of the publication reference
     AuthTitlePubEnd <- paste(AuthTitlePub,
@@ -279,7 +319,7 @@ for (i in names(html2)) {
     # create the lines to generate the icon
     pdfLink <- icon_link(
             icon = "fa fa-file-pdf",
-            text = " PDF",
+            text = " Full-text",
             url =  ifelse(ext == ".pdf",
               paste0("PubList/", pubList[which(tolower(gsub(
                 "[^[:alnum:]]", " ", pubListTitleHTML, perl = T

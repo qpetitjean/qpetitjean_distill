@@ -18,7 +18,7 @@ output:
 <div style="height: 0.125rem;"><br></div>
 <p class="plain-text">
 `r fontawesome::fa("flag", fill = "#333333")` &ensp; Nationalities<br/>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg/langfr-225px-Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg.png" height="30px" width="45px" /> &ensp; <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Flag_of_Switzerland_%28Pantone%29.svg/langfr-800px-Flag_of_Switzerland_%28Pantone%29.svg.png" height="30px" width="30px" /></p> 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%29.svg/512px-Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%29.svg.png" height="30px" width="45px" /> &ensp; <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Flag_of_Switzerland_%28Pantone%29.svg/langfr-800px-Flag_of_Switzerland_%28Pantone%29.svg.png" height="30px" width="30px" /></p> 
 
 <p class="plain-text">
 `r fontawesome::fa("location-dot", fill = "#333333")` &ensp; Present/last institutional address<br/>
@@ -54,6 +54,34 @@ output:
 ***
 
 # RESEARCH EXPERIENCE
+<p class="plain-text">
+`r fontawesome::fa("briefcase", fill = "#333333")` &ensp; February 2024 - December 2024 | Postdoctoral researcher | <a href='https://eng-eabx.bordeaux-aquitaine.hub.inrae.fr/'>National Research Institute for Agriculture, Food and Environment—INRAE; Aquatic ecosystems and global change Unit—EABX</a>, Cestas, FR </p>
+<p class="detailed-text">
+<em><u>Title:</u> «Modeling the effects of anthropogenic pressures on migratory fishes».<br/>
+<u>Supervisor(s):</u> Dr. Bertrand VILLENEUVE.</em><br/></p>
+<details>
+  <summary class= "summary">
+  Read the story behind
+  </summary>
+<table style="border: none; width='100%';">
+  <tr>
+    <td style="width: 80%; vertical-align: top;">
+<p class="detailed-text"> 
+Still deeply interested by improving our knowledge about multiple stressors' effects on fish health to improve conservation practices, I will join the <a href='https://eng-eabx.bordeaux-aquitaine.hub.inrae.fr/'>Aquatic ecosystems and global change research unit (EABX)</a> in February 2024.<br/><br/>
+More particularly, I will become a member of the <a href='https://scholar.google.fr/citations?hl=fr&user=2KksVvoAAAAJ&view_op=list_works&sortby=pubdate'>Bertrand VILLENEUVE</a>'s lab to investigate how anthropogenic pressures such as pollution, temperature, hydromophology, dams, and so on may contribute to the decline of migratory fish species (e.g., <em>Alosa alosa</em>, <em>Salmo salar</em>, <em>Anguilla anguilla</em>) along river continuum.<br/><br/>
+More details to come soon ! 
+</p>
+</td>
+    <td style="width: 20%; vertical-align: top;">
+<a title="https://www.inrae.fr/" href='https://www.inrae.fr/'><img src="https://upload.wikimedia.org/wikipedia/fr/thumb/2/2a/Logo-INRAE_Transparent.svg/2560px-Logo-INRAE_Transparent.svg.png" height="41px" width="155px" /></a></br>
+    
+<a title="https://www.ofb.gouv.fr/en" href='https://www.ofb.gouv.fr/en'><img src="https://upload.wikimedia.org/wikipedia/fr/a/a5/OFB_190702_PHILOGENIQUE_JG-02.jpg" height="155px" width="155px" /></a></br>
+    
+</td>
+  </tr>
+</table>
+
+</details> 
 <p class="plain-text">
 `r fontawesome::fa("briefcase", fill = "#333333")` &ensp; Mars 2021 - October 2022 | Postdoctoral researcher | <a href='https://www6.paca.inrae.fr/institut-sophia-agrobiotech'>National Research Institute for Agriculture, Food and Environment—INRAE</a>, Sophia-Antipolis, FR </p>
 <p class="detailed-text">
@@ -118,7 +146,7 @@ plot(
 The experiments were video-recorded, and my task was to use video-tracking solutions to quantify insect movements and their changes in response to temperature ramps.<br/>
 I analyzed the movements of the 35 wasp populations to test for variability in thermal biology and activity patterns. My aim was to uncover patterns of local adaptation (i.e., relationship between thermal resistance and the bioclimatic area of the origin of the populations) and test for adaptive trade-offs between resistance to cold and warm temperatures.<br/><br/>
 This work also inspired the development of the MoveR `r fontawesome::fa("r-project", fill = "steelblue")` package, intending to easily import, visualize,  process, filter, and analyze movement data obtained from video-tracking softwares.<br/><br/>
-<a href="https://qpetitjean.github.io/MoveR/index.html">See here for package documentation</a>.
+See here for <a href="https://qpetitjean.github.io/MoveR/index.html">package documentation</a> and here for <a href="https://www.biorxiv.org/content/10.1101/2023.11.08.566216v1">the article preprint</a> hosted in bioRxiv.
 </p>
 </td>
     <td style="width: 20%; vertical-align: top;">
@@ -156,7 +184,7 @@ This work also inspired the development of the MoveR `r fontawesome::fa("r-proje
 
 </details>
 <p class="plain-text">
-`r fontawesome::fa("briefcase", fill = "#333333")` &ensp; January 2020 - December 2021 | Postdoctoral researcher | <a href='https://www.inp-toulouse.fr/fr/index.html'>National Polytechnic Institute—INP</a>, Toulouse, FR </p>
+`r fontawesome::fa("briefcase", fill = "#333333")` &ensp; January 2020 - December 2021 and March 2023 - January 2024| Postdoctoral researcher | <a href='https://www.inp-toulouse.fr/fr/index.html'>National Polytechnic Institute—INP</a>, Toulouse, FR </p>
 <p class="detailed-text">
 <em><u>Title:</u> «Gut microbiota shifts among freshwater fish populations exposed to multiple stressors under lab and field conditions».<br/>
 <u>Supervisor(s):</u> Dr. Lisa JACQUIN, Dr. Jo&euml;l WHITE & Pr. Pascal LAFFAILLE.</em><br/></p>
@@ -173,7 +201,7 @@ Following my Ph.D. defense, I was still Intending to increase the integration of
 Since the literature highlighting the close relationships between physiological and behavioral responses and gut microbiota composition was flourishing, my supervisors (<a href='https://sites.google.com/site/jacquinlisa2'>Lisa JACQUIN</a>, <a href='https://scholar.google.com/citations?hl=fr&user=eI53HscAAAAJ&view_op=list_works&sortby=pubdate'>S&eacute;verine JEAN</a> and <a href='https://scholar.google.fr/citations?hl=fr&user=qMa0F0gAAAAJ&view_op=list_works&sortby=pubdate'>Pascal LAFFAILLE</a>) and I started a collaboration with <a href='https://whitejoel.weebly.com/'>Jo&euml;l WHITE</a> to investigate how multiples stressors may affect gut microbiota composition among several populations of wild fish. <br/><br/>
 Fortunately, during my Ph.D., we collected the gut of all the fish involved in laboratory and reciprocal transplant experiments testing for the combined effect of trace metal contamination and immune challenge. This provided a fair amount of samples to investigate the intraspecific variability of gut microbiota composition in wild fish populations exposed to environmentally relevant stressors. Also, it allowed uncovering potential links between fish physiological and/or behavioral responses already measured during my Ph.D. and gut microbiota composition. <br/><br/>
 While the COVID-19 pandemic knocked at the world's door, we were coerced to delay laboratory analyses (DNA extractions – PCR – NGS). Fortunately, I just had enough time to finish lab' and bioinformatic analyses before leaving this position for the next one. 
-Currently, thanks to Margarita Granada (a Second-year master's student), final statistical analyses and writing are on the way! <br/><br/>
+Finally, I just get back to the datasets analyses and writing during a new postdoctoral contract this year (2023) <br/><br/>
 Stay tuned for further news to come.</p>
 
 </p>
@@ -349,7 +377,8 @@ For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_d
   </summary>
   
   <p style="text-align:center;">
-  <img src="https://helsinki.setac.org/wp-content/uploads/2018/02/Helsinki-website-logos-banner-.jpg" height="80px" width="470px" /></p>
+  <img src="https://www.setac.org/assets/img/logo.svg" height="97.5px" width="150px" /> &ensp; 
+  <img src="https://www.syngenta.fr/sites/g/files/kgtney1611/files/color/syn_global_theme-75ea6ac3/logo.svg" height="65px" width="200px" /></p>
   <p class="detailed-text">
   Grant programme supported by the SETAC Europe reinvestment fund and Syngenta to help student members participating to the <a href='https://helsinki.setac.org/welcome/'>SETAC Europe 29<sup>th</sup> meeting</a> meeting (Up to maximum 250€, Travel costs only, visa and accommodation are not included).
 </p>
@@ -428,17 +457,19 @@ As Co-organizer, chairman (Ecotoxicology & Ecophysiology session), and financial
 `r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://onlinelibrary.wiley.com/journal/14610248'>Ecology Letters</a>&nbsp;(n=1)<br/>
 `r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://www.sciencedirect.com/journal/environmental-pollution'>Environmental Pollution</a>&nbsp;(n=2)<br/>
 `r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://www.springer.com/journal/11356'>Environmental Science and Pollution Research</a>&nbsp;(n=4)<br/>
+`r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://www.frontiersin.org/journals/fish-science'>Frontiers in Fish Science</a>&nbsp;(n=1)<br/>
 `r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://onlinelibrary.wiley.com/journal/24715646'>Journal of Experimental Zoology Part A: Ecological Genetics and Physiology</a>&nbsp;(n=1)<br/>
 `r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://www.sciencedirect.com/journal/science-of-the-total-environment'>Science of The Total Environment</a>&nbsp;(n=4)<br/>
 </p>
 
 ### EDITORIAL DUTIES
 `r fontawesome::fa("file-lines", fill = "#333333")` &ensp; Data editor at&nbsp;<a href='https://onlinelibrary.wiley.com/journal/14610248'>Ecology Letters</a> <br/>
+`r fontawesome::fa("file-lines", fill = "#333333")` &ensp; Review editor at&nbsp;<a href='https://www.frontiersin.org/'>Frontiers in Fish Science</a> <br/>
 
 ***
 
 # HOBBIES
 <p class="plain-text">
 `r fontawesome::fa("person-hiking", fill = "#333333")` &ensp; Hiking/fishing: Fauna and flora watching and photography <br/>
-`r fontawesome::fa("person-hiking", fill = "#333333")` &ensp; Sports: Basket ball, volley-ball <br/>
+`r fontawesome::fa("person-hiking", fill = "#333333")` &ensp; Sports: Basket ball, running <br/>
 `r fontawesome::fa("person-hiking", fill = "#333333")` &ensp; Travel: Cultural and naturalist trip (Western Europe, China, Sri Lanka, Malaysia, Nicaragua)</p>

@@ -18,9 +18,9 @@ output:
   <tr>
     <td style="width: 70%; vertical-align: top;">
 <p class="plain-text">
-I'm happy to share the first release (v0.1.0) of the <a href='https://qpetitjean.github.io/MoveR/index.html'>MoveR package</a>.</p>
+I'm happy to share the latest release (v0.2.0) of the <a href='https://qpetitjean.github.io/MoveR/index.html'>MoveR package</a>.</p>
 </td>
-    <td style="width: 20%; vertical-align: top;">
+    <td style="width: 30%; vertical-align: top;">
 <a title="MoveR" href='https://qpetitjean.github.io/MoveR/index.html'>
 <div id="container" >
   <img src="https://github.com/qpetitjean/MoveR/blob/Main/man/figures/hexsticker.png?raw=true" style=" height: 150px; left: 20px; top: -20px;"/>
@@ -50,5 +50,10 @@ knitr::include_graphics("https://github.com/qpetitjean/qpetitjean_distill/raw/ma
 
 <p class="plain-text">
 Check the <a href="https://qpetitjean.github.io/MoveR/index.html">MoveR documentation website</a> and the associated <a href="https://github.com/qpetitjean/MoveR">GitHub repository</a>.</p>
+
+<p class="plain-text">
+Check also the <a href="https://biorxiv.org/cgi/content/short/2023.11.08.566216v1">MoveR preprint article hosted in bioRxiv</a>.</p>
+
+<p class="plain-text">
 Also, note that MoveR is still under active development, documentation and GitHub repository content may hence regularly be updated. 
-Accordingly, if you find any issues, please report them using <a href="https://github.com/qpetitjean/MoveR/issues/new">the GitHub issue section</a>!
+Accordingly, if you find any issues, please report them using <a href="https://github.com/qpetitjean/MoveR/issues/new">the GitHub issue section</a>!.</p>

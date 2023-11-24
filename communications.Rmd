@@ -20,8 +20,11 @@ source(file.path("R", "Jp-Helveston-Func.R"))
 
 # ORAL COMMUNICATIONS
 
+## 2023
+`r fontawesome::fa("square-caret-right", fill = "#333333")` &ensp; <strong>Q Petitjean</strong>*, M Granada, S Jean, S Manzi, C Veyssiere, A Perrault, M Cousseau, P Laffaille, White J, L Jacquin, Environmentally relevant metal contamination levels affect gut microbiota composition in wild fish populations (<em>Gobio occitaniae</em>). Oral communication at the <a href='https://ecotox-2023.colloque.inrae.fr/'>VIII<sup>ème</sup> Colloque du Réseau Ecotox.</a>
+
 ## 2021
-`r fontawesome::fa("square-caret-right", fill = "#333333")` &ensp; <strong>Q Petitjean</strong>*, Variable responses to multiple stressors in a wild freshwater fish: Gobio occitaniae. Oral communication at the <a href='https://www.biologie.uni-hamburg.de/en/forschung/grk2530/'>Department of Biology of the university of Hamburg (RTG 2530).</a> 
+`r fontawesome::fa("square-caret-right", fill = "#333333")` &ensp; <strong>Q Petitjean</strong>*, Variable responses to multiple stressors in a wild freshwater fish: <em>Gobio occitaniae</em>. Oral communication at the <a href='https://www.biologie.uni-hamburg.de/en/forschung/grk2530/'>Department of Biology of the university of Hamburg (RTG 2530).</a> 
 
 ## 2019
 `r fontawesome::fa("square-caret-right", fill = "#333333")` &ensp; <strong>Q Petitjean</strong>*, L Jacquin, L Riem, E Rojas, A Perrault, M Cousseau, P Laffaille, S Jean, Variability of responses to multiples stressors in fish: biological level and population matter. Oral communication at the <a href='https://helsinki.setac.org/welcome/'>SETAC Europe 29<sup>th</sup> meeting 2019.</a>

@@ -298,6 +298,14 @@ table, th, tr, td {
   z-index: 2;
 }
 
+/* right aligned image */
+#right {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-right: 0;
+}
+
 /* unauthorize click */
 .avoid-clicks {
   pointer-events: none;

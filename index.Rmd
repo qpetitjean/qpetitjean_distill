@@ -1054,7 +1054,13 @@ docs <-
       "consider",
       "general",
       "order",
-      "present"
+      "present",
+      "better",
+      "contrary",
+      "point",
+      "suggesting",
+      "locat",
+      "detail"
     )
   )
 
