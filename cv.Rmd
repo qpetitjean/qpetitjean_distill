@@ -442,6 +442,8 @@ As Co-organizer, chairman (Ecotoxicology & Ecophysiology session), and financial
 
 ### MEMBERSHIP 
 <p class="plain-text" style="text-align: left">
+`r fontawesome::fa("handshake", fill = "#333333")` &ensp; ECOTOX INRAE network animation team&nbsp;<a href='https://eng-ecotox.hub.inrae.fr/'>(ECOTOX)</a> <br/>
+`r fontawesome::fa("handshake", fill = "#333333")` &ensp; Coordinator of the Young Ecotoxicologists Group of the ECOTOX INRAE network&nbsp;<a href='https://ecotox.hub.inrae.fr/actualites/yeg-ecotox'>(YEG)</a> <br/>
 `r fontawesome::fa("handshake", fill = "#333333")` &ensp; British Ecological Society&nbsp;<a href='https://www.britishecologicalsociety.org/'>(BES)</a> <br/>
 `r fontawesome::fa("handshake", fill = "#333333")` &ensp; Soci&eacute;t&eacute; Française d’&Eacute;cologie et d’&Eacute;volution&nbsp;<a href='https://sfecologie.org/'>(SFE²)</a> <br/>
 `r fontawesome::fa("handshake", fill = "#333333")` &ensp; Society of Environmental Toxicology and Chemistry&nbsp;<a href='https://www.setac.org/'>(SETAC)</a> <br/>
