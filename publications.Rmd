@@ -96,13 +96,13 @@ DOIHTMLClass <-
       "Elsevier",
       "Pergamon",
       "Springer",
-      "Frontiers",
+      "FrontiersMediaSA",
       "TheRoyalSocietyPublishing",
       "WileyOnlineLibrary",
       "ColdSpringHarborLaboratory"
     ),
     HTMLNode = c(
-      "NotAllowed",
+      "#article-identifier-links > a.anchor.doi.anchor-default",
       ".ArticleIdentifierLinks .doi",
       ".c-bibliographic-information__value",
       ".header-bar-three",
@@ -182,7 +182,9 @@ for (i in seq(nrow(html1))) {
     #### or if it does not work, retrieve the DOI from from the URL of the article (e.g., Wiley)
   } else if (!is.null(temp[["Publisher"]])){
     if (DOIHTMLClass[which(DOIHTMLClass[["Publisher"]] == gsub(" .*$", "", gsub(" ", "", temp[["Publisher"]]))),
-                          "HTMLNode"] == "NotAllowed") {
+                          "HTMLNode"] == "NotAllowed" && 
+        length(regmatches(temp[["PubUrl"]],
+                    regexpr("10.\\d{4,9}/[-._;()/:a-z0-9A-Z]+", temp[["PubUrl"]], perl = F))) > 0) {
     DOI <-
       regmatches(temp[["PubUrl"]],
                  regexpr("10.\\d{4,9}/[-._;()/:a-z0-9A-Z]+", temp[["PubUrl"]], perl = F))
@@ -319,7 +321,7 @@ for (i in names(html2)) {
     # create the lines to generate the icon
     pdfLink <- icon_link(
             icon = "fa fa-file-pdf",
-            text = " Full-text",
+            text = "Full-text",
             url =  ifelse(ext == ".pdf",
               paste0("PubList/", pubList[which(tolower(gsub(
                 "[^[:alnum:]]", " ", pubListTitleHTML, perl = T
@@ -344,7 +346,26 @@ for (i in names(html2)) {
           pdfLink,
           sep = " ")
        
-    # in case the data are open access, add the DATA icon and the link to data repository
+      # in case a preprint has been submitted, add the Preprint icon and the link to the preprint
+          if (pubList[which(tolower(gsub(
+            "[^[:alnum:]]", " ", pubListTitleHTML, perl = T
+          )) == tolower(gsub(
+            "[^[:alnum:]]", " ", datHtml, perl = T
+          ))), "Preprint"] != "") {
+            AuthTitlePubEndLink <- paste(AuthTitlePubEndLink,
+            icon_link(icon = "fa fa-file-pdf",
+                      text = "Preprint",
+                      url =
+                        pubList[which(tolower(gsub(
+                          "[^[:alnum:]]", " ", pubListTitleHTML, perl = T
+                        )) == tolower(gsub(
+                          "[^[:alnum:]]", " ", datHtml, perl = T
+                        ))), "Preprint"]),
+            
+          sep = " ")
+          }
+
+    # in case the data are open access, add the Data icon and the link to data repository
           if (pubList[which(tolower(gsub(
             "[^[:alnum:]]", " ", pubListTitleHTML, perl = T
           )) == tolower(gsub(
@@ -352,7 +373,7 @@ for (i in names(html2)) {
           ))), "Data"] != "") {
             AuthTitlePubEndLink <- paste(AuthTitlePubEndLink,
             icon_link(icon = "fa fa-database",
-                      text = " DATA",
+                      text = "Data",
                       url =
                         pubList[which(tolower(gsub(
                           "[^[:alnum:]]", " ", pubListTitleHTML, perl = T
@@ -371,7 +392,7 @@ for (i in names(html2)) {
           ))), "Code"] != "") {
             AuthTitlePubEndLink <- paste(AuthTitlePubEndLink,
             icon_link(icon = "fa fa-file-code-o",
-                      text = " R CODE",
+                      text = "Code",
                       url =
                         pubList[which(tolower(gsub(
                           "[^[:alnum:]]", " ", pubListTitleHTML, perl = T
@@ -389,7 +410,7 @@ for (i in names(html2)) {
           ))), "StatReport"] != "") {
             AuthTitlePubEndLink <- paste(AuthTitlePubEndLink,
             icon_link(icon = "fas fa-file-invoice",
-                      text = " RMarkdown",
+                      text = "RMarkdown",
                       url =
                         pubList[which(tolower(gsub(
                           "[^[:alnum:]]", " ", pubListTitleHTML, perl = T

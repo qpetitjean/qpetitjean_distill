@@ -146,8 +146,10 @@ plot(
 The experiments were video-recorded, and my task was to use video-tracking solutions to quantify insect movements and their changes in response to temperature ramps.<br/>
 I analyzed the movements of the 35 wasp populations to test for variability in thermal biology and activity patterns. My aim was to uncover patterns of local adaptation (i.e., relationship between thermal resistance and the bioclimatic area of the origin of the populations) and test for adaptive trade-offs between resistance to cold and warm temperatures.<br/><br/>
 This work also inspired the development of the MoveR `r fontawesome::fa("r-project", fill = "steelblue")` package, intending to easily import, visualize,  process, filter, and analyze movement data obtained from video-tracking softwares.<br/><br/>
-See here for <a href="https://qpetitjean.github.io/MoveR/index.html">package documentation</a> and here for <a href="https://www.biorxiv.org/content/10.1101/2023.11.08.566216v1">the article preprint</a> hosted in bioRxiv.
-</p>
+See here for:<br/>
+&#8226; <a href="https://qpetitjean.github.io/MoveR/index.html">Package documentation</a> <br/>
+&#8226; <a href="https://www.biorxiv.org/content/10.1101/2023.11.08.566216v1">Preprint hosted in bioRxiv</a> <br/>
+&#8226; <a href="https://www.softxjournal.com/article/S2352-7110(24)00045-1/fulltext">Edited article published in SoftwareX</a>.</p>
 </td>
     <td style="width: 20%; vertical-align: top;">
 <a title="https://ecophytopic.fr/recherche-innovation/proteger/projet-bidime" href='https://ecophytopic.fr/recherche-innovation/proteger/projet-bidime'><img src="images/BidimeProjLogo.png" height="148px" width="155px" /></a></br>

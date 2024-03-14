@@ -52,7 +52,7 @@ knitr::include_graphics("https://github.com/qpetitjean/qpetitjean_distill/raw/ma
 Check the <a href="https://qpetitjean.github.io/MoveR/index.html">MoveR documentation website</a> and the associated <a href="https://github.com/qpetitjean/MoveR">GitHub repository</a>.</p>
 
 <p class="plain-text">
-Check also the <a href="https://biorxiv.org/cgi/content/short/2023.11.08.566216v1">MoveR preprint article hosted in bioRxiv</a>.</p>
+Check also the <a href="https://biorxiv.org/cgi/content/short/2023.11.08.566216v1">MoveR preprint article hosted in bioRxiv</a> or the <a href="https://www.softxjournal.com/article/S2352-7110(24)00045-1/fulltext">edited version of the article published in SoftwareX</a>.</p>
 
 <p class="plain-text">
 Also, note that MoveR is still under active development, documentation and GitHub repository content may hence regularly be updated. 
