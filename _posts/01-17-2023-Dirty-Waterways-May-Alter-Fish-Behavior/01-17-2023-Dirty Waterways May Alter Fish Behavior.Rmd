@@ -4,6 +4,10 @@ description: "Our research about the effects of pollution on fish behavior has b
 preview: https://undark.org/wp-content/uploads/2019/09/undark-logo-black@2x.png 
 categories:
   - Press articles
+  - Fish 
+  - Behavior
+  - Cognition
+  - Pollution
 author:
   - name: Quentin PETITJEAN
     url: "https://qpetitjean.github.io/qpetitjean_distill/index.html"

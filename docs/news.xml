@@ -12,7 +12,21 @@
       <link>https://qpetitjean.github.io/qpetitjean_distill/</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 12 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Overview Of The Innovations For Behavioral Ecotoxicology</title>
+      <dc:creator>Quentin PETITJEAN</dc:creator>
+      <link>https://qpetitjean.github.io/qpetitjean_distill/posts/2024-03-20-EcotoxBehavior</link>
+      <description>Innovations in Behavioral Ecotoxicology: Exploring the Impacts of Contaminants through Video Analysis Automation</description>
+      <category>Ecotoxicology</category>
+      <category>Behavior</category>
+      <category>Pollution</category>
+      <category>video-Tracking</category>
+      <category>French language</category>
+      <guid>https://qpetitjean.github.io/qpetitjean_distill/posts/2024-03-20-EcotoxBehavior</guid>
+      <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://ecotox.hub.inrae.fr/var/hub_internet_national_ecotox/storage/images/_aliases/inra_logo/configuration-graphique/haut/ecotox/60665-1-fre-FR/Ecotox.png" medium="image" type="image/png"/>
+    </item>
     <item>
       <title>MoveR Package</title>
       <dc:creator>Quentin PETITJEAN</dc:creator>

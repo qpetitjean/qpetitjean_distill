@@ -4,6 +4,8 @@ description: "MoveR: An R package for easy analysis of animal video-tracking dat
 preview: https://github.com/qpetitjean/MoveR/blob/Main/man/figures/hexsticker.png?raw=true
 categories:
   - R package
+  - Movement
+  - Behavior
 author:
   - name: Quentin PETITJEAN
     url: "https://qpetitjean.github.io/qpetitjean_distill/index.html"

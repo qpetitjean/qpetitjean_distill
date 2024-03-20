@@ -1,5 +1,28 @@
 [
   {
+    "path": "posts/2024-03-20-EcotoxBehavior/",
+    "title": "Overview Of The Innovations For Behavioral Ecotoxicology",
+    "description": "Innovations in Behavioral Ecotoxicology: Exploring the Impacts of Contaminants through Video Analysis Automation",
+    "author": [
+      {
+        "name": "Quentin PETITJEAN",
+        "url": "https://qpetitjean.github.io/qpetitjean_distill/index.html"
+      }
+    ],
+    "date": "2024-03-20",
+    "categories": [
+      "Ecotoxicology",
+      "Behavior",
+      "Pollution",
+      "video-Tracking",
+      "French language"
+    ],
+    "contents": "\r\n\r\n\r\nI’m happy to share the Thematic Sheet N°48 written for The French ECOTOX network.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nThe ECOTOX Thematic Sheet N°48 in a nutshell\r\n\r\nTogether with Raphaël Royauté, we have crafted a Thematic Sheet (N°48) for the French ECOTOX network.\r\nThe aim of this article is to offer a non-exhaustive yet insightful overview of the current landscape in behavioral ecotoxicology.\r\n\r\n\r\nOur short review leverages open-source technologies and artificial intelligence (AI) to tackle the complexities of behavioral data analysis, representing a significant step forward in our collective understanding of contaminants’ impacts on animals.\r\n\r\n\r\nAlthough this thematic sheet offers a snapshot that may quickly become outdated due to the rapid evolution of methods and tools, especially those referring to AI, it is intended as a valuable resource for researchers eager to explore the fascinating field of behavioral ecotoxicology more deeply.\r\n\r\n\r\nThe full article is available (in French language only) here.\r\n\r\n\r\n\r\n\r\n",
+    "preview": "https://ecotox.hub.inrae.fr/var/hub_internet_national_ecotox/storage/images/_aliases/inra_logo/configuration-graphique/haut/ecotox/60665-1-fre-FR/Ecotox.png",
+    "last_modified": "2024-03-20T09:22:46+01:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/2023-07-12-mover-package/",
     "title": "MoveR Package",
     "description": "MoveR: An R package for easy analysis of animal video-tracking data",
