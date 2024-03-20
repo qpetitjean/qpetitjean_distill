@@ -20,7 +20,7 @@ output:
   <tr>
     <td style="width: 70%; vertical-align: top;">
 <p class="plain-text">
-I'm happy to share the latest release (v0.2.0) of the <a href='https://qpetitjean.github.io/MoveR/index.html'>MoveR package</a>.</p>
+I'm happy to share the latest release (v0.3.0) of the <a href='https://qpetitjean.github.io/MoveR/index.html'>MoveR package</a>.</p>
 </td>
     <td style="width: 30%; vertical-align: top;">
 <a title="MoveR" href='https://qpetitjean.github.io/MoveR/index.html'>

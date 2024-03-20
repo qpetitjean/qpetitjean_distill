@@ -33,6 +33,8 @@
       <link>https://qpetitjean.github.io/qpetitjean_distill/posts/2023-07-12-mover-package</link>
       <description>MoveR: An R package for easy analysis of animal video-tracking data</description>
       <category>R package</category>
+      <category>Movement</category>
+      <category>Behavior</category>
       <guid>https://qpetitjean.github.io/qpetitjean_distill/posts/2023-07-12-mover-package</guid>
       <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
       <media:content url="https://github.com/qpetitjean/MoveR/blob/Main/man/figures/hexsticker.png?raw=true" medium="image" type="text/plain"/>
@@ -43,8 +45,12 @@
       <link>https://qpetitjean.github.io/qpetitjean_distill/posts/01-17-2023-Dirty-Waterways-May-Alter-Fish-Behavior</link>
       <description>Our research about the effects of pollution on fish behavior has been covered in Undark Magazine.</description>
       <category>Press articles</category>
+      <category>Fish</category>
+      <category>Behavior</category>
+      <category>Cognition</category>
+      <category>Pollution</category>
       <guid>https://qpetitjean.github.io/qpetitjean_distill/posts/01-17-2023-Dirty-Waterways-May-Alter-Fish-Behavior</guid>
-      <pubDate>Tue, 17 Jan 2023 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 16 Jan 2023 00:00:00 +0000</pubDate>
       <media:content url="https://undark.org/wp-content/uploads/2019/09/undark-logo-black@2x.png" medium="image" type="image/png"/>
     </item>
     <item>
