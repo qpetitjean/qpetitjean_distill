@@ -61,7 +61,7 @@ output:
 <u>Supervisor(s):</u> Dr. Bertrand VILLENEUVE.</em><br/></p>
 <details>
   <summary class= "summary">
-  Read the story behind
+  Read the story behind (click to unroll)
   </summary>
 <table style="border: none; width='100%';">
   <tr>
@@ -89,7 +89,7 @@ More details to come soon !
 <u>Supervisor(s):</u> Dr. Vincent CALCAGNO.</em><br/></p>
 <details>
   <summary class= "summary">
-  Read the story behind
+  Read the story behind (click to unroll)
   </summary>
 <table style="border: none; width='100%';">
   <tr>
@@ -160,11 +160,11 @@ See here for:<br/>
 
 <a title="https://ecophytopic.fr/" href='https://ecophytopic.fr/'><img src="https://ecophytopic.fr/themes/custom/ecophytopic_theme/logo.svg" height="80px" width="155px" /></a></br>
 
-<a title="https://www6.paca.inrae.fr/institut-sophia-agrobiotech/" href='https://www6.paca.inrae.fr/institut-sophia-agrobiotech/'><img src="https://www6.paca.inrae.fr/var/internet_paca_institut_sophia_agrobiotech/storage/images/setup2/configuration/haut-de-page/logo-umr-isa/36541-7-fre-FR/Logo-UMR-ISA_inra_logo.jpg" height="113px" width="155px" /></a></br>
+<a title="https://www6.paca.inrae.fr/institut-sophia-agrobiotech/" href='https://www6.paca.inrae.fr/institut-sophia-agrobiotech/'><img src="https://institut-sophia-agrobiotech.paca.hub.inrae.fr/var/hub_internet_paca_institut_sophia_agrobiotech/storage/images/_aliases/inra_logo_principal/1/4/5/6/36541-18-fre-FR/2002d66dd081-logo_institutsophiaagrobiotech.png" height="113px" width="155px" /></a></br>
 
 <a title="https://gredeg.univ-cotedazur.fr/" href='https://gredeg.univ-cotedazur.fr/'><img src="https://gredeg.univ-cotedazur.fr/uas/laboratoire-gredeg/LOGO/logo-gredeg.png" height="81px" width="155px" /></a></br>
 
-<a title="https://www6.montpellier.inrae.fr/cbgp/" href='https://www6.montpellier.inrae.fr/cbgp/'><img src="https://www6.montpellier.inrae.fr/var/internet_montpellier_cbgp/storage/images/configuration-graphique/haut/cbgp/41081-13-fre-FR/CBGP_inra_logo.png" height="62px" width="155px" /></a></br>
+<a title="https://www6.montpellier.inrae.fr/cbgp/" href='https://www6.montpellier.inrae.fr/cbgp/'><img src="https://umr-cbgp.fr/wp-content/uploads/2023/04/Logo-CBGP-baseline-FR.svg" height="62px" width="155px" /></a></br>
 
 <a title="https://www.astredhor.fr/" href='https://www.astredhor.fr/'><img src="https://www.astredhor.fr/image.htm?img=65796-Logo300.jpg" height="60px" width=155px" /></a></br>
 
@@ -192,7 +192,7 @@ See here for:<br/>
 <u>Supervisor(s):</u> Dr. Lisa JACQUIN, Dr. Jo&euml;l WHITE & Pr. Pascal LAFFAILLE.</em><br/></p>
 <details>
   <summary class= "summary">
-  Read the story behind
+  Read the story behind (click to unroll)
   </summary>
 
 <table style="border: none; width='100%';">
@@ -209,15 +209,13 @@ Stay tuned for further news to come.</p>
 </p>
 </td>
     <td style="width: 20%; vertical-align: top;">
-      <a title="https://www.eco.omp.eu/" href='https://www.eco.omp.eu/'><img src="https://www.eco.omp.eu/wp-content/uploads/2020/04/v2_logo_ecolab_baseline_cmjn.svg" height="56px" width="155px" /></a></br>
-    
-    <a title="https://edb.cnrs.fr/" href='https://edb.cnrs.fr/'><img src="https://www.univ-tlse3.fr/medias/photo/logo-edb_1576487603148-png?ID_FICHE=1136458590592" height="155px" width="155px" /></a></br>
+      <a title="https://crbe.cnrs.fr/en/" href='https://crbe.cnrs.fr/en/'><img src="https://crbe.cnrs.fr/wp-content/uploads/2024/01/cropped-Logo-CRBE-couleur-2048x782.png" height="56px" width="155px" /></a></br>
     
     <a title="https://www.ensat.fr/en/index.html" href='https://www.ensat.fr/en/index.html'><img src="https://upload.wikimedia.org/wikipedia/fr/5/57/Logo_inp_ensat_2022.png" height="65px" width="155px" /></a></br>
     
     <a title="https://www.univ-toulouse.fr/" href='https://www.univ-toulouse.fr/'><img src="https://www.univ-toulouse.fr/sites/default/files/inline-images/logo_uftmp_horizontale.svg" height="80px" width="155px" /></a></br>
     
-    <a title="https://www.cnrs.fr/" href='https://www.cnrs.fr/'><img src="https://www.cnrs.fr/themes/custom/cnrs/logo.svg" height="155px" width="155px" /></a></br>
+    <a title="https://www.cnrs.fr/" href='https://www.cnrs.fr/'><img src="https://www.cnrs.fr/sites/default/files/logo/logo.svg" height="155px" width="155px" /></a></br>
     
     <a title="https://www.genotoul.fr/" href='https://www.genotoul.fr/'><img src="https://www.genotoul.fr/wp-content/uploads/2017/01/Genotoul_logo-rvb_min.png" height="44px" width="155px" /></a></br>
 </td>
@@ -232,7 +230,7 @@ Stay tuned for further news to come.</p>
 <u>Supervisor(s):</u> Dr. Lisa JACQUIN, Dr. S&eacute;verine JEAN & Pr. Pascal LAFFAILLE.</em><br/></p>
 <details>
   <summary class= "summary">
-  Read the story behind
+  Read the story behind (click to unroll)
   </summary>
 <table style="border: none; width='100%';">
   <tr>
@@ -252,15 +250,13 @@ knitr::include_graphics('images/PhDVensDiag.png')
 For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_distill/publications.html#section-2'>Publication section</a> of this website.</p>
 </td>
     <td style="width: 20%; vertical-align: top;">
-    <a title="https://www.eco.omp.eu/" href='https://www.eco.omp.eu/'><img src="https://www.eco.omp.eu/wp-content/uploads/2020/04/v2_logo_ecolab_baseline_cmjn.svg" height="56px" width="155px" /></a></br>
-    
-    <a title="https://edb.cnrs.fr/" href='https://edb.cnrs.fr/'><img src="https://www.univ-tlse3.fr/medias/photo/logo-edb_1576487603148-png?ID_FICHE=1136458590592" height="155px" width="155px" /></a></br>
+    <a title="https://crbe.cnrs.fr/en/" href='https://crbe.cnrs.fr/en/'><img src="https://crbe.cnrs.fr/wp-content/uploads/2024/01/cropped-Logo-CRBE-couleur-2048x782.png" height="56px" width="155px" /></a></br>
     
     <a title="https://www.ensat.fr/en/index.html" href='https://www.ensat.fr/en/index.html'><img src="https://upload.wikimedia.org/wikipedia/fr/5/57/Logo_inp_ensat_2022.png" height="65px" width="155px" /></a></br>
     
     <a title="https://www.univ-toulouse.fr/" href='https://www.univ-toulouse.fr/'><img src="https://www.univ-toulouse.fr/sites/default/files/inline-images/logo_uftmp_horizontale.svg" height="80px" width="155px" /></a></br>
     
-    <a title="https://www.cnrs.fr/" href='https://www.cnrs.fr/'><img src="https://www.cnrs.fr/themes/custom/cnrs/logo.svg" height="155px" width="155px" /></a></br>
+    <a title="https://www.cnrs.fr/" href='https://www.cnrs.fr/'><img src="https://www.cnrs.fr/sites/default/files/logo/logo.svg" height="155px" width="155px" /></a></br>
     
     <a title="https://eau-grandsudouest.fr/" href='https://eau-grandsudouest.fr/'><img src="https://aides-territoires-prod.s3.fr-par.scw.cloud/aides-territoires-prod/backers/agence-de-leau-adour-garonne_logo.png" height="99px" width="155px" /></a></br>
     
@@ -279,7 +275,7 @@ For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_d
 <u>Supervisor(s):</u> Dr. Annette DE VAUFLEURY & Dr. Fr&eacute;d&eacute;ric GIMBERT.</em><br/></p>
 <details>
   <summary class= "summary">
-  Read the story behind
+  Read the story behind (click to unroll)
   </summary>
 <table style="border: none; width='100%';">
   <tr>
@@ -299,19 +295,19 @@ For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_d
 </p>
 </td>
     <td style="width: 20%; vertical-align: top;">
-    <a title="https://chrono-environnement.univ-fcomte.fr" href='https://chrono-environnement.univ-fcomte.fr/'><img src="https://chrono-environnement.univ-fcomte.fr/IMG/siteon0.png?1512470683" height="43px" width="155px" /></a></br>
+    <a title="https://chrono-environnement.univ-fcomte.fr" href='https://chrono-environnement.univ-fcomte.fr/'><img src="https://chrono-environnement.univ-fcomte.fr/wp-content/uploads/2023/10/logo-chrono-environnementpour-web.png" height="43px" width="155px" /></a></br>
     
     <a title="https://www.univ-fcomte.fr/" href='https://www.univ-fcomte.fr/'><img src="https://upload.wikimedia.org/wikipedia/fr/7/77/Logo_Universit%C3%A9_de_Franche-Comt%C3%A9_2018.png" height="43px" width="155px" /></a></br>
     
     <a title="https://www.ubfc.fr/" href='https://www.ubfc.fr/'><img src="https://upload.wikimedia.org/wikipedia/fr/4/49/Logo_UBFC.png" height="72px" width="155px" /></a></br>
     
-    <a title="https://www.cnrs.fr/" href='https://www.cnrs.fr/'><img src="https://www.cnrs.fr/themes/custom/cnrs/logo.svg" height="155px" width="155px" /></a></br>
+    <a title="https://www.cnrs.fr/" href='https://www.cnrs.fr/'><img src="https://www.cnrs.fr/sites/default/files/logo/logo.svg" height="155px" width="155px" /></a></br> 
     
-    <a title="https://www.bourgognefranchecomte.fr/" href='https://www.bourgognefranchecomte.fr/'><img src="https://www.bourgognefranchecomte.fr/themes/bourg/logo.svg" height="117px" width="155px" /></a></br>
+    <a title="https://www.bourgognefranchecomte.fr/" href='https://www.bourgognefranchecomte.fr/'><img src= "https://www.bourgognefranchecomte.fr/themes/custom/bourg/logo.svg" height="117px" width="155px" /></a></br>
     
     <a title="https://www.culture.gouv.fr/en/Regions/Drac-Bourgogne-Franche-Comte" href='https://www.culture.gouv.fr/en/Regions/Drac-Bourgogne-Franche-Comte'><img src="https://www.culture.gouv.fr/var/culture/storage/images/_aliases/reference/7/3/0/4/3164037-1-fre-FR/LogoMCHP.PNG" height="119px" width="155px" /></a></br>
     
-    <a title="https://chrono-environnement.univ-fcomte.fr/plateforme/PEA2t/?lang=en" href='https://chrono-environnement.univ-fcomte.fr/plateforme/PEA2t/?lang=en'><img src="https://chrono-environnement.univ-fcomte.fr/IMG/png/logos_pea2t.png" height="72px" width="155px" /></a></br>
+    <a title="https://chrono-environnement.univ-fcomte.fr/plateforme/PEA2t/?lang=en" href='https://chrono-environnement.univ-fcomte.fr/plateforme/PEA2t/?lang=en'><img src="https://chrono-environnement.univ-fcomte.fr/wp-content/uploads/2023/06/logos_PEAT-03.jpg" height="72px" width="155px" /></a></br>
     
     <a title="https://www.femto-st.fr/fr" href='https://www.femto-st.fr/fr'><img src="https://www.femto-st.fr/sites/all/themes/femto/logo.png" height="74px" width="155px" /></a></br>
 </td>
@@ -326,7 +322,7 @@ For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_d
 <u>Supervisor(s):</u> Dr. Fr&eacute;d&eacute;ric GIMBERT & Pr. Aleya LOTFI.</em><br/></p>
 <details>
   <summary class= "summary">
-  Read the story behind
+  Read the story behind (click to unroll)
   </summary>
 <table style="border: none; width='100%';">
   <tr>
@@ -345,15 +341,15 @@ For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_d
 </p>
 </td>
     <td style="width: 20%; vertical-align: top;">
-    <a title="https://chrono-environnement.univ-fcomte.fr/" href='https://chrono-environnement.univ-fcomte.fr/'><img src="https://chrono-environnement.univ-fcomte.fr/IMG/siteon0.png?1512470683" height="43px" width="155px" /></a></br>
+    <a title="https://chrono-environnement.univ-fcomte.fr/" href='https://chrono-environnement.univ-fcomte.fr/'><img src="https://chrono-environnement.univ-fcomte.fr/wp-content/uploads/2023/10/logo-chrono-environnementpour-web.png" height="43px" width="155px" /></a></br>
     
     <a title="https://www.univ-fcomte.fr/" href='https://www.univ-fcomte.fr/'><img src="https://upload.wikimedia.org/wikipedia/fr/7/77/Logo_Universit%C3%A9_de_Franche-Comt%C3%A9_2018.png" height="43px" width="155px" /></a></br>
     
     <a title="https://www.ubfc.fr/" href='https://www.ubfc.fr/'><img src="https://upload.wikimedia.org/wikipedia/fr/4/49/Logo_UBFC.png" height="72px" width="155px" /></a></br>
     
-    <a title="https://www.cnrs.fr/" href='https://www.cnrs.fr/'><img src="https://www.cnrs.fr/themes/custom/cnrs/logo.svg" height="155px" width="155px" /></a></br>
+    <a title="https://www.cnrs.fr/" href='https://www.cnrs.fr/'><img src="https://www.cnrs.fr/sites/default/files/logo/logo.svg" height="155px" width="155px" /></a></br>
     
-    <a title="https://www.bourgognefranchecomte.fr/" href='https://www.bourgognefranchecomte.fr/'><img src="https://www.bourgognefranchecomte.fr/themes/bourg/logo.svg" height="117px" width="155px" /></a></br>
+    <a title="https://www.bourgognefranchecomte.fr/" href='https://www.bourgognefranchecomte.fr/'><img src="https://www.bourgognefranchecomte.fr/themes/custom/bourg/logo.svg" height="117px" width="155px" /></a></br>
     
 </td>
   </tr>
@@ -375,7 +371,7 @@ For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_d
 `r fontawesome::fa("trophy", fill = "#333333")` &ensp; 2019 | Travel grant for the SETAC Europe 29<sup>th</sup> meeting&nbsp;(≈430€) </p>
 <details>
   <summary class= "summary">
-  Details
+  Details (click to unroll)
   </summary>
   
   <p style="text-align:center;">
@@ -389,7 +385,7 @@ For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_d
 `r fontawesome::fa("trophy", fill = "#333333")` &ensp; 2016 | Ph.D grant from French research and education ministry&nbsp;(≈60k€) </p>
 <details>
   <summary class= "summary">
-  Details
+  Details (click to unroll)
   </summary>
   
   <p style="text-align:center;">
@@ -404,7 +400,7 @@ For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_d
 `r fontawesome::fa("trophy", fill = "#333333")` &ensp; 2015 | Leonard Da Vinci international mobility grant&nbsp;(≈2.5k€) </p>
 <details>
   <summary class= "summary">
-  Details
+  Details (click to unroll)
   </summary>
   
   <p style="text-align:center;">
@@ -432,7 +428,7 @@ I have also worked to update the collection of the university of Galway' herbari
 `r fontawesome::fa("sitemap", fill = "#333333")` &ensp; 14th meeting Ecology and Behaviour (E&B) 2019</p>
 <details>
   <summary class= "summary">
-  Details
+  Details (click to unroll)
   </summary>
 <p class="detailed-text">
 The « Ecology and Behaviour » conferences are organized by and for young researchers. These events are an ideal opportunity for master, Ph.D. students, and postdocs to share their works with other researchers in ecology, evolutionary biology, and behavioral ecology. <br/></p>

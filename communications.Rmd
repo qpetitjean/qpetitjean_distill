@@ -16,9 +16,15 @@ output:
 # to create button link redirecting to pdf file
 source(file.path("R", "Jp-Helveston-Func.R"))
 ```
-<p class="small-text"><span>&#42;</span> indicate the person who presented the work.</p>
+<p class="small-text"><span>&#42;</sup> indicates the person who presented the work.</p>
+<p class="small-text"><sup>&#9830;</sup> indicates equal contribution.</p>
 
 # ORAL COMMUNICATIONS
+
+## 2024 - Planned in October
+`r fontawesome::fa("square-caret-right", fill = "#333333")` &ensp; <strong>Q Petitjean</strong>*, K Kreutzenberger, J Belliard, L Plichard, B Bourillon, O Dezerald, B Villeneuve, Effect of multiple stressors on migratory fishes: does watershed functioning help better explain population declines? Oral communication at the <a href='https://sfe2-2024.fr/fr'>SFE² meeting 2024.</a>
+
+`r fontawesome::fa("square-caret-right", fill = "#333333")` &ensp; <strong>Q Petitjean</strong>*, K Kreutzenberger, J Belliard, L Plichard, B Bourillon, O Dezerald, B Villeneuve, Effets des stress anthropiques sur le déclin des poissons migrateurs : une approche multifactorielle intégrative du fonctionnement des bassins versants. Oral communication at the <a href='https://jilo-2024.sciencesconf.org/'>VI<sup>ème</sup> Journées internationales de limnologie et d'océanographie (JILO 2024).</a>
 
 ## 2023
 `r fontawesome::fa("square-caret-right", fill = "#333333")` &ensp; <strong>Q Petitjean</strong>*, M Granada, S Jean, S Manzi, C Veyssiere, A Perrault, M Cousseau, P Laffaille, White J, L Jacquin, Environmentally relevant metal contamination levels affect gut microbiota composition in wild fish populations (<em>Gobio occitaniae</em>). Oral communication at the <a href='https://ecotox-2023.colloque.inrae.fr/'>VIII<sup>ème</sup> Colloque du Réseau Ecotox.</a>
@@ -42,8 +48,11 @@ source(file.path("R", "Jp-Helveston-Func.R"))
 
 # POSTER PRESENTATIONS
 
+## 2024
+`r fontawesome::fa("square-caret-right", fill = "#333333")` &ensp; <strong>Q Petitjean</strong>*<sup>, &#9830;</sup>, S M Dupont<sup>&#9830;</sup>, C Le Picard<sup>&#9830;</sup>, B Bellier<sup>&#9830;</sup>,  H Sentenac<sup>&#9830;</sup>, S Bancel<sup>&#9830;</sup>, E FUENTES<sup>&#9830;</sup>, Young ecotoxicologist group (yeg), le groupe des jeunes ecotoxicologues francophones. Poster presentation at the <a href='https://asso-sefa.fr/colloque-de-la-sefa'>French SEFA meeting 2024.</a><br/>`r icon_link(icon = "fa fa-file-pdf", text = "Poster", url ="Posters/Petitjeanetal-YEG-POSTER.pdf")`
+
 ## 2023
-`r fontawesome::fa("square-caret-right", fill = "#333333")` &ensp; <strong>Q Petitjean</strong>*, S Lartigue, M Cointe, R LeClech,  M Ion Scotta, N Ris, L Van Oudenhove , V Calcagno, MoveR: a package for the visualization and analysis of video-tracking data in R. Poster presentation at the <a href='https://entomo2023.sciencesconf.org/'>43èmes journées des Entomophagistes.</a><br/>`r icon_link(icon = "fa fa-file-pdf", text = "Poster", url ="Posters/Petitjeanetal-MOVER-POSTER.pdf")`
+`r fontawesome::fa("square-caret-right", fill = "#333333")` &ensp; <strong>Q Petitjean</strong>*, S Lartigue, M Cointe, R LeClech,  M Ion Scotta, N Ris, L Van Oudenhove, V Calcagno, MoveR: a package for the visualization and analysis of video-tracking data in R. Poster presentation at the <a href='https://entomo2023.sciencesconf.org/'>43èmes journées des Entomophagistes.</a><br/>`r icon_link(icon = "fa fa-file-pdf", text = "Poster", url ="Posters/Petitjeanetal-MOVER-POSTER.pdf")`
 
 ## 2019
 `r fontawesome::fa("square-caret-right", fill = "#333333")` &ensp; M Pitout*, <strong>Q Petitjean</strong>, A Perrault, M Cousseau, P Laffaille, L Jacquin, S Jean, Physiological and transcriptomic responses to metal contamination and immune challenge in gudgeon. Poster presentation at the <a href='https://eb2019.sciencesconf.org/'>E&B meeting 2019.</a>
