@@ -1,7 +1,7 @@
 ---
 title: "Young Ecotoxicologist Group - YEG"
 description: "The group of young French-speaking ecotoxicologists."
-preview: images/LogoYEG_Final.png
+preview: https://github.com/qpetitjean/qpetitjean_distill/raw/main/images/LogoYEG_Final.png
 categories:
   - Ecotoxicology
   - Young Researchers

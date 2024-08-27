@@ -79,14 +79,24 @@ URL <- paste0("https://qpetitjean.github.io/qpetitjean_distill/posts/", basename
 desc <- rvest::html_node(htmlContent, "meta[property='description']")
 subtitle <- rvest::html_attr(desc, "content")
 
+# intro text
+introText <- "<p>Catch Up on Our Recent Activities - Click the title to learn more.</p>"
+
+# inline link style
+linkStyle <- "color: rgba(20, 130, 125, 1); font-style: italic; border-bottom: 0px; text-decoration: none; margin-right: 0px; margin-left: 0px;"
+hoverStyle <- "color: rgba(117, 112, 179, 1); font-style: italic; text-decoration: none; border-bottom: 0px;"
+
 # Display the title and preview
 htmlDisplay <- paste0(
+  introText,
   '<div style="display: flex; align-items: center; justify-content: space-between;">',
   '<div style="flex-grow: 1;">',
   '<a href="', URL, '" style="text-decoration: none;">',
-  '<h2 style="margin: 0; font-family: \'Edu QLD Beginner\', cursive, Arial, sans-serif;">', newsTitle, '</h2>',
+  '<h2>', newsTitle, '</h2>',
   '</a>',
-  '<p>', subtitle, '</p>',
+  '<a href="', URL, '" style="', linkStyle, '" onmouseover="this.style.cssText=\'', hoverStyle, '\'" onmouseout="this.style.cssText=\'', linkStyle, '\'">',
+  '<p style="margin: 0;">', subtitle, '</p>',
+  '</a>',
   '</div>',
   htmlImageTag,
   '</div>'

@@ -138,6 +138,7 @@ Qpetitjean <- regmatches(GscholarURL,
 html1 <- scholar::get_publications(Qpetitjean)
 
 # remove the oral communications and posters from the publication list (see function above)
+html1 <- html1[-which(html1$journal == ""),]
 html1 <- toRemove(
   toExclude = c("Oral Communication", "oral communication", "Poster", "poster", "Presses universitaires de Franche-Comté"),
   from = "journal",
