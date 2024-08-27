@@ -284,6 +284,7 @@ table, th, tr, td {
   font-family: var(--font-body);
   font-style: normal;
   font-size: 0.938em;
+  color: var(--body-color);
   text-align: justify;
   font-weight: 400;
 }
