@@ -46,7 +46,6 @@ output:
 # LATEST NEWS
 
 ```{r LatestNews, echo=FALSE, results='asis'}
-
 # Get the latest news published in the website
 path = "docs/posts"
 dirs <- list.dirs(path, full.names = TRUE, recursive = FALSE)
@@ -73,10 +72,14 @@ if (colonPos > 1) {
 # Extract the first image src attribute
 image <- rvest::html_node(htmlContent, "img")
 imgPreview <- rvest::html_attr(image, "src")
-htmlImageTag <- paste0('<img src="', imgPreview, '" style="height: 80px; margin-left: 10px; vertical-align: middle;">')
+htmlImageTag <- paste0('<img src="', imgPreview, '" style="height: 180px; margin-left: 10px; vertical-align: middle;">')
 
 # Retrieve the URL to the news
 URL <- paste0("https://qpetitjean.github.io/qpetitjean_distill/posts/", basename(latestDir))
+
+# Retrieve the description
+desc <- rvest::html_node(htmlContent, "meta[property='description']")
+subtitle <- rvest::html_attr(desc, "content")
 
 # Display the title and preview
 htmlDisplay <- paste0(
@@ -85,6 +88,7 @@ htmlDisplay <- paste0(
   '<a href="', URL, '" style="text-decoration: none;">',
   '<h2 style="margin: 0; font-family: \'Edu QLD Beginner\', cursive, Arial, sans-serif;">', newsTitle, '</h2>',
   '</a>',
+  '<p>', subtitle, '</p>',
   '</div>',
   htmlImageTag,
   '</div>'
