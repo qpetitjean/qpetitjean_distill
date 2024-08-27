@@ -80,7 +80,7 @@ desc <- rvest::html_node(htmlContent, "meta[property='description']")
 subtitle <- rvest::html_attr(desc, "content")
 
 # intro text
-introText <- "<p>Catch Up on Our Recent Activities - Click the title to learn more.</p>"
+introText <- "<p>Catch Up on Our Recent Activities - Click below to learn more.</p>"
 
 # inline link style
 linkStyle <- "color: rgba(20, 130, 125, 1); font-style: italic; border-bottom: 0px; text-decoration: none; margin-right: 0px; margin-left: 0px;"
@@ -90,15 +90,13 @@ hoverStyle <- "color: rgba(117, 112, 179, 1); font-style: italic; text-decoratio
 htmlDisplay <- paste0(
   introText,
   '<div style="display: flex; align-items: center; justify-content: space-between;">',
+  '<a href="', URL, '" style="text-decoration: none; display: flex; align-items: center; width: 100%;">',
   '<div style="flex-grow: 1;">',
-  '<a href="', URL, '" style="text-decoration: none;">',
   '<h2>', newsTitle, '</h2>',
-  '</a>',
-  '<a href="', URL, '" style="', linkStyle, '" onmouseover="this.style.cssText=\'', hoverStyle, '\'" onmouseout="this.style.cssText=\'', linkStyle, '\'">',
-  '<p style="margin: 0;">', subtitle, '</p>',
-  '</a>',
+  '<p style="margin: 0; ', linkStyle, '" onmouseover="this.style.cssText=\'', hoverStyle, '\'" onmouseout="this.style.cssText=\'', linkStyle, '\'">', subtitle, '</p>',
   '</div>',
   htmlImageTag,
+  '</a>',
   '</div>'
 )
 

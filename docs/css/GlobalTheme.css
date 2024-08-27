@@ -284,7 +284,6 @@ table, th, tr, td {
   font-family: var(--font-body);
   font-style: normal;
   font-size: 0.938em;
-  color: var(--body-color);
   text-align: justify;
   font-weight: 400;
 }
@@ -376,7 +375,7 @@ table, th, tr, td {
   }
   
 /*  mobile or tablet display */
-@media screen and (max-width: 1015px) {
+@media screen and (max-width: 1070px) {
   /* reduce the search bar */  
 .algolia-autocomplete{
     width: 6.5rem; }
@@ -400,7 +399,7 @@ html body {
 }
 
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 945px) {
   /* Hide the TOC when resized to mobile or tablet:  480px, 768px, 900px */
 #TOC {
     position: relative;
