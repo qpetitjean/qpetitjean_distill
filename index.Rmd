@@ -25,7 +25,6 @@ output:
   postcards::trestles
   
 ---
-
 ```{r metadata, include=FALSE, results='asis'}
   metathis::meta_social(
     metathis::meta(),
@@ -40,7 +39,6 @@ output:
     twitter_creator = "@Q_PETITJEAN"
   )
 ```
-
 <div style="border-top: 1px solid #cccccc; width: 100%; margin: 20px 0;"></div>
 
 # LATEST NEWS
