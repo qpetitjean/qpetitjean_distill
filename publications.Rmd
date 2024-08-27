@@ -31,6 +31,14 @@ if(!require(easyPubMed)){
     install.packages("easyPubMed")
 }
 
+# load the file containing the correspondence between the publication title and the pdf file name located in the github repository or a weblink to the pdf when #the article is OA
+pubList <- read.csv(list.files("PubList",
+                                pattern = ".csv",
+                                full.names = TRUE),
+                    sep = ";",
+                    dec = ".",
+                    encoding = "latin1")
+
 # load the function from https://www.jhelvy.com/posts/2021-03-25-customizing-distill-with-htmltools-and-css/
 # to create button link redirecting to pdf file
 source(file.path("R", "Jp-Helveston-Func.R"))
@@ -102,10 +110,10 @@ DOIHTMLClass <-
       "ColdSpringHarborLaboratory"
     ),
     HTMLNode = c(
-      "#article-identifier-links > a.anchor.doi.anchor-default",
+      "NotAllowed",
       ".ArticleIdentifierLinks .doi",
       ".c-bibliographic-information__value",
-      ".header-bar-three",
+      "a.ArticleLayoutHeader__info__doi",
       ".epub-section",
       "NotAllowed", 
       ".highwire-cite-metadata-doi"
@@ -188,8 +196,21 @@ for (i in seq(nrow(html1))) {
     DOI <-
       regmatches(temp[["PubUrl"]],
                  regexpr("10.\\d{4,9}/[-._;()/:a-z0-9A-Z]+", temp[["PubUrl"]], perl = F))
+    
+  #### otherwise, try to retrieve the DOI from API (ELSEVIER)
+  } else if (DOIHTMLClass[which(DOIHTMLClass[["Publisher"]] == gsub(" .*$", "", gsub(" ", "", temp[["Publisher"]]))),
+                          "HTMLNode"] == "NotAllowed" && 
+        length(regmatches(temp[["PubUrl"]],
+                    regexpr("10.\\d{4,9}/[-._;()/:a-z0-9A-Z]+", temp[["PubUrl"]], perl = F))) == 0){
+     apiK <- readLines("W:/APIs/ElsevierApiKey.txt")
+     pii <- sub(".*pii/([A-Za-z0-9]+).*", "\\1", temp[["PubUrl"]])
+     apiURL <- paste0("https://api.elsevier.com/content/article/PII/", pii)
+     response <- httr::GET(apiURL, httr::add_headers(`X-ELS-APIKey` = apiK))
+     content <-  httr::content(response, "text")
+     parsed_json <- jsonlite::fromJSON(content)
+     DOI <- parsed_json$`full-text-retrieval-response`$coredata$`prism:doi`
+}else{
     #### otherwise, try to retrieve the DOI from the publisher website (webscrapping) according to the DOIHTMLClass
-  } else{
     DOI <-
       rvest::html_text(rvest::html_nodes(rvest::read_html(temp[["PubUrl"]]),
                                          DOIHTMLClass[which(DOIHTMLClass[["Publisher"]] == gsub(" .*$", "", gsub(" ", "", temp[["Publisher"]]))),
@@ -258,14 +279,6 @@ html2 <- html2[sort(names(html2), decreasing = T)]
 # reorder the various elements (authors, year, title, journal...) from the publication record
 # also add the publication' URL behind the publication' title (publisher website), the PDF file and the altimetric and dimension badges below each publication
 # see https://api.altmetric.com/embeds.html and https://badge.dimensions.ai/#build for more details
-
-# load the file containing the correspondence between the publication title and the pdf file name located in the github repository or a weblink to the pdf when #the article is OA
-pubList <- read.csv(list.files("PubList",
-                                pattern = ".csv",
-                                full.names = TRUE),
-                    sep = ";",
-                    dec = ".",
-                    encoding = "latin1")
 
 # NA may interfer with the next code bloc, replace them by none
 pubList[is.na(pubList)] <- ""
@@ -347,11 +360,13 @@ for (i in names(html2)) {
           sep = " ")
        
       # in case a preprint has been submitted, add the Preprint icon and the link to the preprint
-          if (pubList[which(tolower(gsub(
+       preprintCheck <- pubList[which(tolower(gsub(
             "[^[:alnum:]]", " ", pubListTitleHTML, perl = T
           )) == tolower(gsub(
             "[^[:alnum:]]", " ", datHtml, perl = T
-          ))), "Preprint"] != "") {
+          ))), "Preprint"]
+       
+          if (length(preprintCheck)> 0 && preprintCheck != "" ) {
             AuthTitlePubEndLink <- paste(AuthTitlePubEndLink,
             icon_link(icon = "fa fa-file-pdf",
                       text = "Preprint",
@@ -366,11 +381,13 @@ for (i in names(html2)) {
           }
 
     # in case the data are open access, add the Data icon and the link to data repository
-          if (pubList[which(tolower(gsub(
+       OADataCheck <- pubList[which(tolower(gsub(
             "[^[:alnum:]]", " ", pubListTitleHTML, perl = T
           )) == tolower(gsub(
             "[^[:alnum:]]", " ", datHtml, perl = T
-          ))), "Data"] != "") {
+          ))), "Data"]
+       
+          if (length(OADataCheck)>0 && OADataCheck != "") {
             AuthTitlePubEndLink <- paste(AuthTitlePubEndLink,
             icon_link(icon = "fa fa-database",
                       text = "Data",
@@ -385,11 +402,13 @@ for (i in names(html2)) {
           }
        
        # in case the code is open access, add the code icon and the link to code repository
-          if (pubList[which(tolower(gsub(
+       CodeCheck <- pubList[which(tolower(gsub(
             "[^[:alnum:]]", " ", pubListTitleHTML, perl = T
           )) == tolower(gsub(
             "[^[:alnum:]]", " ", datHtml, perl = T
-          ))), "Code"] != "") {
+          ))), "Code"]
+       
+          if (length(CodeCheck)>0 && CodeCheck != "") {
             AuthTitlePubEndLink <- paste(AuthTitlePubEndLink,
             icon_link(icon = "fa fa-file-code-o",
                       text = "Code",
@@ -403,11 +422,13 @@ for (i in names(html2)) {
           }
        
           # in case their is an online statistical report (Rmarkdown), add the code icon and the link to the report
-          if (pubList[which(tolower(gsub(
+          statReport <- pubList[which(tolower(gsub(
             "[^[:alnum:]]", " ", pubListTitleHTML, perl = T
           )) == tolower(gsub(
             "[^[:alnum:]]", " ", datHtml, perl = T
-          ))), "StatReport"] != "") {
+          ))), "StatReport"]
+       
+          if (length(statReport)>0 && statReport != "") {
             AuthTitlePubEndLink <- paste(AuthTitlePubEndLink,
             icon_link(icon = "fas fa-file-invoice",
                       text = "RMarkdown",

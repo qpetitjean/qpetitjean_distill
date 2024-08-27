@@ -1,0 +1,199 @@
+---
+title: "WordCloud"
+author: "Quentin PETITJEAN"
+date: "2024-08-27"
+output: html_document
+---
+
+```{r worldCloud, message=FALSE, warning=FALSE, echo=FALSE,  fig.align = 'center', fig.height = 6, out.width="80%", results='asis', dpi = 250, dev = "png", dev.args=list(bg="transparent")}
+if(!require(wordcloud)){
+  install.packages("wordcloud")
+}
+if (!require(textstem)) {
+  install.packages("textstem")
+}
+if(!require(tm)){
+  install.packages("tm")
+}
+if(!require(RColorBrewer)){
+  install.packages("RColorBrewer")
+}
+
+# retrieve the list of pdf files
+pdfList <-
+  list.files(
+    "PubList",
+    pattern = ".pdf",
+    full.names = TRUE
+  )
+
+# load a csv file containing useless words to remove from the wordcloud
+useLessW <- read.csv2("Other/UselessWords.csv")
+
+# retrieve text from the publication (pdf files)
+AllPub <- c()
+for (i in seq(length(pdfList))) {
+  fullPub <- pdftools::pdf_text(pdf = pdfList[i])
+  
+  # concatenate all pages
+  fullPub <- paste(fullPub, collapse = " ")
+  
+  # keep only the text between the Introduction and the Acknowledgements
+  start <- base::regexpr("Introduction", fullPub, ignore.case = TRUE)
+  end <- base::regexpr("Acknowledgements", fullPub, ignore.case = TRUE)
+  NorefNoAbs <- substr(fullPub, start[1], end[1] - 1)
+
+  # remove cited references (between rounded and squared brackets, word followed by et al and word withg initials)
+  docs <- gsub("\\(.*?\\)", " ", NorefNoAbs, perl = T)
+  docs <- gsub("\\[.*?\\]", " ", docs, perl = T)
+  docs <- gsub("\\b\\w+\\set al\\b", " ", docs, perl = TRUE)
+  docs <- gsub("\\b[A-Z][a-z]+\\s[A-Z]\\.", " ", docs)
+  
+  # remove special characters
+  docs <- gsub("[^[:alnum:][:space:]]", " ", docs)
+  
+  AllPub <- c(AllPub, docs)
+}
+  AllPub <- paste(AllPub, collapse = " ")
+  
+# create a corpus (needed for the following functions)
+docs <- tm::Corpus(tm::VectorSource(AllPub))
+#tm::inspect(docs)
+
+# Convert the text to lowercase
+docs <- tm::tm_map(docs, tm::content_transformer(tolower))
+
+# remove stopwords
+docs <- tm::tm_map(docs, tm::removeWords, tm::stopwords("english"))
+
+# Remove extra whitespace
+docs <- tm::tm_map(docs, tm::stripWhitespace) 
+
+# Remove punctuation
+docs <- tm::tm_map(docs, tm::removePunctuation) 
+
+# Remove numbers
+docs <- tm::tm_map(docs, tm::removeNumbers) 
+  
+# Lemmatize words
+docs <- tm::tm_map(docs, tm::content_transformer(textstem::lemmatize_strings))
+
+# remove english prepositions
+docs <-
+  tm::tm_map(
+    docs,
+    tm::removeWords,
+    useLessW$prepositions
+  )
+
+# remove english adjectives
+docs <-
+  tm::tm_map(
+    docs,
+    tm::removeWords,
+    useLessW$adjectives
+  )
+
+# remove english adverbs
+docs <-
+  tm::tm_map(
+    docs,
+    tm::removeWords,
+    useLessW$adverbs
+  )
+
+# remove english Subordinating Conjunctions
+docs <-
+  tm::tm_map(
+    docs,
+    tm::removeWords,
+    useLessW$subConj
+  )
+
+# remove english modal-auxiliary-verbs
+docs <-
+  tm::tm_map(
+    docs,
+    tm::removeWords,
+    useLessW$modAuxVerbs
+  )
+
+# remove english coordinating conjuction
+docs <-
+  tm::tm_map(docs,
+             tm::removeWords,
+             useLessW$coordConj)
+
+# remove english number
+docs <-
+  tm::tm_map(
+    docs,
+    tm::removeWords,
+    useLessW$numbers
+  )
+
+# remove other words currently found in scientific literature and other specific to this set of publications (e.g., the studies'sites names)
+docs <-
+  tm::tm_map(
+    docs,
+    tm::removeWords,
+    useLessW$other
+  )
+
+# construct words matrix
+dtm <- tm::TermDocumentMatrix(docs)
+m <- as.matrix(dtm)
+v <- sort(rowSums(m), decreasing = TRUE)
+d <- data.frame(word = names(v), freq = v)
+
+# manually correct some mistakes/approximation
+d[which(d["word"] == "physiology"), "freq"] <-
+  d[which(d["word"] == "physiology"), "freq"] + d[which(d["word"] == "physiol"), "freq"]
+d <- d[-which(d["word"] == "physiol"), ]
+d[which(d["word"] == "contamination"), "freq"] <-
+  d[which(d["word"] == "contamination"), "freq"] + d[which(d["word"] == "contaminate"), "freq"]
+d <- d[-which(d["word"] == "contaminate"), ]
+d[which(d["word"] == "metal"), "freq"] <-
+  d[which(d["word"] == "tms"), "freq"] + d[which(d["word"] == "metal"), "freq"]
+d <- d[-which(d["word"] == "tms"), ]
+d[which(d["word"] == "injection"), "freq"] <-
+  d[which(d["word"] == "inject"), "freq"] + d[which(d["word"] == "injection"), "freq"]
+d <- d[-which(d["word"] == "inject"), ]
+d[which(d["word"] == "maximum"), "freq"] <-
+  d[which(d["word"] == "max"), "freq"] + d[which(d["word"] == "maximum"), "freq"]
+d <- d[-which(d["word"] == "max"), ]
+d[which(d["word"] == "exposure"), "freq"] <-
+  d[which(d["word"] == "exposure"), "freq"] + d[which(d["word"] == "expose"), "freq"]
+d <- d[-which(d["word"] == "expose"), ]
+d[which(d["word"] == "stress"), "freq"] <-
+  d[which(d["word"] == "stress"), "freq"] + d[which(d["word"] == "stressor"), "freq"]
+d <- d[-which(d["word"] == "stressor"), ]
+d[which(d["word"] == "behavior"), "freq"] <-
+  d[which(d["word"] == "behavior"), "freq"] + d[which(d["word"] == "behavioral"), "freq"]
+d <- d[-which(d["word"] == "behavioral"), ]
+d[which(d["word"] == "variability"), "freq"] <-
+  d[which(d["word"] == "variability"), "freq"] + d[which(d["word"] == "variance"), "freq"]
+d <- d[-which(d["word"] == "variance"), ]
+d[which(d["word"] == "interaction"), "freq"] <-
+  d[which(d["word"] == "interaction"), "freq"] + d[which(d["word"] == "interactive"), "freq"]
+d <- d[-which(d["word"] == "interactive"), ]
+d[which(d["word"] == "cost"), "freq"] <-
+  d[which(d["word"] == "cost"), "freq"] + d[which(d["word"] == "costly"), "freq"]
+d <- d[-which(d["word"] == "costly"), ]
+
+d[which(d["word"] == "track"), "word"] <- "video-tracking"
+d[which(d["word"] == "min"), "word"] <- "minimum"
+d[which(d["word"] == "biochem"), "word"] <- "biochemistry"
+
+set.seed(1234)
+wordcloud::wordcloud(
+  words =  d$word[-1],
+  freq = d$freq,
+  min.freq = 30,
+  max.words = 200,
+  random.order = FALSE,
+  rot.per = 0.25,
+  colors = RColorBrewer::brewer.pal(6, "Dark2")
+)
+
+```

@@ -1,0 +1,345 @@
+prepositions;adjectives;adverbs;subConj;modAuxVerbs;coordConj;numbers;other
+aboard;abactinal;abnormally;after;will;for;one;figure
+about;abandoned;abruptly;although;would;and;two;fig
+above;abashed;absolutely;as;shall;nor;three;table
+across;abatable;absently;as if;should;but;four;first
+after;abatic;accordingly;as long as;can;or;five;second
+against;abaxial;accurately;as much;could;yet;six;third
+along;abbatial;accusingly;as soon as;may;so;seven;result
+alongside;abbreviated;actively;as though;might;either;eight;significant
+amid;abducent;actually;because ;must;neither;nine;observed
+amidst;abducting;acutely;before ;dare;both;ten;also
+among;aberrant;admirably;even ;need;not only;eleven;values
+amongst;abeyant;adventurously;even if;used to;whether;twelve;according
+anti;abhorrent;adversely;even though;ought to;;thirteen;addition
+apart;abiding;affirmatively;if ;be able to;;fourteen;obtain
+around;abient;afterwards;if only;have to;;fifteen;using
+as;able;allegedly;if when;had better;;sixteen;used
+astride;abnormal;almost;if then;be going to;;seventeen;allowed
+at;aboard;alternatively;inasmuch ;would rather;;eighteen;https
+barring;abrasive;always;inasmuch as;;;nineteen;°c
+before;absent;amazingly;in case;;;twenty;france
+behind;abundant;ambitiously;in order that;;;thirty;different
+below;acceptable;angrily;just as;;;forty;<U+FB01>sh
+beneath;accessible;anxiously;lest ;;;fifty;days
+beside;accountable;aptly;now ;;;sixty;previous
+besides;accurate;arrogantly;now since;;;seventy;rate
+between;acidic;asymmetrically;now that;;;eighty;level
+beyond;acoustic;awkwardly;now when;;;ninety;pbs
+but;active;badly;once ;;;hundred;lps
+by;actual;barely;provided ;;;thousand;control
+circa;adaptable;bashfully;provided that;;;million;group
+concerning;adept;beautifully;rather than;;;billion;multiple
+considering;addicted;bitterly;since ;;;trillion;studie
+despite;admirable;bleakly;so that;;;first;study
+down;adorable;blindly;supposing ;;;second;total
+during;adored;blissfully;than ;;;third;higher
+except;adventurous;boldly;that ;;;fourth;lower
+excepting;aesthetic;bravely;though ;;;fifth;high
+excluding;afraid;briefly;till ;;;sixth;low
+following;aggressive;brightly;unless ;;;seventh;changes
+for;agile;briskly;until ;;;eighth;change
+from;alarmed;broadly;when ;;;ninth;increase
+given;alert;brutally;whenever ;;;tenth;decrease
+in;alive;busily;where ;;;eleventh;increased
+inside;allergic;calmly;whereas ;;;twelfth;decreased
+into;aloof;candidly;where if;;;thirteenth;mean
+lest;amazed;carefully;wherever ;;;fourteenth;respectively
+like;amazing;carelessly;whether ;;;fifteenth;potential
+minus;ambitious;cautiously;which ;;;sixteenth;affect
+near;ample;ceaselessly;while ;;;seventeenth;due
+notwithstanding;amused;cheerfully;who ;;;eighteenth;test
+of;amusing;chronically;whoever ;;;nineteenth;number
+off;ancient;clearly;why ;;;twentieth;found
+on;angry;cleverly;;;;thirtieth;axis
+onto;anguished;closely;;;;fortieth;xxx
+opposite;animated;coaxingly;;;;fiftieth;alone
+outside;annual;commonly;;;;sixtieth;tion
+over;annoyed;completely;;;;seventieth;amix
+past;annoying;continually;;;;eightieth;particularly
+pending;anxious;coolly;;;;ninetieth;average
+per;anti;correctly;;;;hundredth;ausei
+plus;antique;courageously;;;;thousandth;riou
+pro;appetizing;crossly;;;;millionth;arimas
+regarding;apprehensive;cruelly;;;;billionth;celfig
+re;appropriate;curiously;;;;trillionth;relat
+round;arid;cynically;;;;decade;represent
+save;arrogant;daily;;;;;measur
+since;artificial;daintily;;;;;observ
+than;artistic;daringly;;;;;antorpe
+through;ashamed;dearly;;;;;allow
+throughout;asleep;deceivingly;;;;;petitjean
+to;astonishing;deeply;;;;;jacquin
+toward;at;deliberately;;;;;celcab
+towards;athletic;delicately;;;;;cantly
+touching;attentive;delightfully;;;;;cant
+under;attractive;deliriously;;;;;non
+underneath;auspicious;desperately;;;;;signi
+unlike;authentic;determinedly;;;;;show
+until;automatic;diligently;;;;;suggest
+up;awesome;discreetly;;;;;riem
+upon;awful;distinctively;;;;;display
+versus;awkward;dramatically;;;;;determin
+via;bad;drastically;;;;;con
+with;bashful;dutifully;;;;;see
+within;barren;eagerly;;;;;account
+without;barricaded;easily;;;;;whole
+withal;barytic;effectively;;;;;end
+worth;basal;efficiently;;;;;caus
+;basaltic;elegantly;;;;;supporting
+;baseborn;eloquently;;;;;whatever
+;based;enormously;;;;;inter
+;baseless;enthusiastically;;;;;plate
+;basic;entirely;;;;;bas
+;bathyal;equally;;;;;especially
+;battleful;especially;;;;;including
+;battlemented;ethically;;;;;resulting
+;batty;evidently;;;;;indicate
+;batwing;eventually;;;;;well
+;beautiful;exactly;;;;;follow
+;belligerent;exclusively;;;;;consider
+;beneficial;explicitly;;;;;general
+;best;extremely;;;;;order
+;big;factually;;;;;present
+;bitter;faithfully;;;;;better
+;bizarre;famously;;;;;contrary
+;black;far;;;;;point
+;blue;fast;;;;;suggesting
+;boring;fatally;;;;;locat
+;brainy;ferociously;;;;;detail
+;bright;fervently;;;;;analyze
+;broad;fiercely;;;;;assess
+;broken;finally;;;;;assumption
+;busy;fondly;;;;;baseline
+;calm;foolishly;;;;;calculate
+;capable;fortunately;;;;;characterize
+;careful;frankly;;;;;comparison
+;careless;frantically;;;;;conclusion
+;caring;freely;;;;;data
+;cautious;frightfully;;;;;demonstrate
+;charming;fully;;;;;derived
+;cheap;furiously;;;;;distribution
+;cheerful;generally;;;;;estimate
+;chubby;generously;;;;;evaluate
+;clean;gently;;;;;experimental
+;clever;gingerly;;;;;findings
+;clumsy;gladly;;;;;hypothesis
+;cold;gracefully;;;;;illustrate
+;colorful;gratefully;;;;;impact
+;comfortable;greatly;;;;;investigate
+;concerned;greedily;;;;;limitations
+;confused;happily;;;;;method
+;crowded;hard;;;;;model
+;cruel;hardly;;;;;observation
+;curious;harshly;;;;;parameter
+;curly;hastily;;;;;protocol
+;cute;heartily;;;;;randomized
+;daily;heavily;;;;;regression
+;daft;helpfully;;;;;relevant
+;dainty;helplessly;;;;;replicate
+;damaged;here;;;;;requirement
+;damn;highly;;;;;sample
+;damning;honestly;;;;;significance
+;damp;hopelessly;;;;;simulation
+;dampish;hungrily;;;;;specific
+;dangerous;hurriedly;;;;;statistical
+;dark;immediately;;;;;summary
+;darkling;impartially;;;;;systematic
+;darned;impatiently;;;;;technique
+;dauntless;impressively;;;;;theoretical
+;daylong;inadequately;;;;;variable
+;dead;increasingly;;;;;type
+;deep;independently;;;;;expos
+;defective;indirectly;;;;;current
+;delicate;innocently;;;;;critical
+;delicious;inquisitively;;;;;antorpe
+;depressed;instantly;;;;;use
+;determined;intensely;;;;;number
+;different;interestingly;;;;;take
+;dirty;internally;;;;;hence
+;disgusting;intuitively;;;;;find
+;dry;invariably;;;;;include
+;dusty;irritably;;;;;thus
+;early;jovially;;;;;depend
+;educated;joyfully;;;;;accord
+;efficient;joyously;;;;;several
+;elderly;jubilantly;;;;;relative
+;elegant;justly;;;;;expect
+;embarrassed;keenly;;;;;good
+;empty;kiddingly;;;;;long
+;encouraging;kindly;;;;;numb
+;enthusiastic;knavishly;;;;;have
+;excellent;knowingly;;;;;different
+;exciting;knowledgeably;;;;;sum
+;expensive;lazily;;;;;reach
+;fabulous;less;;;;;indeed
+;fair;lightly;;;;;day
+;faithful;likely;;;;;sure
+;famous;literally;;;;;learn
+;fancy;lively;;;;;tackle
+;fantastic;loftily;;;;;call
+;fast;longingly;;;;;check
+;fearful;loosely;;;;;commercial
+;fearless;loudly;;;;;subject
+;fertile;lovingly;;;;;speci?cally
+;filthy;loyally;;;;;routine
+;foolish;madly;;;;;photoperiod
+;forgetful;majestically;;;;;literature
+;friendly;meaningfully;;;;;however
+;funny;mechanically;;;;;locate
+;gentle;merrily;;;;;index
+;glamorous;miserably;;;;;local
+;glorious;mockingly;;;;;value
+;gorgeous;momentarily;;;;;combine
+;graceful;mortally;;;;;difference
+;grateful;mysteriously;;;;;datum
+;great;naturally;;;;;available
+;greedy;nearly;;;;;fraction
+;green;neatly;;;;;measure
+;handsome;nervously;;;;;muscle
+;happy;never;;;;;relate
+;harsh;nicely;;;;;perform
+;healthy;noisily;;;;;instance
+;heavy;obediently;;;;;auscor
+;helpful;oddly;;;;;significant
+;hilarious;offensively;;;;;cellular
+;historical;officially;;;;;material
+;horrible;only;;;;;compute
+;hot;openly;;;;;explain
+;huge;optimistically;;;;;capacity
+;humorous;painfully;;;;;single
+;hungry;patiently;;;;;expression
+;ignorant;perfectly;;;;;ratio
+;illegal;physically;;;;;supporting
+;imaginary;playfully;;;;;compare
+;impolite;politely;;;;;function
+;important;poorly;;;;;body
+;impossible;potentially;;;;;time
+;innocent;powerfully;;;;;tank
+;intelligent;promptly;;;;;concentration
+;interesting;properly;;;;;trace
+;jealous;proudly;;;;;particle
+;jolly;publicly;;;;;effect
+;juicy;punctually;;;;;
+;juvenile;quaintly;;;;;
+;kind;queerly;;;;;
+;large;questionably;;;;;
+;legal;quickly;;;;;
+;light;quietly;;;;;
+;literate;quirkily;;;;;
+;little;quizzically;;;;;
+;lively;randomly;;;;;
+;lonely;rapidly;;;;;
+;loud;rarely;;;;;
+;lovely;ravenously;;;;;
+;macho;readily;;;;;
+;magical;really;;;;;
+;magnificent;reassuringly;;;;;
+;massive;recklessly;;;;;
+;mature;regularly;;;;;
+;mean;reluctantly;;;;;
+;messy;repeatedly;;;;;
+;modern;restfully;;;;;
+;narrow;righteously;;;;;
+;nasty;rightfully;;;;;
+;naughty;roughly;;;;;
+;nervous;rudely;;;;;
+;new;sadly;;;;;
+;noisy;safely;;;;;
+;nutritious;scarcely;;;;;
+;obedient;scientifically;;;;;
+;obese;searchingly;;;;;
+;obnoxious;seemingly;;;;;
+;old;selectively;;;;;
+;overconfident;selfishly;;;;;
+;peaceful;seriously;;;;;
+;pink;severely;;;;;
+;polite;shakily;;;;;
+;poor;sharply;;;;;
+;powerful;sheepishly;;;;;
+;precious;shrilly;;;;;
+;pretty;shyly;;;;;
+;proud;silently;;;;;
+;quick;sleepily;;;;;
+;quiet;slowly;;;;;
+;rapid;smoothly;;;;;
+;rare;softly;;;;;
+;red;solemnly;;;;;
+;remarkable;sometimes;;;;;
+;responsible;soon;;;;;
+;rich;speedily;;;;;
+;romantic;spontaneously;;;;;
+;royal;stealthily;;;;;
+;rude;sternly;;;;;
+;scintillating;strategically;;;;;
+;secretive;strictly;;;;;
+;selfish;stubbornly;;;;;
+;serious;stupidly;;;;;
+;sharp;subconsciously;;;;;
+;shiny;suddenly;;;;;
+;shocking;supposedly;;;;;
+;short;surprisingly;;;;;
+;shy;suspiciously;;;;;
+;silly;sweetly;;;;;
+;sincere;swiftly;;;;;
+;skinny;sympathetically;;;;;
+;slim;systematically;;;;;
+;slow;tactfully;;;;;
+;small;technically;;;;;
+;soft;temporarily;;;;;
+;spicy;tensely;;;;;
+;spiritual;terribly;;;;;
+;splendid;thankfully;;;;;
+;strong;thoroughly;;;;;
+;successful;thoughtfully;;;;;
+;sweet;tightly;;;;;
+;talented;tomorrow;;;;;
+;tall;tonight;;;;;
+;tactful;too;;;;;
+;tailor-made;tremendously;;;;;
+;take-charge;truly;;;;;
+;tangible;truthfully;;;;;
+;tasteful;typically;;;;;
+;tasty;ultimately;;;;;
+;teachable;unaccountably;;;;;
+;teeming;unbearably;;;;;
+;tempean;understandingly;;;;;
+;temperate;undoubtedly;;;;;
+;tenable;unexpectedly;;;;;
+;tenacious;unfortunately;;;;;
+;tender;unhappily;;;;;
+;tender-hearted;universally;;;;;
+;tense;unmistakably;;;;;
+;terrible;unquestionably;;;;;
+;terrific;unwillingly;;;;;
+;testimonial;upbeat;;;;;
+;thankful;upright;;;;;
+;thankworthy;upward;;;;;
+;thick;urgently;;;;;
+;thin;usefully;;;;;
+;therapeutic;uselessly;;;;;
+;thorough;usually;;;;;
+;thoughtful;vacantly;;;;;
+;tiny;vaguely;;;;;
+;tough;vainly;;;;;
+;ugly;valiantly;;;;;
+;unique;vastly;;;;;
+;untidy;verbally;;;;;
+;upset;viciously;;;;;
+;victorious;victoriously;;;;;
+;violent;violently;;;;;
+;vulgar;vividly;;;;;
+;warm;vocally;;;;;
+;weak;voluntarily;;;;;
+;wealthy;warmly;;;;;
+;wide;wearily;;;;;
+;wise;well;;;;;
+;witty;wetly;;;;;
+;wonderful;wholly;;;;;
+;worried;wildly;;;;;
+;young;wisely;;;;;
+;youthful;wonderfully;;;;;
+;zealous;wrongly;;;;;
+;;yearly;;;;;
+;;youthfully;;;;;
+;;zealously;;;;;

@@ -73,9 +73,22 @@ More details to come soon !
 </p>
 </td>
     <td style="width: 20%; vertical-align: top;">
-<a title="https://www.inrae.fr/" href='https://www.inrae.fr/'><img src="https://upload.wikimedia.org/wikipedia/fr/thumb/2/2a/Logo-INRAE_Transparent.svg/2560px-Logo-INRAE_Transparent.svg.png" height="41px" width="155px" /></a></br>
     
-<a title="https://www.ofb.gouv.fr/en" href='https://www.ofb.gouv.fr/en'><img src="https://upload.wikimedia.org/wikipedia/fr/a/a5/OFB_190702_PHILOGENIQUE_JG-02.jpg" height="155px" width="155px" /></a></br>
+```{r EABXLogoSet, echo = FALSE, results='asis'}
+logoData <- read.csv2("Other/LogoURL.csv")
+Res <- c()
+tofind <- c("inrae", "ofb")
+for(i in tofind){ 
+Logo <- logoData$URL[logoData$Logo == i]
+Website <- logoData$website[logoData$Logo == i]
+width <- logoData$widthpx[logoData$Logo == i]
+
+Res[i] <- cat(sprintf('<a title="%s" href="%s">
+<img src="%s" width="%spx" style="display: block; margin: auto;" />
+</a></br>', Website, Website, Logo, width))
+}
+cat(Res)
+```
     
 </td>
   </tr>
@@ -152,25 +165,22 @@ See here for:<br/>
 &#8226; <a href="https://www.softxjournal.com/article/S2352-7110(24)00045-1/fulltext">Edited article published in SoftwareX</a>.</p>
 </td>
     <td style="width: 20%; vertical-align: top;">
-<a title="https://ecophytopic.fr/recherche-innovation/proteger/projet-bidime" href='https://ecophytopic.fr/recherche-innovation/proteger/projet-bidime'><img src="images/BidimeProjLogo.png" height="148px" width="155px" /></a></br>
+    
+```{r ISALogoSet, echo = FALSE, results='asis'}
+logoData <- read.csv2("Other/LogoURL.csv")
+Res <- c()
+tofind <- c("bidime", "inrae", "anr", "ecophyto", "isa", "gredeg", "cbgp", "astredhor", "chambrAgrPaca", "bioline")
+for(i in tofind){ 
+Logo <- logoData$URL[logoData$Logo == i]
+Website <- logoData$website[logoData$Logo == i]
+width <- logoData$widthpx[logoData$Logo == i]
 
-<a title="https://www.inrae.fr/" href='https://www.inrae.fr/'><img src="https://upload.wikimedia.org/wikipedia/fr/thumb/2/2a/Logo-INRAE_Transparent.svg/2560px-Logo-INRAE_Transparent.svg.png" height="41px" width="155px" /></a></br>
-
-<a title="https://anr.fr/" href='https://anr.fr/'><img src="https://anr.fr/fileadmin/_processed_/c/2/csm_ANR-blanc-sur-bleu_727e9b01cc.png" height="80px" width="155px" /></a></br>
-
-<a title="https://ecophytopic.fr/" href='https://ecophytopic.fr/'><img src="https://ecophytopic.fr/themes/custom/ecophytopic_theme/logo.svg" height="80px" width="155px" /></a></br>
-
-<a title="https://www6.paca.inrae.fr/institut-sophia-agrobiotech/" href='https://www6.paca.inrae.fr/institut-sophia-agrobiotech/'><img src="https://institut-sophia-agrobiotech.paca.hub.inrae.fr/var/hub_internet_paca_institut_sophia_agrobiotech/storage/images/_aliases/inra_logo_principal/1/4/5/6/36541-18-fre-FR/2002d66dd081-logo_institutsophiaagrobiotech.png" height="113px" width="155px" /></a></br>
-
-<a title="https://gredeg.univ-cotedazur.fr/" href='https://gredeg.univ-cotedazur.fr/'><img src="https://gredeg.univ-cotedazur.fr/uas/laboratoire-gredeg/LOGO/logo-gredeg.png" height="81px" width="155px" /></a></br>
-
-<a title="https://www6.montpellier.inrae.fr/cbgp/" href='https://www6.montpellier.inrae.fr/cbgp/'><img src="https://umr-cbgp.fr/wp-content/uploads/2023/04/Logo-CBGP-baseline-FR.svg" height="62px" width="155px" /></a></br>
-
-<a title="https://www.astredhor.fr/" href='https://www.astredhor.fr/'><img src="https://www.astredhor.fr/image.htm?img=65796-Logo300.jpg" height="60px" width=155px" /></a></br>
-
-<a title="https://paca.chambres-agriculture.fr/" href='https://paca.chambres-agriculture.fr/'><img src="https://paca.chambres-agriculture.fr/fileadmin/user_upload/Provence-Alpes-Cote_d_Azur/020_Inst_Paca/Interface/Logo_CA-PACA_mobile.jpg" height="55px" width="155px" /></a></br>
-
-<a title="https://biolineagrosciences.com/" href='https://biolineagrosciences.com/'><img src="https://www.biolineagrosciences.com/wp-content/themes/bioline/img/logo-bioline_172.png" height="54px" width="155px" /></a></br>
+Res[i] <- cat(sprintf('<a title="%s" href="%s">
+<img src="%s" width="%spx" style="display: block; margin: auto;" />
+</a></br>', Website, Website, Logo, width))
+}
+cat(Res)
+```
 
 </td>
   </tr>
@@ -209,15 +219,23 @@ Stay tuned for further news to come.</p>
 </p>
 </td>
     <td style="width: 20%; vertical-align: top;">
-      <a title="https://crbe.cnrs.fr/en/" href='https://crbe.cnrs.fr/en/'><img src="https://crbe.cnrs.fr/wp-content/uploads/2024/01/cropped-Logo-CRBE-couleur-2048x782.png" height="56px" width="155px" /></a></br>
     
-    <a title="https://www.ensat.fr/en/index.html" href='https://www.ensat.fr/en/index.html'><img src="https://upload.wikimedia.org/wikipedia/fr/5/57/Logo_inp_ensat_2022.png" height="65px" width="155px" /></a></br>
-    
-    <a title="https://www.univ-toulouse.fr/" href='https://www.univ-toulouse.fr/'><img src="https://www.univ-toulouse.fr/sites/default/files/inline-images/logo_uftmp_horizontale.svg" height="80px" width="155px" /></a></br>
-    
-    <a title="https://www.cnrs.fr/" href='https://www.cnrs.fr/'><img src="https://www.cnrs.fr/sites/default/files/logo/logo.svg" height="155px" width="155px" /></a></br>
-    
-    <a title="https://www.genotoul.fr/" href='https://www.genotoul.fr/'><img src="https://www.genotoul.fr/wp-content/uploads/2017/01/Genotoul_logo-rvb_min.png" height="44px" width="155px" /></a></br>
+```{r crbeLogoSet1, echo = FALSE, results='asis'}
+logoData <- read.csv2("Other/LogoURL.csv")
+Res <- c()
+tofind <- c("crbe", "ensat", "TlseUniv", "cnrs", "genotoul")
+for(i in tofind){ 
+Logo <- logoData$URL[logoData$Logo == i]
+Website <- logoData$website[logoData$Logo == i]
+width <- logoData$widthpx[logoData$Logo == i]
+
+Res[i] <- cat(sprintf('<a title="%s" href="%s">
+<img src="%s" width="%spx" style="display: block; margin: auto;" />
+</a></br>', Website, Website, Logo, width))
+}
+cat(Res)
+```
+
 </td>
   </tr>
 </table>
@@ -250,18 +268,22 @@ knitr::include_graphics('images/PhDVensDiag.png')
 For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_distill/publications.html#section-2'>Publication section</a> of this website.</p>
 </td>
     <td style="width: 20%; vertical-align: top;">
-    <a title="https://crbe.cnrs.fr/en/" href='https://crbe.cnrs.fr/en/'><img src="https://crbe.cnrs.fr/wp-content/uploads/2024/01/cropped-Logo-CRBE-couleur-2048x782.png" height="56px" width="155px" /></a></br>
     
-    <a title="https://www.ensat.fr/en/index.html" href='https://www.ensat.fr/en/index.html'><img src="https://upload.wikimedia.org/wikipedia/fr/5/57/Logo_inp_ensat_2022.png" height="65px" width="155px" /></a></br>
-    
-    <a title="https://www.univ-toulouse.fr/" href='https://www.univ-toulouse.fr/'><img src="https://www.univ-toulouse.fr/sites/default/files/inline-images/logo_uftmp_horizontale.svg" height="80px" width="155px" /></a></br>
-    
-    <a title="https://www.cnrs.fr/" href='https://www.cnrs.fr/'><img src="https://www.cnrs.fr/sites/default/files/logo/logo.svg" height="155px" width="155px" /></a></br>
-    
-    <a title="https://eau-grandsudouest.fr/" href='https://eau-grandsudouest.fr/'><img src="https://aides-territoires-prod.s3.fr-par.scw.cloud/aides-territoires-prod/backers/agence-de-leau-adour-garonne_logo.png" height="99px" width="155px" /></a></br>
-    
-    <a title="https://programmes.insu.cnrs.fr/ec2co/" href='https://programmes.insu.cnrs.fr/ec2co/'><img src="https://programmes.insu.cnrs.fr/wp-content/uploads/2019/05/logo-768x322.png" height="65px" width="155px" /></a></br>
-    <a title="https://www.enseignementsup-recherche.gouv.fr/en" href='https://www.enseignementsup-recherche.gouv.fr/en'><img src="https://www.enseignementsup-recherche.gouv.fr/sites/default/files/site_logo/2022-05/1_MESR_RVB.svg" height="155px" width="155px" /></a></br>
+```{r CRBELogoSet2, echo = FALSE, results='asis'}
+logoData <- read.csv2("Other/LogoURL.csv")
+Res <- c()
+tofind <- c("crbe", "ensat", "TlseUniv", "cnrs", "AEAG", "ec2co", "MESRI")
+for(i in tofind){ 
+Logo <- logoData$URL[logoData$Logo == i]
+Website <- logoData$website[logoData$Logo == i]
+width <- logoData$widthpx[logoData$Logo == i]
+
+Res[i] <- cat(sprintf('<a title="%s" href="%s">
+<img src="%s" width="%spx" style="display: block; margin: auto;" />
+</a></br>', Website, Website, Logo, width))
+}
+cat(Res)
+```
     
 </td>
   </tr>
@@ -295,21 +317,23 @@ For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_d
 </p>
 </td>
     <td style="width: 20%; vertical-align: top;">
-    <a title="https://chrono-environnement.univ-fcomte.fr" href='https://chrono-environnement.univ-fcomte.fr/'><img src="https://chrono-environnement.univ-fcomte.fr/wp-content/uploads/2023/10/logo-chrono-environnementpour-web.png" height="43px" width="155px" /></a></br>
     
-    <a title="https://www.univ-fcomte.fr/" href='https://www.univ-fcomte.fr/'><img src="https://upload.wikimedia.org/wikipedia/fr/7/77/Logo_Universit%C3%A9_de_Franche-Comt%C3%A9_2018.png" height="43px" width="155px" /></a></br>
-    
-    <a title="https://www.ubfc.fr/" href='https://www.ubfc.fr/'><img src="https://upload.wikimedia.org/wikipedia/fr/4/49/Logo_UBFC.png" height="72px" width="155px" /></a></br>
-    
-    <a title="https://www.cnrs.fr/" href='https://www.cnrs.fr/'><img src="https://www.cnrs.fr/sites/default/files/logo/logo.svg" height="155px" width="155px" /></a></br> 
-    
-    <a title="https://www.bourgognefranchecomte.fr/" href='https://www.bourgognefranchecomte.fr/'><img src= "https://www.bourgognefranchecomte.fr/themes/custom/bourg/logo.svg" height="117px" width="155px" /></a></br>
-    
-    <a title="https://www.culture.gouv.fr/en/Regions/Drac-Bourgogne-Franche-Comte" href='https://www.culture.gouv.fr/en/Regions/Drac-Bourgogne-Franche-Comte'><img src="https://www.culture.gouv.fr/var/culture/storage/images/_aliases/reference/7/3/0/4/3164037-1-fre-FR/LogoMCHP.PNG" height="119px" width="155px" /></a></br>
-    
-    <a title="https://chrono-environnement.univ-fcomte.fr/plateforme/PEA2t/?lang=en" href='https://chrono-environnement.univ-fcomte.fr/plateforme/PEA2t/?lang=en'><img src="https://chrono-environnement.univ-fcomte.fr/wp-content/uploads/2023/06/logos_PEAT-03.jpg" height="72px" width="155px" /></a></br>
-    
-    <a title="https://www.femto-st.fr/fr" href='https://www.femto-st.fr/fr'><img src="https://www.femto-st.fr/sites/all/themes/femto/logo.png" height="74px" width="155px" /></a></br>
+```{r ChronoEnvLogoSet1, echo = FALSE, results='asis'}
+logoData <- read.csv2("Other/LogoURL.csv")
+Res <- c()
+tofind <- c("chronoEnv", "FCUniv", "UBFC", "cnrs", "BFC", "DRAAC", "PEA2T", "femto")
+for(i in tofind){ 
+Logo <- logoData$URL[logoData$Logo == i]
+Website <- logoData$website[logoData$Logo == i]
+width <- logoData$widthpx[logoData$Logo == i]
+
+Res[i] <- cat(sprintf('<a title="%s" href="%s">
+<img src="%s" width="%spx" style="display: block; margin: auto;" />
+</a></br>', Website, Website, Logo, width))
+}
+cat(Res)
+```
+
 </td>
   </tr>
 </table>
@@ -341,15 +365,22 @@ For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_d
 </p>
 </td>
     <td style="width: 20%; vertical-align: top;">
-    <a title="https://chrono-environnement.univ-fcomte.fr/" href='https://chrono-environnement.univ-fcomte.fr/'><img src="https://chrono-environnement.univ-fcomte.fr/wp-content/uploads/2023/10/logo-chrono-environnementpour-web.png" height="43px" width="155px" /></a></br>
     
-    <a title="https://www.univ-fcomte.fr/" href='https://www.univ-fcomte.fr/'><img src="https://upload.wikimedia.org/wikipedia/fr/7/77/Logo_Universit%C3%A9_de_Franche-Comt%C3%A9_2018.png" height="43px" width="155px" /></a></br>
-    
-    <a title="https://www.ubfc.fr/" href='https://www.ubfc.fr/'><img src="https://upload.wikimedia.org/wikipedia/fr/4/49/Logo_UBFC.png" height="72px" width="155px" /></a></br>
-    
-    <a title="https://www.cnrs.fr/" href='https://www.cnrs.fr/'><img src="https://www.cnrs.fr/sites/default/files/logo/logo.svg" height="155px" width="155px" /></a></br>
-    
-    <a title="https://www.bourgognefranchecomte.fr/" href='https://www.bourgognefranchecomte.fr/'><img src="https://www.bourgognefranchecomte.fr/themes/custom/bourg/logo.svg" height="117px" width="155px" /></a></br>
+```{r ChronoEnvLogoSet2, echo = FALSE, results='asis'}
+logoData <- read.csv2("Other/LogoURL.csv")
+Res <- c()
+tofind <- c("chronoEnv", "FCUniv", "UBFC", "cnrs", "BFC")
+for(i in tofind){ 
+Logo <- logoData$URL[logoData$Logo == i]
+Website <- logoData$website[logoData$Logo == i]
+width <- logoData$widthpx[logoData$Logo == i]
+
+Res[i] <- cat(sprintf('<a title="%s" href="%s">
+<img src="%s" width="%spx" style="display: block; margin: auto;" />
+</a></br>', Website, Website, Logo, width))
+}
+cat(Res)
+```
     
 </td>
   </tr>
@@ -374,9 +405,24 @@ For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_d
   Details (click to unroll)
   </summary>
   
-  <p style="text-align:center;">
-  <img src="https://www.setac.org/assets/img/logo.svg" height="97.5px" width="150px" /> &ensp; 
-  <img src="https://www.syngenta.fr/sites/g/files/kgtney1611/files/color/syn_global_theme-75ea6ac3/logo.svg" height="65px" width="200px" /></p>
+```{r Sub1, echo = FALSE, results='asis'}
+logoData <- read.csv2("Other/LogoURL.csv")
+Res <- c()
+tofind <- c("setac", "syngenta")
+for(i in tofind){ 
+Logo <- logoData$URL[logoData$Logo == i]
+Website <- logoData$website[logoData$Logo == i]
+width <- logoData$widthpx[logoData$Logo == i]
+height <- logoData$heightpx[logoData$Logo == i]
+
+Res[i] <- sprintf('<div style="display: inline-block; margin-right: 10px;">
+<a title="%s" href="%s">
+<img src="%s" width="%spx" height="%spx" />
+</a></div>', Website, Website, Logo, width, height)
+
+}
+cat('<div style="text-align: center;">', Res, '</div>', sep = "")
+```
   <p class="detailed-text">
   Grant programme supported by the SETAC Europe reinvestment fund and Syngenta to help student members participating to the <a href='https://helsinki.setac.org/welcome/'>SETAC Europe 29<sup>th</sup> meeting</a> meeting (Up to maximum 250€, Travel costs only, visa and accommodation are not included).
 </p>
@@ -388,10 +434,29 @@ For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_d
   Details (click to unroll)
   </summary>
   
-  <p style="text-align:center;">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Minist%C3%A8re_de_l%27Enseignement_Sup%C3%A9rieur_et_de_la_Recherche.png/1280px-Minist%C3%A8re_de_l%27Enseignement_Sup%C3%A9rieur_et_de_la_Recherche.png" height="75px" width="105px" /> &ensp; 
-  <img src="https://www.univ-tlse3.fr/medias/photo/logo-ed-sdu2e_1578590506112-jpg?ID_FICHE=1136458588340" height="80px" width="113px" /> &ensp; 
-  <img src="https://www.univ-toulouse.fr/sites/default/files/inline-images/logo_uftmp_horizontale.svg" height="75px" width="143px" /></p>
+```{r Sub2, echo = FALSE, results='asis'}
+logoData <- read.csv2("Other/LogoURL.csv")
+Res <- c()
+tofind <- c("MESRI", "TlseUniv", "sdu2e")
+for(i in tofind){ 
+Logo <- logoData$URL[logoData$Logo == i]
+Website <- logoData$website[logoData$Logo == i]
+width <- logoData$widthpx[logoData$Logo == i]
+height <- logoData$heightpx[logoData$Logo == i]
+if(i == "MESRI"){
+  height <- 75
+  width <- 205
+}
+
+Res[i] <- sprintf('<div style="display: inline-block; margin-right: 10px;">
+<a title="%s" href="%s">
+<img src="%s" width="%spx" height="%spx" />
+</a></div>', Website, Website, Logo, width, height)
+
+}
+cat('<div style="text-align: center;">', Res, '</div>', sep = "")
+```
+
 <p class="detailed-text">
 3 years stipend allowed by the French research and education ministry to study the variability of responses among freshwater fish populations (<em>Gobio occitaniae</em>) exposed to multiple stressors at the <a href='https://www.univ-tlse3.fr/'>Paul Sabatier University—UPS</a>.
 </p>
@@ -403,9 +468,24 @@ For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_d
   Details (click to unroll)
   </summary>
   
-  <p style="text-align:center;">
-  <img src="https://upload.wikimedia.org/wikipedia/fr/c/ce/NUI%2C_Galway.png" height="70px" width="155px" /> &ensp; 
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/1280px-Flag_of_Europe.svg.png" height="70px" width="105px" /></p>
+```{r Sub3, echo = FALSE, results='asis'}
+logoData <- read.csv2("Other/LogoURL.csv")
+Res <- c()
+tofind <- c("GalwayUniv", "europeFlag")
+for(i in tofind){ 
+Logo <- logoData$URL[logoData$Logo == i]
+Website <- logoData$website[logoData$Logo == i]
+height <- logoData$heightpx[logoData$Logo == i]
+
+Res[i] <- sprintf('<div style="display: inline-block; margin-right: 10px;">
+<a title="%s" href="%s">
+<img src="%s" height="%spx" />
+</a></div>', Website, Website, Logo, height)
+
+}
+cat('<div style="text-align: center;">', Res, '</div>', sep = "")
+```
+
 <p class="detailed-text">
 European grant supporting individual mobility projects to acquire training and professional experience within Europe. <br/></p>
 <p class="detailed-text">
@@ -452,19 +532,174 @@ As Co-organizer, chairman (Ecotoxicology & Ecophysiology session), and financial
 
 # PEER REVIEWS & EDITORIAL DUTIES
 ### PEER REVIEWS
-<p class="plain-text" style="text-align: left">
-`r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://www.tandfonline.com/journals/best20'>Critical Reviews in Environmental Sciences and Technology</a>&nbsp;(n=2)<br/>
-`r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://onlinelibrary.wiley.com/journal/14610248'>Ecology Letters</a>&nbsp;(n=1)<br/>
-`r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://www.sciencedirect.com/journal/environmental-pollution'>Environmental Pollution</a>&nbsp;(n=2)<br/>
-`r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://www.springer.com/journal/11356'>Environmental Science and Pollution Research</a>&nbsp;(n=4)<br/>
-`r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://www.frontiersin.org/journals/fish-science'>Frontiers in Fish Science</a>&nbsp;(n=1)<br/>
-`r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://onlinelibrary.wiley.com/journal/24715646'>Journal of Experimental Zoology Part A: Ecological Genetics and Physiology</a>&nbsp;(n=1)<br/>
-`r fontawesome::fa("file-lines", fill = "#333333")` &ensp; <a href='https://www.sciencedirect.com/journal/science-of-the-total-environment'>Science of The Total Environment</a>&nbsp;(n=4)<br/>
-</p>
+```{r loadData, echo=FALSE}
+# Load data
+filePath <- "W:/Reviews/Recap_reviews-QP.xlsx"
+ArticleRevData <- readxl::read_excel(filePath, sheet = "ArticleRevSummary")
+DataRevData <- readxl::read_excel(filePath, sheet = "DataRevSummary")
+URL <- readxl::read_excel(filePath, sheet = "JournalsURL")
+
+```
+
+```{r PeerRevSum, echo=FALSE}
+# Aggregate the total number of reviews per journal for Article reviews
+ArticleReviewsPerJournal <-
+  with(
+    ArticleRevData[!is.na(ArticleRevData$`Date review Submitted`), ],
+    aggregate(
+      `Date review Submitted`,
+      by = list(JournalName = `Journal name`),
+      FUN = length
+    )
+  )
+colnames(ArticleReviewsPerJournal)[2] <- "TotalArticleReviews"
+
+# Aggregate the total number of reviews per journal for Data reviews
+DataReviewsPerJournal <-
+  with(DataRevData[!is.na(DataRevData$`Date review Submitted`),],
+       aggregate(
+         `Date review Submitted`,
+         by = list(JournalName = `Journal name`),
+         FUN = length
+       ))
+colnames(DataReviewsPerJournal)[2] <- "TotalDataReviews"
+
+# Merge the two dataframes by JournalName
+totalReviewsPerJournal <- merge(ArticleReviewsPerJournal, DataReviewsPerJournal, by = "JournalName", all = TRUE)
+
+# Replace NA with 0 for journals that have reviews in only one of the datasets
+totalReviewsPerJournal$TotalArticleReviews[is.na(totalReviewsPerJournal$TotalArticleReviews)] <- 0
+totalReviewsPerJournal$TotalDataReviews[is.na(totalReviewsPerJournal$TotalDataReviews)] <- 0
+
+# Calculate the total number of reviews for each journal
+totalReviewsPerJournal$TotalReviews <- totalReviewsPerJournal$TotalArticleReviews + totalReviewsPerJournal$TotalDataReviews
+
+# Sort the dataframe by the total number of reviews in descending order
+totalReviewsPerJournal <- totalReviewsPerJournal[order(-totalReviewsPerJournal$TotalReviews), ]
+
+```
+
+```{r PeerRevHTML, echo=FALSE,  results='asis'}
+# Create the HTML string indicating the number of review performed for each journal
+htmlOutput <- c()
+for (i in 1:nrow(totalReviewsPerJournal)) {
+  journalName <- totalReviewsPerJournal$JournalName[i]
+  reviewCount <- totalReviewsPerJournal$TotalReviews[i]
+  journalURL <- URL[grep(journalName, URL$JournalName), "URL"]
+  
+  htmlString <- paste0(
+    '<p class="plain-text" style="text-align: left; margin: 0; ">',
+    fontawesome::fa("file-lines", fill = "#333333"), '&ensp; ',
+    '<a href="', journalURL, '">', journalName, '</a>&nbsp;(n=', reviewCount, ')<br/>',
+    '</p>'
+  )
+  htmlOutput <- c(htmlOutput, htmlString)
+}  
+  
+cat(paste(htmlOutput, collapse = "\n"))
+
+```
 
 ### EDITORIAL DUTIES
-`r fontawesome::fa("file-lines", fill = "#333333")` &ensp; Data editor at&nbsp;<a href='https://onlinelibrary.wiley.com/journal/14610248'>Ecology Letters</a> <br/>
-`r fontawesome::fa("file-lines", fill = "#333333")` &ensp; Review editor at&nbsp;<a href='https://www.frontiersin.org/'>Frontiers in Fish Science</a> <br/>
+`r fontawesome::fa("file-lines", fill = "#333333")` &ensp; Data editor at&nbsp;<a href='https://onlinelibrary.wiley.com/journal/14610248'>Ecology Letters (since June 2023)</a> <br/>
+`r fontawesome::fa("file-lines", fill = "#333333")` &ensp; Review editor at&nbsp;<a href='https://www.frontiersin.org/'>Frontiers in Fish Science (since Aug. 2023)</a> <br/>
+
+### REVIEW SUMMARY
+```{r PrepDataPlot, echo=FALSE}
+# Extract years from Date review Submitted
+ArticleRevData$Year <- format(ArticleRevData$`Date review Submitted`, "%Y")
+DataRevData$Year <- format(DataRevData$`Date review Submitted`, "%Y")
+
+# Aggregate the number of reviews per year for each type
+ArticleReviewsPerYear <- aggregate(ArticleRevData$`Date review Submitted`, by = list(Year = ArticleRevData$Year), FUN = length)
+names(ArticleReviewsPerYear)[2] <- "ArticleReviews"
+
+DataReviewsPerYear <- aggregate(DataRevData$`Date review Submitted`, by = list(Year = DataRevData$Year), FUN = length)
+names(DataReviewsPerYear)[2] <- "DataReviews"
+
+# Merge the data frames by Year and calculate the sum of reviews
+reviewsPerYear <- merge(ArticleReviewsPerYear, DataReviewsPerYear, by = "Year", all = TRUE)
+reviewsPerYear$ArticleReviews[is.na(reviewsPerYear$ArticleReviews)] <- 0
+reviewsPerYear$DataReviews[is.na(reviewsPerYear$DataReviews)] <- 0
+reviewsPerYear$TotalReviews <- reviewsPerYear$ArticleReviews + reviewsPerYear$DataReviews
+
+```
+
+```{r PlotData, echo=FALSE, fig.align = 'left', out.width="80%", fig.height = 4, dpi = 300, dev = "png", dev.args=list(bg="transparent"), fig.cap="Summary of Article and Data & Code Reviews Performed over the Years"}
+# Display the plot
+ggplot2::ggplot(reviewsPerYear, ggplot2::aes(x = as.numeric(Year))) +
+  ggplot2::geom_line(ggplot2::aes(y = ArticleReviews, color = "Article Reviews"),
+                     size = 1.2) +
+  ggplot2::geom_line(ggplot2::aes(y = DataReviews, color = "Data & Code Reviews"), size = 1.2) +
+  ggplot2::geom_line(ggplot2::aes(y = TotalReviews, color = "Total Reviews"), size = 1.2) +
+  ggplot2::geom_point(ggplot2::aes(y = ArticleReviews, color = "Article Reviews"),
+                      size = 6) +
+  ggplot2::geom_point(ggplot2::aes(y = DataReviews, color = "Data & Code Reviews"), size = 6) +
+  ggplot2::geom_point(ggplot2::aes(y = TotalReviews, color = "Total Reviews"), size = 6) +
+  ggplot2::geom_text(
+    ggplot2::aes(y = ArticleReviews, label = ArticleReviews, color = "Article Reviews"),
+    vjust = 0.5,
+    hjust = 0.5,
+    color = "white",
+    size = 3.5,
+    fontface = "bold"
+  ) +
+  ggplot2::geom_text(
+    ggplot2::aes(y = DataReviews, label = DataReviews, color = "Data & Code Reviews"),
+    vjust = 0.5,
+    hjust = 0.5,
+    color = "white",
+    size = 3.5,
+    fontface = "bold"
+  ) +
+  ggplot2::geom_text(
+    ggplot2::aes(y = TotalReviews, label = TotalReviews, color = "Total Reviews"),
+    vjust = 0.5,
+    hjust = 0.5,
+    color = "white",
+    size = 3.5,
+    fontface = "bold"
+  ) +
+  ggplot2::ggtitle("") +
+  ggplot2::scale_x_continuous(breaks = unique(as.numeric(reviewsPerYear$Year))) +
+  ggplot2::labs(y = "# of Reviews", color = "Review Type") +
+  ggplot2::scale_color_manual(
+    values = c(
+      "Article Reviews" = "#18BC9C",
+      # rgba(24, 188, 156, 1)
+      "Data & Code Reviews" = "#7570B3",
+      # rgba(117, 112, 179, 1)
+      "Total Reviews" = "#14827D"     
+      # rgba(20, 130, 125, 1)
+    )
+  ) +
+  ggplot2::theme_minimal(base_size = 14) +
+  ggplot2::theme(
+    plot.margin=grid::unit(c(-10,0,0,0), "mm"),
+    plot.background = ggplot2::element_blank(),
+    plot.title = ggplot2::element_text(hjust = 0.5, size = 16),
+    axis.title.x = ggplot2::element_blank(),
+    axis.title.y = ggplot2::element_text(size = 14),
+    axis.text = ggplot2::element_text(size = 12),
+    axis.ticks = ggplot2::element_line(color = "grey80"),
+    axis.line = ggplot2::element_line(color = "grey80"),
+    legend.position = "top",
+    legend.title = ggplot2::element_blank(),
+    legend.text = ggplot2::element_text(size = 12),
+    panel.grid.major = ggplot2::element_blank(),
+    panel.grid.minor = ggplot2::element_blank()
+  ) +
+  ggplot2::scale_y_continuous(limits = c(
+    0,
+    max(reviewsPerYear$ArticleReviews, reviewsPerYear$TotalReviews) + 1
+  ),
+  breaks = seq(
+    0,
+    max(reviewsPerYear$ArticleReviews, reviewsPerYear$TotalReviews) + 1,
+    by = 1
+  ))
+
+```
 
 ***
 

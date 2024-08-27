@@ -2163,7 +2163,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
      All rows must end with a semi-colon.                      */
 
   /* Optional: embed custom fonts here with `@import`          */
-  @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
   @import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400;500;600;700&family=Merienda:wght@400;700&family=Mochiy+Pop+P+One&family=Rampart+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Dirt&family=Saira+Stencil+One&display=swap');
   /* Optional: embed some icons from academicons here with `@import`          */
@@ -2173,8 +2173,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   :root {
     /* Main font */
     --font-body:   'Roboto', sans-serif, Arial, sans-serif;
-    --font-header: 'Edu QLD Beginner', cursive, Arial, sans-serif;
-    --font-navbar: 'Edu QLD Beginner', cursive, Arial, sans-serif;
+    --font-header: 'Poppins', Arial, sans-serif;
+    --font-header2: 'Edu QLD Beginner', cursive, Arial, sans-serif;
+    --font-navbar: 'Poppins', Arial, sans-serif;
     
     /* color of the html pages background */
     --color-background:    rgba(215, 219, 219, 0.5);
@@ -2212,6 +2213,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --fig-cap-color:   rgba(0, 0, 0, 0.6);
     /*-- Specify custom fonts ~~~ must be imported above   --*/
     --heading-font:    var(--font-header);
+    --h1-font:         var(--font-header); /* Custom font for h1 */
+    --h2-font:         var(--font-header2); /* Custom font for h2 */
+    --h3-font:         var(--font-header2); /* Custom font for h3 */
     --mono-font:       monospace;
     --body-font:       var(--font-body);
     --navbar-font:     var(--font-navbar);  /* websites + blogs only */
@@ -2345,10 +2349,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   }
 
   /* Postcard headers */
-  h1, h2, h3 {
+  h1 {
     color:    var(--header-color);
     /*-- Specify custom fonts ~~~ must be imported above   --*/
     font-family:   var(--font-header);
+    /*-- Specify custom fonts ~~~ must be imported above   --*/
+    font-weight:   500;
+    font-style:    bold;
+  }
+
+  h2, h3 {
+    color:    var(--header-color);
+    /*-- Specify custom fonts ~~~ must be imported above   --*/
+    font-family:   var(--font-header2);
     /*-- Specify custom fonts ~~~ must be imported above   --*/
     font-weight:   500;
     font-style:    bold;
@@ -2565,6 +2578,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       display: inline-block;
       padding: 10px 0px;
       margin: 10px 14px; }
+  }
+
+  /* Custom separator style */
+  .news-separator {
+    border: none;
+    height: 2px;
+    background-color: --aside-color; /* Choose your preferred color */
+    margin: 40px 0; /* Adjust spacing as needed */
+    width: 100%;
   }</style>
   <style type="text/css">
   /* base style */
@@ -2773,7 +2795,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
      All rows must end with a semi-colon.                      */
 
   /* Optional: embed custom fonts here with `@import`          */
-  @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
   @import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400;500;600;700&family=Merienda:wght@400;700&family=Mochiy+Pop+P+One&family=Rampart+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Dirt&family=Saira+Stencil+One&display=swap');
   /* Optional: embed some icons from academicons here with `@import`          */
@@ -2783,8 +2805,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   :root {
     /* Main font */
     --font-body:   'Roboto', sans-serif, Arial, sans-serif;
-    --font-header: 'Edu QLD Beginner', cursive, Arial, sans-serif;
-    --font-navbar: 'Edu QLD Beginner', cursive, Arial, sans-serif;
+    --font-header: 'Poppins', Arial, sans-serif;
+    --font-header2: 'Edu QLD Beginner', cursive, Arial, sans-serif;
+    --font-navbar: 'Poppins', Arial, sans-serif;
     
     /* color of the html pages background */
     --color-background:    rgba(215, 219, 219, 0.5);
@@ -2822,6 +2845,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --fig-cap-color:   rgba(0, 0, 0, 0.6);
     /*-- Specify custom fonts ~~~ must be imported above   --*/
     --heading-font:    var(--font-header);
+    --h1-font:         var(--font-header); /* Custom font for h1 */
+    --h2-font:         var(--font-header2); /* Custom font for h2 */
+    --h3-font:         var(--font-header2); /* Custom font for h3 */
     --mono-font:       monospace;
     --body-font:       var(--font-body);
     --navbar-font:     var(--font-navbar);  /* websites + blogs only */
@@ -2955,10 +2981,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   }
 
   /* Postcard headers */
-  h1, h2, h3 {
+  h1 {
     color:    var(--header-color);
     /*-- Specify custom fonts ~~~ must be imported above   --*/
     font-family:   var(--font-header);
+    /*-- Specify custom fonts ~~~ must be imported above   --*/
+    font-weight:   500;
+    font-style:    bold;
+  }
+
+  h2, h3 {
+    color:    var(--header-color);
+    /*-- Specify custom fonts ~~~ must be imported above   --*/
+    font-family:   var(--font-header2);
     /*-- Specify custom fonts ~~~ must be imported above   --*/
     font-weight:   500;
     font-style:    bold;
@@ -3177,6 +3212,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       margin: 10px 14px; }
   }
 
+  /* Custom separator style */
+  .news-separator {
+    border: none;
+    height: 2px;
+    background-color: --aside-color; /* Choose your preferred color */
+    margin: 40px 0; /* Adjust spacing as needed */
+    width: 100%;
+  }
+
   </style>
   <!--/radix_placeholder_site_in_header-->
 
@@ -3246,6 +3290,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <ul>
 <li><a href="#peer-reviews" id="toc-peer-reviews">PEER REVIEWS</a></li>
 <li><a href="#editorial-duties" id="toc-editorial-duties">EDITORIAL DUTIES</a></li>
+<li><a href="#review-summary" id="toc-review-summary">REVIEW SUMMARY</a></li>
 </ul></li>
 <li><a href="#hobbies" id="toc-hobbies">HOBBIES</a></li>
 </ul>
@@ -3313,8 +3358,13 @@ More details to come soon !
 </p>
 </td>
 <td style="width: 20%; vertical-align: top;">
-<p><a title="https://www.inrae.fr/" href='https://www.inrae.fr/'><img src="https://upload.wikimedia.org/wikipedia/fr/thumb/2/2a/Logo-INRAE_Transparent.svg/2560px-Logo-INRAE_Transparent.svg.png" height="41px" width="155px" /></a></br></p>
-<p><a title="https://www.ofb.gouv.fr/en" href='https://www.ofb.gouv.fr/en'><img src="https://upload.wikimedia.org/wikipedia/fr/a/a5/OFB_190702_PHILOGENIQUE_JG-02.jpg" height="155px" width="155px" /></a></br></p>
+<div class="layout-chunk" data-layout="l-body">
+<p><a title="https://www.inrae.fr/" href="https://www.inrae.fr/">
+<img src="https://upload.wikimedia.org/wikipedia/fr/thumb/2/2a/Logo-INRAE_Transparent.svg/2560px-Logo-INRAE_Transparent.svg.png" width="155px" style="display: block; margin: auto;" />
+</a></br><a title="https://www.ofb.gouv.fr/en" href="https://www.ofb.gouv.fr/en">
+<img src="https://upload.wikimedia.org/wikipedia/fr/a/a5/OFB_190702_PHILOGENIQUE_JG-02.jpg" width="155px" style="display: block; margin: auto;" />
+</a></br></p>
+</div>
 </td>
 </tr>
 </table>
@@ -3356,16 +3406,29 @@ See here for:<br/>
 </p>
 </td>
 <td style="width: 20%; vertical-align: top;">
-<p><a title="https://ecophytopic.fr/recherche-innovation/proteger/projet-bidime" href='https://ecophytopic.fr/recherche-innovation/proteger/projet-bidime'><img src="images/BidimeProjLogo.png" height="148px" width="155px" /></a></br></p>
-<p><a title="https://www.inrae.fr/" href='https://www.inrae.fr/'><img src="https://upload.wikimedia.org/wikipedia/fr/thumb/2/2a/Logo-INRAE_Transparent.svg/2560px-Logo-INRAE_Transparent.svg.png" height="41px" width="155px" /></a></br></p>
-<p><a title="https://anr.fr/" href='https://anr.fr/'><img src="https://anr.fr/fileadmin/_processed_/c/2/csm_ANR-blanc-sur-bleu_727e9b01cc.png" height="80px" width="155px" /></a></br></p>
-<p><a title="https://ecophytopic.fr/" href='https://ecophytopic.fr/'><img src="https://ecophytopic.fr/themes/custom/ecophytopic_theme/logo.svg" height="80px" width="155px" /></a></br></p>
-<p><a title="https://www6.paca.inrae.fr/institut-sophia-agrobiotech/" href='https://www6.paca.inrae.fr/institut-sophia-agrobiotech/'><img src="https://institut-sophia-agrobiotech.paca.hub.inrae.fr/var/hub_internet_paca_institut_sophia_agrobiotech/storage/images/_aliases/inra_logo_principal/1/4/5/6/36541-18-fre-FR/2002d66dd081-logo_institutsophiaagrobiotech.png" height="113px" width="155px" /></a></br></p>
-<p><a title="https://gredeg.univ-cotedazur.fr/" href='https://gredeg.univ-cotedazur.fr/'><img src="https://gredeg.univ-cotedazur.fr/uas/laboratoire-gredeg/LOGO/logo-gredeg.png" height="81px" width="155px" /></a></br></p>
-<p><a title="https://www6.montpellier.inrae.fr/cbgp/" href='https://www6.montpellier.inrae.fr/cbgp/'><img src="https://umr-cbgp.fr/wp-content/uploads/2023/04/Logo-CBGP-baseline-FR.svg" height="62px" width="155px" /></a></br></p>
-<p><a title="https://www.astredhor.fr/" href='https://www.astredhor.fr/'><img src="https://www.astredhor.fr/image.htm?img=65796-Logo300.jpg" height="60px" width=155px" /></a></br></p>
-<p><a title="https://paca.chambres-agriculture.fr/" href='https://paca.chambres-agriculture.fr/'><img src="https://paca.chambres-agriculture.fr/fileadmin/user_upload/Provence-Alpes-Cote_d_Azur/020_Inst_Paca/Interface/Logo_CA-PACA_mobile.jpg" height="55px" width="155px" /></a></br></p>
-<p><a title="https://biolineagrosciences.com/" href='https://biolineagrosciences.com/'><img src="https://www.biolineagrosciences.com/wp-content/themes/bioline/img/logo-bioline_172.png" height="54px" width="155px" /></a></br></p>
+<div class="layout-chunk" data-layout="l-body">
+<p><a title="https://ecophytopic.fr/recherche-innovation/proteger/projet-bidime" href="https://ecophytopic.fr/recherche-innovation/proteger/projet-bidime">
+<img src="images/BidimeProjLogo.png" width="155px" style="display: block; margin: auto;" />
+</a></br><a title="https://www.inrae.fr/" href="https://www.inrae.fr/">
+<img src="https://upload.wikimedia.org/wikipedia/fr/thumb/2/2a/Logo-INRAE_Transparent.svg/2560px-Logo-INRAE_Transparent.svg.png" width="155px" style="display: block; margin: auto;" />
+</a></br><a title="https://anr.fr/" href="https://anr.fr/">
+<img src="https://anr.fr/fileadmin/_processed_/c/2/csm_ANR-blanc-sur-bleu_727e9b01cc.png" width="155px" style="display: block; margin: auto;" />
+</a></br><a title="https://ecophytopic.fr/" href="https://ecophytopic.fr/">
+<img src="https://ecophytopic.fr/themes/custom/ecophytopic_theme/logo.svg" width="155px" style="display: block; margin: auto;" />
+</a></br><a title="https://www6.paca.inrae.fr/institut-sophia-agrobiotech/" href="https://www6.paca.inrae.fr/institut-sophia-agrobiotech/">
+<img src="https://institut-sophia-agrobiotech.paca.hub.inrae.fr/var/hub_internet_paca_institut_sophia_agrobiotech/storage/images/_aliases/inra_logo_principal/1/4/5/6/36541-18-fre-FR/2002d66dd081-logo_institutsophiaagrobiotech.png" width="155px" style="display: block; margin: auto;" />
+</a></br><a title="https://gredeg.univ-cotedazur.fr/" href="https://gredeg.univ-cotedazur.fr/">
+<img src="https://gredeg.univ-cotedazur.fr/uas/laboratoire-gredeg/LOGO/logo-gredeg.png" width="155px" style="display: block; margin: auto;" />
+</a></br><a title="https://www6.montpellier.inrae.fr/cbgp/" href="https://www6.montpellier.inrae.fr/cbgp/">
+<img src="https://umr-cbgp.fr/wp-content/uploads/2023/04/Logo-CBGP-baseline-FR.svg" width="155px" style="display: block; margin: auto;" />
+</a></br><a title="https://www.astredhor.fr/" href="https://www.astredhor.fr/">
+<img src="https://www.astredhor.fr/image.htm?img=65796-Logo300.jpg" width="155px" style="display: block; margin: auto;" />
+</a></br><a title="https://paca.chambres-agriculture.fr/" href="https://paca.chambres-agriculture.fr/">
+<img src="https://paca.chambres-agriculture.fr/fileadmin/user_upload/Provence-Alpes-Cote_d_Azur/020_Inst_Paca/Interface/Logo_CA-PACA_mobile.jpg" width="155px" style="display: block; margin: auto;" />
+</a></br><a title="https://biolineagrosciences.com/" href="https://biolineagrosciences.com/">
+<img src="https://www.biolineagrosciences.com/wp-content/themes/bioline/img/logo-bioline_172.png" width="155px" style="display: block; margin: auto;" />
+</a></br></p>
+</div>
 </td>
 </tr>
 </table>
@@ -3401,11 +3464,19 @@ Stay tuned for further news to come.
 </p>
 </td>
 <td style="width: 20%; vertical-align: top;">
-<p><a title="https://crbe.cnrs.fr/en/" href='https://crbe.cnrs.fr/en/'><img src="https://crbe.cnrs.fr/wp-content/uploads/2024/01/cropped-Logo-CRBE-couleur-2048x782.png" height="56px" width="155px" /></a></br></p>
-<p><a title="https://www.ensat.fr/en/index.html" href='https://www.ensat.fr/en/index.html'><img src="https://upload.wikimedia.org/wikipedia/fr/5/57/Logo_inp_ensat_2022.png" height="65px" width="155px" /></a></br></p>
-<p><a title="https://www.univ-toulouse.fr/" href='https://www.univ-toulouse.fr/'><img src="https://www.univ-toulouse.fr/sites/default/files/inline-images/logo_uftmp_horizontale.svg" height="80px" width="155px" /></a></br></p>
-<p><a title="https://www.cnrs.fr/" href='https://www.cnrs.fr/'><img src="https://www.cnrs.fr/sites/default/files/logo/logo.svg" height="155px" width="155px" /></a></br></p>
-<a title="https://www.genotoul.fr/" href='https://www.genotoul.fr/'><img src="https://www.genotoul.fr/wp-content/uploads/2017/01/Genotoul_logo-rvb_min.png" height="44px" width="155px" /></a></br>
+<div class="layout-chunk" data-layout="l-body">
+<p><a title="https://crbe.cnrs.fr/en/" href="https://crbe.cnrs.fr/en/">
+<img src="https://crbe.cnrs.fr/wp-content/uploads/2024/01/cropped-Logo-CRBE-couleur-2048x782.png" width="155px" style="display: block; margin: auto;" />
+</a></br><a title="https://www.ensat.fr/en/index.html" href="https://www.ensat.fr/en/index.html">
+<img src="https://upload.wikimedia.org/wikipedia/fr/5/57/Logo_inp_ensat_2022.png" width="155px" style="display: block; margin: auto;" />
+</a></br><a title="https://www.univ-toulouse.fr/" href="https://www.univ-toulouse.fr/">
+<img src="https://www.univ-toulouse.fr/sites/default/files/inline-images/logo_uftmp_horizontale.svg" width="155px" style="display: block; margin: auto;" />
+</a></br><a title="https://www.cnrs.fr/" href="https://www.cnrs.fr/">
+<img src="https://upload.wikimedia.org/wikipedia/fr/7/72/Logo_Centre_national_de_la_recherche_scientifique_%282023-%29.svg" width="155px" style="display: block; margin: auto;" />
+</a></br><a title="https://www.genotoul.fr/" href="https://www.genotoul.fr/">
+<img src="https://www.genotoul.fr/wp-content/uploads/2017/01/Genotoul_logo-rvb_min.png" width="155px" style="display: block; margin: auto;" />
+</a></br></p>
+</div>
 </td>
 </tr>
 </table>
@@ -3449,13 +3520,23 @@ For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_d
 </p>
 </td>
 <td style="width: 20%; vertical-align: top;">
-<p><a title="https://crbe.cnrs.fr/en/" href='https://crbe.cnrs.fr/en/'><img src="https://crbe.cnrs.fr/wp-content/uploads/2024/01/cropped-Logo-CRBE-couleur-2048x782.png" height="56px" width="155px" /></a></br></p>
-<p><a title="https://www.ensat.fr/en/index.html" href='https://www.ensat.fr/en/index.html'><img src="https://upload.wikimedia.org/wikipedia/fr/5/57/Logo_inp_ensat_2022.png" height="65px" width="155px" /></a></br></p>
-<p><a title="https://www.univ-toulouse.fr/" href='https://www.univ-toulouse.fr/'><img src="https://www.univ-toulouse.fr/sites/default/files/inline-images/logo_uftmp_horizontale.svg" height="80px" width="155px" /></a></br></p>
-<p><a title="https://www.cnrs.fr/" href='https://www.cnrs.fr/'><img src="https://www.cnrs.fr/sites/default/files/logo/logo.svg" height="155px" width="155px" /></a></br></p>
-<p><a title="https://eau-grandsudouest.fr/" href='https://eau-grandsudouest.fr/'><img src="https://aides-territoires-prod.s3.fr-par.scw.cloud/aides-territoires-prod/backers/agence-de-leau-adour-garonne_logo.png" height="99px" width="155px" /></a></br></p>
-<p><a title="https://programmes.insu.cnrs.fr/ec2co/" href='https://programmes.insu.cnrs.fr/ec2co/'><img src="https://programmes.insu.cnrs.fr/wp-content/uploads/2019/05/logo-768x322.png" height="65px" width="155px" /></a></br>
-<a title="https://www.enseignementsup-recherche.gouv.fr/en" href='https://www.enseignementsup-recherche.gouv.fr/en'><img src="https://www.enseignementsup-recherche.gouv.fr/sites/default/files/site_logo/2022-05/1_MESR_RVB.svg" height="155px" width="155px" /></a></br></p>
+<div class="layout-chunk" data-layout="l-body">
+<p><a title="https://crbe.cnrs.fr/en/" href="https://crbe.cnrs.fr/en/">
+<img src="https://crbe.cnrs.fr/wp-content/uploads/2024/01/cropped-Logo-CRBE-couleur-2048x782.png" width="155px" style="display: block; margin: auto;" />
+</a></br><a title="https://www.ensat.fr/en/index.html" href="https://www.ensat.fr/en/index.html">
+<img src="https://upload.wikimedia.org/wikipedia/fr/5/57/Logo_inp_ensat_2022.png" width="155px" style="display: block; margin: auto;" />
+</a></br><a title="https://www.univ-toulouse.fr/" href="https://www.univ-toulouse.fr/">
+<img src="https://www.univ-toulouse.fr/sites/default/files/inline-images/logo_uftmp_horizontale.svg" width="155px" style="display: block; margin: auto;" />
+</a></br><a title="https://www.cnrs.fr/" href="https://www.cnrs.fr/">
+<img src="https://upload.wikimedia.org/wikipedia/fr/7/72/Logo_Centre_national_de_la_recherche_scientifique_%282023-%29.svg" width="155px" style="display: block; margin: auto;" />
+</a></br><a title="https://eau-grandsudouest.fr/" href="https://eau-grandsudouest.fr/">
+<img src="https://aides-territoires-prod.s3.fr-par.scw.cloud/aides-territoires-prod/backers/agence-de-leau-adour-garonne_logo.png" width="155px" style="display: block; margin: auto;" />
+</a></br><a title="https://programmes.insu.cnrs.fr/ec2co/" href="https://programmes.insu.cnrs.fr/ec2co/">
+<img src="https://programmes.insu.cnrs.fr/wp-content/uploads/2019/05/logo-768x322.png" width="155px" style="display: block; margin: auto;" />
+</a></br><a title="https://www.enseignementsup-recherche.gouv.fr/en" href="https://www.enseignementsup-recherche.gouv.fr/en">
+<img src="https://www.enseignementsup-recherche.gouv.fr/sites/default/files/site_logo/2022-05/1_MESR_RVB.svg" width="155px" style="display: block; margin: auto;" />
+</a></br></p>
+</div>
 </td>
 </tr>
 </table>
@@ -3493,14 +3574,25 @@ For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_d
 </p>
 </td>
 <td style="width: 20%; vertical-align: top;">
-<p><a title="https://chrono-environnement.univ-fcomte.fr" href='https://chrono-environnement.univ-fcomte.fr/'><img src="https://chrono-environnement.univ-fcomte.fr/wp-content/uploads/2023/10/logo-chrono-environnementpour-web.png" height="43px" width="155px" /></a></br></p>
-<p><a title="https://www.univ-fcomte.fr/" href='https://www.univ-fcomte.fr/'><img src="https://upload.wikimedia.org/wikipedia/fr/7/77/Logo_Universit%C3%A9_de_Franche-Comt%C3%A9_2018.png" height="43px" width="155px" /></a></br></p>
-<p><a title="https://www.ubfc.fr/" href='https://www.ubfc.fr/'><img src="https://upload.wikimedia.org/wikipedia/fr/4/49/Logo_UBFC.png" height="72px" width="155px" /></a></br></p>
-<p><a title="https://www.cnrs.fr/" href='https://www.cnrs.fr/'><img src="https://www.cnrs.fr/sites/default/files/logo/logo.svg" height="155px" width="155px" /></a></br></p>
-<p><a title="https://www.bourgognefranchecomte.fr/" href='https://www.bourgognefranchecomte.fr/'><img src= "https://www.bourgognefranchecomte.fr/themes/custom/bourg/logo.svg" height="117px" width="155px" /></a></br></p>
-<p><a title="https://www.culture.gouv.fr/en/Regions/Drac-Bourgogne-Franche-Comte" href='https://www.culture.gouv.fr/en/Regions/Drac-Bourgogne-Franche-Comte'><img src="https://www.culture.gouv.fr/var/culture/storage/images/_aliases/reference/7/3/0/4/3164037-1-fre-FR/LogoMCHP.PNG" height="119px" width="155px" /></a></br></p>
-<p><a title="https://chrono-environnement.univ-fcomte.fr/plateforme/PEA2t/?lang=en" href='https://chrono-environnement.univ-fcomte.fr/plateforme/PEA2t/?lang=en'><img src="https://chrono-environnement.univ-fcomte.fr/wp-content/uploads/2023/06/logos_PEAT-03.jpg" height="72px" width="155px" /></a></br></p>
-<a title="https://www.femto-st.fr/fr" href='https://www.femto-st.fr/fr'><img src="https://www.femto-st.fr/sites/all/themes/femto/logo.png" height="74px" width="155px" /></a></br>
+<div class="layout-chunk" data-layout="l-body">
+<p><a title="https://chrono-environnement.univ-fcomte.fr" href="https://chrono-environnement.univ-fcomte.fr">
+<img src="https://chrono-environnement.univ-fcomte.fr/wp-content/uploads/2023/10/logo-chrono-environnementpour-web.png" width="155px" style="display: block; margin: auto;" />
+</a></br><a title="https://www.univ-fcomte.fr/" href="https://www.univ-fcomte.fr/">
+<img src="https://upload.wikimedia.org/wikipedia/fr/7/77/Logo_Universit%C3%A9_de_Franche-Comt%C3%A9_2018.png" width="155px" style="display: block; margin: auto;" />
+</a></br><a title="https://www.ubfc.fr/" href="https://www.ubfc.fr/">
+<img src="https://upload.wikimedia.org/wikipedia/fr/4/49/Logo_UBFC.png" width="155px" style="display: block; margin: auto;" />
+</a></br><a title="https://www.cnrs.fr/" href="https://www.cnrs.fr/">
+<img src="https://upload.wikimedia.org/wikipedia/fr/7/72/Logo_Centre_national_de_la_recherche_scientifique_%282023-%29.svg" width="155px" style="display: block; margin: auto;" />
+</a></br><a title="https://www.bourgognefranchecomte.fr/" href="https://www.bourgognefranchecomte.fr/">
+<img src="https://www.bourgognefranchecomte.fr/themes/custom/bourg/logo.svg" width="155px" style="display: block; margin: auto;" />
+</a></br><a title="https://www.culture.gouv.fr/en/Regions/Drac-Bourgogne-Franche-Comte" href="https://www.culture.gouv.fr/en/Regions/Drac-Bourgogne-Franche-Comte">
+<img src="https://www.culture.gouv.fr/var/culture/storage/images/_aliases/reference/7/3/0/4/3164037-1-fre-FR/LogoMCHP.PNG" width="155px" style="display: block; margin: auto;" />
+</a></br><a title="https://chrono-environnement.univ-fcomte.fr/wp-content/uploads/2023/06/logos_PEAT-03.jpg" href="https://chrono-environnement.univ-fcomte.fr/wp-content/uploads/2023/06/logos_PEAT-03.jpg">
+<img src="https://chrono-environnement.univ-fcomte.fr/plateforme/PEA2t/?lang=en" width="155px" style="display: block; margin: auto;" />
+</a></br><a title="https://www.femto-st.fr/fr" href="https://www.femto-st.fr/fr">
+<img src="https://www.femto-st.fr/sites/all/themes/femto/logo.png" width="155px" style="display: block; margin: auto;" />
+</a></br></p>
+</div>
 </td>
 </tr>
 </table>
@@ -3538,11 +3630,19 @@ For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_d
 </p>
 </td>
 <td style="width: 20%; vertical-align: top;">
-<p><a title="https://chrono-environnement.univ-fcomte.fr/" href='https://chrono-environnement.univ-fcomte.fr/'><img src="https://chrono-environnement.univ-fcomte.fr/wp-content/uploads/2023/10/logo-chrono-environnementpour-web.png" height="43px" width="155px" /></a></br></p>
-<p><a title="https://www.univ-fcomte.fr/" href='https://www.univ-fcomte.fr/'><img src="https://upload.wikimedia.org/wikipedia/fr/7/77/Logo_Universit%C3%A9_de_Franche-Comt%C3%A9_2018.png" height="43px" width="155px" /></a></br></p>
-<p><a title="https://www.ubfc.fr/" href='https://www.ubfc.fr/'><img src="https://upload.wikimedia.org/wikipedia/fr/4/49/Logo_UBFC.png" height="72px" width="155px" /></a></br></p>
-<p><a title="https://www.cnrs.fr/" href='https://www.cnrs.fr/'><img src="https://www.cnrs.fr/sites/default/files/logo/logo.svg" height="155px" width="155px" /></a></br></p>
-<p><a title="https://www.bourgognefranchecomte.fr/" href='https://www.bourgognefranchecomte.fr/'><img src="https://www.bourgognefranchecomte.fr/themes/custom/bourg/logo.svg" height="117px" width="155px" /></a></br></p>
+<div class="layout-chunk" data-layout="l-body">
+<p><a title="https://chrono-environnement.univ-fcomte.fr" href="https://chrono-environnement.univ-fcomte.fr">
+<img src="https://chrono-environnement.univ-fcomte.fr/wp-content/uploads/2023/10/logo-chrono-environnementpour-web.png" width="155px" style="display: block; margin: auto;" />
+</a></br><a title="https://www.univ-fcomte.fr/" href="https://www.univ-fcomte.fr/">
+<img src="https://upload.wikimedia.org/wikipedia/fr/7/77/Logo_Universit%C3%A9_de_Franche-Comt%C3%A9_2018.png" width="155px" style="display: block; margin: auto;" />
+</a></br><a title="https://www.ubfc.fr/" href="https://www.ubfc.fr/">
+<img src="https://upload.wikimedia.org/wikipedia/fr/4/49/Logo_UBFC.png" width="155px" style="display: block; margin: auto;" />
+</a></br><a title="https://www.cnrs.fr/" href="https://www.cnrs.fr/">
+<img src="https://upload.wikimedia.org/wikipedia/fr/7/72/Logo_Centre_national_de_la_recherche_scientifique_%282023-%29.svg" width="155px" style="display: block; margin: auto;" />
+</a></br><a title="https://www.bourgognefranchecomte.fr/" href="https://www.bourgognefranchecomte.fr/">
+<img src="https://www.bourgognefranchecomte.fr/themes/custom/bourg/logo.svg" width="155px" style="display: block; margin: auto;" />
+</a></br></p>
+</div>
 </td>
 </tr>
 </table>
@@ -3563,10 +3663,20 @@ For more information, see the <a href='https://qpetitjean.github.io/qpetitjean_d
 <summary class="summary">
 Details (click to unroll)
 </summary>
-<p style="text-align:center;">
-<img src="https://www.setac.org/assets/img/logo.svg" height="97.5px" width="150px" />  
-<img src="https://www.syngenta.fr/sites/g/files/kgtney1611/files/color/syn_global_theme-75ea6ac3/logo.svg" height="65px" width="200px" />
-</p>
+<div class="layout-chunk" data-layout="l-body">
+<div style="text-align: center;">
+<div style="display: inline-block; margin-right: 10px;">
+<a title="https://www.setac.org" href="https://www.setac.org">
+<img src="https://www.setac.org/assets/img/logo.svg" width="150px" height="97.5px" />
+</a>
+</div>
+<div style="display: inline-block; margin-right: 10px;">
+<a title="https://www.syngenta.fr" href="https://www.syngenta.fr">
+<img src="https://www.syngenta.fr/sites/g/files/kgtney1611/files/color/syn_global_theme-75ea6ac3/logo.svg" width="200px" height="65px" />
+</a>
+</div>
+</div>
+</div>
 <p class="detailed-text">
 Grant programme supported by the SETAC Europe reinvestment fund and Syngenta to help student members participating to the <a href='https://helsinki.setac.org/welcome/'>SETAC Europe 29<sup>th</sup> meeting</a> meeting (Up to maximum 250€, Travel costs only, visa and accommodation are not included).
 </p>
@@ -3578,11 +3688,25 @@ Grant programme supported by the SETAC Europe reinvestment fund and Syngenta to 
 <summary class="summary">
 Details (click to unroll)
 </summary>
-<p style="text-align:center;">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Minist%C3%A8re_de_l%27Enseignement_Sup%C3%A9rieur_et_de_la_Recherche.png/1280px-Minist%C3%A8re_de_l%27Enseignement_Sup%C3%A9rieur_et_de_la_Recherche.png" height="75px" width="105px" />  
-<img src="https://www.univ-tlse3.fr/medias/photo/logo-ed-sdu2e_1578590506112-jpg?ID_FICHE=1136458588340" height="80px" width="113px" />  
-<img src="https://www.univ-toulouse.fr/sites/default/files/inline-images/logo_uftmp_horizontale.svg" height="75px" width="143px" />
-</p>
+<div class="layout-chunk" data-layout="l-body">
+<div style="text-align: center;">
+<div style="display: inline-block; margin-right: 10px;">
+<a title="https://www.enseignementsup-recherche.gouv.fr/en" href="https://www.enseignementsup-recherche.gouv.fr/en">
+<img src="https://www.enseignementsup-recherche.gouv.fr/sites/default/files/site_logo/2022-05/1_MESR_RVB.svg" width="205px" height="75px" />
+</a>
+</div>
+<div style="display: inline-block; margin-right: 10px;">
+<a title="https://www.univ-toulouse.fr/" href="https://www.univ-toulouse.fr/">
+<img src="https://www.univ-toulouse.fr/sites/default/files/inline-images/logo_uftmp_horizontale.svg" width="155px" height="80px" />
+</a>
+</div>
+<div style="display: inline-block; margin-right: 10px;">
+<a title="https://sdu2e.obs-mip.fr/" href="https://sdu2e.obs-mip.fr/">
+<img src="https://www.univ-tlse3.fr/medias/photo/logo-ed-sdu2e_1578590506112-jpg?ID_FICHE=1136458588340" width="113px" height="80px" />
+</a>
+</div>
+</div>
+</div>
 <p class="detailed-text">
 3 years stipend allowed by the French research and education ministry to study the variability of responses among freshwater fish populations (<em>Gobio occitaniae</em>) exposed to multiple stressors at the <a href='https://www.univ-tlse3.fr/'>Paul Sabatier University—UPS</a>.
 </p>
@@ -3594,10 +3718,20 @@ Details (click to unroll)
 <summary class="summary">
 Details (click to unroll)
 </summary>
-<p style="text-align:center;">
-<img src="https://upload.wikimedia.org/wikipedia/fr/c/ce/NUI%2C_Galway.png" height="70px" width="155px" />  
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/1280px-Flag_of_Europe.svg.png" height="70px" width="105px" />
-</p>
+<div class="layout-chunk" data-layout="l-body">
+<div style="text-align: center;">
+<div style="display: inline-block; margin-right: 10px;">
+<a title="https://www.universityofgalway.ie/" href="https://www.universityofgalway.ie/">
+<img src="https://upload.wikimedia.org/wikipedia/fr/c/ce/NUI%2C_Galway.png" height="70px" />
+</a>
+</div>
+<div style="display: inline-block; margin-right: 10px;">
+<a title="" href="">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/1280px-Flag_of_Europe.svg.png" height="70px" />
+</a>
+</div>
+</div>
+</div>
 <p class="detailed-text">
 European grant supporting individual mobility projects to acquire training and professional experience within Europe. <br/>
 </p>
@@ -3646,18 +3780,77 @@ As Co-organizer, chairman (Ecotoxicology &amp; Ecophysiology session), and finan
 <hr />
 <h1 id="peer-reviews-editorial-duties">PEER REVIEWS &amp; EDITORIAL DUTIES</h1>
 <h3 id="peer-reviews">PEER REVIEWS</h3>
-<p class="plain-text" style="text-align: left">
-<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"/></svg>   <a href='https://www.tandfonline.com/journals/best20'>Critical Reviews in Environmental Sciences and Technology</a> (n=2)<br/>
-<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"/></svg>   <a href='https://onlinelibrary.wiley.com/journal/14610248'>Ecology Letters</a> (n=1)<br/>
-<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"/></svg>   <a href='https://www.sciencedirect.com/journal/environmental-pollution'>Environmental Pollution</a> (n=2)<br/>
-<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"/></svg>   <a href='https://www.springer.com/journal/11356'>Environmental Science and Pollution Research</a> (n=4)<br/>
-<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"/></svg>   <a href='https://www.frontiersin.org/journals/fish-science'>Frontiers in Fish Science</a> (n=1)<br/>
-<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"/></svg>   <a href='https://onlinelibrary.wiley.com/journal/24715646'>Journal of Experimental Zoology Part A: Ecological Genetics and Physiology</a> (n=1)<br/>
-<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"/></svg>   <a href='https://www.sciencedirect.com/journal/science-of-the-total-environment'>Science of The Total Environment</a> (n=4)<br/>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<p class="plain-text" style="text-align: left; margin: 0; ">
+<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;">
+<path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"/>
+</svg>
+  <a href="https://onlinelibrary.wiley.com/journal/14610248">Ecology Letters</a> (n=9)<br/>
 </p>
+<p class="plain-text" style="text-align: left; margin: 0; ">
+<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;">
+<path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"/>
+</svg>
+  <a href="https://www.springer.com/journal/11356">Environmental Science and Pollution Research</a> (n=4)<br/>
+</p>
+<p class="plain-text" style="text-align: left; margin: 0; ">
+<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;">
+<path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"/>
+</svg>
+  <a href="https://www.sciencedirect.com/journal/science-of-the-total-environment">Science of The Total Environment</a> (n=4)<br/>
+</p>
+<p class="plain-text" style="text-align: left; margin: 0; ">
+<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;">
+<path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"/>
+</svg>
+  <a href="https://link.springer.com/journal/10452">Aquatic Ecology</a> (n=2)<br/>
+</p>
+<p class="plain-text" style="text-align: left; margin: 0; ">
+<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;">
+<path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"/>
+</svg>
+  <a href="https://www.tandfonline.com/journals/best20">Critical Reviews in Environmental Science &amp; Technology</a> (n=2)<br/>
+</p>
+<p class="plain-text" style="text-align: left; margin: 0; ">
+<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;">
+<path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"/>
+</svg>
+  <a href="https://www.sciencedirect.com/journal/environmental-pollution">Environmental Pollution</a> (n=2)<br/>
+</p>
+<p class="plain-text" style="text-align: left; margin: 0; ">
+<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;">
+<path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"/>
+</svg>
+  <a href="character(0)">Front. Fish Sci. - Fish Ecology</a> (n=1)<br/>
+</p>
+<p class="plain-text" style="text-align: left; margin: 0; ">
+<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;">
+<path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"/>
+</svg>
+  <a href="https://onlinelibrary.wiley.com/journal/24715646">Journal of Experimental Zoology Part A</a> (n=1)<br/>
+</p>
+</div>
 <h3 id="editorial-duties">EDITORIAL DUTIES</h3>
-<p><svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"/></svg>   Data editor at <a href='https://onlinelibrary.wiley.com/journal/14610248'>Ecology Letters</a> <br/>
-<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"/></svg>   Review editor at <a href='https://www.frontiersin.org/'>Frontiers in Fish Science</a> <br/></p>
+<p><svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"/></svg>   Data editor at <a href='https://onlinelibrary.wiley.com/journal/14610248'>Ecology Letters (since June 2023)</a> <br/>
+<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"/></svg>   Review editor at <a href='https://www.frontiersin.org/'>Frontiers in Fish Science (since Aug. 2023)</a> <br/></p>
+<h3 id="review-summary">REVIEW SUMMARY</h3>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure" style="text-align: left"><span style="display:block;" id="fig:PlotData"></span>
+<img src="cv_files/figure-html5/PlotData-1.png" alt="Summary of Article and Data &amp; Code Reviews Performed over the Years" width="80%" />
+<p class="caption">
+Figure 6: Summary of Article and Data &amp; Code Reviews Performed over the Years
+</p>
+</div>
+</div>
 <hr />
 <h1 id="hobbies">HOBBIES</h1>
 <p class="plain-text">

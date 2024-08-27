@@ -1,28 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
   <url>
-    <loc>https://qpetitjean.github.io/qpetitjean_distill/communications.html</loc>
-    <lastmod>2024-07-19T14:41:11+02:00</lastmod>
-  </url>
-  <url>
     <loc>https://qpetitjean.github.io/qpetitjean_distill/cv.html</loc>
-    <lastmod>2024-07-19T15:46:55+02:00</lastmod>
+    <lastmod>2024-08-27T17:22:45+02:00</lastmod>
   </url>
   <url>
-    <loc>https://qpetitjean.github.io/qpetitjean_distill/</loc>
-    <lastmod>2023-11-24T11:11:27+01:00</lastmod>
-  </url>
-  <url>
-    <loc>https://qpetitjean.github.io/qpetitjean_distill/License.html</loc>
-    <lastmod>2024-03-20T09:24:37+01:00</lastmod>
-  </url>
-  <url>
-    <loc>https://qpetitjean.github.io/qpetitjean_distill/news.html</loc>
-    <lastmod>2023-01-17T17:13:47+01:00</lastmod>
-  </url>
-  <url>
-    <loc>https://qpetitjean.github.io/qpetitjean_distill/publications.html</loc>
-    <lastmod>2024-03-14T15:39:36+01:00</lastmod>
+    <loc>https://qpetitjean.github.io/qpetitjean_distill/posts/2024-08-27-yeg/</loc>
+    <lastmod>2024-08-27T15:53:24+02:00</lastmod>
   </url>
   <url>
     <loc>https://qpetitjean.github.io/qpetitjean_distill/posts/2024-03-20-EcotoxBehavior/</loc>
@@ -30,7 +14,7 @@
   </url>
   <url>
     <loc>https://qpetitjean.github.io/qpetitjean_distill/posts/2023-07-12-mover-package/</loc>
-    <lastmod>2024-03-20T09:43:51+01:00</lastmod>
+    <lastmod>2024-08-27T15:41:49+02:00</lastmod>
   </url>
   <url>
     <loc>https://qpetitjean.github.io/qpetitjean_distill/posts/01-17-2023-Dirty-Waterways-May-Alter-Fish-Behavior/</loc>

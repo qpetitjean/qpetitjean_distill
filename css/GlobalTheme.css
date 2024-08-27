@@ -9,7 +9,7 @@
    All rows must end with a semi-colon.                      */
 
 /* Optional: embed custom fonts here with `@import`          */
-@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400;500;600;700&family=Merienda:wght@400;700&family=Mochiy+Pop+P+One&family=Rampart+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Dirt&family=Saira+Stencil+One&display=swap');
 /* Optional: embed some icons from academicons here with `@import`          */
@@ -19,8 +19,9 @@
 :root {
   /* Main font */
   --font-body:   'Roboto', sans-serif, Arial, sans-serif;
-  --font-header: 'Edu QLD Beginner', cursive, Arial, sans-serif;
-  --font-navbar: 'Edu QLD Beginner', cursive, Arial, sans-serif;
+  --font-header: 'Poppins', Arial, sans-serif;
+  --font-header2: 'Edu QLD Beginner', cursive, Arial, sans-serif;
+  --font-navbar: 'Poppins', Arial, sans-serif;
   
   /* color of the html pages background */
   --color-background:    rgba(215, 219, 219, 0.5);
@@ -58,6 +59,9 @@ html {
   --fig-cap-color:   rgba(0, 0, 0, 0.6);
   /*-- Specify custom fonts ~~~ must be imported above   --*/
   --heading-font:    var(--font-header);
+  --h1-font:         var(--font-header); /* Custom font for h1 */
+  --h2-font:         var(--font-header2); /* Custom font for h2 */
+  --h3-font:         var(--font-header2); /* Custom font for h3 */
   --mono-font:       monospace;
   --body-font:       var(--font-body);
   --navbar-font:     var(--font-navbar);  /* websites + blogs only */
@@ -191,10 +195,19 @@ a:hover, a:focus {
 }
 
 /* Postcard headers */
-h1, h2, h3 {
+h1 {
   color:    var(--header-color);
   /*-- Specify custom fonts ~~~ must be imported above   --*/
   font-family:   var(--font-header);
+  /*-- Specify custom fonts ~~~ must be imported above   --*/
+  font-weight:   500;
+  font-style:    bold;
+}
+
+h2, h3 {
+  color:    var(--header-color);
+  /*-- Specify custom fonts ~~~ must be imported above   --*/
+  font-family:   var(--font-header2);
   /*-- Specify custom fonts ~~~ must be imported above   --*/
   font-weight:   500;
   font-style:    bold;
@@ -411,4 +424,13 @@ html body {
     display: inline-block;
     padding: 10px 0px;
     margin: 10px 14px; }
+}
+
+/* Custom separator style */
+.news-separator {
+  border: none;
+  height: 2px;
+  background-color: --aside-color; /* Choose your preferred color */
+  margin: 40px 0; /* Adjust spacing as needed */
+  width: 100%;
 }
