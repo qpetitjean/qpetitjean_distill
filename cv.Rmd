@@ -18,7 +18,7 @@ output:
 <div style="height: 0.125rem;"><br></div>
 <p class="plain-text">
 `r fontawesome::fa("flag", fill = "#333333")` &ensp; Nationalities<br/>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%29.svg/512px-Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%29.svg.png" height="30px" width="45px" /> &ensp; <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Flag_of_Switzerland_%28Pantone%29.svg/langfr-800px-Flag_of_Switzerland_%28Pantone%29.svg.png" height="30px" width="30px" /></p> 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/langfr-1280px-Flag_of_France.svg.png" height="30px" width="45px" /> &ensp; <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Flag_of_Switzerland_%28Pantone%29.svg/langfr-800px-Flag_of_Switzerland_%28Pantone%29.svg.png" height="30px" width="30px" /></p> 
 
 <p class="plain-text">
 `r fontawesome::fa("location-dot", fill = "#333333")` &ensp; Present/last institutional address<br/>
@@ -523,6 +523,7 @@ As Co-organizer, chairman (Ecotoxicology & Ecophysiology session), and financial
 `r fontawesome::fa("handshake", fill = "#333333")` &ensp; ECOTOX INRAE network animation team&nbsp;<a href='https://eng-ecotox.hub.inrae.fr/'>(ECOTOX)</a> <br/>
 `r fontawesome::fa("handshake", fill = "#333333")` &ensp; Coordinator of the Young Ecotoxicologists Group of the ECOTOX INRAE network&nbsp;<a href='https://ecotox.hub.inrae.fr/actualites/yeg-ecotox'>(YEG)</a> <br/>
 `r fontawesome::fa("handshake", fill = "#333333")` &ensp; British Ecological Society&nbsp;<a href='https://www.britishecologicalsociety.org/'>(BES)</a> <br/>
+`r fontawesome::fa("handshake", fill = "#333333")` &ensp; French Reproducible Research Network&nbsp;<a href='https://www.recherche-reproductible.fr/'>(FR-RR)</a> <br/>
 `r fontawesome::fa("handshake", fill = "#333333")` &ensp; Soci&eacute;t&eacute; Française d’&Eacute;cologie et d’&Eacute;volution&nbsp;<a href='https://sfecologie.org/'>(SFE²)</a> <br/>
 `r fontawesome::fa("handshake", fill = "#333333")` &ensp; Society of Environmental Toxicology and Chemistry&nbsp;<a href='https://www.setac.org/'>(SETAC)</a> <br/>
 `r fontawesome::fa("handshake", fill = "#333333")` &ensp; Society for open, reliable and transparent ecology and evolutionary biology&nbsp;<a href='https://www.sortee.org/'>(SORTEE)</a> <br/>

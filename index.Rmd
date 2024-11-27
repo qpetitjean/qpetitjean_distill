@@ -11,7 +11,9 @@ links:
   - label: '<i class="fa fa-github"></i>'
     url: "https://github.com/qpetitjean"
   - label: '<i class="fa fa-twitter"></i>'
-    url: "https://twitter.com/Q_PETITJEAN"
+    url: "https://bsky.app/profile/qpetitjean.bsky.social"
+  - label: '<i class="fa fa-linkedin"></i>'
+    url: "https://fr.linkedin.com/in/quentin-petitjean-phd-aba3b5aa"
   - label: '<i class="ai ai-orcid fa-lg"></i>'
     url: "https://orcid.org/0000-0003-2708-7831"
   - label: '<i class="ai ai-researcherid fa-lg"></i>'
