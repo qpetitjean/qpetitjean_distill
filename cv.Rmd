@@ -630,9 +630,9 @@ reviewsPerYear$TotalReviews <- reviewsPerYear$ArticleReviews + reviewsPerYear$Da
 # Display the plot
 ggplot2::ggplot(reviewsPerYear, ggplot2::aes(x = as.numeric(Year))) +
   ggplot2::geom_line(ggplot2::aes(y = ArticleReviews, color = "Article Reviews"),
-                     size = 1.2) +
-  ggplot2::geom_line(ggplot2::aes(y = DataReviews, color = "Data & Code Reviews"), size = 1.2) +
-  ggplot2::geom_line(ggplot2::aes(y = TotalReviews, color = "Total Reviews"), size = 1.2) +
+                     linewidth = 1.2) +
+  ggplot2::geom_line(ggplot2::aes(y = DataReviews, color = "Data & Code Reviews"), linewidth = 1.2) +
+  ggplot2::geom_line(ggplot2::aes(y = TotalReviews, color = "Total Reviews"), linewidth = 1.2) +
   ggplot2::geom_point(ggplot2::aes(y = ArticleReviews, color = "Article Reviews"),
                       size = 6) +
   ggplot2::geom_point(ggplot2::aes(y = DataReviews, color = "Data & Code Reviews"), size = 6) +
