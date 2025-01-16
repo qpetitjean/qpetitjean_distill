@@ -21,7 +21,13 @@ source(file.path("R", "Jp-Helveston-Func.R"))
 
 # ORAL COMMUNICATIONS
 
-## 2024 - Planned in October
+## 2025 - Planned in April
+`r fontawesome::fa("square-caret-right", fill = "#333333")` &ensp; <strong>Q Petitjean</strong>*, Science reproductible : Publier ses données et son code pour une recherche transparente – comment répondre aux attentes des éditeurs. Oral communication (invited speaker) at the <a href='https://jrfrr-2025.sciencesconf.org/'>Journées du Réseau Français de la Recherche Reproductible (JRFRR 2025).</a>
+
+## 2024
+
+`r fontawesome::fa("square-caret-right", fill = "#333333")` &ensp; <strong>Q Petitjean</strong>*, Analyses comportementales en Vidéo-tracking. Oral communication (Workshop animation) at the <a href='https://life.ir.inrae.fr/actualites/jst-life-20242'>Journées scientifiques et techniques de l'IR life 2024.</a>
+
 `r fontawesome::fa("square-caret-right", fill = "#333333")` &ensp; <strong>Q Petitjean</strong>*, K Kreutzenberger, J Belliard, L Plichard, B Bourillon, O Dezerald, B Villeneuve, Effect of multiple stressors on migratory fishes: does watershed functioning help better explain population declines? Oral communication at the <a href='https://sfe2-2024.fr/fr'>SFE² meeting 2024.</a>
 
 `r fontawesome::fa("square-caret-right", fill = "#333333")` &ensp; <strong>Q Petitjean</strong>*, K Kreutzenberger, J Belliard, L Plichard, B Bourillon, O Dezerald, B Villeneuve, Effets des stress anthropiques sur le déclin des poissons migrateurs : une approche multifactorielle intégrative du fonctionnement des bassins versants. Oral communication at the <a href='https://jilo-2024.sciencesconf.org/'>VI<sup>ème</sup> Journées internationales de limnologie et d'océanographie (JILO 2024).</a>

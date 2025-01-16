@@ -14,7 +14,7 @@ output:
 
 <!-- <p style="color: var(--title-color); font-family: var(--font-body); text-align: center; text-decoration-line: underline; font-size: 125%"> <b>Currently looking for opportunities<b></p> --> 
 <br/>
-<p style='font-family: var(--font-header); font-weight: 700; color: var(--header-color); font-style: bold; font-size:175%;'>Quentin PETITJEAN, Ph.D&nbsp;<a href="mailto:q.petitjean1@gmail.com"><i class="fa fa-envelope fa-1.5x" aria-hidden="true"></i></a></p>
+<p style='font-family: var(--font-header); font-weight: 700; color: var(--header-color); font-style: bold; font-size:175%;'>Quentin PETITJEAN, Ph.D&nbsp;<a href="mailto:quentin.petitjean@inrae.fr"><i class="fa fa-envelope fa-1.5x" aria-hidden="true"></i></a></p>
 <div style="height: 0.125rem;"><br></div>
 <p class="plain-text">
 `r fontawesome::fa("flag", fill = "#333333")` &ensp; Nationalities<br/>
@@ -22,7 +22,7 @@ output:
 
 <p class="plain-text">
 `r fontawesome::fa("location-dot", fill = "#333333")` &ensp; Present/last institutional address<br/>
-<a href="https://maps.app.goo.gl/fGRuQYXKFXn1PhiJ9"> <small>Aquatic ecosystems and global change Unit (EABX, INRAE), Cestas, France.</small></a></p> 
+<a href="https://maps.app.goo.gl/wi1YkxL1J7GKTNZr8"> <small>Bees & Environment Unit (AE, INRAE), Avignon, France.</small></a></p> 
 
 ***
 
@@ -54,6 +54,46 @@ output:
 ***
 
 # RESEARCH EXPERIENCE
+<p class="plain-text">
+`r fontawesome::fa("briefcase", fill = "#333333")` &ensp; January 2025 - Present | Research Scientist | <a href='https://abeilles-et-environnement.paca.hub.inrae.fr/'>National Research Institute for Agriculture, Food and Environment—INRAE; Bees & Environment Unit—AE</a>, Avignon, FR </p>
+<p class="detailed-text">
+<em><u>Title:</u> «Wild bees ecotoxicology».<br/></p>
+<details>
+  <summary class= "summary">
+  Read the story behind (click to unroll)
+  </summary>
+<table style="border: none; width='100%';">
+  <tr>
+    <td style="width: 80%; vertical-align: top;">
+<p class="detailed-text"> 
+I have started a permanent researcher position at the <a href='https://abeilles-et-environnement.paca.hub.inrae.fr/'>Bees & Environment unit (AE)</a> on January 2025.<br/><br/>
+More particularly, I will investigate how contaminants and stressors may affects bees health.<br/><br/>
+More details to come soon ! 
+</p>
+</td>
+    <td style="width: 20%; vertical-align: top;">
+    
+```{r AELogoSet, echo = FALSE, results='asis'}
+logoData <- read.csv2("Other/LogoURL.csv")
+Res <- c()
+tofind <- c("inrae", "umtPrade")
+for(i in tofind){ 
+Logo <- logoData$URL[logoData$Logo == i]
+Website <- logoData$website[logoData$Logo == i]
+width <- logoData$widthpx[logoData$Logo == i]
+
+Res[i] <- cat(sprintf('<a title="%s" href="%s">
+<img src="%s" width="%spx" style="display: block; margin: auto;" />
+</a></br>', Website, Website, Logo, width))
+}
+cat(Res)
+```
+    
+</td>
+  </tr>
+</table>
+
+</details> 
 <p class="plain-text">
 `r fontawesome::fa("briefcase", fill = "#333333")` &ensp; February 2024 - December 2024 | Postdoctoral researcher | <a href='https://eng-eabx.bordeaux-aquitaine.hub.inrae.fr/'>National Research Institute for Agriculture, Food and Environment—INRAE; Aquatic ecosystems and global change Unit—EABX</a>, Cestas, FR </p>
 <p class="detailed-text">
