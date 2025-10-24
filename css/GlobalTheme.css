@@ -268,6 +268,7 @@ table, th, tr, td {
   font-size: 0.8em;
   color: var(--aside-color);
   text-align: right;
+  margin:0;
 }
 
 /* add a special appearence for the title of the detailed section */
@@ -434,3 +435,32 @@ html body {
   margin: 40px 0; /* Adjust spacing as needed */
   width: 100%;
 }
+
+/* accessibility utility class */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+/* Styling for the talks list */
+.talks { margin: 0; padding-left: 0; }
+.talks ul { list-style: none; padding-left: 0; }
+.talks li { list-style: none; margin: 10px 0 18px; border-bottom: 1px solid #eee; padding-bottom: 12px; }
+.talks li a { text-decoration: none; }
+
+/* Styling for the poster list */
+.poster { margin: 0; padding-left: 0; }
+.poster ul { list-style: none; padding-left: 0; }
+.poster li { list-style: none; margin: 10px 0 18px; border-bottom: 1px solid #eee; padding-bottom: 12px; }
+.poster li a { text-decoration: none; }
+
+/* Styling for the publication list */
+.pubs ul { list-style: none; padding-left: 0; }
+.pubs li { margin: 12px 0 18px; border-bottom: 1px solid #eee; padding-bottom: 12px; }
+.pubs li a { text-decoration: none; }

@@ -1,7 +1,6 @@
-name: "Distill_Website_QP"
-title: "QUENTIN PETITJEAN"
-description: |
-  Quentin PETITJEAN personal website.
+name: "Quentin PETITJEAN Website"
+title: "Quentin PETITJEAN"
+description: "Official website of Quentin Petitjean, Researcher at INRAE. Evolutionary Ecotoxicology & Ecophysiology"
 base_url: "https://qpetitjean.github.io/qpetitjean_distill/"
 repository_url: "https://github.com/qpetitjean/qpetitjean_distill"
 twitter:
@@ -41,6 +40,7 @@ output:
     includes:
       in_header: 
         - _others/_FloatingTOC.html
+        - _others/_headTags.html
         #- _others/_GiscusComment.html
       after_body: 
         - _others/_TargetBlank.html

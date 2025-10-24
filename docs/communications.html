@@ -21,7 +21,7 @@
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css" data-origin="pandoc">
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -32,7 +32,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -88,22 +88,25 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>QUENTIN PETITJEAN: COMMUNICATIONS</title>
+  <title>Quentin PETITJEAN: COMMUNICATIONS</title>
 
+  <meta property="description" itemprop="description" content="Talks and posters by Quentin Petitjean (INRAE)"/>
 
   <link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"/>
   <link rel="icon" type="image/png" href="images/FavIcon.png"/>
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="QUENTIN PETITJEAN: COMMUNICATIONS"/>
+  <meta property="og:title" content="Quentin PETITJEAN: COMMUNICATIONS"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="Talks and posters by Quentin Petitjean (INRAE)"/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="QUENTIN PETITJEAN"/>
+  <meta property="og:site_name" content="Quentin PETITJEAN"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="QUENTIN PETITJEAN: COMMUNICATIONS"/>
+  <meta property="twitter:title" content="Quentin PETITJEAN: COMMUNICATIONS"/>
+  <meta property="twitter:description" content="Talks and posters by Quentin Petitjean (INRAE)"/>
   <meta property="twitter:site" content="@Q_PETITJEAN"/>
   <meta property="twitter:creator" content="@Q_PETITJEAN"/>
 
@@ -111,7 +114,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output"]}},"value":[{"type":"character","attributes":{},"value":["COMMUNICATIONS"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_float","toc_depth","collapsed","self_contained","code_folding","css"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]},{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["css/GlobalTheme.css"]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output"]}},"value":[{"type":"character","attributes":{},"value":["COMMUNICATIONS"]},{"type":"character","attributes":{},"value":["Talks and posters by Quentin Petitjean (INRAE)"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_float","toc_depth","collapsed","self_contained","code_folding","css","includes"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]},{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["css/GlobalTheme.css"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["in_header"]}},"value":[{"type":"character","attributes":{},"value":["_others/_headTags.html"]}]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -459,8 +462,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
 
   <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
   <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
   <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
@@ -830,9 +833,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     display: none !important;
   }
 
+  hr.section-separator {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 0px;
+  }
+
+
+  d-byline {
+    border-top: none;
+  }
+
   d-article {
     padding-top: 2.5rem;
     padding-bottom: 30px;
+    border-top: none;
   }
 
   d-appendix {
@@ -927,6 +942,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article div.sourceCode pre {
     padding-left: 18px;
     font-size: 14px;
+  }
+
+  /* tweak for Pandoc numbered line within distill */
+  d-article pre.numberSource code > span {
+      left: -2em;
   }
 
   d-article pre {
@@ -1688,6 +1708,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // create d-title
     $('.d-title').changeElementType('d-title');
 
+    // separator
+    var separator = '<hr class="section-separator" style="clear: both"/>';
+    // prepend separator above appendix
+    $('.d-byline').before(separator);
+    $('.d-article').before(separator);
+
     // create d-byline
     var byline = $('<d-byline></d-byline>');
     $('.d-byline').replaceWith(byline);
@@ -1765,8 +1791,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     $('.distill-force-highlighting-css').parent().remove();
 
     // remove empty line numbers inserted by pandoc when using a
-    // custom syntax highlighting theme
-    $('code.sourceCode a:empty').remove();
+    // custom syntax highlighting theme, except when numbering line
+    // in code chunk
+    $('pre:not(.numberLines) code.sourceCode a:empty').remove();
 
     // load distill framework
     load_distill_framework();
@@ -1792,12 +1819,13 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       // add orcid ids
       $('.authors-affiliations').find('.author').each(function(i, el) {
         var orcid_id = front_matter.authors[i].orcidID;
+        var author_name = front_matter.authors[i].author
         if (orcid_id) {
           var a = $('<a></a>');
           a.attr('href', 'https://orcid.org/' + orcid_id);
           var img = $('<img></img>');
           img.addClass('orcid-id');
-          img.attr('alt', 'ORCID ID');
+          img.attr('alt', author_name ? 'ORCID ID for ' + author_name : 'ORCID ID');
           img.attr('src','data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==');
           a.append(img);
           $(this).append(a);
@@ -2422,6 +2450,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     font-size: 0.8em;
     color: var(--aside-color);
     text-align: right;
+    margin:0;
   }
 
   /* add a special appearence for the title of the detailed section */
@@ -2587,7 +2616,24 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     background-color: --aside-color; /* Choose your preferred color */
     margin: 40px 0; /* Adjust spacing as needed */
     width: 100%;
-  }</style>
+  }
+
+  /* accessibility utility class */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+  }
+
+  .talks { margin: 0; padding-left: 0; }
+  .talks ul { list-style: none; padding-left: 0; }
+  .talks li { list-style: none; margin: 10px 0 18px; border-bottom: 1px solid #eee; padding-bottom: 12px; }
+  .talks li a { text-decoration: none; }</style>
   <style type="text/css">
   /* base style */
 
@@ -2743,7 +2789,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.23/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2783,6 +2829,27 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!-- TOC JAVASCRIPT ELEMENTS END -->
+  <link rel="canonical" href="https://qpetitjean.github.io/qpetitjean_distill/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Quentin Petitjean",
+    "affiliation": "INRAE",
+    "jobTitle": "Researcher",
+    "url": "https://qpetitjean.github.io/qpetitjean_distill/",
+    "image": "https://qpetitjean.github.io/qpetitjean_distill/images/Home_QP.png",
+    "sameAs": [
+      "https://orcid.org/0000-0003-2708-7831",
+      "https://scholar.google.com/citations?user=GMudi1sAAAAJ",
+      "https://fr.linkedin.com/in/quentin-petitjean-phd-aba3b5aa",
+      "https://ecotox.hub.inrae.fr/groupe-jeunes/pages-profil/quentin-petitjean",
+      "https://cv.hal.science/qpetitjean",
+      "https://www.researchgate.net/profile/Quentin-Petitjean-2",
+      "https://www.webofscience.com/wos/author/record/AAE-8204-2021"
+    ]
+  }
+  </script>
   <style type="text/css">
 
   /* base variables */
@@ -3054,6 +3121,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     font-size: 0.8em;
     color: var(--aside-color);
     text-align: right;
+    margin:0;
   }
 
   /* add a special appearence for the title of the detailed section */
@@ -3221,8 +3289,45 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     width: 100%;
   }
 
+  /* accessibility utility class */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+  }
+
+  .talks { margin: 0; padding-left: 0; }
+  .talks ul { list-style: none; padding-left: 0; }
+  .talks li { list-style: none; margin: 10px 0 18px; border-bottom: 1px solid #eee; padding-bottom: 12px; }
+  .talks li a { text-decoration: none; }
   </style>
   <!--/radix_placeholder_site_in_header-->
+  <link rel="canonical" href="https://qpetitjean.github.io/qpetitjean_distill/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Quentin Petitjean",
+    "affiliation": "INRAE",
+    "jobTitle": "Researcher",
+    "url": "https://qpetitjean.github.io/qpetitjean_distill/",
+    "image": "https://qpetitjean.github.io/qpetitjean_distill/images/Home_QP.png",
+    "sameAs": [
+      "https://orcid.org/0000-0003-2708-7831",
+      "https://scholar.google.com/citations?user=GMudi1sAAAAJ",
+      "https://fr.linkedin.com/in/quentin-petitjean-phd-aba3b5aa",
+      "https://ecotox.hub.inrae.fr/groupe-jeunes/pages-profil/quentin-petitjean",
+      "https://cv.hal.science/qpetitjean",
+      "https://www.researchgate.net/profile/Quentin-Petitjean-2",
+      "https://www.webofscience.com/wos/author/record/AAE-8204-2021"
+    ]
+  }
+  </script>
 
   <link rel="stylesheet" href="css/GlobalTheme.css" type="text/css"/>
 
@@ -3233,7 +3338,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"COMMUNICATIONS","authors":[]}
+{"title":"COMMUNICATIONS","description":"Talks and posters by Quentin Petitjean (INRAE)","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -3241,7 +3346,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <header class="header header--fixed" role="banner">
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
-<a href="index.html" class="title">QUENTIN PETITJEAN</a>
+<a href="index.html" class="title">Quentin PETITJEAN</a>
 <a href="index.html">
 <i class="fa fa-home" aria-hidden="true"></i>
 </a>
@@ -3265,9 +3370,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 <div class="d-title">
 <h1>COMMUNICATIONS</h1>
+
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-
+<p>Talks and posters by Quentin Petitjean (INRAE)</p>
 </div>
 
 
@@ -3278,66 +3384,99 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <ul>
 <li><a href="#oral-communications" id="toc-oral-communications">ORAL COMMUNICATIONS</a>
 <ul>
-<li><a href="#planned-in-april" id="toc-planned-in-april">2025 - Planned in April</a></li>
-<li><a href="#section" id="toc-section">2024</a></li>
-<li><a href="#section-1" id="toc-section-1">2023</a></li>
-<li><a href="#section-2" id="toc-section-2">2021</a></li>
-<li><a href="#section-3" id="toc-section-3">2019</a></li>
-<li><a href="#section-4" id="toc-section-4">2018</a></li>
-<li><a href="#section-5" id="toc-section-5">2017</a></li>
-<li><a href="#section-6" id="toc-section-6">2016</a></li>
+<li><a href="#section" id="toc-section">2025</a></li>
+<li><a href="#section-1" id="toc-section-1">2024</a></li>
+<li><a href="#section-2" id="toc-section-2">2023</a></li>
+<li><a href="#section-3" id="toc-section-3">2021</a></li>
+<li><a href="#section-4" id="toc-section-4">2019</a></li>
+<li><a href="#section-5" id="toc-section-5">2018</a></li>
+<li><a href="#section-6" id="toc-section-6">2017</a></li>
+<li><a href="#section-7" id="toc-section-7">2016</a></li>
 </ul></li>
 <li><a href="#poster-presentations" id="toc-poster-presentations">POSTER PRESENTATIONS</a>
 <ul>
-<li><a href="#section-7" id="toc-section-7">2024</a></li>
-<li><a href="#section-8" id="toc-section-8">2023</a></li>
-<li><a href="#section-9" id="toc-section-9">2019</a></li>
-<li><a href="#section-10" id="toc-section-10">2018</a></li>
-<li><a href="#section-11" id="toc-section-11">2017</a></li>
-<li><a href="#section-12" id="toc-section-12">2016</a></li>
+<li><a href="#section-8" id="toc-section-8">2024</a></li>
+<li><a href="#section-9" id="toc-section-9">2023</a></li>
+<li><a href="#section-10" id="toc-section-10">2019</a></li>
+<li><a href="#section-11" id="toc-section-11">2018</a></li>
+<li><a href="#section-12" id="toc-section-12">2017</a></li>
+<li><a href="#section-13" id="toc-section-13">2016</a></li>
 </ul></li>
 </ul>
 </nav>
 </div>
 <p class="small-text">
-<span>*</sup> indicates the person who presented the work.
-</p>
-<p class="small-text">
-<sup>♦</sup> indicates equal contribution.
+<span>*</sup> indicates the person who presented the work.<br/><sup>♦</sup> indicates equal contribution.
 </p>
 <h1 id="oral-communications">ORAL COMMUNICATIONS</h1>
-<h2 id="planned-in-april">2025 - Planned in April</h2>
-<p><svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M400 96c0-8.8-7.2-16-16-16L64 80c-8.8 0-16 7.2-16 16l0 320c0 8.8 7.2 16 16 16l320 0c8.8 0 16-7.2 16-16l0-320zM384 32c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96C0 60.7 28.7 32 64 32l320 0zM320 256c0 6.7-2.8 13-7.7 17.6l-112 104c-7 6.5-17.2 8.2-25.9 4.4s-14.4-12.5-14.4-22l0-208c0-9.5 5.7-18.2 14.4-22s18.9-2.1 25.9 4.4l112 104c4.9 4.5 7.7 10.9 7.7 17.6z"/></svg>   <strong>Q Petitjean</strong>*, Science reproductible : Publier ses données et son code pour une recherche transparente – comment répondre aux attentes des éditeurs. Oral communication (invited speaker) at the <a href='https://jrfrr-2025.sciencesconf.org/'>Journées du Réseau Français de la Recherche Reproductible (JRFRR 2025).</a></p>
-<h2 id="section">2024</h2>
+<h2 id="section">2025</h2>
+<div class="talks">
+<p><svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M400 96c0-8.8-7.2-16-16-16L64 80c-8.8 0-16 7.2-16 16l0 320c0 8.8 7.2 16 16 16l320 0c8.8 0 16-7.2 16-16l0-320zM384 32c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96C0 60.7 28.7 32 64 32l320 0zM320 256c0 6.7-2.8 13-7.7 17.6l-112 104c-7 6.5-17.2 8.2-25.9 4.4s-14.4-12.5-14.4-22l0-208c0-9.5 5.7-18.2 14.4-22s18.9-2.1 25.9 4.4l112 104c4.9 4.5 7.7 10.9 7.7 17.6z"/></svg>   <strong>Q Petitjean</strong>*, Science reproductible : Publier ses données et son code pour une recherche transparente – comment répondre aux attentes des éditeurs. Oral communication (invited speaker) at the <a href='https://jrfrr-2025.sciencesconf.org/'>Journées du Réseau Français de la Recherche Reproductible (JRFRR 2025).</a><br/><a href="https://hal.science/hal-05032797v1" target="_blank" rel="noopener" aria-label="Slides (link)"><i class="fa fa-file-pdf" aria-hidden="true"></i> Slides</a> <a href="https://doi.org/10.60527/ewag-3442" target="_blank" rel="noopener" aria-label="Watch the talk (Fr) (link)"><i class="fa fa-circle-play" aria-hidden="true"></i> Watch the talk (Fr)</a></p>
+</div>
+<h2 id="section-1">2024</h2>
+<div class="talks">
 <p><svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M400 96c0-8.8-7.2-16-16-16L64 80c-8.8 0-16 7.2-16 16l0 320c0 8.8 7.2 16 16 16l320 0c8.8 0 16-7.2 16-16l0-320zM384 32c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96C0 60.7 28.7 32 64 32l320 0zM320 256c0 6.7-2.8 13-7.7 17.6l-112 104c-7 6.5-17.2 8.2-25.9 4.4s-14.4-12.5-14.4-22l0-208c0-9.5 5.7-18.2 14.4-22s18.9-2.1 25.9 4.4l112 104c4.9 4.5 7.7 10.9 7.7 17.6z"/></svg>   <strong>Q Petitjean</strong>*, Analyses comportementales en Vidéo-tracking. Oral communication (Workshop animation) at the <a href='https://life.ir.inrae.fr/actualites/jst-life-20242'>Journées scientifiques et techniques de l’IR life 2024.</a></p>
 <p><svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M400 96c0-8.8-7.2-16-16-16L64 80c-8.8 0-16 7.2-16 16l0 320c0 8.8 7.2 16 16 16l320 0c8.8 0 16-7.2 16-16l0-320zM384 32c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96C0 60.7 28.7 32 64 32l320 0zM320 256c0 6.7-2.8 13-7.7 17.6l-112 104c-7 6.5-17.2 8.2-25.9 4.4s-14.4-12.5-14.4-22l0-208c0-9.5 5.7-18.2 14.4-22s18.9-2.1 25.9 4.4l112 104c4.9 4.5 7.7 10.9 7.7 17.6z"/></svg>   <strong>Q Petitjean</strong>*, K Kreutzenberger, J Belliard, L Plichard, B Bourillon, O Dezerald, B Villeneuve, Effect of multiple stressors on migratory fishes: does watershed functioning help better explain population declines? Oral communication at the <a href='https://sfe2-2024.fr/fr'>SFE² meeting 2024.</a></p>
 <p><svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M400 96c0-8.8-7.2-16-16-16L64 80c-8.8 0-16 7.2-16 16l0 320c0 8.8 7.2 16 16 16l320 0c8.8 0 16-7.2 16-16l0-320zM384 32c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96C0 60.7 28.7 32 64 32l320 0zM320 256c0 6.7-2.8 13-7.7 17.6l-112 104c-7 6.5-17.2 8.2-25.9 4.4s-14.4-12.5-14.4-22l0-208c0-9.5 5.7-18.2 14.4-22s18.9-2.1 25.9 4.4l112 104c4.9 4.5 7.7 10.9 7.7 17.6z"/></svg>   <strong>Q Petitjean</strong>*, K Kreutzenberger, J Belliard, L Plichard, B Bourillon, O Dezerald, B Villeneuve, Effets des stress anthropiques sur le déclin des poissons migrateurs : une approche multifactorielle intégrative du fonctionnement des bassins versants. Oral communication at the <a href='https://jilo-2024.sciencesconf.org/'>VI<sup>ème</sup> Journées internationales de limnologie et d’océanographie (JILO 2024).</a></p>
-<h2 id="section-1">2023</h2>
+</div>
+<h2 id="section-2">2023</h2>
+<div class="talks">
 <p><svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M400 96c0-8.8-7.2-16-16-16L64 80c-8.8 0-16 7.2-16 16l0 320c0 8.8 7.2 16 16 16l320 0c8.8 0 16-7.2 16-16l0-320zM384 32c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96C0 60.7 28.7 32 64 32l320 0zM320 256c0 6.7-2.8 13-7.7 17.6l-112 104c-7 6.5-17.2 8.2-25.9 4.4s-14.4-12.5-14.4-22l0-208c0-9.5 5.7-18.2 14.4-22s18.9-2.1 25.9 4.4l112 104c4.9 4.5 7.7 10.9 7.7 17.6z"/></svg>   <strong>Q Petitjean</strong>*, M Granada, S Jean, S Manzi, C Veyssiere, A Perrault, M Cousseau, P Laffaille, White J, L Jacquin, Environmentally relevant metal contamination levels affect gut microbiota composition in wild fish populations (<em>Gobio occitaniae</em>). Oral communication at the <a href='https://ecotox-2023.colloque.inrae.fr/'>VIII<sup>ème</sup> Colloque du Réseau Ecotox.</a></p>
-<h2 id="section-2">2021</h2>
+</div>
+<h2 id="section-3">2021</h2>
+<div class="talks">
 <p><svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M400 96c0-8.8-7.2-16-16-16L64 80c-8.8 0-16 7.2-16 16l0 320c0 8.8 7.2 16 16 16l320 0c8.8 0 16-7.2 16-16l0-320zM384 32c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96C0 60.7 28.7 32 64 32l320 0zM320 256c0 6.7-2.8 13-7.7 17.6l-112 104c-7 6.5-17.2 8.2-25.9 4.4s-14.4-12.5-14.4-22l0-208c0-9.5 5.7-18.2 14.4-22s18.9-2.1 25.9 4.4l112 104c4.9 4.5 7.7 10.9 7.7 17.6z"/></svg>   <strong>Q Petitjean</strong>*, Variable responses to multiple stressors in a wild freshwater fish: <em>Gobio occitaniae</em>. Oral communication at the <a href='https://www.biologie.uni-hamburg.de/en/forschung/grk2530/'>Department of Biology of the university of Hamburg (RTG 2530).</a></p>
-<h2 id="section-3">2019</h2>
+</div>
+<h2 id="section-4">2019</h2>
+<div class="talks">
 <p><svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M400 96c0-8.8-7.2-16-16-16L64 80c-8.8 0-16 7.2-16 16l0 320c0 8.8 7.2 16 16 16l320 0c8.8 0 16-7.2 16-16l0-320zM384 32c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96C0 60.7 28.7 32 64 32l320 0zM320 256c0 6.7-2.8 13-7.7 17.6l-112 104c-7 6.5-17.2 8.2-25.9 4.4s-14.4-12.5-14.4-22l0-208c0-9.5 5.7-18.2 14.4-22s18.9-2.1 25.9 4.4l112 104c4.9 4.5 7.7 10.9 7.7 17.6z"/></svg>   <strong>Q Petitjean</strong>*, L Jacquin, L Riem, E Rojas, A Perrault, M Cousseau, P Laffaille, S Jean, Variability of responses to multiples stressors in fish: biological level and population matter. Oral communication at the <a href='https://helsinki.setac.org/welcome/'>SETAC Europe 29<sup>th</sup> meeting 2019.</a></p>
-<h2 id="section-4">2018</h2>
+</div>
+<h2 id="section-5">2018</h2>
+<div class="talks">
 <p><svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M400 96c0-8.8-7.2-16-16-16L64 80c-8.8 0-16 7.2-16 16l0 320c0 8.8 7.2 16 16 16l320 0c8.8 0 16-7.2 16-16l0-320zM384 32c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96C0 60.7 28.7 32 64 32l320 0zM320 256c0 6.7-2.8 13-7.7 17.6l-112 104c-7 6.5-17.2 8.2-25.9 4.4s-14.4-12.5-14.4-22l0-208c0-9.5 5.7-18.2 14.4-22s18.9-2.1 25.9 4.4l112 104c4.9 4.5 7.7 10.9 7.7 17.6z"/></svg>   <strong>Q Petitjean</strong>*, L Jacquin, L Riem, E Rojas, A Perrault, M Cousseau, P Laffaille, S Jean, Variability of fish population responses to combined contamination and immune stressors in wild gudgeon. Oral communication at the <a href='https://sfecologie2018.sciencesconf.org/'>SFE² meeting 2018.</a></p>
-<h2 id="section-5">2017</h2>
+</div>
+<h2 id="section-6">2017</h2>
+<div class="talks">
 <p><svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M400 96c0-8.8-7.2-16-16-16L64 80c-8.8 0-16 7.2-16 16l0 320c0 8.8 7.2 16 16 16l320 0c8.8 0 16-7.2 16-16l0-320zM384 32c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96C0 60.7 28.7 32 64 32l320 0zM320 256c0 6.7-2.8 13-7.7 17.6l-112 104c-7 6.5-17.2 8.2-25.9 4.4s-14.4-12.5-14.4-22l0-208c0-9.5 5.7-18.2 14.4-22s18.9-2.1 25.9 4.4l112 104c4.9 4.5 7.7 10.9 7.7 17.6z"/></svg>   <strong>Q Petitjean</strong>*, J Côte, S Jean, A Perrault, O Morrisseau, P Laffaille, L Jacquin, Responses of freshwater fish to multiple stressors. Oral communication at the <a href='https://www.freshwatersciences.eu/effs/index.asp?page=SEFS&Id=4'>SEFS meeting 2017.</a></p>
-<h2 id="section-6">2016</h2>
+</div>
+<h2 id="section-7">2016</h2>
+<div class="talks">
 <p><svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M400 96c0-8.8-7.2-16-16-16L64 80c-8.8 0-16 7.2-16 16l0 320c0 8.8 7.2 16 16 16l320 0c8.8 0 16-7.2 16-16l0-320zM384 32c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96C0 60.7 28.7 32 64 32l320 0zM320 256c0 6.7-2.8 13-7.7 17.6l-112 104c-7 6.5-17.2 8.2-25.9 4.4s-14.4-12.5-14.4-22l0-208c0-9.5 5.7-18.2 14.4-22s18.9-2.1 25.9 4.4l112 104c4.9 4.5 7.7 10.9 7.7 17.6z"/></svg>   <strong>Q Petitjean</strong>*, A-V Walter-Simonnet, F Choulet, A-L Mariet, P Goncalves, H Laurent, P Rosenthal, A de Vaufleury, F Gimbert, From iron ore to ecotoxicological impacts: One thousand years of manganese history. Oral communication at the <a href='https://ichmet2016.ugent.be/'>ICHMET meeting 2016.</a></p>
+</div>
 <p><br/></p>
 <h1 id="poster-presentations">POSTER PRESENTATIONS</h1>
-<h2 id="section-7">2024</h2>
-<p><svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M400 96c0-8.8-7.2-16-16-16L64 80c-8.8 0-16 7.2-16 16l0 320c0 8.8 7.2 16 16 16l320 0c8.8 0 16-7.2 16-16l0-320zM384 32c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96C0 60.7 28.7 32 64 32l320 0zM320 256c0 6.7-2.8 13-7.7 17.6l-112 104c-7 6.5-17.2 8.2-25.9 4.4s-14.4-12.5-14.4-22l0-208c0-9.5 5.7-18.2 14.4-22s18.9-2.1 25.9 4.4l112 104c4.9 4.5 7.7 10.9 7.7 17.6z"/></svg>   <strong>Q Petitjean</strong>*<sup>, ♦</sup>, S M Dupont<sup>♦</sup>, C Le Picard<sup>♦</sup>, B Bellier<sup>♦</sup>, H Sentenac<sup>♦</sup>, S Bancel<sup>♦</sup>, E FUENTES<sup>♦</sup>, Young ecotoxicologist group (yeg), le groupe des jeunes ecotoxicologues francophones. Poster presentation at the <a href='https://asso-sefa.fr/colloque-de-la-sefa'>French SEFA meeting 2024.</a><br/><a href="Posters/Petitjeanetal-YEG-POSTER.pdf" class="icon-link"><i class="fa fa-file-pdf"></i> Poster</a></p>
-<h2 id="section-8">2023</h2>
-<p><svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M400 96c0-8.8-7.2-16-16-16L64 80c-8.8 0-16 7.2-16 16l0 320c0 8.8 7.2 16 16 16l320 0c8.8 0 16-7.2 16-16l0-320zM384 32c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96C0 60.7 28.7 32 64 32l320 0zM320 256c0 6.7-2.8 13-7.7 17.6l-112 104c-7 6.5-17.2 8.2-25.9 4.4s-14.4-12.5-14.4-22l0-208c0-9.5 5.7-18.2 14.4-22s18.9-2.1 25.9 4.4l112 104c4.9 4.5 7.7 10.9 7.7 17.6z"/></svg>   <strong>Q Petitjean</strong>*, S Lartigue, M Cointe, R LeClech, M Ion Scotta, N Ris, L Van Oudenhove, V Calcagno, MoveR: a package for the visualization and analysis of video-tracking data in R. Poster presentation at the <a href='https://entomo2023.sciencesconf.org/'>43èmes journées des Entomophagistes.</a><br/><a href="Posters/Petitjeanetal-MOVER-POSTER.pdf" class="icon-link"><i class="fa fa-file-pdf"></i> Poster</a></p>
-<h2 id="section-9">2019</h2>
+<h2 id="section-8">2024</h2>
+<div class="poster">
+<p><svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M400 96c0-8.8-7.2-16-16-16L64 80c-8.8 0-16 7.2-16 16l0 320c0 8.8 7.2 16 16 16l320 0c8.8 0 16-7.2 16-16l0-320zM384 32c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96C0 60.7 28.7 32 64 32l320 0zM320 256c0 6.7-2.8 13-7.7 17.6l-112 104c-7 6.5-17.2 8.2-25.9 4.4s-14.4-12.5-14.4-22l0-208c0-9.5 5.7-18.2 14.4-22s18.9-2.1 25.9 4.4l112 104c4.9 4.5 7.7 10.9 7.7 17.6z"/></svg>   <strong>Q Petitjean</strong>*<sup>, ♦</sup>, S M Dupont<sup>♦</sup>, C Le Picard<sup>♦</sup>, B Bellier<sup>♦</sup>, H Sentenac<sup>♦</sup>, S Bancel<sup>♦</sup>, E FUENTES<sup>♦</sup>, Young ecotoxicologist group (yeg), le groupe des jeunes ecotoxicologues francophones. Poster presentation at the <a href='https://asso-sefa.fr/colloque-de-la-sefa'>French SEFA meeting 2024.</a><br/><a href="Posters/Petitjeanetal-YEG-POSTER.pdf" target="_blank" rel="noopener" aria-label="Poster (PDF)"><i class="fa fa-file-pdf" aria-hidden="true"></i> Poster</a></p>
+</div>
+<h2 id="section-9">2023</h2>
+<div class="poster">
+<p><svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M400 96c0-8.8-7.2-16-16-16L64 80c-8.8 0-16 7.2-16 16l0 320c0 8.8 7.2 16 16 16l320 0c8.8 0 16-7.2 16-16l0-320zM384 32c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96C0 60.7 28.7 32 64 32l320 0zM320 256c0 6.7-2.8 13-7.7 17.6l-112 104c-7 6.5-17.2 8.2-25.9 4.4s-14.4-12.5-14.4-22l0-208c0-9.5 5.7-18.2 14.4-22s18.9-2.1 25.9 4.4l112 104c4.9 4.5 7.7 10.9 7.7 17.6z"/></svg>   <strong>Q Petitjean</strong>*, S Lartigue, M Cointe, R LeClech, M Ion Scotta, N Ris, L Van Oudenhove, V Calcagno, MoveR: a package for the visualization and analysis of video-tracking data in R. Poster presentation at the <a href='https://entomo2023.sciencesconf.org/'>43èmes journées des Entomophagistes.</a><br/><a href="Posters/Petitjeanetal-MOVER-POSTER.pdf" target="_blank" rel="noopener" aria-label="Poster (PDF)"><i class="fa fa-file-pdf" aria-hidden="true"></i> Poster</a></p>
+</div>
+<h2 id="section-10">2019</h2>
+<div class="poster">
 <p><svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M400 96c0-8.8-7.2-16-16-16L64 80c-8.8 0-16 7.2-16 16l0 320c0 8.8 7.2 16 16 16l320 0c8.8 0 16-7.2 16-16l0-320zM384 32c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96C0 60.7 28.7 32 64 32l320 0zM320 256c0 6.7-2.8 13-7.7 17.6l-112 104c-7 6.5-17.2 8.2-25.9 4.4s-14.4-12.5-14.4-22l0-208c0-9.5 5.7-18.2 14.4-22s18.9-2.1 25.9 4.4l112 104c4.9 4.5 7.7 10.9 7.7 17.6z"/></svg>   M Pitout*, <strong>Q Petitjean</strong>, A Perrault, M Cousseau, P Laffaille, L Jacquin, S Jean, Physiological and transcriptomic responses to metal contamination and immune challenge in gudgeon. Poster presentation at the <a href='https://eb2019.sciencesconf.org/'>E&amp;B meeting 2019.</a></p>
-<h2 id="section-10">2018</h2>
-<p><svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M400 96c0-8.8-7.2-16-16-16L64 80c-8.8 0-16 7.2-16 16l0 320c0 8.8 7.2 16 16 16l320 0c8.8 0 16-7.2 16-16l0-320zM384 32c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96C0 60.7 28.7 32 64 32l320 0zM320 256c0 6.7-2.8 13-7.7 17.6l-112 104c-7 6.5-17.2 8.2-25.9 4.4s-14.4-12.5-14.4-22l0-208c0-9.5 5.7-18.2 14.4-22s18.9-2.1 25.9 4.4l112 104c4.9 4.5 7.7 10.9 7.7 17.6z"/></svg>   <strong>Q Petitjean</strong>*, S Jean, J Côte, A Lamarins, A Perrault, P Laffaille, L Jacquin, Responses to combined temperature and immune stressors in wild gudgeon. Poster presentation at the <a href='https://sfecologie2018.sciencesconf.org/'>SFE² meeting 2018.</a><br/><a href="Posters/Petitjeanetal-TempImmStress-POSTER.pdf" class="icon-link"><i class="fa fa-file-pdf"></i> Poster</a></p>
-<h2 id="section-11">2017</h2>
+</div>
+<h2 id="section-11">2018</h2>
+<div class="poster">
+<p><svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M400 96c0-8.8-7.2-16-16-16L64 80c-8.8 0-16 7.2-16 16l0 320c0 8.8 7.2 16 16 16l320 0c8.8 0 16-7.2 16-16l0-320zM384 32c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96C0 60.7 28.7 32 64 32l320 0zM320 256c0 6.7-2.8 13-7.7 17.6l-112 104c-7 6.5-17.2 8.2-25.9 4.4s-14.4-12.5-14.4-22l0-208c0-9.5 5.7-18.2 14.4-22s18.9-2.1 25.9 4.4l112 104c4.9 4.5 7.7 10.9 7.7 17.6z"/></svg>   <strong>Q Petitjean</strong>*, S Jean, J Côte, A Lamarins, A Perrault, P Laffaille, L Jacquin, Responses to combined temperature and immune stressors in wild gudgeon. Poster presentation at the <a href='https://sfecologie2018.sciencesconf.org/'>SFE² meeting 2018.</a><br/><a href="Posters/Petitjeanetal-TempImmStress-POSTER.pdf" target="_blank" rel="noopener" aria-label="Poster (PDF)"><i class="fa fa-file-pdf" aria-hidden="true"></i> Poster</a></p>
+</div>
+<h2 id="section-12">2017</h2>
+<div class="poster">
 <p><svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M400 96c0-8.8-7.2-16-16-16L64 80c-8.8 0-16 7.2-16 16l0 320c0 8.8 7.2 16 16 16l320 0c8.8 0 16-7.2 16-16l0-320zM384 32c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96C0 60.7 28.7 32 64 32l320 0zM320 256c0 6.7-2.8 13-7.7 17.6l-112 104c-7 6.5-17.2 8.2-25.9 4.4s-14.4-12.5-14.4-22l0-208c0-9.5 5.7-18.2 14.4-22s18.9-2.1 25.9 4.4l112 104c4.9 4.5 7.7 10.9 7.7 17.6z"/></svg>   <strong>Q Petitjean</strong>*, J Côte, L Jacquin, A Perrault, O Morrisseau, P Laffaille, S Jean, Responses of freshwater fish to multiple stressors. Poster presentation at the FEE meeting 2017.</p>
-<h2 id="section-12">2016</h2>
-<p><svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M400 96c0-8.8-7.2-16-16-16L64 80c-8.8 0-16 7.2-16 16l0 320c0 8.8 7.2 16 16 16l320 0c8.8 0 16-7.2 16-16l0-320zM384 32c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96C0 60.7 28.7 32 64 32l320 0zM320 256c0 6.7-2.8 13-7.7 17.6l-112 104c-7 6.5-17.2 8.2-25.9 4.4s-14.4-12.5-14.4-22l0-208c0-9.5 5.7-18.2 14.4-22s18.9-2.1 25.9 4.4l112 104c4.9 4.5 7.7 10.9 7.7 17.6z"/></svg>   <strong>Q Petitjean</strong>*, A-V Walter-Simonnet, F Choulet, A-L Mariet, P Goncalves, H Laurent, P Rosenthal, A de Vaufleury, F Gimbert, Impacts de la présence de déchets sidérurgiques anciens sur la contamination des sols en métaux. Poster presentation at the <a href='https://asso-sefa.fr/colloque-de-la-sefa'>French SEFA meeting 2016.</a><br/><a href="Posters/Petitjeanetal-MineWastes-POSTER.pdf" class="icon-link"><i class="fa fa-file-pdf"></i> Poster</a></p>
+</div>
+<h2 id="section-13">2016</h2>
+<div class="poster">
+<p><svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#333333;overflow:visible;position:relative;"><path d="M400 96c0-8.8-7.2-16-16-16L64 80c-8.8 0-16 7.2-16 16l0 320c0 8.8 7.2 16 16 16l320 0c8.8 0 16-7.2 16-16l0-320zM384 32c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96C0 60.7 28.7 32 64 32l320 0zM320 256c0 6.7-2.8 13-7.7 17.6l-112 104c-7 6.5-17.2 8.2-25.9 4.4s-14.4-12.5-14.4-22l0-208c0-9.5 5.7-18.2 14.4-22s18.9-2.1 25.9 4.4l112 104c4.9 4.5 7.7 10.9 7.7 17.6z"/></svg>   <strong>Q Petitjean</strong>*, A-V Walter-Simonnet, F Choulet, A-L Mariet, P Goncalves, H Laurent, P Rosenthal, A de Vaufleury, F Gimbert, Impacts de la présence de déchets sidérurgiques anciens sur la contamination des sols en métaux. Poster presentation at the <a href='https://asso-sefa.fr/colloque-de-la-sefa'>French SEFA meeting 2016.</a><br/><a href="Posters/Petitjeanetal-MineWastes-POSTER.pdf" target="_blank" rel="noopener" aria-label="Poster (PDF)"><i class="fa fa-file-pdf" aria-hidden="true"></i> Poster</a></p>
+</div>
+<p><br/><br/></p>
+<nav>
+<a href="/qpetitjean_distill/news.html" style="color:rgba(20, 130, 125, 1); font-style: italic; border-bottom: 0px; text-decoration: none; margin-right: 0px; margin-left: 0px;">News</a> |
+<a href="/qpetitjean_distill/publications.html" style="color:rgba(20, 130, 125, 1); font-style: italic; border-bottom: 0px; text-decoration: none; margin-right: 0px; margin-left: 0px;">Publications</a> |
+<a href="/qpetitjean_distill/communications.html" style="color:rgba(20, 130, 125, 1); font-style: italic; border-bottom: 0px; text-decoration: none; margin-right: 0px; margin-left: 0px;">Communications</a> |
+<a href="/qpetitjean_distill/cv.html" style="color:rgba(20, 130, 125, 1); font-style: italic; border-bottom: 0px; text-decoration: none; margin-right: 0px; margin-left: 0px;">Curriculum Vitae </a>
+</nav>
+<html lang="en">
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

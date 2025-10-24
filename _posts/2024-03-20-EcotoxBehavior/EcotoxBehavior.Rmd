@@ -15,7 +15,11 @@ author:
     affiliation_url: https://eng-eabx.bordeaux-aquitaine.hub.inrae.fr/
 date: 03-20-2024
 output:
-  distill::distill_article
+  distill::distill_article:
+    self_contained: false
+    includes:
+      in_header:
+        - _others/_headTags.html
 ---
 
 <table style="border: none; width='100%';">

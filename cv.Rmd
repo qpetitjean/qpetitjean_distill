@@ -1,5 +1,6 @@
 ---
 title: "CURRICULUM VITAE"
+description: "CV of Quentin Petitjean (INRAE)"
 output: 
   distill::distill_article:
     toc: true
@@ -10,7 +11,13 @@ output:
     includes:
     css:
       - css/GlobalTheme.css
+    in_header:
+      - _others/_headTags.html
 ---
+
+```{r canonical, include=FALSE, results='asis'}
+cat('<link rel="canonical" href="https://qpetitjean.github.io/qpetitjean_distill/cv.html">')
+``` 
 
 <!-- <p style="color: var(--title-color); font-family: var(--font-body); text-align: center; text-decoration-line: underline; font-size: 125%"> <b>Currently looking for opportunities<b></p> --> 
 <br/>
@@ -136,7 +143,7 @@ cat(Res)
 
 </details> 
 <p class="plain-text">
-`r fontawesome::fa("briefcase", fill = "#333333")` &ensp; Mars 2021 - October 2022 | Postdoctoral researcher | <a href='https://www6.paca.inrae.fr/institut-sophia-agrobiotech'>National Research Institute for Agriculture, Food and Environment—INRAE</a>, Sophia-Antipolis, FR </p>
+`r fontawesome::fa("briefcase", fill = "#333333")` &ensp; March 2021 - October 2022 | Postdoctoral researcher | <a href='https://www6.paca.inrae.fr/institut-sophia-agrobiotech'>National Research Institute for Agriculture, Food and Environment—INRAE</a>, Sophia-Antipolis, FR </p>
 <p class="detailed-text">
 <em><u>Title:</u> «Study of intraspecific variability and thermal adaptation traits in parasitic micro-wasps using computer-vision approaches».<br/>
 <u>Supervisor(s):</u> Dr. Vincent CALCAGNO.</em><br/></p>
@@ -231,7 +238,13 @@ cat(Res)
 </p>
 
 <div class="video-container">
-<a href='https://www.youtube.com/embed/Y9ltf08Iqb4'><iframe width="100%" height="100%" src="https://www.youtube.com/embed/Y9ltf08Iqb4" title="Video-phenotyping of thermal performances in minute wasps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
+  <iframe width="100%" height="100%"
+          src="https://www.youtube.com/embed/Y9ltf08Iqb4"
+          title="Video-phenotyping of thermal performances in minute wasps"
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
 </div>
 
 </details>
@@ -252,9 +265,12 @@ cat(Res)
 Following my Ph.D. defense, I was still Intending to increase the integration of multiple biological levels of organization in studying responses to multiple stressors. <br/><br/>
 Since the literature highlighting the close relationships between physiological and behavioral responses and gut microbiota composition was flourishing, my supervisors (<a href='https://sites.google.com/site/jacquinlisa2'>Lisa JACQUIN</a>, <a href='https://scholar.google.com/citations?hl=fr&user=eI53HscAAAAJ&view_op=list_works&sortby=pubdate'>S&eacute;verine JEAN</a> and <a href='https://scholar.google.fr/citations?hl=fr&user=qMa0F0gAAAAJ&view_op=list_works&sortby=pubdate'>Pascal LAFFAILLE</a>) and I started a collaboration with <a href='https://whitejoel.weebly.com/'>Jo&euml;l WHITE</a> to investigate how multiples stressors may affect gut microbiota composition among several populations of wild fish. <br/><br/>
 Fortunately, during my Ph.D., we collected the gut of all the fish involved in laboratory and reciprocal transplant experiments testing for the combined effect of trace metal contamination and immune challenge. This provided a fair amount of samples to investigate the intraspecific variability of gut microbiota composition in wild fish populations exposed to environmentally relevant stressors. Also, it allowed uncovering potential links between fish physiological and/or behavioral responses already measured during my Ph.D. and gut microbiota composition. <br/><br/>
-While the COVID-19 pandemic knocked at the world's door, we were coerced to delay laboratory analyses (DNA extractions – PCR – NGS). Fortunately, I just had enough time to finish lab' and bioinformatic analyses before leaving this position for the next one. 
+While the COVID-19 pandemic knocked at the world's door, we were coerced to delay laboratory analyses (DNA extractions – PCR – NGS). Fortunately, I just had enough time to finish lab' and bioinformatic analyses before leaving this position for the next one. <br/><br/>
 Finally, I just get back to the datasets analyses and writing during a new postdoctoral contract this year (2023) <br/><br/>
-Stay tuned for further news to come.</p>
+In March 2025, we finally published a preprint reporting the first results of this line of work: “Experimental metal contamination reduces gut microbiota diversity and alters its composition and function in wild-caught fish.” Here we found that metal contamination consistently reduced both taxonomic and predicted functional diversity of the gut microbiota, decreasing biosynthesis (e.g., cell-structure and amino-acid precursors) while increasing energy-production pathways (e.g., anaerobic respiration). Surprisingly, we detected no interaction between metals and the immune challenge, and no difference among populations despite their contrasting exposure histories, pointing to a strong, generalizable microbiome response to metal stress.
+<br/><br/>
+See here for:<br/>
+&#8226; <a href="https://www.biorxiv.org/content/10.1101/2025.03.21.644596v1">Preprint hosted in bioRxiv</a> <br/></p>
 
 </p>
 </td>
@@ -297,11 +313,11 @@ cat(Res)
 Freshly Graduated from Bourgogne-Franche-Comt&eacute; University with a master's in environmental sciences/ecotoxicology, I was lucky enough to work with very supportive people on stimulating and interdisciplinary projects (see my previous experiences below). Briefly, I was working on transfer, fate, and effects of contaminants on laboratory-raised organisms when new exciting questions arose. For example, could the outcomes of contaminants exposure differ according to the origin of the populations? <br/>Focusing on this question would imply working with wild populations. Still, in the wild, organisms are not only exposed to contaminants but rather to a combination of stressful conditions such as temperature changes or pathogens. This brings me to drill into evolutionary ecology and intraspecific variability to better understand how multiple stressors interact and whether the outcome of stressors exposure may differ among populations.<br/><br/>
 Accordingly, I started a Ph.D. program with <a href='https://sites.google.com/site/jacquinlisa2'>Lisa JACQUIN</a>, <a href='https://scholar.google.com/citations?hl=fr&user=eI53HscAAAAJ&view_op=list_works&sortby=pubdate'>S&eacute;verine JEAN</a> and <a href='https://scholar.google.fr/citations?hl=fr&user=qMa0F0gAAAAJ&view_op=list_works&sortby=pubdate'>Pascal LAFFAILLE</a> to investigate the intraspecific variability of responses to multiple stressors among wild fish populations (<em>Gobio occitaniae</em>) and across levels of biological organization.<br/><br/>
 To tackle these aims, I used complementary approaches (see fig. \@ref(fig:PhDApproaches) below) such as the analysis of large datasets collated in the field to uncover potential relationships between stressors exposure and fish health <a href='https://qpetitjean.github.io/qpetitjean_distill/publications.html#section-1'>(Petitjean et al., 2020)</a>. But also, full factorial design conducted in the lab to identify causal link between stressors exposure and plastic responses of fish from several populuations <a href='https://qpetitjean.github.io/qpetitjean_distill/publications.html#section-1'>(Petitjean et al., 2020;</a> <a href='https://qpetitjean.github.io/qpetitjean_distill/publications.html#section'> Petitjean et al., 2021)</a>. Finally, I performed a reciprocal transplant experiment in the field to unveil potential pattern of local adaptation to stressors exposure <a href='https://qpetitjean.github.io/qpetitjean_distill/publications.html#section'> (Petitjean et al., 2023)</a>.<br/>
-```{r PhDApproaches, echo=FALSE, results='asis', message=FALSE, warning=FALSE, fig.align = 'center', out.width="90%", fig.cap="Summary of the research questions investigated during my Ph.D. and the complementary approaches used to tackle them."}
+```{r PhDApproaches, echo=FALSE, results='asis', message=FALSE, warning=FALSE, fig.align = 'center', out.width="90%", fig.cap="Summary of the research questions investigated during my Ph.D. and the complementary approaches used to tackle them.", fig.alt="Diagram summarizing research questions of Quentin Petitjean."}
 knitr::include_graphics('images/PhDApproaches.png')
 ```
 Briefly, we found that combinations of stressors resulted in different outcomes than exposure to single stressors. Still, interactions were antagonistic, synergistic, or additive depending on the traits and level of biological organization. Accordingly, among the numerous traits measured, behavior appeared to be the most sensitive to stressors exposure. Also, populations' responses to stressors differed according to their origin. By using reciprocal transplant approaches, we found that some populations were more resistant to stream contamination with no apparent costs (no trade-off). the results of my Ph.D suggest that we need to rely on integrative and interdisciplinary approaches to improve our knowledge of the effect of multiple stressors and, more generally, global changes on populations' adaptive potential and vulnerability (see fig. \@ref(fig:PhDVensDiag)).
-```{r PhDVensDiag, echo=FALSE, results='asis', message=FALSE, warning=FALSE, fig.align = 'center', out.width="65%", fig.cap="Summary of the research questions investigated during during my Ph.D. and the complementary approaches used to tackle them."}
+```{r PhDVensDiag, echo=FALSE, results='asis', message=FALSE, warning=FALSE, fig.align = 'center', out.width="65%", fig.cap="Summary of the research questions investigated during during my Ph.D. and the complementary approaches used to tackle them.", fig.alt="Diagram summarizing field that QUentin Petitjean'PhD works encompass."}
 knitr::include_graphics('images/PhDVensDiag.png')
 ```
 
@@ -348,7 +364,7 @@ Indeed mining and metallurgical activities are the most ancient sources of anthr
 Here we aimed to characterize the mineralogical composition of slags deposited one thousand years ago and to uncover whether it could still be a significant source of soil contamination that could transfer to organisms and have harmful effects. <br/><br/>
 To tackle these aims, we sampled slags and soil cores along transects starting from the center of the slag heap. We then used scanning electron microscopy with energy dispersive spectrometry (EDS) mapping and x-ray diffraction to analyze slags and soil mineralogical composition. We also conducted chemical extraction and ecotoxicity bioassays using land snail (<em>Cantareus aspersus</em>) on soil samples to assess contaminant transfers in plants and biota and infer possible harmful effects. <br/><br/>
 Briefly, We found that slags that remain in the soil still release a significant amount of manganese (Mn), which is consistent with their mineralogical composition. We also uncovered that a large proportion of the Mn contamination might be available for transfers in plants and animals, especially land snails. However, we did not find any evidence of toxicity caused by soils contamination on snails (see fig. \@ref(fig:GraphAbsChemos)). <br/>
-```{r GraphAbsChemos, echo=FALSE, results='asis', message=FALSE, warning=FALSE, fig.align = 'center', out.width="90%", fig.cap="Summary of the results discussed in <a href='https://qpetitjean.github.io/qpetitjean_distill/publications.html#section'>Petitjean et al., 2021 Origin, fate and ecotoxicity of manganese from legacy metallurgical wastes</a>."}
+```{r GraphAbsChemos, echo=FALSE, results='asis', message=FALSE, warning=FALSE, fig.align = 'center', out.width="90%", fig.cap="Summary of the results discussed in <a href='https://qpetitjean.github.io/qpetitjean_distill/publications.html#section'>Petitjean et al., 2021 Origin, fate and ecotoxicity of manganese from legacy metallurgical wastes</a>.", fig.alt="Summary of the results discussed in Petitjean et al., 2021."}
 GraphAbsChemos <- "https://ars.els-cdn.com/content/image/1-s2.0-S0045653521008079-ga1_lrg.jpg"
 knitr::include_graphics(GraphAbsChemos)
 ```
@@ -396,7 +412,7 @@ While aware of the need to mitigate the increasing degradation of the environmen
 Indeed, until 2002 household waste disposal was authorized in France, resulting in contamination of the surrounding environment, primarily through contaminants leaching. To reduce environmental contamination entailed by this mode of waste storage, the Etueffont landfill (i.e., study site) set up a lagoon ponds system collecting landfill leachates.<br/><br/>
 Here, we aimed to better understand whether leachates released in the ponds may induce the accumulation of trace metal elements in biota (i.e., bioaccumulation kinetics) and how water and sediment may contribute to the observed bioaccumulation' patterns.<br/><br/>
 To tackle these aims, we used an active biomonitoring approach through caging laboratory-raised midges larvae (<em>Chironomus riparius</em>) in the first landfill leachate collection pond. More particularly, we used two types of cages to either expose the larvae to water only or water and sediment for a five days maximum duration (see fig. \@ref(fig:CagesTypes)).<br/>
-```{r CagesTypes, echo=FALSE, results='asis', message=FALSE, warning=FALSE, fig.align = 'center', out.width="80%", fig.cap="Type of cages used for active biomonitoring, the cage on the left (WS) allows exposing the midges to water and sediment. In contrast, the cage on the right (W) allows exposing the midges to water only."}
+```{r CagesTypes, echo=FALSE, results='asis', message=FALSE, warning=FALSE, fig.align = 'center', out.width="80%", fig.cap="Type of cages used for active biomonitoring, the cage on the left (WS) allows exposing the midges to water and sediment. In contrast, the cage on the right (W) allows exposing the midges to water only.", fig.alt="Shema of the cages used in Gimbert et al., 2018."}
 cagesURL <- "https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs11356-016-8261-1/MediaObjects/11356_2016_8261_Fig2_HTML.gif"
 knitr::include_graphics(cagesURL)
 ```
@@ -561,7 +577,8 @@ As Co-organizer, chairman (Ecotoxicology & Ecophysiology session), and financial
 ### MEMBERSHIP 
 <p class="plain-text" style="text-align: left">
 `r fontawesome::fa("handshake", fill = "#333333")` &ensp; ECOTOX INRAE network animation team&nbsp;<a href='https://eng-ecotox.hub.inrae.fr/'>(ECOTOX)</a> <br/>
-`r fontawesome::fa("handshake", fill = "#333333")` &ensp; Coordinator of the Young Ecotoxicologists Group of the ECOTOX INRAE network&nbsp;<a href='https://ecotox.hub.inrae.fr/actualites/yeg-ecotox'>(YEG)</a> <br/>
+`r fontawesome::fa("handshake", fill = "#333333")` &ensp; Co-coordinator of the Young Ecotoxicologists Group of the ECOTOX INRAE network&nbsp;<a href='https://ecotox.hub.inrae.fr/actualites/yeg-ecotox'>(YEG)</a> <br/>
+`r fontawesome::fa("handshake", fill = "#333333")` &ensp; Co-coordinator of the Pesticides & Pollinators Group of the POLLINECO network&nbsp;<a href='https://pollineco.org/'>(POLLINECO)</a> <br/>
 `r fontawesome::fa("handshake", fill = "#333333")` &ensp; British Ecological Society&nbsp;<a href='https://www.britishecologicalsociety.org/'>(BES)</a> <br/>
 `r fontawesome::fa("handshake", fill = "#333333")` &ensp; French Reproducible Research Network&nbsp;<a href='https://www.recherche-reproductible.fr/'>(FR-RR)</a> <br/>
 `r fontawesome::fa("handshake", fill = "#333333")` &ensp; Soci&eacute;t&eacute; Française d’&Eacute;cologie et d’&Eacute;volution&nbsp;<a href='https://sfecologie.org/'>(SFE²)</a> <br/>
@@ -575,7 +592,7 @@ As Co-organizer, chairman (Ecotoxicology & Ecophysiology session), and financial
 ### PEER REVIEWS
 ```{r loadData, echo=FALSE}
 # Load data
-filePath <- "W:/Reviews/Recap_reviews-QP.xlsx"
+filePath <- "C:/Users/qpetitjean/Desktop/WORK/Reviews/Recap_reviews-QP.xlsx"
 ArticleRevData <- readxl::read_excel(filePath, sheet = "ArticleRevSummary")
 DataRevData <- readxl::read_excel(filePath, sheet = "DataRevSummary")
 URL <- readxl::read_excel(filePath, sheet = "JournalsURL")

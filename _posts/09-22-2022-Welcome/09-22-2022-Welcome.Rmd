@@ -11,7 +11,11 @@ author:
     affiliation_url: https://www6.paca.inrae.fr/institut-sophia-agrobiotech
 date: 09-22-2022
 output:
-  distill::distill_article
+  distill::distill_article:
+    self_contained: false
+    includes:
+      in_header:
+        - _others/_headTags.html
 ---
    
  <table style="border: none; width='100%';">

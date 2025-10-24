@@ -1,8 +1,16 @@
 ---
 title: "News"
+description: "Updates, publications and lab news by Quentin Petitjean (INRAE)."
 listing: posts
 output:
   distill::distill_article:
     css:
       - css/GlobalTheme.css
+    includes:
+      in_header:
+        - _others/_headTags.html
 ---
+
+```{r canonical, include=FALSE, results='asis'}
+cat('<link rel="canonical" href="https://qpetitjean.github.io/qpetitjean_distill/news.html">')
+```

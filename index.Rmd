@@ -1,46 +1,58 @@
 ---
-title: "QUENTIN PETITJEAN"
+title: "Quentin PETITJEAN"
+description: "Official website of Quentin Petitjean, Researcher at INRAE. Evolutionary Ecotoxicology & Ecophysiology"
 image: images/Home_QP.png
 favicon: images/FavIcon.png
 twitter:
   creator: "@Q_PETITJEAN"
   site: "@Q_PETITJEAN"
 links:
-  - label: '<i class="fa fa-envelope"></i>'
+  - label: '<i class="fa fa-envelope"></i> <span class="sr-only">Email</span>'
     url: "mailto:quentin.petitjean@inrae.fr"
-  - label: '<i class="fa fa-github"></i>'
+  - label: '<i class="fa fa-github"></i> <span class="sr-only">GitHub</span>'
     url: "https://github.com/qpetitjean"
-  - label: '<i class="fa fa-twitter"></i>'
+  - label: '<i class="fa fa-twitter"></i> <span class="sr-only">Bluesky</span>'
     url: "https://bsky.app/profile/qpetitjean.bsky.social"
-  - label: '<i class="fa fa-linkedin"></i>'
+  - label: '<i class="fa fa-linkedin"></i> <span class="sr-only">LinkedIn</span>'
     url: "https://fr.linkedin.com/in/quentin-petitjean-phd-aba3b5aa"
-  - label: '<i class="ai ai-orcid fa-lg"></i>'
+  - label: '<i class="ai ai-orcid fa-lg"></i> <span class="sr-only">ORCID</span>'
     url: "https://orcid.org/0000-0003-2708-7831"
-  - label: '<i class="ai ai-researcherid fa-lg"></i>'
+  - label: '<i class="ai ai-researcherid fa-lg"></i> <span class="sr-only">ResearcherID</span>'
     url: "https://www.webofscience.com/wos/author/record/AAE-8204-2021"
-  - label: '<i class="ai ai-researchgate fa-lg"></i>'
+  - label: '<i class="ai ai-researchgate fa-lg"></i> <span class="sr-only">ResearchGate</span>'
     url: "https://www.researchgate.net/profile/Quentin-Petitjean-2"
-  - label: '<i class="ai ai-google-scholar fa-lg"></i>'
+  - label: '<i class="ai ai-google-scholar fa-lg"></i> <span class="sr-only">Google Scholar</span>'
     url: "https://scholar.google.com/citations?user=GMudi1sAAAAJ&hl=en"
 site: distill::distill_website
 output:
-  postcards::trestles
-  
+  postcards::trestles:
+    includes:
+      in_header:
+        - _others/_headTags.html
 ---
 ```{r metadata, include=FALSE, results='asis'}
-  metathis::meta_social(
-    metathis::meta(),
-    title = "Quentin PETITJEAN webpage",
-    description = "The personal website of Quentin PETITJEAN",
-    url = "https://github.com/qpetitjean",
-    image = "images/Home_QP.png",
-    image_alt = "A photo of Quentin PETITJEAN",
-    og_type = "website",
-    og_author = "Quentin PETITJEAN",
-    twitter_card_type = "summary",
-    twitter_creator = "@Q_PETITJEAN"
-  )
+cat('<link rel="canonical" href="https://qpetitjean.github.io/qpetitjean_distill/">')
+
+library(metathis)
+metas <- meta()
+metas <- meta_name(metas, "description" =
+  "Official website of Quentin Petitjean, Researcher at INRAE. Research, publications, projects (MoveR), news, and contact."
+)
+meta_social(
+  metas,
+  title = "Quentin Petitjean – Researcher at INRAE",
+  description = "Evolutionary ecotoxicology, ecophysiology, animal behavior",
+  url = "https://qpetitjean.github.io/qpetitjean_distill/",
+  image = "images/Home_QP.png",
+  image_alt = "Photo of Quentin Petitjean",
+  og_type = "website",
+  twitter_card_type = "summary_large_image",
+  twitter_creator = "@Q_PETITJEAN"
+)
 ```
+
+# Evolutionary Ecotoxicology & Ecophysiology
+
 <div style="border-top: 1px solid #cccccc; width: 100%; margin: 20px 0;"></div>
 
 # LATEST NEWS
@@ -58,6 +70,9 @@ htmlFile <- htmlFiles[1]
 htmlContent <- xml2::read_html(htmlFile)
 title <- rvest::html_node(htmlContent, "title")
 newsTitle <- rvest::html_text(title)
+if(length(grep("Quentin PETITJEAN: ", newsTitle)>0)){
+  newsTitle <- gsub("Quentin PETITJEAN: ", "", newsTitle)
+}
 
 # remove author name from the title 
 colonPos <- base::regexpr(":", newsTitle)
@@ -72,7 +87,7 @@ if (colonPos > 1) {
 # Extract the first image src attribute
 image <- rvest::html_node(htmlContent, "img")
 imgPreview <- rvest::html_attr(image, "src")
-htmlImageTag <- paste0('<img src="', imgPreview, '" style="height: 180px; margin-left: 10px; vertical-align: middle;">')
+htmlImageTag <- paste0('<img src="', imgPreview, '" alt="Preview of the latest news', '" style="height: 180px; margin-left: 10px; vertical-align: middle;">')
 
 # Retrieve the URL to the news
 URL <- paste0("https://qpetitjean.github.io/qpetitjean_distill/posts/", basename(latestDir))
@@ -137,3 +152,12 @@ In addition, I'm an `r fontawesome::fa("r-project", fill = "steelblue")` enthusi
 </div>
 <div class="d-appendix">
 </div>
+
+<nav>
+  <a href="/qpetitjean_distill/news.html" style="color:rgba(20, 130, 125, 1); font-style: italic; border-bottom: 0px; text-decoration: none; margin-right: 0px; margin-left: 0px;">News</a> |
+  <a href="/qpetitjean_distill/publications.html" style="color:rgba(20, 130, 125, 1); font-style: italic; border-bottom: 0px; text-decoration: none; margin-right: 0px; margin-left: 0px;">Publications</a> |
+  <a href="/qpetitjean_distill/communications.html" style="color:rgba(20, 130, 125, 1); font-style: italic; border-bottom: 0px; text-decoration: none; margin-right: 0px; margin-left: 0px;">Communications</a> |
+  <a href="/qpetitjean_distill/cv.html" style="color:rgba(20, 130, 125, 1); font-style: italic; border-bottom: 0px; text-decoration: none; margin-right: 0px; margin-left: 0px;">Curriculum Vitae </a>
+</nav>
+
+<html lang="en">

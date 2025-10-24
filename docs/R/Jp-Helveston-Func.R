@@ -17,9 +17,10 @@ make_icon_text <- function(icon, text) {
 # copied from https://github.com/jhelvy/jhelvy.com
 # for more details, see https://www.jhelvy.com/posts/2021-03-25-customizing-distill-with-htmltools-and-css/
 # Creates the html to make a button to an external link
-icon_link <- function(icon = NULL, text = NULL, url = NULL) {
-  if (!is.null(icon)) {
-    text <- make_icon_text(icon, text)
-  }
-  return(htmltools::a(href = url, text, class = "icon-link"))
+icon_link <- function(icon, text, url, new_tab = TRUE) {
+  target <- if (new_tab) ' target="_blank" rel="noopener"' else ""
+  sprintf(
+    '<a href="%s"%s aria-label="%s (%s)"><i class="%s" aria-hidden="true"></i> %s</a>',
+    url, target, text, if (grepl("\\.pdf$", url)) "PDF" else "link", icon, text
+  )
 }
